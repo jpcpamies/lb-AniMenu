@@ -1,4 +1,4 @@
-
+//hola
 // Variables para capturar la fecha del navegador
 var fecha = new Date();
 var numero = fecha.getDate();
