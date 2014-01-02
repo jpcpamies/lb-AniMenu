@@ -105,6 +105,15 @@
 	animation animacionMes 2.7s 1
 	-webkit-animation animacionMes 2.7s 1
 
+.inici
+	.boto
+	.botoTrans
+	.on
+	.onTrans
+	.off
+	.offTrans
+		display none
+
 .on
 	.menu
 		background rgba(black,.5)
@@ -143,19 +152,19 @@
 			content '\e602'
 			font-family icono
 		&:hover
-			background rgba(black,.7)
+			background rgba(black,.5)
 			color white
 			-webkit-transition: all .2s;
 			transition: all .2s;
 	.aumentar
 		background rgba(white,.7)
 		border-radius 50%
-		bottom 90px 
+		top 75px 
 		color rgba(black,.7)
 		height 50px
 		line-height 1.9em
 		position fixed
-		right 25px
+		right 12px
 		font-size 1.2em
 		text-align center
 		width 50px
@@ -167,32 +176,32 @@
 			font-size 1.4em
 			font-weight 300
 		&:hover
-			background rgba(black,.7)
+			background rgba(black,.5)
 			color white
 			-webkit-transition: all .2s;
 			transition: all .2s;
 	.disminuir
 		background rgba(white,.7)
 		border-radius 50%
-		bottom 155px 
+		top 140px 
 		color rgba(black,.7)
 		height 50px
 		line-height 1.7em
 		position fixed
-		right 25px
+		right 12px
 		font-size 1.3em
 		text-align center
 		width 50px
 		z-index 2
-		animation animacionDisminuar .25s 1
-		-webkit-animation animacionDisminuar .25s 1
+		animation animacionDisminuir .25s 1
+		-webkit-animation animacionDisminuir .25s 1
 		&:after
 			content 'a'
 			font-size .75em
 			font-weight 300
 			text-align center
 		&:hover
-			background rgba(black,.7)
+			background rgba(black,.5)
 			color white
 			-webkit-transition: all .2s;
 			transition: all .2s;
@@ -292,14 +301,22 @@
 
 @keyframes animacionAumentar 
 	0% 
-		bottom 25px
+		top 12px
 		opacity 0
 	100% 
-		bottom 90px
+		bottom 75px
 		opacity 1
 
-@keyframes animacionBoto 
-	from
+@keyframes animacionDisminuir
+	0% 
+		top 12px
+		opacity 0
+	100% 
+		bottom 75px
+		opacity 1
+
+@keyframes animacionbotoTrans 
+	from	
 		background rgba(white,.3)
 		color rgba(black,.7)
 		height 38px
@@ -315,22 +332,13 @@
 		font-size 1.2em
 		width 50px
 
-@keyframes animacionbotoTrans 
-	from
-		background rgba(white,.7)
-		color rgba(black,.7)
-		height 50px
-		line-height 2.2em
-		font-size 1.2em
-		width 50px
-		
-	to
-		background rgba(white,.3)
-		color rgba(black,.7)
-		height 38px
-		line-height 2.4em
-		font-size .8em
-		width 38px
+@keyframes animacionMapa 
+	0% 
+		left 180px
+		opacity 0
+	100% 
+		left 12px
+		opacity 1
 		 
 
 
@@ -356,13 +364,7 @@
 
 // @keyframes animacionNumero 
 
-// @keyframes animacionMapa 
-// 	0% 
-// 		left 180px
-// 		opacity 0
-// 	100% 
-// 		left 25px
-// 		opacity 1
+
 
 // @keyframes animacionMes 
 // 	0% 

@@ -30,8 +30,8 @@ var inicio = 350; //number of pixels before modifying styles
 
 		$(window).bind('scroll', function () {
 		    if ($(window).scrollTop() > inicio) {
-		        $('.boto').addClass('botoTrans');
+		        $('.inici').addClass('botoTrans');
 		    } else {
-		        $('.boto').removeClass('botoTrans');
+		        $('.inici').removeClass('botoTrans');
 		    }
 		});
