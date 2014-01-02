@@ -16,22 +16,28 @@ document.getElementById('divDia').innerHTML = diasSemana[dia];
 document.getElementById('divNumero').innerHTML = numero;
 document.getElementById('divMes').innerHTML = meses[mes];
 
-function toggleMenu(){
-    var e = document.getElementById('divMenu');
-    if(e.className=='menuOff') {
-        e.className='menuOn'
+function toggleMenu(a){
+    var e = document.getElementById(a);
+    if(e.className=='boto') {
+        e.className='botoOn'
     } else {
-        e.className='menuOff'
+        e.className='boto'
     }
 }
 
 // Transforamcion del boton al scroll
-var inicio = 350; //number of pixels before modifying styles
+function iniciarScroll(){
+	var inicio = 350; //number of pixels before modifying styles
+	setTimeout('iniciarScroll', 500);
+			$(window).bind('scroll', function () {
+			    if ($(window).scrollTop() > inicio) {
+			        $('.inici').addClass('boto');
+			    } else {
+			        $('.inici').removeClass('boto');
+			    }
+			});
+}
 
-		$(window).bind('scroll', function () {
-		    if ($(window).scrollTop() > inicio) {
-		        $('.inici').addClass('boto');
-		    } else {
-		        $('.inici').removeClass('boto');
-		    }
-		});
+
+
+
