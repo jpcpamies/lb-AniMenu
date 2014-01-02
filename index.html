@@ -29,18 +29,50 @@
     <![endif]-->
     
     <div class="bg"></div>
-    <div class="calendar">
-        <div id='dia' class="dia"><span>Dimarts</span></div>
-        <div id='numero' class="numero"><span>31</span></div>
-        <div id='mes' class="mes"><span>Desembre</span></div>   
-    </div>
 
-    <div id="divMenu" class="menuOff" onclick="toggleMenu('divMenu')"><!--Les dos class que tenen que iterar an aquest div son: .menuOff .menuOn  -->
+    <nav class="menu"><!-- Iterar entre .menu .menuTrans .on .onTrans .off .offTrans-->
         <span id='menu' class="menu"></span>
         <span id='aumentar' class="aumentar"></span>
         <span id='disminuir' class="disminuir"></span>
         <a href="#"><span class="mapa"></span></a>
+    </nav>
+    <header class="calendar">
+        <div id='divDia' class="dia"><span>Dimarts</span></div>
+        <div id='divNumero' class="numero"><span>31</span></div>
+        <div id='divMes' class="mes"><span>Desembre</span></div>   
+    </header>
+    <div id='eventActual' class="eventActual">
+        <div id='titol' class="titol"><p>Event actual</p></div>
+        <div class="hora">
+            <div class="horaInici"><p>13:30</p></div>
+            <div class="horaFi"><p>14:45</p></div>
+        </div>
+        <div class="event">
+            <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+            <div class="lloc"><p>Poli deportiu</p></div>
+        </div>
     </div>
+    <section class="llistaVisible"><!-- Iterar entre .llistaVisible .llistaInvisible-->
+        <article class="event">
+        <div class="detall">
+            <div class="hora">
+                <div class="horaInici"><p>13:30</p></div>
+                <div class="horaFi"><p>14:45</p></div>
+            </div>
+            <div class="lloc"><p>Poli deportiu</p></div>
+        </div>
+        <div class="contingut">
+            <div class="titolEvent">
+                <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                <div class="detallEvent"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                </div>
+            </div>
+        </div>
+        </article>
+    </section>
+    <footer class="footerApp">
+        <p>Quinquenals 2014</p>
+    </footer>
 
 
     <script src="js/main.js"></script>

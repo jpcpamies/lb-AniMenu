@@ -1,5 +1,5 @@
-function toggleMenu(a){
-    var e = document.getElementById(a);
+function toggleMenu(){
+    var e = document.getElementById('divMenu');
     if(e.className=='menuOff') {
         e.className='menuOn'
     } else {
