@@ -60,26 +60,6 @@
 
 .boto
 	.menu
-		background rgba(white,.7)
-		border-radius 50%
-		top 12px 
-		color rgba(black,.7)
-		height 50px
-		line-height 2.2em
-		position fixed
-		right 12px
-		font-size 1.2em
-		text-align center
-		width 50px
-		z-index 7
-		animation animacionBoto .2s 1
-		-webkit-animation animacionBoto .2s 1
-		&:after
-			content '\e601'
-			font-family icono	
-
-.botoTrans
-	.menu
 		background rgba(white,.15)
 		border-radius 50%
 		top 12px 
@@ -92,11 +72,11 @@
 		text-align center
 		width 38px
 		z-index 7
-		animation animacionbotoTrans .2s 1
-		-webkit-animation animacionbotoTrans .2s 1
+		animation animacionBoto .5s 1
+		-webkit-animation animacionBoto .5s 1
 		&:after
 			content '\e601'
-			font-family icono	
+			font-family icono
 
 .mes
 	left 23%
@@ -114,7 +94,7 @@
 	.offTrans
 		display none
 
-.on
+.botoOn
 	.menu
 		background rgba(black,.5)
 		border-radius 50%
@@ -128,8 +108,8 @@
 		text-align center
 		width 50px
 		z-index 7
-		animation animacionOn 1s 1
-		-webkit-animation animacionOn 1s 1
+		animation animacionbotoOn .3s 1
+		-webkit-animation animacionbotoOn .3s 1
 		&:after
 			content '\e601'
 			font-family icono	
@@ -195,6 +175,98 @@
 		z-index 2
 		animation animacionDisminuir .25s 1
 		-webkit-animation animacionDisminuir .25s 1
+		&:after
+			content 'a'
+			font-size .75em
+			font-weight 300
+			text-align center
+		&:hover
+			background rgba(black,.5)
+			color white
+			-webkit-transition: all .2s;
+			transition: all .2s;
+
+.botoOff
+	.menu
+		background rgba(black,.5)
+		border-radius 50%
+		top 12px 
+		color rgba(white,.7)
+		height 50px
+		line-height 2.2em
+		position fixed
+		right 12px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 7
+		animation animacionbotoOff .3s 1
+		-webkit-animation animacionbotoOff .3s 1
+		&:after
+			content '\e601'
+			font-family icono	
+	.mapa
+		background rgba(white,.7)
+		border-radius 50%
+		top 12px 
+		color rgba(black,.7)
+		height 50px
+		line-height 2.1em
+		position fixed
+		left 12px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 3
+		animation animacionMapaOff .2s 1
+		-webkit-animation animacionMapaOff .2s 1
+		&:after
+			content '\e602'
+			font-family icono
+		&:hover
+			background rgba(black,.5)
+			color white
+			-webkit-transition: all .2s;
+			transition: all .2s;
+	.aumentar
+		background rgba(white,.7)
+		border-radius 50%
+		top 75px 
+		color rgba(black,.7)
+		height 50px
+		line-height 1.9em
+		position fixed
+		right 12px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 4
+		animation animacionAumentarOff .2s 1
+		-webkit-animation animacionAumentarOff .2s 1
+		&:after
+			content 'a'
+			font-size 1.4em
+			font-weight 300
+		&:hover
+			background rgba(black,.5)
+			color white
+			-webkit-transition: all .2s;
+			transition: all .2s;
+	.disminuir
+		background rgba(white,.7)
+		border-radius 50%
+		top 140px 
+		color rgba(black,.7)
+		height 50px
+		line-height 1.7em
+		position fixed
+		right 12px
+		font-size 1.3em
+		text-align center
+		width 50px
+		z-index 2
+		animation animacionDisminuirOff .25s 1
+		-webkit-animation animacionDisminuirOff .25s 1
 		&:after
 			content 'a'
 			font-size .75em
@@ -307,6 +379,14 @@
 		bottom 75px
 		opacity 1
 
+@keyframes animacionAumentarOff
+	0% 
+		bottom 75px
+		opacity 1
+	100% 
+		top 12px
+		opacity 0
+
 @keyframes animacionDisminuir
 	0% 
 		top 12px
@@ -315,22 +395,53 @@
 		bottom 75px
 		opacity 1
 
-@keyframes animacionbotoTrans 
-	from	
-		background rgba(white,.3)
-		color rgba(black,.7)
+@keyframes animacionDisminuirOff
+	0% 
+		bottom 75px
+		opacity 1
+	100% 
+		top 12px
+		opacity 0
+
+@keyframes animacionBoto 
+	0% 
+		opacity 0
+	100% 
+		opacity 1
+
+@keyframes animacionbotoOn 
+	0% 
+		background rgba(white,.15)
+		color rgba(white,.3)
+		font-size .8em
 		height 38px
 		line-height 2.4em
-		font-size .8em
 		width 38px
-		
-	to
-		background rgba(white,.7)
-		color rgba(black,.7)
+	100% 
+		background rgba(black,.5)
+		color rgba(white,.7)
 		height 50px
 		line-height 2.2em
+		right 12px
 		font-size 1.2em
 		width 50px
+
+@keyframes animacionbotoOff
+	0% 	
+		background rgba(black,.5)
+		color rgba(white,.7)
+		height 50px
+		line-height 2.2em
+		right 12px
+		font-size 1.2em
+		width 50px
+	100% 
+		background rgba(white,.15)
+		color rgba(white,.3)
+		font-size .8em
+		height 38px
+		line-height 2.4em
+		width 38px
 
 @keyframes animacionMapa 
 	0% 
@@ -339,6 +450,14 @@
 	100% 
 		left 12px
 		opacity 1
+
+@keyframes animacionMapaOff
+	0% 
+		left 12px
+		opacity 1
+	100% 
+		left 180px
+		opacity 0
 		 
 
 
