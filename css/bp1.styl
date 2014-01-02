@@ -72,8 +72,8 @@
 		text-align center
 		width 50px
 		z-index 7
-		// animation animacionOn 0s 1
-		// -webkit-animation animacionOn 0s 1
+		animation animacionOn 1s 1
+		-webkit-animation animacionOn 1s 1
 		&:after
 			content '\e601'
 			font-family icono	
@@ -105,6 +105,8 @@
 	animation animacionMes 2.7s 1
 	-webkit-animation animacionMes 2.7s 1
 
+.on
+	
 
 .PROVA COMIDN
 	.menu
@@ -205,6 +207,24 @@
 	100% 
 		bottom 90px
 		opacity 1
+
+@keyframes animacionOn 
+	from
+		background rgba(white,.3)
+		color rgba(black,.7)
+		height 38px
+		line-height 2.4em
+		font-size .8em
+		width 38px
+		
+	to
+		background rgba(white,.7)
+		color rgba(black,.7)
+		height 50px
+		line-height 2.2em
+		font-size 1.2em
+		width 50px
+		 
 
 @keyframes animacionbotoTrans 
 	from
