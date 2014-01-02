@@ -6,5 +6,3 @@ function toggleMenu(a){
         e.className='menuOff'
     }
 }
-
-Prueba de cambio en js
