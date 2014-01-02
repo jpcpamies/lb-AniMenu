@@ -49,6 +49,7 @@
 .llistaVisible
 	border 1px solid white
 	margin .5em
+
 .numero
 	font-size 7.5em
 	left 26%
@@ -57,11 +58,11 @@
 	animation animacionNumero 2.5s 1
 	-webkit-animation animacionNumero 2.5s 1
 
-.menu
-	.menu 
+.boto
+	.menu
 		background rgba(white,.7)
 		border-radius 50%
-		bottom 25px 
+		top 25px 
 		color rgba(black,.7)
 		height 50px
 		line-height 2.2em
@@ -70,12 +71,32 @@
 		font-size 1.2em
 		text-align center
 		width 50px
-		z-index 3
-		animation animacionOff 0s 1
-		-webkit-animation animacionOff 0s 1
+		z-index 7
+		animation animacionOn 0s 1
+		-webkit-animation animacionOn 0s 1
 		&:after
 			content '\e601'
-			font-family icono
+			font-family icono	
+
+.botoTrans
+	.menu
+		background rgba(white,.3)
+		border-radius 50%
+		top 25px 
+		color rgba(black,.7)
+		height 38px
+		line-height 2.2em
+		position fixed
+		right 25px
+		font-size 1.2em
+		text-align center
+		width 38px
+		z-index 7
+		animation animacionOn 0s 1
+		-webkit-animation animacionOn 0s 1
+		&:after
+			content '\e601'
+			font-family icono	
 
 .mes
 	left 23%
@@ -84,7 +105,8 @@
 	animation animacionMes 2.7s 1
 	-webkit-animation animacionMes 2.7s 1
 
-.menuOn
+
+.PROVA COMIDN
 	.menu
 		background rgba(black,.7)
 		border-radius 50%
@@ -175,26 +197,6 @@
 			color white
 			-webkit-transition: all .2s;
 			transition: all .2s;
-
-@keyframes animacionOff 
-	0% 
-		opacity 0
-	50% 
-		opacity 0
-	75% 
-		opacity 0
-	100% 
-		opacity 1
-
-@keyframes animacionOn 
-	0% 
-		opacity 0
-	50% 
-		opacity 0
-	75% 
-		opacity 0
-	100% 
-		opacity 1
 
 @keyframes animacionMapa 
 	0% 

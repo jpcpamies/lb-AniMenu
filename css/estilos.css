@@ -85,369 +85,303 @@ background: rgb(47,68,92);
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\0000340}}
 .llistaVisible{border:1px solid #fff;margin:.5em}
 
-/* line 43 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 44 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\0000343}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\0000344}}
 .numero{font-size:7.5em;left:26%;letter-spacing:-15px;top:35px;animation:animacionNumero 2.5s 1;-webkit-animation:animacionNumero 2.5s 1}
-
-/* line 51 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\0000351}}
 
 /* line 52 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\0000352}}
-.menu .menu{background:rgba(255,255,255,0.7);border-radius:50%;bottom:25px;color:rgba(0,0,0,0.7);height:50px;line-height:2.2em;position:fixed;right:25px;font-size:1.2em;text-align:center;width:50px;z-index:3;animation:animacionOff 0 1;-webkit-animation:animacionOff 0 1;}
 
-/* line 67 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 53 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\0000367}}
-.menu .menu:after{content:'\e601';font-family:icono}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\0000353}}
+.boto .menu{background:rgba(255,255,255,0.7);border-radius:50%;top:25px;color:rgba(0,0,0,0.7);height:50px;line-height:2.2em;position:fixed;right:25px;font-size:1.2em;text-align:center;width:50px;z-index:7;animation:animacionOn 0 1;-webkit-animation:animacionOn 0 1;}
 
-/* line 71 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 68 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\0000371}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\0000368}}
+.boto .menu:after{content:'\e601';font-family:icono}
+
+/* line 72 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\0000372}}
+
+/* line 73 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\0000373}}
+.botoTrans .menu{background:rgba(255,255,255,0.3);border-radius:50%;top:25px;color:rgba(0,0,0,0.7);height:38px;line-height:2.2em;position:fixed;right:25px;font-size:1.2em;text-align:center;width:38px;z-index:7;animation:animacionOn 0 1;-webkit-animation:animacionOn 0 1;}
+
+/* line 88 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\0000388}}
+.botoTrans .menu:after{content:'\e601';font-family:icono}
+
+/* line 92 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\0000392}}
 .mes{left:23%;font-size:2em;top:180px;animation:animacionMes 2.7s 1;-webkit-animation:animacionMes 2.7s 1}
 
-/* line 78 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 100 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\0000378}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003100}}
 
-/* line 79 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 101 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\0000379}}
-.menuOn .menu{background:rgba(0,0,0,0.7);border-radius:50%;bottom:25px;color:rgba(255,255,255,0.7);height:50px;line-height:2.2em;position:fixed;right:25px;font-size:1.2em;text-align:center;width:50px;z-index:7;animation:animacionOn 0 1;-webkit-animation:animacionOn 0 1;}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003101}}
+.PROVA COMIDN .menu{background:rgba(0,0,0,0.7);border-radius:50%;bottom:25px;color:rgba(255,255,255,0.7);height:50px;line-height:2.2em;position:fixed;right:25px;font-size:1.2em;text-align:center;width:50px;z-index:7;animation:animacionOn 0 1;-webkit-animation:animacionOn 0 1;}
 
-/* line 94 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 116 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\0000394}}
-.menuOn .menu:after{content:'\e601';font-family:icono}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003116}}
+.PROVA COMIDN .menu:after{content:'\e601';font-family:icono}
 
-/* line 97 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 119 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\0000397}}
-.menuOn .mapa{background:rgba(255,255,255,0.7);border-radius:50%;bottom:25px;color:rgba(0,0,0,0.7);height:50px;line-height:2.1em;position:fixed;left:25px;font-size:1.2em;text-align:center;width:50px;z-index:3;animation:animacionMapa .2s 1;-webkit-animation:animacionMapa .2s 1;}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003119}}
+.PROVA COMIDN .mapa{background:rgba(255,255,255,0.7);border-radius:50%;bottom:25px;color:rgba(0,0,0,0.7);height:50px;line-height:2.1em;position:fixed;left:25px;font-size:1.2em;text-align:center;width:50px;z-index:3;animation:animacionMapa .2s 1;-webkit-animation:animacionMapa .2s 1;}
 
-/* line 112 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 134 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003112}}
-.menuOn .mapa:after{content:'\e602';font-family:icono}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003134}}
+.PROVA COMIDN .mapa:after{content:'\e602';font-family:icono}
 
-/* line 115 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 137 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003115}}
-.menuOn .mapa:hover{background:rgba(0,0,0,0.7);color:#fff;-webkit-transition:all .2s;transition:all .2s}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003137}}
+.PROVA COMIDN .mapa:hover{background:rgba(0,0,0,0.7);color:#fff;-webkit-transition:all .2s;transition:all .2s}
 
-/* line 120 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 142 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003120}}
-.menuOn .aumentar{background:rgba(255,255,255,0.7);border-radius:50%;bottom:90px;color:rgba(0,0,0,0.7);height:50px;line-height:1.9em;position:fixed;right:25px;font-size:1.2em;text-align:center;width:50px;z-index:4;animation:animacionAumentar .2s 1;-webkit-animation:animacionAumentar .2s 1;}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003142}}
+.PROVA COMIDN .aumentar{background:rgba(255,255,255,0.7);border-radius:50%;bottom:90px;color:rgba(0,0,0,0.7);height:50px;line-height:1.9em;position:fixed;right:25px;font-size:1.2em;text-align:center;width:50px;z-index:4;animation:animacionAumentar .2s 1;-webkit-animation:animacionAumentar .2s 1;}
 
-/* line 135 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 157 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003135}}
-.menuOn .aumentar:after{content:'a';font-size:1.4em;font-weight:300}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003157}}
+.PROVA COMIDN .aumentar:after{content:'a';font-size:1.4em;font-weight:300}
 
-/* line 139 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 161 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003139}}
-.menuOn .aumentar:hover{background:rgba(0,0,0,0.7);color:#fff;-webkit-transition:all .2s;transition:all .2s}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003161}}
+.PROVA COMIDN .aumentar:hover{background:rgba(0,0,0,0.7);color:#fff;-webkit-transition:all .2s;transition:all .2s}
 
-/* line 144 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 166 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003144}}
-.menuOn .disminuir{background:rgba(255,255,255,0.7);border-radius:50%;bottom:155px;color:rgba(0,0,0,0.7);height:50px;line-height:1.7em;position:fixed;right:25px;font-size:1.3em;text-align:center;width:50px;z-index:2;animation:animacionDisminuar .25s 1;-webkit-animation:animacionDisminuar .25s 1;}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003166}}
+.PROVA COMIDN .disminuir{background:rgba(255,255,255,0.7);border-radius:50%;bottom:155px;color:rgba(0,0,0,0.7);height:50px;line-height:1.7em;position:fixed;right:25px;font-size:1.3em;text-align:center;width:50px;z-index:2;animation:animacionDisminuar .25s 1;-webkit-animation:animacionDisminuar .25s 1;}
 
-/* line 159 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 181 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003159}}
-.menuOn .disminuir:after{content:'a';font-size:.75em;font-weight:300;text-align:center}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003181}}
+.PROVA COMIDN .disminuir:after{content:'a';font-size:.75em;font-weight:300;text-align:center}
 
-/* line 164 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 186 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003164}}
-.menuOn .disminuir:hover{background:rgba(0,0,0,0.7);color:#fff;-webkit-transition:all .2s;transition:all .2s}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003186}}
+.PROVA COMIDN .disminuir:hover{background:rgba(0,0,0,0.7);color:#fff;-webkit-transition:all .2s;transition:all .2s}
 
-/* line 170 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 192 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003170}}
-@-moz-keyframes animacionOff{0%{opacity:0}
-50%{opacity:0}
-75%{opacity:0}
-100%{opacity:1}
-}
-/* line 170 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003170}}
-@-webkit-keyframes animacionOff{0%{opacity:0}
-50%{opacity:0}
-75%{opacity:0}
-100%{opacity:1}
-}
-/* line 170 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003170}}
-@-o-keyframes animacionOff{0%{opacity:0}
-50%{opacity:0}
-75%{opacity:0}
-100%{opacity:1}
-}
-/* line 170 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003170}}
-@-ms-keyframes animacionOff{0%{opacity:0}
-50%{opacity:0}
-75%{opacity:0}
-100%{opacity:1}
-}
-/* line 170 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003170}}
-@keyframes animacionOff{0%{opacity:0}
-50%{opacity:0}
-75%{opacity:0}
-100%{opacity:1}
-}
-/* line 180 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003180}}
-@-moz-keyframes animacionOn{0%{opacity:0}
-50%{opacity:0}
-75%{opacity:0}
-100%{opacity:1}
-}
-/* line 180 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003180}}
-@-webkit-keyframes animacionOn{0%{opacity:0}
-50%{opacity:0}
-75%{opacity:0}
-100%{opacity:1}
-}
-/* line 180 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003180}}
-@-o-keyframes animacionOn{0%{opacity:0}
-50%{opacity:0}
-75%{opacity:0}
-100%{opacity:1}
-}
-/* line 180 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003180}}
-@-ms-keyframes animacionOn{0%{opacity:0}
-50%{opacity:0}
-75%{opacity:0}
-100%{opacity:1}
-}
-/* line 180 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003180}}
-@keyframes animacionOn{0%{opacity:0}
-50%{opacity:0}
-75%{opacity:0}
-100%{opacity:1}
-}
-/* line 190 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003190}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003192}}
 @-moz-keyframes animacionMapa{0%{left:180px;opacity:0}
 100%{left:25px;opacity:1}
 }
-/* line 190 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 192 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003190}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003192}}
 @-webkit-keyframes animacionMapa{0%{left:180px;opacity:0}
 100%{left:25px;opacity:1}
 }
-/* line 190 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 192 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003190}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003192}}
 @-o-keyframes animacionMapa{0%{left:180px;opacity:0}
 100%{left:25px;opacity:1}
 }
-/* line 190 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 192 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003190}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003192}}
 @-ms-keyframes animacionMapa{0%{left:180px;opacity:0}
 100%{left:25px;opacity:1}
 }
-/* line 190 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 192 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003190}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003192}}
 @keyframes animacionMapa{0%{left:180px;opacity:0}
 100%{left:25px;opacity:1}
 }
-/* line 198 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 200 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003198}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003200}}
 @-moz-keyframes animacionAumentar{0%{bottom:25px;opacity:0}
 100%{bottom:90px;opacity:1}
 }
-/* line 198 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 200 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003198}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003200}}
 @-webkit-keyframes animacionAumentar{0%{bottom:25px;opacity:0}
 100%{bottom:90px;opacity:1}
 }
-/* line 198 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 200 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003198}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003200}}
 @-o-keyframes animacionAumentar{0%{bottom:25px;opacity:0}
 100%{bottom:90px;opacity:1}
 }
-/* line 198 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 200 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003198}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003200}}
 @-ms-keyframes animacionAumentar{0%{bottom:25px;opacity:0}
 100%{bottom:90px;opacity:1}
 }
-/* line 198 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 200 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003198}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003200}}
 @keyframes animacionAumentar{0%{bottom:25px;opacity:0}
 100%{bottom:90px;opacity:1}
 }
-/* line 206 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 208 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003206}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003208}}
 @-moz-keyframes animacionDisminuar{0%{bottom:25px;opacity:0}
 100%{bottom:155px;opacity:1}
 }
-/* line 206 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 208 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003206}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003208}}
 @-webkit-keyframes animacionDisminuar{0%{bottom:25px;opacity:0}
 100%{bottom:155px;opacity:1}
 }
-/* line 206 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 208 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003206}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003208}}
 @-o-keyframes animacionDisminuar{0%{bottom:25px;opacity:0}
 100%{bottom:155px;opacity:1}
 }
-/* line 206 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 208 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003206}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003208}}
 @-ms-keyframes animacionDisminuar{0%{bottom:25px;opacity:0}
 100%{bottom:155px;opacity:1}
 }
-/* line 206 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 208 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003206}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003208}}
 @keyframes animacionDisminuar{0%{bottom:25px;opacity:0}
 100%{bottom:155px;opacity:1}
 }
-/* line 214 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 216 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003214}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003216}}
 @-moz-keyframes animacionMes{0%{opacity:0}
 20%{opacity:0}
 65%{left:17%;opacity:0}
 100%{left:23%;opacity:1}
 }
-/* line 214 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 216 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003214}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003216}}
 @-webkit-keyframes animacionMes{0%{opacity:0}
 20%{opacity:0}
 65%{left:17%;opacity:0}
 100%{left:23%;opacity:1}
 }
-/* line 214 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 216 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003214}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003216}}
 @-o-keyframes animacionMes{0%{opacity:0}
 20%{opacity:0}
 65%{left:17%;opacity:0}
 100%{left:23%;opacity:1}
 }
-/* line 214 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 216 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003214}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003216}}
 @-ms-keyframes animacionMes{0%{opacity:0}
 20%{opacity:0}
 65%{left:17%;opacity:0}
 100%{left:23%;opacity:1}
 }
-/* line 214 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 216 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003214}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003216}}
 @keyframes animacionMes{0%{opacity:0}
 20%{opacity:0}
 65%{left:17%;opacity:0}
 100%{left:23%;opacity:1}
 }
-/* line 226 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 228 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003226}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003228}}
 @-moz-keyframes animacionNumero{0%{opacity:0;top:90px}
 20%{opacity:0}
 100%{opacity:1;top:35px}
 }
-/* line 226 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 228 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003226}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003228}}
 @-webkit-keyframes animacionNumero{0%{opacity:0;top:90px}
 20%{opacity:0}
 100%{opacity:1;top:35px}
 }
-/* line 226 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 228 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003226}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003228}}
 @-o-keyframes animacionNumero{0%{opacity:0;top:90px}
 20%{opacity:0}
 100%{opacity:1;top:35px}
 }
-/* line 226 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 228 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003226}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003228}}
 @-ms-keyframes animacionNumero{0%{opacity:0;top:90px}
 20%{opacity:0}
 100%{opacity:1;top:35px}
 }
-/* line 226 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 228 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003226}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003228}}
 @keyframes animacionNumero{0%{opacity:0;top:90px}
 20%{opacity:0}
 100%{opacity:1;top:35px}
 }
-/* line 236 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 238 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003236}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003238}}
 @-moz-keyframes animacionDia{0%{opacity:0}
 20%{opacity:0}
 65%{left:33%;opacity:0}
 100%{left:27%;opacity:1}
 }
-/* line 236 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 238 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003236}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003238}}
 @-webkit-keyframes animacionDia{0%{opacity:0}
 20%{opacity:0}
 65%{left:33%;opacity:0}
 100%{left:27%;opacity:1}
 }
-/* line 236 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 238 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003236}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003238}}
 @-o-keyframes animacionDia{0%{opacity:0}
 20%{opacity:0}
 65%{left:33%;opacity:0}
 100%{left:27%;opacity:1}
 }
-/* line 236 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 238 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003236}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003238}}
 @-ms-keyframes animacionDia{0%{opacity:0}
 20%{opacity:0}
 65%{left:33%;opacity:0}
 100%{left:27%;opacity:1}
 }
-/* line 236 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
+/* line 238 : /Users/jordiimac/Documents/AniMenu/css/bp1.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003236}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp1\.styl}line{font-family:\00003238}}
 @keyframes animacionDia{0%{opacity:0}
 20%{opacity:0}
 65%{left:33%;opacity:0}
