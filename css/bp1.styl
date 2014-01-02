@@ -62,38 +62,38 @@
 	.menu
 		background rgba(white,.7)
 		border-radius 50%
-		top 25px 
+		top 12px 
 		color rgba(black,.7)
 		height 50px
 		line-height 2.2em
 		position fixed
-		right 25px
+		right 12px
 		font-size 1.2em
 		text-align center
 		width 50px
 		z-index 7
-		animation animacionBoto 1s 1
-		-webkit-animation animacionBoto 1s 1
+		animation animacionBoto .2s 1
+		-webkit-animation animacionBoto .2s 1
 		&:after
 			content '\e601'
 			font-family icono	
 
 .botoTrans
 	.menu
-		background rgba(white,.3)
+		background rgba(white,.15)
 		border-radius 50%
-		top 25px 
-		color rgba(black,.7)
+		top 12px 
+		color rgba(white,.3)
 		height 38px
 		line-height 2.4em
 		position fixed
-		right 25px
+		right 12px
 		font-size .8em
 		text-align center
 		width 38px
 		z-index 7
-		animation animacionbotoTrans 1s 1
-		-webkit-animation animacionbotoTrans 1s 1
+		animation animacionbotoTrans .2s 1
+		-webkit-animation animacionbotoTrans .2s 1
 		&:after
 			content '\e601'
 			font-family icono	
@@ -107,14 +107,14 @@
 
 .on
 	.menu
-		background rgba(white,.7)
+		background rgba(black,.5)
 		border-radius 50%
-		top 25px 
-		color rgba(black,.7)
+		top 12px 
+		color rgba(white,.7)
 		height 50px
 		line-height 2.2em
 		position fixed
-		right 25px
+		right 12px
 		font-size 1.2em
 		text-align center
 		width 50px
@@ -124,7 +124,86 @@
 		&:after
 			content '\e601'
 			font-family icono	
-	
+	.mapa
+		background rgba(white,.7)
+		border-radius 50%
+		top 12px 
+		color rgba(black,.7)
+		height 50px
+		line-height 2.1em
+		position fixed
+		left 12px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 3
+		animation animacionMapa .2s 1
+		-webkit-animation animacionMapa .2s 1
+		&:after
+			content '\e602'
+			font-family icono
+		&:hover
+			background rgba(black,.7)
+			color white
+			-webkit-transition: all .2s;
+			transition: all .2s;
+	.aumentar
+		background rgba(white,.7)
+		border-radius 50%
+		bottom 90px 
+		color rgba(black,.7)
+		height 50px
+		line-height 1.9em
+		position fixed
+		right 25px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 4
+		animation animacionAumentar .2s 1
+		-webkit-animation animacionAumentar .2s 1
+		&:after
+			content 'a'
+			font-size 1.4em
+			font-weight 300
+		&:hover
+			background rgba(black,.7)
+			color white
+			-webkit-transition: all .2s;
+			transition: all .2s;
+	.disminuir
+		background rgba(white,.7)
+		border-radius 50%
+		bottom 155px 
+		color rgba(black,.7)
+		height 50px
+		line-height 1.7em
+		position fixed
+		right 25px
+		font-size 1.3em
+		text-align center
+		width 50px
+		z-index 2
+		animation animacionDisminuar .25s 1
+		-webkit-animation animacionDisminuar .25s 1
+		&:after
+			content 'a'
+			font-size .75em
+			font-weight 300
+			text-align center
+		&:hover
+			background rgba(black,.7)
+			color white
+			-webkit-transition: all .2s;
+			transition: all .2s;
+	.programa
+		p
+			color white
+			left 75px
+			line-height 1em
+			font-size .8em
+			position absolute
+			top 18px
 
 .PROVA COMIDN
 	.menu
@@ -242,7 +321,6 @@
 		line-height 2.2em
 		font-size 1.2em
 		width 50px
-		 
 
 @keyframes animacionbotoTrans 
 	from
