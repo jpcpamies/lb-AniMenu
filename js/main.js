@@ -24,3 +24,14 @@ function toggleMenu(){
         e.className='menuOff'
     }
 }
+
+// Transforamcion del boton al scroll
+var inicio = 50; //number of pixels before modifying styles
+
+		$(window).bind('scroll', function () {
+		    if ($(window).scrollTop() > inicio) {
+		        $('.boto').addClass('botoTrans');
+		    } else {
+		        $('.boto').removeClass('botoTrans');
+		    }
+		});
