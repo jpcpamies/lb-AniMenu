@@ -1,0 +1,258 @@
+
+.bg 
+	@css {
+		background: rgb(47,68,92);
+		background: -moz-linear-gradient(top,  rgba(47,68,92,1) 0%, rgba(62,99,135,1) 51%, rgba(121,147,172,1) 91%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(47,68,92,1)), color-stop(51%,rgba(62,99,135,1)), color-stop(91%,rgba(121,147,172,1)));
+		background: -webkit-linear-gradient(top,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
+		background: -o-linear-gradient(top,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
+		background: -ms-linear-gradient(top,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
+		background: linear-gradient(to bottom,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f445c', endColorstr='#7993ac',GradientType=0 );
+        }
+	height 100%
+	left 0
+	position fixed
+	top 0
+	width 100%
+	z-index 1
+
+.calendar 
+	color white
+	height 100%
+	left 0
+	margin 0 auto
+	position absolute
+	top 3em
+	width 100%
+	z-index 2
+
+.dia
+.numero
+.mes
+	color white
+	display block
+	line-height 1em
+	position absolute
+	z-index 4
+
+.dia
+	font-size 2em
+	left 27%
+	animation animacionDia 2.9s 1
+	-webkit-animation animacionDia 2.9s 1
+@keyframes animacionDia 
+	0% 
+		opacity 0
+	20% 
+		opacity 0
+	65% 
+		left 33%
+		opacity 0
+	100% 
+		left 27%
+		opacity 1
+
+.numero
+	font-size 7.5em
+	left 26%
+	letter-spacing -15px
+	top 35px
+	animation animacionNumero 2.5s 1
+	-webkit-animation animacionNumero 2.5s 1
+@keyframes animacionNumero 
+	0% 
+		opacity 0
+		top 90px
+	20% 
+		opacity 0
+	100% 
+		opacity 1
+		top 35px
+
+.mes
+	left 23%
+	font-size 2em
+	top 180px
+	animation animacionMes 2.7s 1
+	-webkit-animation animacionMes 2.7s 1
+@keyframes animacionMes 
+	0% 
+		opacity 0
+	20% 
+		opacity 0
+	65% 
+		left 17%
+		opacity 0
+	100% 
+		left 23%
+		opacity 1
+
+.menuOff
+	.menu 
+		background rgba(white,.7)
+		border-radius 50%
+		bottom 25px 
+		color rgba(black,.7)
+		height 50px
+		line-height 2.2em
+		position fixed
+		right 25px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 3
+		animation animacionOff 0s 1
+		-webkit-animation animacionOff 0s 1
+		&:after
+			content '\e601'
+			font-family icono
+
+.menuOn
+	.menu
+		background rgba(black,.7)
+		border-radius 50%
+		bottom 25px 
+		color rgba(white,.7)
+		height 50px
+		line-height 2.2em
+		position fixed
+		right 25px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 7
+		animation animacionOn 0s 1
+		-webkit-animation animacionOn 0s 1
+		&:after
+			content '\e601'
+			font-family icono
+	.mapa
+		background rgba(white,.7)
+		border-radius 50%
+		bottom 25px 
+		color rgba(black,.7)
+		height 50px
+		line-height 2.1em
+		position fixed
+		left 25px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 3
+		animation animacionMapa .2s 1
+		-webkit-animation animacionMapa .2s 1
+		&:after
+			content '\e602'
+			font-family icono
+		&:hover
+			background rgba(black,.7)
+			color white
+			-webkit-transition: all .2s;
+			transition: all .2s;
+	.aumentar
+		background rgba(white,.7)
+		border-radius 50%
+		bottom 90px 
+		color rgba(black,.7)
+		height 50px
+		line-height 1.9em
+		position fixed
+		right 25px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 4
+		animation animacionAumentar .2s 1
+		-webkit-animation animacionAumentar .2s 1
+		&:after
+			content 'a'
+			font-size 1.4em
+			font-weight 300
+		&:hover
+			background rgba(black,.7)
+			color white
+			-webkit-transition: all .2s;
+			transition: all .2s;
+	.disminuir
+		background rgba(white,.7)
+		border-radius 50%
+		bottom 155px 
+		color rgba(black,.7)
+		height 50px
+		line-height 1.7em
+		position fixed
+		right 25px
+		font-size 1.3em
+		text-align center
+		width 50px
+		z-index 2
+		animation animacionDisminuar .25s 1
+		-webkit-animation animacionDisminuar .25s 1
+		&:after
+			content 'a'
+			font-size .75em
+			font-weight 300
+			text-align center
+		&:hover
+			background rgba(black,.7)
+			color white
+			-webkit-transition: all .2s;
+			transition: all .2s;
+
+@keyframes animacionOff 
+	0% 
+		opacity 0
+	50% 
+		opacity 0
+	75% 
+		opacity 0
+	100% 
+		opacity 1
+
+@keyframes animacionOn 
+	0% 
+		opacity 0
+	50% 
+		opacity 0
+	75% 
+		opacity 0
+	100% 
+		opacity 1
+
+@keyframes animacionMapa 
+	0% 
+		left 180px
+		opacity 0
+	100% 
+		left 25px
+		opacity 1
+
+@keyframes animacionAumentar 
+	0% 
+		bottom 25px
+		opacity 0
+	100% 
+		bottom 90px
+		opacity 1
+
+@keyframes animacionDisminuar 
+	0% 
+		bottom 25px
+		opacity 0
+	100% 
+		bottom 155px
+		opacity 1
+
+
+
+
+
+
+
+
+
+
+
+
+

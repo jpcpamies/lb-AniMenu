@@ -1,0 +1,58 @@
+
+@import "reset.styl"
+
+// Margenes =========================================
+
+// Fuentes =========================================
+principal = 'Lato', sans-serif;
+
+// Colores =========================================
+principal = rgba(#e8eaed,1)
+secundario = #5a6171
+rosa = #d1505f
+iconos = #353535
+gris = #a6a6a6
+
+// @font-face ======================================
+@font-face 
+    font-family: 'icono';
+    src:url('../fonts/icomoon.eot');
+    src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon.woff') format('woff'),
+        url('../fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+
+// .icon-location:before {
+//     content: "\e608";
+// }
+// .icon-equalizer:before {
+//     content: "\e601";
+// }
+// .icon-map:before {
+//     content: "\e602";
+// }
+// .icon-arrow-up:before {
+//     content: "\e600";
+// }
+
+body
+    width 100%
+    height 100%
+    font-family lato
+    font-size 20px
+    font-weight 100
+        
+
+// Break points ====================================
+
+// @media screen and (min-width: 880px) 
+//     @import "bp3.styl"
+
+// @media screen and (max-width: 880px) 
+//     @import "bp2.styl"
+
+@media screen and (max-width: 769px) 
+    @import "bp1.styl"
