@@ -60,20 +60,20 @@
 
 .boto
 	.menu
-		background rgba(white,.15)
+		background rgba(white,.05)
 		border-radius 50%
 		top 12px 
-		color rgba(white,.3)
-		height 38px
-		line-height 2.4em
+		color rgba(white,.5)
+		height 50px
+		line-height 2.2em
 		position fixed
 		right 12px
-		font-size .8em
+		font-size 1.2em
 		text-align center
-		width 38px
+		width 50px
 		z-index 7
-		animation animacionBoto .5s 1
-		-webkit-animation animacionBoto .5s 1
+		animation animacionBoto .2s 1
+		-webkit-animation animacionBoto .2s 1
 		&:after
 			content '\e601'
 			font-family icono
@@ -232,7 +232,7 @@
 	.aumentar
 		background rgba(white,.7)
 		border-radius 50%
-		top 12px 
+		top 75px 
 		color rgba(black,.7)
 		height 50px
 		line-height 1.9em
@@ -257,7 +257,7 @@
 	.disminuir
 		background rgba(white,.7)
 		border-radius 50%
-		top 12px 
+		top 140px 
 		color rgba(black,.7)
 		height 50px
 		line-height 1.7em
@@ -268,8 +268,8 @@
 		text-align center
 		width 50px
 		z-index 2
-		animation animacionDisminuirOff .25s 1
-		-webkit-animation animacionDisminuirOff .25s 1
+		animation animacionDisminuirOff .2s 1
+		-webkit-animation animacionDisminuirOff .2s 1
 		&:after
 			content 'a'
 			font-size .75em
@@ -277,98 +277,6 @@
 			text-align center
 		&:hover
 			background rgba(black,.5)
-			color white
-			-webkit-transition: all .2s;
-			transition: all .2s;
-
-.PROVA COMIDN
-	.menu
-		background rgba(black,.7)
-		border-radius 50%
-		bottom 25px 
-		color rgba(white,.7)
-		height 50px
-		line-height 2.2em
-		position fixed
-		right 25px
-		font-size 1.2em
-		text-align center
-		width 50px
-		z-index 7
-		animation animacionOn 0s 1
-		-webkit-animation animacionOn 0s 1
-		&:after
-			content '\e601'
-			font-family icono
-	.mapa
-		background rgba(white,.7)
-		border-radius 50%
-		bottom 25px 
-		color rgba(black,.7)
-		height 50px
-		line-height 2.1em
-		position fixed
-		left 25px
-		font-size 1.2em
-		text-align center
-		width 50px
-		z-index 3
-		animation animacionMapa .2s 1
-		-webkit-animation animacionMapa .2s 1
-		&:after
-			content '\e602'
-			font-family icono
-		&:hover
-			background rgba(black,.7)
-			color white
-			-webkit-transition: all .2s;
-			transition: all .2s;
-	.aumentar
-		background rgba(white,.7)
-		border-radius 50%
-		bottom 90px 
-		color rgba(black,.7)
-		height 50px
-		line-height 1.9em
-		position fixed
-		right 25px
-		font-size 1.2em
-		text-align center
-		width 50px
-		z-index 4
-		animation animacionAumentar .2s 1
-		-webkit-animation animacionAumentar .2s 1
-		&:after
-			content 'a'
-			font-size 1.4em
-			font-weight 300
-		&:hover
-			background rgba(black,.7)
-			color white
-			-webkit-transition: all .2s;
-			transition: all .2s;
-	.disminuir
-		background rgba(white,.7)
-		border-radius 50%
-		bottom 155px 
-		color rgba(black,.7)
-		height 50px
-		line-height 1.7em
-		position fixed
-		right 25px
-		font-size 1.3em
-		text-align center
-		width 50px
-		z-index 2
-		animation animacionDisminuar .25s 1
-		-webkit-animation animacionDisminuar .25s 1
-		&:after
-			content 'a'
-			font-size .75em
-			font-weight 300
-			text-align center
-		&:hover
-			background rgba(black,.7)
 			color white
 			-webkit-transition: all .2s;
 			transition: all .2s;
@@ -383,7 +291,6 @@
 
 @keyframes animacionAumentarOff
 	0% 
-		bottom 75px
 		opacity 1
 	100% 
 		top 12px
@@ -399,7 +306,6 @@
 
 @keyframes animacionDisminuirOff
 	0% 
-		bottom 75px
 		opacity 1
 	100% 
 		top 12px
@@ -432,18 +338,9 @@
 	0% 	
 		background rgba(black,.5)
 		color rgba(white,.7)
-		height 50px
-		line-height 2.2em
-		right 12px
-		font-size 1.2em
-		width 50px
 	100% 
 		background rgba(white,.15)
 		color rgba(white,.3)
-		font-size .8em
-		height 38px
-		line-height 2.4em
-		width 38px
 
 @keyframes animacionMapa 
 	0% 
