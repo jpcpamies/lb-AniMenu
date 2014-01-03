@@ -60,7 +60,7 @@
 
 .boto
 	.menu
-		background rgba(white,.05)
+		background rgba(black,.05)
 		border-radius 50%
 		top 12px 
 		color rgba(white,.5)
@@ -108,8 +108,6 @@
 		text-align center
 		width 50px
 		z-index 7
-		// animation animacionbotoOn .3s 1
-		// -webkit-animation animacionbotoOn .3s 1
 		&:after
 			content '\e601'
 			font-family icono	
@@ -126,8 +124,8 @@
 		text-align center
 		width 50px
 		z-index 3
-		animation animacionMapa .2s 1
-		-webkit-animation animacionMapa .2s 1
+		animation animacionMapa .4s 1
+		-webkit-animation animacionMapa .4s 1
 		&:after
 			content '\e602'
 			font-family icono
@@ -149,8 +147,8 @@
 		text-align center
 		width 50px
 		z-index 4
-		animation animacionAumentar .2s 1
-		-webkit-animation animacionAumentar .2s 1
+		animation animacionAumentar .4s 1
+		-webkit-animation animacionAumentar .4s 1
 		&:after
 			content 'a'
 			font-size 1.4em
@@ -173,8 +171,8 @@
 		text-align center
 		width 50px
 		z-index 2
-		animation animacionDisminuir .25s 1
-		-webkit-animation animacionDisminuir .25s 1
+		animation animacionDisminuir .4s 1
+		-webkit-animation animacionDisminuir .4s 1
 		&:after
 			content 'a'
 			font-size .75em
@@ -207,13 +205,6 @@
 		opacity 0
 	100% 
 		opacity 1
-
-@keyframes animacionbotoOn 
-	0%
-		color rgba(white,.5) 
-	100%
-		color rgba(white,1) 
-
 
 @keyframes animacionMapa 
 	0% 
