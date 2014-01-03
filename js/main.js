@@ -16,22 +16,36 @@ document.getElementById('divDia').innerHTML = diasSemana[dia];
 document.getElementById('divNumero').innerHTML = numero;
 document.getElementById('divMes').innerHTML = meses[mes];
 
-function toggleMenu(){
-    var e = document.getElementById('divMenu');
-    if(e.className=='menuOff') {
-        e.className='menuOn'
-    } else {
-        e.className='menuOff'
+function toggleMenu(a){
+    var e = document.getElementById(a);
+    if(e.className=='boto'){
+        e.className='botoOn';
+    }
+    else {
+        e.className='boto';
     }
 }
 
 // Transforamcion del boton al scroll
-var inicio = 50; //number of pixels before modifying styles
+var inicio = 150; //number of pixels before modifying styles
 
-		$(window).bind('scroll', function () {
-		    if ($(window).scrollTop() > inicio) {
-		        $('.inici').addClass('boto');
-		    } else {
-		        $('.inici').removeClass('boto');
-		    }
-		});
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > inicio) {
+        $('#inici').removeClass('inici');
+        $('#inici').addClass('boto');
+    } else {
+        $('.inici').removeClass('boto');
+        $('#inici').addClass('inici');
+    }
+});
+
+function resizer (multiplicador){
+    var texto = document.body;
+    
+    if (texto.style.fontSize == ""){
+
+        texto.style.fontSize = "1.0em";
+
+    }texto.style.fontSize = parseFloat(texto.style.fontSize)
+    + (multiplicador * 0.2) + "em";
+}
