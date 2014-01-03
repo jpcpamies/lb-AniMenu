@@ -27,7 +27,7 @@ function toggleMenu(a){
 }
 
 // Transforamcion del boton al scroll
-var inicio = 150; //number of pixels before modifying styles
+var inicio = 80; //number of pixels before modifying styles
 
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > inicio) {
