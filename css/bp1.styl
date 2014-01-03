@@ -96,10 +96,10 @@
 
 .botoOn
 	.menu
-		background rgba(black,.5)
+		background rgba(black,.05)
 		border-radius 50%
 		top 12px 
-		color rgba(white,.7)
+		color rgba(white,.5)
 		height 50px
 		line-height 2.2em
 		position fixed
@@ -108,8 +108,8 @@
 		text-align center
 		width 50px
 		z-index 7
-		animation animacionbotoOn .3s 1
-		-webkit-animation animacionbotoOn .3s 1
+		// animation animacionbotoOn .3s 1
+		// -webkit-animation animacionbotoOn .3s 1
 		&:after
 			content '\e601'
 			font-family icono	
@@ -186,101 +186,6 @@
 			-webkit-transition: all .2s;
 			transition: all .2s;
 
-.botoOff
-	.menu
-		background rgba(black,.5)
-		border-radius 50%
-		top 12px 
-		color rgba(white,.7)
-		height 50px
-		line-height 2.2em
-		position fixed
-		right 12px
-		font-size 1.2em
-		text-align center
-		width 50px
-		z-index 7
-		animation animacionbotoOff .3s 1
-		-webkit-animation animacionbotoOff .3s 1
-		&:after
-			content '\e601'
-			font-family icono	
-	.mapa
-		background rgba(white,.7)
-		border-radius 50%
-		top 12px 
-		color rgba(black,.7)
-		height 50px
-		line-height 2.1em
-		position fixed
-		right 12px
-		font-size 1.2em
-		opacity 0
-		text-align center
-		width 50px
-		z-index 3
-		animation animacionMapaOff .2s 1
-		-webkit-animation animacionMapaOff .2s 1
-		&:after
-			content '\e602'
-			font-family icono
-		&:hover
-			background rgba(black,.5)
-			color white
-			-webkit-transition: all .2s;
-			transition: all .2s;
-	.aumentar
-		background rgba(white,.7)
-		border-radius 50%
-		top 75px 
-		color rgba(black,.7)
-		height 50px
-		line-height 1.9em
-		position fixed
-		right 12px
-		font-size 1.2em
-		opacity 0
-		text-align center
-		width 50px
-		z-index 4
-		animation animacionAumentarOff .2s 1
-		-webkit-animation animacionAumentarOff .2s 1
-		&:after
-			content 'a'
-			font-size 1.4em
-			font-weight 300
-		&:hover
-			background rgba(black,.5)
-			color white
-			-webkit-transition: all .2s;
-			transition: all .2s;
-	.disminuir
-		background rgba(white,.7)
-		border-radius 50%
-		top 140px 
-		color rgba(black,.7)
-		height 50px
-		line-height 1.7em
-		position fixed
-		right 12px
-		font-size 1.3em
-		opacity 0
-		text-align center
-		width 50px
-		z-index 2
-		animation animacionDisminuirOff .2s 1
-		-webkit-animation animacionDisminuirOff .2s 1
-		&:after
-			content 'a'
-			font-size .75em
-			font-weight 300
-			text-align center
-		&:hover
-			background rgba(black,.5)
-			color white
-			-webkit-transition: all .2s;
-			transition: all .2s;
-
 @keyframes animacionAumentar 
 	0% 
 		top 12px
@@ -288,13 +193,6 @@
 	100% 
 		bottom 75px
 		opacity 1
-
-@keyframes animacionAumentarOff
-	0% 
-		opacity 1
-	100% 
-		top 12px
-		opacity 0
 
 @keyframes animacionDisminuir
 	0% 
@@ -304,13 +202,6 @@
 		bottom 75px
 		opacity 1
 
-@keyframes animacionDisminuirOff
-	0% 
-		opacity 1
-	100% 
-		top 12px
-		opacity 0
-
 @keyframes animacionBoto 
 	0% 
 		opacity 0
@@ -318,29 +209,11 @@
 		opacity 1
 
 @keyframes animacionbotoOn 
-	0% 
-		background rgba(white,.15)
-		color rgba(white,.3)
-		font-size .8em
-		height 38px
-		line-height 2.4em
-		width 38px
-	100% 
-		background rgba(black,.5)
-		color rgba(white,.7)
-		height 50px
-		line-height 2.2em
-		right 12px
-		font-size 1.2em
-		width 50px
+	0%
+		color rgba(white,.5) 
+	100%
+		color rgba(white,1) 
 
-@keyframes animacionbotoOff
-	0% 	
-		background rgba(black,.5)
-		color rgba(white,.7)
-	100% 
-		background rgba(white,.15)
-		color rgba(white,.3)
 
 @keyframes animacionMapa 
 	0% 
@@ -350,13 +223,7 @@
 		left 12px
 		opacity 1
 
-@keyframes animacionMapaOff
-	0% 
-		left 12px
-		opacity 1
-	100% 
-		left 180px
-		opacity 0
+
 		 
 		
 		
