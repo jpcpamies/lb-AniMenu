@@ -21,9 +21,6 @@ function toggleMenu(a){
     if(e.className=='boto'){
         e.className='botoOn';
     }
-    else if (e.className=='botoOn'){
-    	e.className='botoOff';
-    }
     else {
     	e.className='boto';
     }
@@ -41,3 +38,14 @@ $(window).bind('scroll', function () {
         $('#inici').addClass('inici');
     }
 });
+
+function resizer (multiplicador){
+	var texto = document.body;
+	
+	if (texto.style.fontSize == ""){
+
+		texto.style.fontSize = "1.0em";
+
+	}texto.style.fontSize = parseFloat(texto.style.fontSize)
+	+ (multiplicador * 0.2) + "em";
+}
