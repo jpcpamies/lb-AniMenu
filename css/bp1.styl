@@ -1,7 +1,7 @@
 
 section
 	position absolute
-	top 
+	z-index -1
 
 .bg 
 	@css {
@@ -51,47 +51,58 @@ section
 	-webkit-animation animacionDia 3s 1
 
 .eventActual
-	background rgba(secundario,1)
-	border-radius 4px
+	background rgba(iconos,.5)
+	border-radius 5px
 	color white
-	display blockK
 	font-size .9em
 	font-weight 100
 	height auto
-	position absolute
-	width 100%
-	.event
-		color white
-		margin -.15em margenMovil .8em 100px
-		.lloc
-			color gris
-			font-size .7em
-			letter-spacing .13em
-			margin .5em 0 0 0
-			text-transform uppercase
-			p
-				&:after
-					content '\e608'
-					font-family icono
-					margin 0 0 0 .2em
-	.hora
-		color white
-		display inline-block
-		float left
-		font-size .73em
-		font-weight 300
-		margin 0 10px
-		width 75px
-		.horaInici
+	margin 2.7em .5em -1.3em .5em
+	padding .5em 1em
+	.contingutEventActual
+		.event
+			color rgba(white,1)
+			letter-spacing .055em
+			line-height 1.2em
+			font-size .9em
+			font-weight 300
+			margin 0 0 0 100px
+			.lloc
+				color rgba(white,.5)
+				font-size .7em
+				letter-spacing .13em
+				margin .5em 0 0 0 
+				text-transform uppercase
+				p
+					&:after
+						content '\e608'
+						font-family icono
+		.hora
+			color white
+			display inline-block
 			float left
-			p
-				&:after
-					content ' -'
-		.horaFi
-			float left
-			p
-				&:after
-					content 'h'
+			font-size .73em
+			font-weight 300
+			margin 2px 0 0 -5px
+			width 100px
+			.horaInici
+				float left
+				p
+					&:after
+						content ' -'
+			.horaFi
+				float left
+				p
+					&:after
+						content 'h'
+	.titol
+		color rgba(iconos,.5)
+		font-size .8em
+		font-weight bold
+		left 20px
+		position absolute
+		text-transform uppercase
+		top 175px
 
 .numero
 	font-size 4em
