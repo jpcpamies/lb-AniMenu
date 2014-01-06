@@ -86,6 +86,7 @@ section
 	height auto
 	left 0px
 	margin 0 0 1em 0
+	overflow-x hidden
 	padding 0 0 2em 0
 	position relative
 	right 0px
@@ -142,9 +143,9 @@ section
 		top 40px
 		width 130px 	
 		z-index 0
-		-webkit-filter blur(2px) opacity(0.8)
-		animation animacionBg1 20s 
-		-webkit-animation animacionBg1 20s 
+		-webkit-filter blur(2px) opacity(0.2)
+		animation animacionBg1 30s infinite
+		-webkit-animation animacionBg1 30s infinite
 	.circuloBg2
 		background #678fb7
 		border-radius 50%
@@ -154,9 +155,33 @@ section
 		top 30px
 		width 60px 	
 		z-index 0
-		-webkit-filter blur(4px) opacity(0.8)
-		animation animacionBg2 30s 1
-		-webkit-animation animacionBg2 30s 1
+		-webkit-filter blur(2px) opacity(0.8)
+		animation animacionBg2 30s infinite
+		-webkit-animation animacionBg2 30s infinite
+	.circuloBg3
+		background #678fb7
+		border-radius 50%
+		height 160px
+		left 220px
+		position absolute
+		top 60px
+		width 160px 	
+		z-index 0
+		-webkit-filter blur(2px) opacity(1)
+		animation animacionBg3 20s infinite
+		-webkit-animation animacionBg3 20s infinite
+	.circuloBg4
+		background #678fb7
+		border-radius 50%
+		height 80px
+		left 10px
+		position absolute
+		top 105px
+		width 80px 	
+		z-index 0
+		-webkit-filter blur(2px) opacity(0.8)
+		animation animacionBg1 20s infinite
+		-webkit-animation animacionBg1 20s infinite
 	.circuloCalendari
 		background rosa
 		border-radius 50%
@@ -396,30 +421,65 @@ section
 		opacity 0
 		-webkit-filter blur(2px)
 	50%
-		opacity 1
+		opacity .2
+		top 65px
 	75%
-		opacity .4
-		-webkit-filter blur(6px)
+		opacity .3
+		-webkit-filter blur(1px)
 	100% 
-		opacity 1
+		opacity 0
+		-webkit-filter blur(2px)
 
 @keyframes animacionBg2 
 	0% 
 		opacity 0
+		-webkit-filter blur(2px)
 	50%
 		opacity .7
+		top 20px
 	75%
 		opacity .5
+		top 90px
 	100% 
-		opacity 1
+		opacity 0
+		-webkit-filter blur(2px)
+
+@keyframes animacionBg3
+	0% 
+		opacity 0
+		-webkit-filter blur(6px)
+	50%
+		opacity .5
+		top 30px
+	75%
+		opacity .2
+		-webkit-filter blur(2px)
+		top 80px
+	100% 
+		opacity 0
+		-webkit-filter blur(6px)
+
+@keyframes animacionBg4
+	0% 
+		opacity 0
+		-webkit-filter blur(2px)
+	50%
+		opacity .5
+	75%
+		opacity .4
+		-webkit-filter blur(6px)
+		top 190px
+	100% 
+		opacity 0
+		-webkit-filter blur(2px)
 
 @keyframes animacionCalendari 
 	0% 
 		opacity 1
 	50%
-		opacity .8
-	75%
 		opacity .9
+	75%
+		opacity .8
 	100% 
 		opacity 1
 
