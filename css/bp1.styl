@@ -1,7 +1,64 @@
 
 section
+	margin 0 0 100px 0
 	position absolute
-	z-index -1
+	z-index 0
+	.event
+		margin 0 .5em 1.8em 2em
+		.detall
+			border-bottom 3px solid rgba(white,.5)
+			padding 0 0 .2em .25em
+			.hora
+				float left
+				width 100px
+				color white
+				display inline-block
+				float left
+				font-size .65em
+				font-weight 300
+				margin -1px 10px 0 -5px
+				.horaInici
+					float left
+				.horaFi
+					margin 0 0 0 40px
+					p
+						&:after
+							content 'h'
+						&:before
+							content '- '
+			.lloc
+				color rgba(white,.5)
+				font-size .6em
+				font-weight 300
+				letter-spacing .20em
+				text-transform uppercase
+				p
+					&:after
+						content '\e608'
+						font-family icono
+		.contingut
+			margin 1em 0 0 0 
+			.titolEvent
+				color rgba(white,.7)
+				font-size .9em
+				font-weight 400
+				margin -.7em 1.8em .7em 0
+				position relative
+				p
+					&:after
+						content '\e600'
+						font-family icono
+						font-size 1em
+						position absolute 
+						right -35px
+						top 0px
+			.detallEvent
+				font-size .8em
+				font-weight 300
+				margin 1em -1em 0em 2em
+				p
+					&:after
+						display none
 
 .bg 
 	@css {
@@ -28,6 +85,7 @@ section
 	display block
 	height auto
 	left 0px
+	margin 0 0 1em 0
 	padding 0 0 2em 0
 	position relative
 	right 0px
@@ -84,23 +142,22 @@ section
 			display inline-block
 			float left
 			font-size .73em
-			font-weight 300
+			font-weight 400
 			margin 2px 0 0 -5px
 			width 100px
 			.horaInici
 				float left
-				p
-					&:after
-						content ' -'
 			.horaFi
-				float left
+				margin 0 0 0 40px
 				p
 					&:after
 						content 'h'
+					&:before
+						content '- '
 	.titol
-		color rgba(iconos,.5)
+		color rgba(iconos,.8)
 		font-size .8em
-		font-weight bold
+		font-weight 300
 		left 20px
 		position absolute
 		text-transform uppercase
@@ -116,6 +173,12 @@ section
 		font-weight 300
 		padding .5em 0 
 		text-align center
+
+.llistaInVisible
+	display none
+.llistaVisible
+	animation animacionLlista 3s 1
+	-webkit-animation animacionLlista 3s 1
 
 .numero
 	font-size 4em
@@ -279,6 +342,12 @@ section
 		opacity 1
 
 @keyframes animacionBoto 
+	0% 
+		opacity 0
+	100% 
+		opacity 1
+
+@keyframes animacionLlista
 	0% 
 		opacity 0
 	100% 
