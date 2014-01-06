@@ -39,7 +39,7 @@ section
 		.contingut
 			margin 1em 0 0 0 
 			.titolEvent
-				color rgba(white,.7)
+				color rgba(white,.9)
 				font-size .9em
 				font-weight 400
 				margin -.7em 1.8em .7em 0
@@ -78,7 +78,7 @@ section
 	width 100%
 	z-index -5
 
-.calendar 
+.calendari
 	background rgba(white,.3)
 	bottom 0px
 	color white
@@ -90,7 +90,46 @@ section
 	position relative
 	right 0px
 	top 0px
-	.circulo
+	.botonera
+		left 0px 
+		height auto
+		position absolute
+		top 180px
+		width 100%
+		overflow-x auto
+		overflow-y hiden
+		white-space nowrap
+		.dia 
+			background none
+			border 1px solid rgba(white,.8)
+			border-radius 50%
+			display inline-block
+			height 65px 
+			margin 0 0 0 1em 
+			position relative
+			width 65px
+			&:first-child
+				margin 0 0 0 -3em
+			p
+				left 32%
+				font-weight 300
+				margin 0
+				position absolute
+				top 7px
+			.centrar
+				left 40%
+				position absolute
+			.centrarMes
+				left 27%
+				position absolute
+			span
+				color rgba(black,.3)
+				left 22%
+				font-size .85em
+				font-weight 400
+				position absolute
+				top 30px
+	.circuloCalendari
 		background rosa
 		border-radius 50%
 		height 150px
@@ -110,12 +149,12 @@ section
 
 .eventActual
 	background rgba(iconos,.3)
-	border-radius 5px
+	// border-radius 5px
 	color white
 	font-size .9em
 	font-weight 100
 	height auto
-	margin 2.7em .5em -1.3em .5em
+	margin 8em 0 -2.05em 0
 	padding .5em 1em
 	.contingutEventActual
 		.event
@@ -161,7 +200,7 @@ section
 		left 20px
 		position absolute
 		text-transform uppercase
-		top 175px
+		top 273px
 
 .footerApp
 	background rgba(white,.3)
