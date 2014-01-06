@@ -79,7 +79,6 @@ section
 	z-index -5
 
 .calendari
-	// background rgba(#3a5b7d,.3)
 	bottom 0px
 	color white
 	display block
@@ -134,6 +133,11 @@ section
 				font-weight 400
 				position absolute
 				top 30px
+		// .uno
+		// 	animation animacionuno 3s 
+		// 	-webkit-animation animacionuno 3s 
+		// 	// animation-delay 2s
+		// 	// -webkit-animation-delay 2s
 	.circuloBg1
 		background #50D1C7
 		border-radius 50%
@@ -193,6 +197,7 @@ section
 		z-index 5
 		animation animacionCalendari 20s 
 		-webkit-animation animacionCalendari 20s 
+
 .dia
 	position absolute
 	top .7em
@@ -211,6 +216,8 @@ section
 	margin 8em 0 -2.2em 0
 	padding .5em 1em
 	.contingutEventActual
+		animation animacionLlista 3s 1
+		-webkit-animation animacionLlista 3s 1
 		.event
 			border-left 1px solid rgba(white,.1)
 			color rgba(white,1)
@@ -251,7 +258,7 @@ section
 		color rgba(iconos,.8)
 		font-size .8em
 		font-weight 300
-		left 20px
+		left 15px
 		position absolute
 		text-transform uppercase
 		top 273px
