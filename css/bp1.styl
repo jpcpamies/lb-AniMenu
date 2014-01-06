@@ -79,7 +79,7 @@ section
 	z-index -5
 
 .calendari
-	background rgba(white,.3)
+	// background rgba(#3a5b7d,.3)
 	bottom 0px
 	color white
 	display block
@@ -133,6 +133,30 @@ section
 				font-weight 400
 				position absolute
 				top 30px
+	.circuloBg1
+		background #50D1C7
+		border-radius 50%
+		height 130px
+		left 40px
+		position absolute
+		top 40px
+		width 130px 	
+		z-index 0
+		-webkit-filter blur(2px) opacity(0.8)
+		animation animacionBg1 20s 
+		-webkit-animation animacionBg1 20s 
+	.circuloBg2
+		background #678fb7
+		border-radius 50%
+		height 60px
+		left 220px
+		position absolute
+		top 30px
+		width 60px 	
+		z-index 0
+		-webkit-filter blur(4px) opacity(0.8)
+		animation animacionBg2 30s 1
+		-webkit-animation animacionBg2 30s 1
 	.circuloCalendari
 		background rosa
 		border-radius 50%
@@ -141,7 +165,9 @@ section
 		position relative
 		top 1em
 		width 150px 
-
+		z-index 5
+		animation animacionCalendari 20s 
+		-webkit-animation animacionCalendari 20s 
 .dia
 	position absolute
 	top .7em
@@ -153,7 +179,6 @@ section
 
 .eventActual
 	background rgba(iconos,.3)
-	// border-radius 5px
 	color white
 	font-size .9em
 	font-weight 100
@@ -364,6 +389,38 @@ section
 		opacity 0
 	100% 
 		bottom 75px
+		opacity 1
+
+@keyframes animacionBg1 
+	0% 
+		opacity 0
+		-webkit-filter blur(2px)
+	50%
+		opacity 1
+	75%
+		opacity .4
+		-webkit-filter blur(6px)
+	100% 
+		opacity 1
+
+@keyframes animacionBg2 
+	0% 
+		opacity 0
+	50%
+		opacity .7
+	75%
+		opacity .5
+	100% 
+		opacity 1
+
+@keyframes animacionCalendari 
+	0% 
+		opacity 1
+	50%
+		opacity .8
+	75%
+		opacity .9
+	100% 
 		opacity 1
 
 @keyframes animacionDia 
