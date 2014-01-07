@@ -1,118 +1,28 @@
 
-section
-	margin 0 0 100px 0
-	position absolute
-	z-index 0
-	.event
-		margin 0 .5em 1.8em 2em
-		.detall
-			border-bottom 3px solid rgba(white,.5)
-			padding 0 0 .2em .25em
-			.hora
-				float left
-				width 100px
-				color white
-				display inline-block
-				float left
-				font-size .65em
-				font-weight 300
-				margin -1px 10px 0 -5px
-				.horaInici
-					float left
-				.horaFi
-					margin 0 0 0 40px
-					p
-						&:after
-							content 'h'
-						&:before
-							content '- '
-			.lloc
-				color rgba(white,.5)
-				font-size .6em
-				font-weight 300
-				letter-spacing .20em
-				text-transform uppercase
-				p
-					&:after
-						content '\e608'
-						font-family icono
-		.contingut
-			margin 1em 0 0 0 
-			.titolEvent
-				color rgba(white,.9)
-				font-size .9em
-				font-weight 400
-				margin -.7em 1.8em .7em 0
-				position relative
-				p
-					&:after
-						content '\e600'
-						font-family icono
-						font-size 1em
-						position absolute 
-						right -35px
-						top 0px
-			.detallEvent
-				font-size .8em
-				font-weight 300
-				margin 1em -1em 0em 2em
-				p
-					&:after
-						display none
-
-.bg 
-	@css {
-		background: rgb(47,68,92);
-		background: -moz-linear-gradient(top,  rgba(47,68,92,1) 0%, rgba(62,99,135,1) 51%, rgba(121,147,172,1) 91%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(47,68,92,1)), color-stop(51%,rgba(62,99,135,1)), color-stop(91%,rgba(121,147,172,1)));
-		background: -webkit-linear-gradient(top,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
-		background: -o-linear-gradient(top,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
-		background: -ms-linear-gradient(top,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
-		background: linear-gradient(to bottom,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f445c', endColorstr='#7993ac',GradientType=0 );
-        }
-	height 100%
-	left 0
-	position fixed
-	top 0
-	width 100%
-	z-index -5
-
-.calendari
-	bottom 0px
-	color white
-	display block
-	height auto
-	left 0px
-	margin 0 0 1em 0
-	overflow-x hidden
-	padding 0 0 2em 0
-	position relative
-	right 0px
-	top 0px
+header
 	.botonera
 		height auto
 		left 0px 
-		padding 0 0 .5em 0
 		overflow-x auto
 		overflow-y hidden
 		position absolute
-		top 175px
+		top 190px
 		white-space nowrap
 		width 100%
 		.dia 
 			background none
 			border 1px solid rgba(rosa,1)
 			border-radius 50%
+			color white
 			display inline-block
 			height 65px 
 			margin 0 0 0 1em 
 			position relative
 			width 65px
 			&:first-child
-				margin 0 0 0 -3em
+				margin 0 0 0 1.5em
 			&:last-child
-				margin 0 6em 0 1em
+				margin 0 1em 0 1em
 			p
 				left 32%
 				font-weight 300
@@ -133,160 +43,240 @@ section
 				font-weight 400
 				position absolute
 				top 30px
-		// .uno
-		// 	animation animacionuno 3s 
-		// 	-webkit-animation animacionuno 3s 
-		// 	// animation-delay 2s
-		// 	// -webkit-animation-delay 2s
-	.circuloBg1
-		background #50D1C7
-		border-radius 50%
-		height 130px
-		left 40px
-		position absolute
-		top 40px
-		width 130px 	
-		z-index 0
-		-webkit-filter blur(2px) opacity(0.2)
-		animation animacionBg1 30s infinite
-		-webkit-animation animacionBg1 30s infinite
-	.circuloBg2
-		background #678fb7
-		border-radius 50%
-		height 60px
-		left 220px
-		position absolute
-		top 30px
-		width 60px 	
-		z-index 0
-		-webkit-filter blur(2px) opacity(0.8)
-		animation animacionBg2 30s infinite
-		-webkit-animation animacionBg2 30s infinite
-	.circuloBg3
-		background #678fb7
-		border-radius 50%
-		height 160px
-		left 220px
-		position absolute
-		top 60px
-		width 160px 	
-		z-index 0
-		-webkit-filter blur(2px) opacity(1)
-		animation animacionBg3 20s infinite
-		-webkit-animation animacionBg3 20s infinite
-	.circuloBg4
-		background #678fb7
-		border-radius 50%
-		height 80px
-		left 10px
-		position absolute
-		top 105px
-		width 80px 	
-		z-index 0
-		-webkit-filter blur(2px) opacity(0.8)
-		animation animacionBg1 20s infinite
-		-webkit-animation animacionBg1 20s infinite
-	.circuloCalendari
-		background rosa
-		border-radius 50%
-		height 150px
-		left 29%
+	.calendari
+		bottom 0px
+		color white
+		display block
+		height 295px
+		overflow-x hidden
 		position relative
-		top 1em
-		width 150px 
-		z-index 5
-		animation animacionCalendari 20s 
-		-webkit-animation animacionCalendari 20s 
+		.circuloCalendari
+			border-radius 50%
+			height 150px
+			display block
+			margin 1em auto 0 auto
+			position relative
+			width 150px 
+			.circuloCentral
+				background rosa
+				border-radius 50%
+				height 150px
+				position relative
+				width 150px 
+				z-index 5
+			.circuloBg1
+				background #50D1C7
+				border-radius 50%
+				height 130px
+				left -50px
+				position absolute
+				top 40px
+				width 130px 	
+				// z-index 5
+				-webkit-filter blur(2px) opacity(0.2)
+				animation animacionBg1 40s infinite
+				-webkit-animation animacionBg1 40s infinite
+			.circuloBg2
+				background #678fb7
+				border-radius 50%
+				height 60px
+				left 130px
+				position absolute
+				top 30px
+				width 60px 	
+				// z-index 5
+				-webkit-filter blur(2px) opacity(0.8)
+				animation animacionBg2 30s infinite
+				-webkit-animation animacionBg2 30s infinite
+			.circuloBg3
+				background #678fb7
+				border-radius 50%
+				height 160px
+				left 110px
+				position absolute
+				top 60px
+				width 160px 	
+				// z-index 5
+				-webkit-filter blur(2px) opacity(1)
+				animation animacionBg3 20s infinite
+				-webkit-animation animacionBg3 20s infinite
+			.circuloBg4
+				background #678fb7
+				border-radius 50%
+				height 80px
+				left -85px
+				position absolute
+				top 105px
+				width 80px 	
+				// z-index 5
+				-webkit-filter blur(2px) opacity(0.8)
+				animation animacionBg1 20s infinite
+				-webkit-animation animacionBg1 20s infinite
+			.dia
+				font-size 1em
+				font-weight 300
+				left 29%
+				position absolute
+				top .75em
+				z-index 6
+				animation animacionDia 3s 1
+				-webkit-animation animacionDia 3s 1
+			.numero
+				bottom .4em
+				font-size 4em
+				left 35%
+				position absolute
+				z-index 6
+				animation animacionNumero 3s 1
+				-webkit-animation animacionNumero 3s 1
+			.mes
+				font-size 1em
+				font-weight 300
+				left 33%
+				position absolute
+				top 5.4em
+				z-index 6
+				animation animacionMes 3s 1
+				-webkit-animation animacionMes 3s 1
+	.eventActual
+		background rgba(iconos,.3)
+		color white
+		font-size .9em
+		font-weight 100
+		height auto
+		margin 0 0 1em 0
+		padding .5em 1em
+		.contingutEventActual
+			animation animacionLlista 3s 1
+			-webkit-animation animacionLlista 3s 1
+			.event
+				border-left 1px solid rgba(white,.1)
+				color rgba(white,1)
+				letter-spacing .055em
+				line-height 1.2em
+				font-size .9em
+				font-weight 300
+				margin 0 0 0 100px
+				padding 0 0 0 15px
+				.lloc
+					color rgba(white,.5)
+					font-size .7em
+					letter-spacing .13em
+					margin .5em 0 0 0 
+					text-transform uppercase
+					p
+						&:after
+							content '\e608'
+							font-family icono
+			.hora
+				color white
+				display inline-block
+				float left
+				font-size .73em
+				font-weight 400
+				margin 2px 0 0 -5px
+				width 100px
+				.horaInici
+					float left
+				.horaFi
+					margin 0 0 0 40px
+					p
+						&:after
+							content 'h'
+						&:before
+							content '- '
+		.titol
+			color rgba(iconos,.8)
+			font-size .8em
+			font-weight 300
+			left 15px
+			position absolute
+			text-transform uppercase
+			top 273px
 
-.dia
+section
+	margin 0 0 100px 0
 	position absolute
-	top .7em
-	left 30%
-	font-size 1em
-	font-weight 300
-	animation animacionDia 3s 1
-	-webkit-animation animacionDia 3s 1
-
-.eventActual
-	background rgba(iconos,.3)
-	color white
-	font-size .9em
-	font-weight 100
-	height auto
-	margin 8em 0 -2.2em 0
-	padding .5em 1em
-	.contingutEventActual
+	z-index 0
+	.llistaVisible
 		animation animacionLlista 3s 1
 		-webkit-animation animacionLlista 3s 1
 		.event
-			border-left 1px solid rgba(white,.1)
-			color rgba(white,1)
-			letter-spacing .055em
-			line-height 1.2em
-			font-size .9em
-			font-weight 300
-			margin 0 0 0 100px
-			padding 0 0 0 15px
-			.lloc
-				color rgba(white,.5)
-				font-size .7em
-				letter-spacing .13em
-				margin .5em 0 0 0 
-				text-transform uppercase
-				p
-					&:after
-						content '\e608'
-						font-family icono
-		.hora
-			color white
-			display inline-block
-			float left
-			font-size .73em
-			font-weight 400
-			margin 2px 0 0 -5px
-			width 100px
-			.horaInici
-				float left
-			.horaFi
-				margin 0 0 0 40px
-				p
-					&:after
-						content 'h'
-					&:before
-						content '- '
-	.titol
-		color rgba(iconos,.8)
-		font-size .8em
-		font-weight 300
-		left 15px
-		position absolute
-		text-transform uppercase
-		top 273px
+			margin 0 .5em 1.8em 2em
+			.detall
+				border-bottom 3px solid rgba(white,.5)
+				padding 0 0 .2em .25em
+				.hora
+					float left
+					width 100px
+					color white
+					display inline-block
+					float left
+					font-size .65em
+					font-weight 300
+					margin -1px 10px 0 -5px
+					.horaInici
+						float left
+					.horaFi
+						margin 0 0 0 40px
+						p
+							&:after
+								content 'h'
+							&:before
+								content '- '
+				.lloc
+					color rgba(white,.5)
+					font-size .6em
+					font-weight 300
+					letter-spacing .20em
+					text-transform uppercase
+					p
+						&:after
+							content '\e608'
+							font-family icono
+			.contingut
+				margin 1em 0 0 0 
+				.titolEvent
+					color rgba(white,.9)
+					font-size .9em
+					font-weight 400
+					margin -.7em 1.8em .7em 0
+					position relative
+					p
+						&:after
+							content '\e600'
+							font-family icono
+							font-size 1em
+							position absolute 
+							right -35px
+							top 0px
+				.detallEvent
+					font-size .8em
+					font-weight 300
+					margin 1em -1em 0em 2em
+					p
+						&:after
+							display none
+	.llistaInVisible
+		display none
 
-.footerApp
-	background rgba(white,.3)
-	bottom 0px
-	position absolute
+.bg 
+	@css {
+		background: rgb(47,68,92);
+		background: -moz-linear-gradient(top,  rgba(47,68,92,1) 0%, rgba(62,99,135,1) 51%, rgba(121,147,172,1) 91%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(47,68,92,1)), color-stop(51%,rgba(62,99,135,1)), color-stop(91%,rgba(121,147,172,1)));
+		background: -webkit-linear-gradient(top,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
+		background: -o-linear-gradient(top,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
+		background: -ms-linear-gradient(top,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
+		background: linear-gradient(to bottom,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f445c', endColorstr='#7993ac',GradientType=0 );
+        }
+	height 100%
+	left 0
+	position fixed
+	top 0
 	width 100%
-	p
-		color iconos
-		font-weight 300
-		padding .5em 0 
-		text-align center
-
-.llistaInVisible
-	display none
-.llistaVisible
-	animation animacionLlista 3s 1
-	-webkit-animation animacionLlista 3s 1
-
-.numero
-	font-size 4em
-	left 35%
-	position absolute
-	bottom .4em
-	animation animacionNumero 3s 1
-	-webkit-animation animacionNumero 3s 1
+	z-index -5
 
 .boto
 	.menu
@@ -307,15 +297,6 @@ section
 		&:after
 			content '\e601'
 			font-family icono
-
-.mes
-	font-size 1em
-	font-weight 300
-	left 33%
-	position absolute
-	top 5.4em
-	animation animacionMes 3s 1
-	-webkit-animation animacionMes 3s 1
 
 .inici
 	.boto

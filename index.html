@@ -23,29 +23,29 @@
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 <body>
-  <div id='inicio'></div>
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
-    
     <div class="bg"></div>
-
     <nav id="inici" class="inici">
         <span id='menu' class="menu" onclick="toggleMenu('inici')"></span>
         <span id='aumentar' class="aumentar" onclick="resizer(1)"></span>
         <span id='disminuir' class="disminuir" onclick="resizer(-1)"></span>
         <a href="#"><span class="mapa"></span></a>
     </nav>
-    <header class="calendari">
-        <div class="circuloCalendari">
-            <div id='divDia' class="dia"><span></span></div>
-            <div id='divNumero' class="numero"><span></span></div>
-            <div id='divMes' class="mes"><span></span></div>   
+    <header>
+        <div class="calendari">
+            <div class="circuloCalendari">
+                <div id='divDia' class="dia"><span></span></div>
+                <div id='divNumero' class="numero"><span></span></div>
+                <div id='divMes' class="mes"><span></span></div>   
+                <div class="circuloCentral"></div>
+                <div class="circuloBg1"></div>
+                <div class="circuloBg2"></div>
+                <div class="circuloBg3"></div>
+                <div class="circuloBg4"></div>
+            </div>
         </div>
-        <div class="circuloBg1"></div>
-        <div class="circuloBg2"></div>
-        <div class="circuloBg3"></div>
-        <div class="circuloBg4"></div>
         <div id='divBotonera' class="botonera">  
             <div class="dia uno"><p>29</p><span>AGO</span></div> 
             <div class="dia dos"><p>30</p><span>AGO</span></div> 
@@ -55,7 +55,6 @@
             <div class="dia seis"><p class='centrar'>4</p><span class='centrarMes'>SEP</span></div> 
             <div class="dia siete"><p class='centrar'>5</p><span class='centrarMes'>SEP</span></div> 
             <div class="dia ocho"><p class='centrar'>6</p><span class='centrarMes'>SEP</span></div> 
-    
         </div>
         <div id='eventActual' class="eventActual">
             <div id='titol' class="titol"><p>Event actual</p></div>
@@ -71,9 +70,8 @@
             </div>
         </div>
     </header>
-
-    <div class="contingut">
-        <section class="llistaVisible"><!-- Iterar entre .llistaVisible .llistaInvisible-->
+    <section class="contingut">
+        <div class="llistaVisible"><!-- Iterar entre .llistaVisible .llistaInvisible-->
             <article class="event">
                 <div class="detall">
                     <div class="hora">
@@ -122,10 +120,8 @@
                     </div>
                 </div>
             </article>
-        </section>
-    </div>
-    <!-- <footer class="footerApp"><p>Quinquenals 2014</p></footer> -->
-
+        </div>
+    </section>
     <!-- Area per a els scripts -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>
