@@ -6,12 +6,12 @@ header
 		overflow-x auto
 		overflow-y hidden
 		position absolute
-		top 190px
+		top 230px
 		white-space nowrap
 		width 100%
 		.dia 
 			background none
-			border 1px solid rgba(rosa,1)
+			border 1px solid rgba(white,1)
 			border-radius 50%
 			color white
 			display inline-block
@@ -47,18 +47,18 @@ header
 		bottom 0px
 		color white
 		display block
-		height 295px
+		height 350px
 		overflow-x hidden
 		position relative
 		.circuloCalendari
 			border-radius 50%
 			height 150px
 			display block
-			margin 1em auto 0 auto
+			margin 2em auto 0 auto
 			position relative
 			width 150px 
 			.circuloCentral
-				background rosa
+				background transparent
 				border-radius 50%
 				height 150px
 				position relative
@@ -117,6 +117,7 @@ header
 				font-weight 300
 				left 29%
 				position absolute
+				text-shadow 0 1px 5px rgba(black,.5)
 				top .75em
 				z-index 6
 				animation animacionDia 3s 1
@@ -126,6 +127,7 @@ header
 				font-size 4em
 				left 35%
 				position absolute
+				text-shadow 0 1px 5px rgba(black,.5)
 				z-index 6
 				animation animacionNumero 3s 1
 				-webkit-animation animacionNumero 3s 1
@@ -134,6 +136,7 @@ header
 				font-weight 300
 				left 33%
 				position absolute
+				text-shadow 0 1px 5px rgba(black,.5)
 				top 5.4em
 				z-index 6
 				animation animacionMes 3s 1
@@ -145,7 +148,7 @@ header
 		font-weight 100
 		height auto
 		margin 0 0 1em 0
-		padding .5em 1em
+		padding .5em 1em 1em 1em
 		.contingutEventActual
 			animation animacionLlista 3s 1
 			-webkit-animation animacionLlista 3s 1
@@ -192,7 +195,7 @@ header
 			left 15px
 			position absolute
 			text-transform uppercase
-			top 273px
+			top 330px
 
 section
 	margin 0 0 100px 0
@@ -262,14 +265,18 @@ section
 
 .bg 
 	@css {
-		background: rgb(47,68,92);
-		background: -moz-linear-gradient(top,  rgba(47,68,92,1) 0%, rgba(62,99,135,1) 51%, rgba(121,147,172,1) 91%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(47,68,92,1)), color-stop(51%,rgba(62,99,135,1)), color-stop(91%,rgba(121,147,172,1)));
-		background: -webkit-linear-gradient(top,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
-		background: -o-linear-gradient(top,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
-		background: -ms-linear-gradient(top,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
-		background: linear-gradient(to bottom,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f445c', endColorstr='#7993ac',GradientType=0 );
+		
+		background: rgb(158,214,252);
+background: -moz-linear-gradient(top,  rgba(158,214,252,1) 0%, rgba(67,147,230,1) 44%, rgba(13,88,185,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(158,214,252,1)), color-stop(44%,rgba(67,147,230,1)), color-stop(100%,rgba(13,88,185,1)));
+background: -webkit-linear-gradient(top,  rgba(158,214,252,1) 0%,rgba(67,147,230,1) 44%,rgba(13,88,185,1) 100%);
+background: -o-linear-gradient(top,  rgba(158,214,252,1) 0%,rgba(67,147,230,1) 44%,rgba(13,88,185,1) 100%);
+background: -ms-linear-gradient(top,  rgba(158,214,252,1) 0%,rgba(67,147,230,1) 44%,rgba(13,88,185,1) 100%);
+background: linear-gradient(to bottom,  rgba(158,214,252,1) 0%,rgba(67,147,230,1) 44%,rgba(13,88,185,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ed6fc', endColorstr='#0d58b9',GradientType=0 );
+
+
+
         }
 	height 100%
 	left 0
