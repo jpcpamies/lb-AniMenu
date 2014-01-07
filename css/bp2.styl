@@ -44,6 +44,10 @@ header
 				position absolute
 				top 30px
 	.calendari
+		background-image url(../img/sol.png)
+		background-position -70px -75px
+		background-repeat no-repeat
+		background-size 150px auto
 		bottom 0px
 		color white
 		display block
@@ -58,60 +62,65 @@ header
 			position relative
 			width 150px 
 			.circuloCentral
-				background transparent
-				border-radius 50%
-				height 150px
-				position relative
-				width 150px 
-				z-index 5
+				display none
+				// background transparent
+				// border-radius 50%
+				// height 150px
+				// position relative
+				// width 150px 
+				// z-index 5
 			.circuloBg1
-				background #50D1C7
-				border-radius 50%
-				height 130px
-				left -50px
-				position absolute
-				top 40px
-				width 130px 	
-				// z-index 5
-				-webkit-filter blur(2px) opacity(0.2)
-				animation animacionBg1 40s infinite
-				-webkit-animation animacionBg1 40s infinite
+				display none
+				// background #50D1C7
+				// border-radius 50%
+				// height 130px
+				// left -50px
+				// position absolute
+				// top 40px
+				// width 130px 	
+				// // z-index 5
+				// -webkit-filter blur(2px) opacity(0.2)
+				// animation animacionBg1 40s infinite
+				// -webkit-animation animacionBg1 40s infinite
 			.circuloBg2
-				background #678fb7
-				border-radius 50%
-				height 60px
-				left 130px
-				position absolute
-				top 30px
-				width 60px 	
-				// z-index 5
-				-webkit-filter blur(2px) opacity(0.8)
-				animation animacionBg2 30s infinite
-				-webkit-animation animacionBg2 30s infinite
+				display none
+				// background #678fb7
+				// border-radius 50%
+				// height 60px
+				// left 130px
+				// position absolute
+				// top 30px
+				// width 60px 	
+				// // z-index 5
+				// -webkit-filter blur(2px) opacity(0.8)
+				// animation animacionBg2 30s infinite
+				// -webkit-animation animacionBg2 30s infinite
 			.circuloBg3
-				background #678fb7
-				border-radius 50%
-				height 160px
-				left 110px
-				position absolute
-				top 60px
-				width 160px 	
-				// z-index 5
-				-webkit-filter blur(2px) opacity(1)
-				animation animacionBg3 20s infinite
-				-webkit-animation animacionBg3 20s infinite
+				display none
+				// background #678fb7
+				// border-radius 50%
+				// height 160px
+				// left 110px
+				// position absolute
+				// top 60px
+				// width 160px 	
+				// // z-index 5
+				// -webkit-filter blur(2px) opacity(1)
+				// animation animacionBg3 20s infinite
+				// -webkit-animation animacionBg3 20s infinite
 			.circuloBg4
-				background #678fb7
-				border-radius 50%
-				height 80px
-				left -85px
-				position absolute
-				top 105px
-				width 80px 	
-				// z-index 5
-				-webkit-filter blur(2px) opacity(0.8)
-				animation animacionBg1 20s infinite
-				-webkit-animation animacionBg1 20s infinite
+				display none
+				// background #678fb7
+				// border-radius 50%
+				// height 80px
+				// left -85px
+				// position absolute
+				// top 105px
+				// width 80px 	
+				// // z-index 5
+				// -webkit-filter blur(2px) opacity(0.8)
+				// animation animacionBg1 20s infinite
+				// -webkit-animation animacionBg1 20s infinite
 			.dia
 				font-size 1em
 				font-weight 300
@@ -141,6 +150,14 @@ header
 				z-index 6
 				animation animacionMes 3s 1
 				-webkit-animation animacionMes 3s 1
+	.deDia
+		left 0px
+		position relative
+		top 0px
+		z-index 15
+		
+		// .sol
+
 	.eventActual
 		background rgba(iconos,.3)
 		color white
@@ -265,25 +282,21 @@ section
 
 .bg 
 	@css {
-		
 		background: rgb(158,214,252);
-background: -moz-linear-gradient(top,  rgba(158,214,252,1) 0%, rgba(67,147,230,1) 44%, rgba(13,88,185,1) 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(158,214,252,1)), color-stop(44%,rgba(67,147,230,1)), color-stop(100%,rgba(13,88,185,1)));
-background: -webkit-linear-gradient(top,  rgba(158,214,252,1) 0%,rgba(67,147,230,1) 44%,rgba(13,88,185,1) 100%);
-background: -o-linear-gradient(top,  rgba(158,214,252,1) 0%,rgba(67,147,230,1) 44%,rgba(13,88,185,1) 100%);
-background: -ms-linear-gradient(top,  rgba(158,214,252,1) 0%,rgba(67,147,230,1) 44%,rgba(13,88,185,1) 100%);
-background: linear-gradient(to bottom,  rgba(158,214,252,1) 0%,rgba(67,147,230,1) 44%,rgba(13,88,185,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ed6fc', endColorstr='#0d58b9',GradientType=0 );
-
-
-
+		background: -moz-linear-gradient(top,  rgba(158,214,252,1) 0%, rgba(67,147,230,1) 44%, rgba(13,88,185,1) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(158,214,252,1)), color-stop(44%,rgba(67,147,230,1)), color-stop(100%,rgba(13,88,185,1)));
+		background: -webkit-linear-gradient(top,  rgba(158,214,252,1) 0%,rgba(67,147,230,1) 44%,rgba(13,88,185,1) 100%);
+		background: -o-linear-gradient(top,  rgba(158,214,252,1) 0%,rgba(67,147,230,1) 44%,rgba(13,88,185,1) 100%);
+		background: -ms-linear-gradient(top,  rgba(158,214,252,1) 0%,rgba(67,147,230,1) 44%,rgba(13,88,185,1) 100%);
+		background: linear-gradient(to bottom,  rgba(158,214,252,1) 0%,rgba(67,147,230,1) 44%,rgba(13,88,185,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ed6fc', endColorstr='#0d58b9',GradientType=0 );
         }
 	height 100%
 	left 0
 	position fixed
 	top 0
 	width 100%
-	z-index -5
+	z-index -10
 
 .boto
 	.menu
