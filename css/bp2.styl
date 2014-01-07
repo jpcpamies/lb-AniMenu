@@ -1,6 +1,4 @@
 
-
-
 header
 	.botonera
 		height auto
@@ -69,7 +67,7 @@ header
 				font-weight 300
 				left 29%
 				position absolute
-				text-shadow 0 1px 5px rgba(black,.5)
+				text-shadow 0 1px 3px rgba(black,.35)
 				top .75em
 				z-index 6
 				animation animacionDia 3s 1
@@ -79,7 +77,7 @@ header
 				font-size 4em
 				left 35%
 				position absolute
-				text-shadow 0 1px 5px rgba(black,.5)
+				text-shadow 0 1px 3px rgba(black,.35)
 				z-index 6
 				animation animacionNumero 3s 1
 				-webkit-animation animacionNumero 3s 1
@@ -88,7 +86,7 @@ header
 				font-weight 300
 				left 33%
 				position absolute
-				text-shadow 0 1px 5px rgba(black,.5)
+				text-shadow 0 1px 3px rgba(black,.35)
 				top 5.4em
 				z-index 6
 				animation animacionMes 3s 1
@@ -100,7 +98,7 @@ header
 		font-weight 100
 		height auto
 		margin 0 0 1em 0
-		padding .5em 1em 1em 1em
+		padding .7em 1em 1.2em 1em
 		.contingutEventActual
 			animation animacionLlista 3s 1
 			-webkit-animation animacionLlista 3s 1
@@ -147,7 +145,7 @@ header
 			left 15px
 			position absolute
 			text-transform uppercase
-			top 330px
+			top 327px
 
 section
 	margin 0 0 100px 0
@@ -159,7 +157,7 @@ section
 		.event
 			margin 0 .5em 1.8em 2em
 			.detall
-				border-bottom 3px solid rgba(white,.7)
+				border-bottom 3px solid rgba(white,1)
 				padding 0 0 .2em .25em
 				.hora
 					float left
@@ -180,7 +178,7 @@ section
 							&:before
 								content '- '
 				.lloc
-					color rgba(white,.5)
+					color rgba(black,.4)
 					font-size .6em
 					font-weight 300
 					letter-spacing .20em
@@ -192,7 +190,7 @@ section
 			.contingut
 				margin 1em 0 0 0 
 				.titolEvent
-					color rgba(white,.9)
+					color rgba(white,1)
 					font-size .9em
 					font-weight 400
 					margin -.7em 1.8em .7em 0
@@ -225,8 +223,8 @@ section
 		position absolute
 		top -72px
 		width 200px 	
-		animation animacionAro1 10s infinite
-		-webkit-animation animacionAro1 10s infinite
+		animation animacionAro1 6s infinite
+		-webkit-animation animacionAro1 6s infinite
 	.rayo1 
 		border-top 5px solid transparent
 		border-bottom 5px solid transparent
@@ -383,7 +381,7 @@ section
 			content '\e601'
 			font-family icono	
 	.mapa
-		background rgba(white,.7)
+		background rgba(#deecfb,1)
 		border-radius 50%
 		top 12px 
 		color rgba(black,.7)
@@ -401,12 +399,12 @@ section
 			content '\e602'
 			font-family icono
 		&:hover
-			background rgba(black,.2)
+			background rgba(#7b9ec2,1)
 			color white
 			-webkit-transition: all .2s;
 			transition: all .2s;
 	.aumentar
-		background rgba(white,.7)
+		background rgba(#deecfb,1)
 		border-radius 50%
 		top 75px 
 		color rgba(black,.7)
@@ -425,12 +423,12 @@ section
 			font-size 1.4em
 			font-weight 300
 		&:hover
-			background rgba(black,.2)
+			background rgba(#7b9ec2,1)
 			color white
 			-webkit-transition: all .2s;
 			transition: all .2s;
 	.disminuir
-		background rgba(white,.7)
+		background rgba(#deecfb,1)
 		border-radius 50%
 		top 140px 
 		color rgba(black,.7)
@@ -449,7 +447,7 @@ section
 			font-size .9em
 			font-weight 300
 		&:hover
-			background rgba(black,.2)
+			background rgba(#7b9ec2,1)
 			color white
 			-webkit-transition: all .2s;
 			transition: all .2s;
@@ -534,7 +532,7 @@ section
 	50%
 		opacity .05
 	75%
-		opacity .1
+		opacity .2
 	100% 
 		opacity 0
 
