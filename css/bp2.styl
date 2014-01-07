@@ -1,0 +1,545 @@
+
+header
+	.botonera
+		height auto
+		left 0px 
+		overflow-x auto
+		overflow-y hidden
+		position absolute
+		top 190px
+		white-space nowrap
+		width 100%
+		.dia 
+			background none
+			border 1px solid rgba(rosa,1)
+			border-radius 50%
+			color white
+			display inline-block
+			height 65px 
+			margin 0 0 0 1em 
+			position relative
+			width 65px
+			&:first-child
+				margin 0 0 0 1.5em
+			&:last-child
+				margin 0 1em 0 1em
+			p
+				left 32%
+				font-weight 300
+				margin 0
+				position absolute
+				top 7px
+			.centrar
+				left 40%
+				position absolute
+			.centrarMes
+				left 27%
+				position absolute
+			span
+				color rgba(black,.3)
+				left 20%
+				letter-spacing 0em
+				font-size .85em
+				font-weight 400
+				position absolute
+				top 30px
+	.calendari
+		bottom 0px
+		color white
+		display block
+		height 295px
+		overflow-x hidden
+		position relative
+		.circuloCalendari
+			border-radius 50%
+			height 150px
+			display block
+			margin 1em auto 0 auto
+			position relative
+			width 150px 
+			.circuloCentral
+				background rosa
+				border-radius 50%
+				height 150px
+				position relative
+				width 150px 
+				z-index 5
+			.circuloBg1
+				background #50D1C7
+				border-radius 50%
+				height 130px
+				left -50px
+				position absolute
+				top 40px
+				width 130px 	
+				// z-index 5
+				-webkit-filter blur(2px) opacity(0.2)
+				animation animacionBg1 40s infinite
+				-webkit-animation animacionBg1 40s infinite
+			.circuloBg2
+				background #678fb7
+				border-radius 50%
+				height 60px
+				left 130px
+				position absolute
+				top 30px
+				width 60px 	
+				// z-index 5
+				-webkit-filter blur(2px) opacity(0.8)
+				animation animacionBg2 30s infinite
+				-webkit-animation animacionBg2 30s infinite
+			.circuloBg3
+				background #678fb7
+				border-radius 50%
+				height 160px
+				left 110px
+				position absolute
+				top 60px
+				width 160px 	
+				// z-index 5
+				-webkit-filter blur(2px) opacity(1)
+				animation animacionBg3 20s infinite
+				-webkit-animation animacionBg3 20s infinite
+			.circuloBg4
+				background #678fb7
+				border-radius 50%
+				height 80px
+				left -85px
+				position absolute
+				top 105px
+				width 80px 	
+				// z-index 5
+				-webkit-filter blur(2px) opacity(0.8)
+				animation animacionBg1 20s infinite
+				-webkit-animation animacionBg1 20s infinite
+			.dia
+				font-size 1em
+				font-weight 300
+				left 29%
+				position absolute
+				top .75em
+				z-index 6
+				animation animacionDia 3s 1
+				-webkit-animation animacionDia 3s 1
+			.numero
+				bottom .4em
+				font-size 4em
+				left 35%
+				position absolute
+				z-index 6
+				animation animacionNumero 3s 1
+				-webkit-animation animacionNumero 3s 1
+			.mes
+				font-size 1em
+				font-weight 300
+				left 33%
+				position absolute
+				top 5.4em
+				z-index 6
+				animation animacionMes 3s 1
+				-webkit-animation animacionMes 3s 1
+	.eventActual
+		background rgba(iconos,.3)
+		color white
+		font-size .9em
+		font-weight 100
+		height auto
+		margin 0 0 1em 0
+		padding .5em 1em
+		.contingutEventActual
+			animation animacionLlista 3s 1
+			-webkit-animation animacionLlista 3s 1
+			.event
+				border-left 1px solid rgba(white,.1)
+				color rgba(white,1)
+				letter-spacing .055em
+				line-height 1.2em
+				font-size .9em
+				font-weight 300
+				margin 0 0 0 100px
+				padding 0 0 0 15px
+				.lloc
+					color rgba(white,.5)
+					font-size .7em
+					letter-spacing .13em
+					margin .5em 0 0 0 
+					text-transform uppercase
+					p
+						&:after
+							content '\e608'
+							font-family icono
+			.hora
+				color white
+				display inline-block
+				float left
+				font-size .73em
+				font-weight 400
+				margin 2px 0 0 -5px
+				width 100px
+				.horaInici
+					float left
+				.horaFi
+					margin 0 0 0 40px
+					p
+						&:after
+							content 'h'
+						&:before
+							content '- '
+		.titol
+			color rgba(iconos,.8)
+			font-size .8em
+			font-weight 300
+			left 15px
+			position absolute
+			text-transform uppercase
+			top 273px
+
+section
+	margin 0 0 100px 0
+	position absolute
+	z-index 0
+	.llistaVisible
+		animation animacionLlista 3s 1
+		-webkit-animation animacionLlista 3s 1
+		.event
+			margin 0 .5em 1.8em 2em
+			.detall
+				border-bottom 3px solid rgba(white,.5)
+				padding 0 0 .2em .25em
+				.hora
+					float left
+					width 100px
+					color white
+					display inline-block
+					float left
+					font-size .65em
+					font-weight 300
+					margin -1px 10px 0 -5px
+					.horaInici
+						float left
+					.horaFi
+						margin 0 0 0 40px
+						p
+							&:after
+								content 'h'
+							&:before
+								content '- '
+				.lloc
+					color rgba(white,.5)
+					font-size .6em
+					font-weight 300
+					letter-spacing .20em
+					text-transform uppercase
+					p
+						&:after
+							content '\e608'
+							font-family icono
+			.contingut
+				margin 1em 0 0 0 
+				.titolEvent
+					color rgba(white,.9)
+					font-size .9em
+					font-weight 400
+					margin -.7em 1.8em .7em 0
+					position relative
+					p
+						&:after
+							content '\e600'
+							font-family icono
+							font-size 1em
+							position absolute 
+							right -35px
+							top 0px
+				.detallEvent
+					font-size .8em
+					font-weight 300
+					margin 1em -1em 0em 2em
+					p
+						&:after
+							display none
+	.llistaInVisible
+		display none
+
+.bg 
+	@css {
+		background: rgb(47,68,92);
+		background: -moz-linear-gradient(top,  rgba(47,68,92,1) 0%, rgba(62,99,135,1) 51%, rgba(121,147,172,1) 91%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(47,68,92,1)), color-stop(51%,rgba(62,99,135,1)), color-stop(91%,rgba(121,147,172,1)));
+		background: -webkit-linear-gradient(top,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
+		background: -o-linear-gradient(top,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
+		background: -ms-linear-gradient(top,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
+		background: linear-gradient(to bottom,  rgba(47,68,92,1) 0%,rgba(62,99,135,1) 51%,rgba(121,147,172,1) 91%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f445c', endColorstr='#7993ac',GradientType=0 );
+        }
+	height 100%
+	left 0
+	position fixed
+	top 0
+	width 100%
+	z-index -5
+
+.boto
+	.menu
+		background rgba(black,.05)
+		border-radius 50%
+		top 12px 
+		color rgba(white,.5)
+		height 50px
+		line-height 2.2em
+		position fixed
+		right 12px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 7
+		animation animacionBoto .2s 1
+		-webkit-animation animacionBoto .2s 1
+		&:after
+			content '\e601'
+			font-family icono
+
+.inici
+	.boto
+	.botoTrans
+	.on
+	.onTrans
+	.off
+	.offTrans
+		display none
+
+.botoOn
+	.menu
+		background rgba(black,.05)
+		border-radius 50%
+		top 12px 
+		color rgba(white,.5)
+		height 50px
+		line-height 2.2em
+		position fixed
+		right 12px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 7
+		&:after
+			content '\e601'
+			font-family icono	
+	.mapa
+		background rgba(white,.7)
+		border-radius 50%
+		top 12px 
+		color rgba(black,.7)
+		height 50px
+		line-height 2.1em
+		position fixed
+		left 12px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 3
+		animation animacionMapa .4s 1
+		-webkit-animation animacionMapa .4s 1
+		&:after
+			content '\e602'
+			font-family icono
+		&:hover
+			background rgba(black,.2)
+			color white
+			-webkit-transition: all .2s;
+			transition: all .2s;
+	.aumentar
+		background rgba(white,.7)
+		border-radius 50%
+		top 75px 
+		color rgba(black,.7)
+		height 50px
+		line-height 1.9em
+		position fixed
+		right 12px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 4
+		animation animacionAumentar .4s 1
+		-webkit-animation animacionAumentar .4s 1
+		&:after
+			content 'a'
+			font-size 1.4em
+			font-weight 300
+		&:hover
+			background rgba(black,.2)
+			color white
+			-webkit-transition: all .2s;
+			transition: all .2s;
+	.disminuir
+		background rgba(white,.7)
+		border-radius 50%
+		top 140px 
+		color rgba(black,.7)
+		height 50px
+		line-height 1.9em
+		position fixed
+		right 12px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 4
+		animation animacionDisminuir .4s 1
+		-webkit-animation animacionDisminuir .4s 1
+		&:after
+			content 'a'
+			font-size .9em
+			font-weight 300
+		&:hover
+			background rgba(black,.2)
+			color white
+			-webkit-transition: all .2s;
+			transition: all .2s;
+
+@keyframes animacionAumentar 
+	0% 
+		top 12px
+		opacity 0
+	100% 
+		bottom 75px
+		opacity 1
+
+@keyframes animacionBg1 
+	0% 
+		opacity 0
+		-webkit-filter blur(2px)
+	50%
+		opacity .2
+		top 65px
+	75%
+		opacity .3
+		-webkit-filter blur(1px)
+	100% 
+		opacity 0
+		-webkit-filter blur(2px)
+
+@keyframes animacionBg2 
+	0% 
+		opacity 0
+		-webkit-filter blur(2px)
+	50%
+		opacity .7
+		top 20px
+	75%
+		opacity .5
+		top 90px
+	100% 
+		opacity 0
+		-webkit-filter blur(2px)
+
+@keyframes animacionBg3
+	0% 
+		opacity 0
+		-webkit-filter blur(6px)
+	50%
+		opacity .5
+		top 30px
+	75%
+		opacity .2
+		-webkit-filter blur(2px)
+		top 80px
+	100% 
+		opacity 0
+		-webkit-filter blur(6px)
+
+@keyframes animacionBg4
+	0% 
+		opacity 0
+		-webkit-filter blur(2px)
+	50%
+		opacity .5
+	75%
+		opacity .4
+		-webkit-filter blur(6px)
+		top 190px
+	100% 
+		opacity 0
+		-webkit-filter blur(2px)
+
+@keyframes animacionCalendari 
+	0% 
+		opacity 1
+	50%
+		opacity .9
+	75%
+		opacity .8
+	100% 
+		opacity 1
+
+@keyframes animacionDia 
+	0% 
+		opacity 0
+	50%
+		opacity 1
+	75%
+		opacity 1
+	100% 
+		opacity 1
+
+@keyframes animacionDisminuir
+	0% 
+		top 12px
+		opacity 0
+	100% 
+		bottom 75px
+		opacity 1
+
+@keyframes animacionBoto 
+	0% 
+		opacity 0
+	100% 
+		opacity 1
+
+@keyframes animacionLlista
+	0% 
+		opacity 0
+	100% 
+		opacity 1
+
+@keyframes animacionNumero 
+	0% 
+		opacity 0
+	50%
+		opacity 0
+	75%
+		opacity 1
+	100% 
+		opacity 1
+
+@keyframes animacionMapa 
+	0% 
+		left 180px
+		opacity 0
+	100% 
+		left 12px
+		opacity 1
+
+@keyframes animacionMes 
+	0% 
+		opacity 0
+	50%
+		opacity 0
+	75%
+		opacity 0
+	100% 
+		opacity 1
+
+
+		 
+		
+		
+
+
+
+
+
+
+
+
+
+
