@@ -69,7 +69,7 @@ header
 				position absolute
 				text-shadow 0 1px 3px rgba(black,.35)
 				top .75em
-				z-index 6
+				// z-index 3
 				animation animacionDia 3s 1
 				-webkit-animation animacionDia 3s 1
 			.numero
@@ -78,7 +78,7 @@ header
 				left 35%
 				position absolute
 				text-shadow 0 1px 3px rgba(black,.35)
-				z-index 6
+				// z-index 3
 				animation animacionNumero 3s 1
 				-webkit-animation animacionNumero 3s 1
 			.mes
@@ -88,7 +88,7 @@ header
 				position absolute
 				text-shadow 0 1px 3px rgba(black,.35)
 				top 5.4em
-				z-index 6
+				// z-index 3
 				animation animacionMes 3s 1
 				-webkit-animation animacionMes 3s 1
 	.eventActual
@@ -365,8 +365,13 @@ section
 		display none
 
 .botoOn
+	background rgba(black,.5)
+	position fixed
+	width 100%
+	height 100%
+	z-index 3
 	.menu
-		background rgba(black,.05)
+		background rgba(black,.1)
 		border-radius 50%
 		top 12px 
 		color rgba(white,.5)
@@ -378,14 +383,18 @@ section
 		text-align center
 		width 50px
 		z-index 7
+		transform rotateZ(45deg)
+		-ms-transform rotateZ(45deg)
+		-webkit-transform rotateZ(45deg)
 		&:after
-			content '\e601'
-			font-family icono	
+			content '\e603'
+			font-family icono
+			font-size 1.3em
 	.mapa
-		background rgba(#deecfb,1)
+		background rgba(#8f8f8f,1)
 		border-radius 50%
 		top 12px 
-		color rgba(black,.7)
+		color rgba(white,1)
 		height 50px
 		line-height 2.1em
 		position fixed
@@ -400,17 +409,17 @@ section
 			content '\e602'
 			font-family icono
 		&:hover
-			background rgba(#7b9ec2,1)
+			background rgba(iconos,1)
 			color white
 			-webkit-transition: all .2s;
 			transition: all .2s;
 	.aumentar
-		background rgba(#deecfb,1)
+		background rgba(#1877e9,1)
 		border-radius 50%
 		top 75px 
-		color rgba(black,.7)
+		color rgba(#deecfb,1)
 		height 50px
-		line-height 1.9em
+		line-height 1.75em
 		position fixed
 		right 12px
 		font-size 1.2em
@@ -424,17 +433,40 @@ section
 			font-size 1.4em
 			font-weight 300
 		&:hover
-			background rgba(#7b9ec2,1)
+			background rgba(iconos,1)
+			color white
+			-webkit-transition: all .2s;
+			transition: all .2s;
+	.contraste
+		background rgba(#1877e9,1)
+		border-radius 50%
+		top 205px 
+		color rgba(#deecfb,1)
+		height 50px
+		line-height 2.1em
+		position fixed
+		right 12px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 4
+		animation animacionAumentar .4s 1
+		-webkit-animation animacionAumentar .4s 1
+		&:after
+			content '\e601'
+			font-family icono
+		&:hover
+			background rgba(iconos,1)
 			color white
 			-webkit-transition: all .2s;
 			transition: all .2s;
 	.disminuir
-		background rgba(#deecfb,1)
+		background rgba(#1877e9,1)
 		border-radius 50%
 		top 140px 
-		color rgba(black,.7)
+		color rgba(#deecfb,1)
 		height 50px
-		line-height 1.9em
+		line-height 1.85em
 		position fixed
 		right 12px
 		font-size 1.2em
@@ -448,7 +480,7 @@ section
 			font-size .9em
 			font-weight 300
 		&:hover
-			background rgba(#7b9ec2,1)
+			background rgba(iconos,1)
 			color white
 			-webkit-transition: all .2s;
 			transition: all .2s;
