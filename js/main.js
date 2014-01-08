@@ -19,6 +19,10 @@ var mes = fecha.getMonth();
 var horas = fecha.getHours();
 var minutos = fecha.getMinutes();
 
+//Variables para capturar elementos
+var texto = document.getElementsByClassName('detallEvent');
+var prog = document.getElementsByClassName('llistaVisible');
+
 // Arreglos per a mostrar mesesos y díes en Català
 var meses = ["Gener", "Febrer", "Març", "Abril", "Maig", "Juny", "Juliol", "Agost", "Setembre", "Octubre" ,"Novembre", "Desembre"];
 var diasSemana = ["Diumenge", "Dilluns", "Dimarts", "Dimecres", "Dijous", "Divendres", "Dissabte"];
@@ -38,26 +42,45 @@ function toggleMenu(a){
     }
 }
 
-// Transforamcion del boton al scroll
-var inicio = 80; //number of pixels before modifying styles
-
-$(window).bind('scroll', function () {
-    if ($(window).scrollTop() > inicio) {
-        $('#inici').removeClass('inici');
-        $('#inici').addClass('boto');
-    } else {
-        $('.inici').removeClass('boto');
-        $('#inici').addClass('inici');
-    }
-});
+function mostrar(b){
+    resetear();
+    var elem = document.getElementById(b);
+    elem.className="llistaVisible";
+}
 
 function resizer (multiplicador){
-    var texto = document.body;
-    
-    if (texto.style.fontSize == ""){
+    for (var i = 0; i < texto.length; i++) {
+        
+        if (texto[i].style.fontSize == ""){
 
-        texto.style.fontSize = "1.0em";
+            texto[i].style.fontSize = "1.0em";
 
-    }texto.style.fontSize = parseFloat(texto.style.fontSize)
-    + (multiplicador * 0.2) + "em";
+        }texto[i].style.fontSize = parseFloat(texto[i].style.fontSize)
+        + (multiplicador * 0.1) + "em";
+        };
+}
+
+function resetear(){
+    for (var i = 0; i < prog.length; i++) {
+        if (prog[i].className=="llistaVisible"){
+            prog[i].className="llistaInVisible";
+        }else{
+            prog[i].className="llistaInVisible";
+        }
+    };
+}
+
+//Cambiar el display de none a block
+function cambiar(esto){
+  vista = document.getElementById(esto).style.display;
+
+  if (vista == 'none')
+  {
+    vista = 'block';
+  }
+  else
+  {
+    vista = 'none';
+  }
+  document.getElementById(esto).style.display = vista;
 }
