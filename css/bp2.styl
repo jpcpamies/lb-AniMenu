@@ -335,6 +335,9 @@ section
 	z-index -10
 
 .boto
+	.facebook
+	.twitter
+		display none
 	.menu
 		background rgba(black,.05)
 		border-radius 50%
@@ -358,10 +361,12 @@ section
 .inici
 	.boto
 	.botoTrans
-	.on
-	.onTrans
+	.facebook
 	.off
 	.offTrans
+	.on
+	.onTrans
+	.twitter
 		display none
 
 .botoOn
@@ -370,49 +375,6 @@ section
 	width 100%
 	height 100%
 	z-index 3
-	.menu
-		background rgba(black,.1)
-		border-radius 50%
-		top 12px 
-		color rgba(white,.5)
-		height 50px
-		line-height 2.2em
-		position fixed
-		right 12px
-		font-size 1.2em
-		text-align center
-		width 50px
-		z-index 7
-		transform rotateZ(45deg)
-		-ms-transform rotateZ(45deg)
-		-webkit-transform rotateZ(45deg)
-		&:after
-			content '\e603'
-			font-family icono
-			font-size 1.3em
-	.mapa
-		background rgba(#8f8f8f,1)
-		border-radius 50%
-		top 12px 
-		color rgba(white,1)
-		height 50px
-		line-height 2.1em
-		position fixed
-		left 12px
-		font-size 1.2em
-		text-align center
-		width 50px
-		z-index 3
-		animation animacionMapa .4s 1
-		-webkit-animation animacionMapa .4s 1
-		&:after
-			content '\e602'
-			font-family icono
-		&:hover
-			background rgba(iconos,1)
-			color white
-			-webkit-transition: all .2s;
-			transition: all .2s;
 	.aumentar
 		background rgba(#1877e9,1)
 		border-radius 50%
@@ -484,6 +446,69 @@ section
 			color white
 			-webkit-transition: all .2s;
 			transition: all .2s;
+	.mapa
+		background rgba(#8f8f8f,1)
+		border-radius 50%
+		top 12px 
+		color rgba(white,1)
+		height 50px
+		line-height 2.1em
+		position fixed
+		left 12px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 3
+		animation animacionMapa .4s 1
+		-webkit-animation animacionMapa .4s 1
+		// &:after
+		// 	content 'VEURE PROGRMA COMPLET'
+		// 	font-size .7em
+		&:before
+			content '\e602'
+			font-family icono
+		&:hover
+			background rgba(iconos,1)
+			color white
+			-webkit-transition: all .2s;
+			transition: all .2s;
+	.menu
+		background rgba(black,.1)
+		border-radius 50%
+		top 12px 
+		color rgba(white,.5)
+		height 50px
+		line-height 2.2em
+		position fixed
+		right 12px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 7
+		transform rotateZ(45deg)
+		-ms-transform rotateZ(45deg)
+		-webkit-transform rotateZ(45deg)
+		&:after
+			content '\e603'
+			font-family icono
+			font-size 1.3em
+	.social
+		.facebook
+			background rgba(white,.5)
+			bottom 0px 
+			display block
+			height 80px
+			left 0px
+			padding 1.5em 0 0 1em
+			position fixed
+			width 100%
+			z-index 4
+		.twitter
+			bottom 25px 
+			right 0px
+			position fixed
+			z-index 4
+	
 
 @keyframes animacionAro1 
 	0% 
@@ -701,12 +726,6 @@ section
 		opacity 0
 	100% 
 		opacity 1
-
-
-
-
-
-		 
 		
 		
 
