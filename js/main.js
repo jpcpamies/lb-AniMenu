@@ -22,6 +22,7 @@ var minutos = fecha.getMinutes();
 //Variables para capturar elementos
 var texto = document.getElementsByClassName('detallEvent');
 var prog = document.getElementsByClassName('llistaVisible');
+var bot = document.getElementsByClassName('dia');
 
 // Arreglos per a mostrar mesesos y díes en Català
 var meses = ["Gener", "Febrer", "Març", "Abril", "Maig", "Juny", "Juliol", "Agost", "Setembre", "Octubre" ,"Novembre", "Desembre"];
@@ -42,10 +43,12 @@ function toggleMenu(a){
     }
 }
 
-function mostrar(b){
-    resetear();
+function mostrar(b,c){
+    resetearProg();
     var elem = document.getElementById(b);
     elem.className="llistaVisible";
+    resetearBot();
+    document.getElementById(c).style.backgroundColor="lightgray";
 }
 
 function resizer (multiplicador){
@@ -60,7 +63,7 @@ function resizer (multiplicador){
         };
 }
 
-function resetear(){
+function resetearProg(){
     for (var i = 0; i < prog.length; i++) {
         if (prog[i].className=="llistaVisible"){
             prog[i].className="llistaInVisible";
@@ -84,3 +87,13 @@ function cambiar(esto){
   }
   document.getElementById(esto).style.display = vista;
 }
+
+function resetearBot(){
+    for (i=0;i<bot.length;i++)
+      bot[i].style.backgroundColor="";
+}
+
+
+
+
+
