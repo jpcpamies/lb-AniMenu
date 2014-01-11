@@ -242,22 +242,41 @@ section
 
 .efectos
 	position relative
-	// .destellos
-	// 	.desdelloA
-	// 		.destelloA1
-	// 		.destelloA2
+	.destellos
+		.destelloA
+			position relative
+			animation animacionDestelloA 14s infinite
+			-webkit-animation animacionDestelloA 14s infinite
+			.destelloA1
+				background rgba(white,.1)
+				border-radius 50%
+				height 50px
+				left 20px
+				position absolute
+				width 50px
+				animation animacionDestelloA1 20s infinite
+				-webkit-animation animacionDestelloA1 20s infinite
+			.destelloA2
+				background rgba(white,.1)
+				border-radius 50%
+				height 20px
+				left 35px
+				position absolute
+				width 20px
+				animation animacionDestelloA2 18s infinite
+				-webkit-animation animacionDestelloA2 18s infinite
 	// 	.desdelloB
 	// 		.destelloB1
 	// 		.destelloB2
 	.nubes
 		.nube1
 			background-image url(../img/nube1.png)
-			background-size 292px auto
+			background-size 275px auto
 			height 188px
 			position absolute
 			right -10%
 			top 70px
-			width 292px
+			width 275px
 			z-index -3
 			animation animacionNube1 10s 1
 			-webkit-animation animacionNube1 10s 1
@@ -533,6 +552,59 @@ section
 			right 0px
 			position fixed
 			z-index 4
+
+@keyframes animacionDestelloA 
+	0% 
+		transform rotateZ(-45deg)
+		-ms-transform rotateZ(-45deg)
+		-webkit-transform rotateZ(-45deg)
+	25% 
+		
+	50%
+		transform rotateZ(-40deg)
+		-ms-transform rotateZ(-40deg)
+		-webkit-transform rotateZ(-40deg)
+
+	75%
+
+
+	100% 
+		transform rotateZ(-45deg)
+		-ms-transform rotateZ(-45deg)
+		-webkit-transform rotateZ(-45deg)
+
+
+@keyframes animacionDestelloA1 
+	0% 
+		opacity 0
+		top 30px
+	25% 
+		opacity 1
+	50%
+		opacity 1
+		top 70px
+	75%
+		opacity 1
+		top 70px
+	100% 
+		opacity 0
+		top 240px
+
+@keyframes animacionDestelloA2 
+	0% 
+		opacity 0
+		top 30px
+	25% 
+		opacity 1
+	50%
+		opacity 1
+		top 80px
+	75%
+		opacity 1
+		top 85px
+	100% 
+		opacity 0
+		top 260px
 
 @keyframes animacionAro1 
 	0% 
