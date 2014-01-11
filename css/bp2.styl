@@ -249,9 +249,29 @@ section
 	// 	.desdelloB
 	// 		.destelloB1
 	// 		.destelloB2
-	// .nubes
-	// 	.nube1
-	// 	.nube2
+	.nubes
+		.nube1
+			background-image url(../img/nube1.png)
+			background-size 292px auto
+			height 188px
+			position absolute
+			right -10%
+			top 70px
+			width 292px
+			z-index -3
+			animation animacionNube1 10s 1
+			-webkit-animation animacionNube1 10s 1
+		.nube2
+			background-image url(../img/nube2.png)
+			background-size 158px auto
+			height 115px
+			left 0%
+			position absolute
+			width 158px
+			z-index -3
+			animation animacionNube2 12s 1
+			-webkit-animation animacionNube2 12s 1
+
 	.rayos
 		.aro1
 			border 3px solid rgba(#ff8cee,1)
@@ -708,6 +728,26 @@ section
 		opacity 0
 	50%
 		opacity 0
+	75%
+		opacity 1
+	100% 
+		opacity 1
+
+@keyframes animacionNube1
+	0% 
+		opacity 0
+	50%
+		opacity 1
+	75%
+		opacity 1
+	100% 
+		opacity 1
+
+@keyframes animacionNube2
+	0% 
+		opacity 0
+	50%
+		opacity 1
 	75%
 		opacity 1
 	100% 
