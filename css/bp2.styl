@@ -45,10 +45,8 @@ header
 				position absolute
 				top 30px
 	.calendari
-		@css {
-		
-        }
 		height 350px
+		position relative
 		.dia
 			font-size 1em
 			font-weight 300
@@ -78,11 +76,6 @@ header
 			// z-index 3
 			animation animacionMes 3s 1
 			-webkit-animation animacionMes 3s 1
-	.efectosHeader
-		// .sol
-		// .nubes
-		// 	.nube1
-		// 	.nube2
 	.eventActual
 		background rgba(white,.08)
 		border-top 1px solid rgba(white,.2)
@@ -207,8 +200,6 @@ section
 	.llistaInvisible
 		display none
 
-
-
 .bg 
 	@css {
 		background: rgb(55,145,189);
@@ -251,7 +242,18 @@ section
 			font-family icono
 			font-size 1.3em
 
-.efectosBody
+.efectos
+	position relative
+	// .destellos
+	// 	.desdelloA
+	// 		.destelloA1
+	// 		.destelloA2
+	// 	.desdelloB
+	// 		.destelloB1
+	// 		.destelloB2
+	// .nubes
+	// 	.nube1
+	// 	.nube2
 	.rayos
 		.aro1
 			border 3px solid rgba(#ff8cee,1)
@@ -353,13 +355,14 @@ section
 			-webkit-filter: blur(4px);
 			animation animacionRayo6 15s infinite
 			-webkit-animation animacionRayo6 15s infinite
-	// .destellos
-	// 	.desdelloA
-	// 		.destelloA1
-	// 		.destelloA2
-	// 	.desdelloB
-	// 		.destelloB1
-	// 		.destelloB2
+	.sol
+		background-image url(../img/sol.png)
+		background-position 0px 0px
+		background-repeat no-repeat
+		background-size 350px auto
+		position absolute
+		z-index 5
+
 
 .inici
 	.boto
