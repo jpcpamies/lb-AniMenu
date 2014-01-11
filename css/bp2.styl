@@ -45,53 +45,40 @@ header
 				position absolute
 				top 30px
 	.calendari
-		background-image url(../img/sol.png)
-		background-position -150px -145px
-		background-repeat no-repeat
-		background-size 350px auto
-		bottom 0px
-		color white
-		display block
-		height 350px
-		overflow-x hidden
-		position relative
-		.circuloCalendari
-			border-radius 50%
-			height 150px
-			display block
-			margin 2em auto 0 auto
-			position relative
-			width 150px 
-
-			.dia
-				font-size 1em
-				font-weight 300
-				left 25%
-				position absolute
-				text-shadow 0 1px 3px rgba(black,.35)
-				top .75em
-				// z-index 3
-				animation animacionDia 3s 1
-				-webkit-animation animacionDia 3s 1
-			.numero
-				bottom 30px
-				font-size 4em
-				left 35%
-				position absolute
-				text-shadow 0 1px 3px rgba(black,.35)
-				// z-index 3
-				animation animacionNumero 3s 1
-				-webkit-animation animacionNumero 3s 1
-			.mes
-				font-size 1em
-				font-weight 300
-				left 33%
-				position absolute
-				text-shadow 0 1px 3px rgba(black,.35)
-				top 5.4em
-				// z-index 3
-				animation animacionMes 3s 1
-				-webkit-animation animacionMes 3s 1
+		.dia
+			font-size 1em
+			font-weight 300
+			left 25%
+			position absolute
+			text-shadow 0 1px 3px rgba(black,.35)
+			top .75em
+			// z-index 3
+			animation animacionDia 3s 1
+			-webkit-animation animacionDia 3s 1
+		.numero
+			bottom 30px
+			font-size 4em
+			left 35%
+			position absolute
+			text-shadow 0 1px 3px rgba(black,.35)
+			// z-index 3
+			animation animacionNumero 3s 1
+			-webkit-animation animacionNumero 3s 1
+		.mes
+			font-size 1em
+			font-weight 300
+			left 33%
+			position absolute
+			text-shadow 0 1px 3px rgba(black,.35)
+			top 5.4em
+			// z-index 3
+			animation animacionMes 3s 1
+			-webkit-animation animacionMes 3s 1
+	.efectosHeader
+		.sol
+		// .nubes
+		// 	.nube1
+		// 	.nube2
 	.eventActual
 		background rgba(iconos,.3)
 		color white
@@ -214,108 +201,7 @@ section
 	.llistaInvisible
 		display none
 
-.rayos
-	overflow-x hidden
-	.aro1
-		border 3px solid rgba(#ff8cee,1)
-		border-radius 50%
-		height 200px
-		left -88px
-		position absolute
-		top -72px
-		width 200px 	
-		animation animacionAro1 6s infinite
-		-webkit-animation animacionAro1 6s infinite
-	.rayo1 
-		border-top 5px solid transparent
-		border-bottom 5px solid transparent
-		border-left 400px solid white
-		border-right 0px solid transparent
-		left -100px
-		position absolute
-		top 100px
-		z-index -5
-		transform rotateZ(43deg)
-		-ms-transform rotateZ(43deg)
-		-webkit-transform rotateZ(43deg)
-		-webkit-filter: blur(3px);
-		animation animacionRayo1 3s infinite
-		-webkit-animation animacionRayo1 3s infinite
-	.rayo2 
-		border-top 3px solid transparent
-		border-bottom 3px solid transparent
-		border-left 250px solid white
-		border-right 0px solid transparent
-		left -100px
-		position absolute
-		top 100px
-		z-index -5
-		transform rotateZ(75deg)
-		-ms-transform rotateZ(75deg)
-		-webkit-transform rotateZ(75deg)
-		-webkit-filter: blur(3px);
-		animation animacionRayo2 10s infinite
-		-webkit-animation animacionRayo2 10s infinite
-	.rayo3 
-		border-top 3px solid transparent
-		border-bottom 3px solid transparent
-		border-left 220px solid white
-		border-right 0px solid transparent
-		left 0px
-		position absolute
-		top 25px
-		z-index -5
-		transform rotateZ(3deg)
-		-ms-transform rotateZ(3deg)
-		-webkit-transform rotateZ(3deg)
-		-webkit-filter: blur(3px);
-		animation animacionRayo3 10s infinite
-		-webkit-animation animacionRayo3 10s infinite
-	.rayo4
-		border-top 10px solid transparent
-		border-bottom 10px solid transparent
-		border-left 600px solid white
-		border-right 0px solid transparent
-		left -150px
-		position absolute
-		top 300px
-		z-index -5
-		transform rotateZ(240deg)
-		-ms-transform rotateZ(240deg)
-		-webkit-transform rotateZ(240deg)
-		-webkit-filter: blur(3px);
-		animation animacionRayo4 5s infinite
-		-webkit-animation animacionRayo4 5s infinite
-	.rayo5
-		border-top 10px solid transparent
-		border-bottom 20px solid transparent
-		border-left 1200px solid white
-		border-right 0px solid transparent
-		left -540px
-		position absolute
-		top 300px
-		z-index -5
-		transform rotateZ(260deg)
-		-ms-transform rotateZ(260deg)
-		-webkit-transform rotateZ(260deg)
-		-webkit-filter: blur(6px);
-		animation animacionRayo5 8s infinite
-		-webkit-animation animacionRayo5 8s infinite
-	.rayo6
-		border-top 10px solid transparent
-		border-bottom 3px solid transparent
-		border-left 700px solid white
-		border-right 0px solid transparent
-		left -220px
-		position absolute
-		top 350px
-		z-index -5
-		transform rotateZ(250deg)
-		-ms-transform rotateZ(250deg)
-		-webkit-transform rotateZ(250deg)
-		-webkit-filter: blur(4px);
-		animation animacionRayo6 15s infinite
-		-webkit-animation animacionRayo6 15s infinite
+
 
 .bg 
 	@css {
@@ -358,6 +244,116 @@ section
 			content '\e603'
 			font-family icono
 			font-size 1.3em
+
+.efectosBody
+	.rayos
+		.aro1
+			border 3px solid rgba(#ff8cee,1)
+			border-radius 50%
+			height 200px
+			left -88px
+			position absolute
+			top -72px
+			width 200px 	
+			animation animacionAro1 6s infinite
+			-webkit-animation animacionAro1 6s infinite
+		.rayo1 
+			border-top 5px solid transparent
+			border-bottom 5px solid transparent
+			border-left 400px solid white
+			border-right 0px solid transparent
+			left -100px
+			position absolute
+			top 100px
+			z-index -5
+			transform rotateZ(43deg)
+			-ms-transform rotateZ(43deg)
+			-webkit-transform rotateZ(43deg)
+			-webkit-filter: blur(3px);
+			animation animacionRayo1 3s infinite
+			-webkit-animation animacionRayo1 3s infinite
+		.rayo2 
+			border-top 3px solid transparent
+			border-bottom 3px solid transparent
+			border-left 250px solid white
+			border-right 0px solid transparent
+			left -100px
+			position absolute
+			top 100px
+			z-index -5
+			transform rotateZ(75deg)
+			-ms-transform rotateZ(75deg)
+			-webkit-transform rotateZ(75deg)
+			-webkit-filter: blur(3px);
+			animation animacionRayo2 10s infinite
+			-webkit-animation animacionRayo2 10s infinite
+		.rayo3 
+			border-top 3px solid transparent
+			border-bottom 3px solid transparent
+			border-left 220px solid white
+			border-right 0px solid transparent
+			left 0px
+			position absolute
+			top 25px
+			z-index -5
+			transform rotateZ(3deg)
+			-ms-transform rotateZ(3deg)
+			-webkit-transform rotateZ(3deg)
+			-webkit-filter: blur(3px);
+			animation animacionRayo3 10s infinite
+			-webkit-animation animacionRayo3 10s infinite
+		.rayo4
+			border-top 10px solid transparent
+			border-bottom 10px solid transparent
+			border-left 600px solid white
+			border-right 0px solid transparent
+			left -150px
+			position absolute
+			top 300px
+			z-index -5
+			transform rotateZ(240deg)
+			-ms-transform rotateZ(240deg)
+			-webkit-transform rotateZ(240deg)
+			-webkit-filter: blur(3px);
+			animation animacionRayo4 5s infinite
+			-webkit-animation animacionRayo4 5s infinite
+		.rayo5
+			border-top 10px solid transparent
+			border-bottom 20px solid transparent
+			border-left 1200px solid white
+			border-right 0px solid transparent
+			left -540px
+			position absolute
+			top 300px
+			z-index -5
+			transform rotateZ(260deg)
+			-ms-transform rotateZ(260deg)
+			-webkit-transform rotateZ(260deg)
+			-webkit-filter: blur(6px);
+			animation animacionRayo5 8s infinite
+			-webkit-animation animacionRayo5 8s infinite
+		.rayo6
+			border-top 10px solid transparent
+			border-bottom 3px solid transparent
+			border-left 700px solid white
+			border-right 0px solid transparent
+			left -220px
+			position absolute
+			top 350px
+			z-index -5
+			transform rotateZ(250deg)
+			-ms-transform rotateZ(250deg)
+			-webkit-transform rotateZ(250deg)
+			-webkit-filter: blur(4px);
+			animation animacionRayo6 15s infinite
+			-webkit-animation animacionRayo6 15s infinite
+	// .destellos
+	// 	.desdelloA
+	// 		.destelloA1
+	// 		.destelloA2
+	// 	.desdelloB
+	// 		.destelloB1
+	// 		.destelloB2
 
 .inici
 	.boto
