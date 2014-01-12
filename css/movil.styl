@@ -292,14 +292,16 @@ section
 		width 100%
 		position absolute
 		top -10px
-		animation animacionDestellos 17s infinite
-		-webkit-animation animacionDestellos 17s infinite
+		left 30px
+		animation animacionDestellos 30s infinite
+		-webkit-animation animacionDestellos 30s infinite
 		.destello1
 			background rgba(white,.1)
 			border-radius 50%
 			height 50px
 			left 36px
 			position absolute
+			top 0px
 			width 50px
 			-webkit-filter blur(1px)
 			animation animacionDestello1 30s infinite
@@ -310,6 +312,7 @@ section
 			height 35px
 			left 43px
 			position absolute
+			top 100px
 			width 35px
 			animation animacionDestello2 30s infinite
 			-webkit-animation animacionDestello2 30s infinite
@@ -319,6 +322,7 @@ section
 			height 20px
 			left 51px
 			position absolute
+			top 150px
 			width 20px
 			-webkit-filter blur(1px)
 			animation animacionDestello3 30s infinite
@@ -329,14 +333,16 @@ section
 			height 75px
 			left 25px
 			position absolute
+			top 220px
 			width 75px
-			animation animacionDestello4 30s infinite
-			-webkit-animation animacionDestello4 30s infinite
+			animation animacionDestello4 50s infinite
+			-webkit-animation animacionDestello4 50s infinite
 		.destello5
 			background rgba(white,.1)
 			height 55px
 			left 12px
 			position relative
+			top 330px
 			width 100px
 			transform scale(.65, .65)
 			-ms-transform scale(.65, .65)
@@ -646,106 +652,156 @@ section
 		opacity 1
 @keyframes animacionDestellos 
 	0% 
-		transform rotateZ(-25deg)
-		-ms-transform rotateZ(-25deg)
-		-webkit-transform rotateZ(-25deg)
-		left 70px
-	35% 
-		transform rotateZ(-18deg)
-		-ms-transform rotateZ(-18deg)
-		-webkit-transform rotateZ(-18deg)
-		left 60px
-	65% 
-		transform rotateZ(-15deg)
-		-ms-transform rotateZ(-15deg)
-		-webkit-transform rotateZ(-15deg)
-		left 50px
-
+		transform translate(55px, 70px)
+		-ms-transform translate(55px, 70px)
+		-webkit-transform translate(55px, 70px)
+		transform rotateZ(-12deg)
+		-ms-transform rotateZ(-12deg)
+		-webkit-transform rotateZ(-12deg)
+	50% 
+		transform translate(80px, 60px)
+		-ms-transform translate(80px, 60px)
+		-webkit-transform translate(80px, 60px)
+		transform rotateZ(-20deg)
+		-ms-transform rotateZ(-20deg)
+		-webkit-transform rotateZ(-20deg)
 	100% 
-		transform rotateZ(-25deg)
-		-ms-transform rotateZ(-25deg)
-		-webkit-transform rotateZ(-25deg)
-		left 70px
+		transform translate(55px, 70px)
+		-ms-transform translate(55px, 70px)
+		-webkit-transform translate(55px, 70px)
+		transform rotateZ(-12deg)
+		-ms-transform rotateZ(-12deg)
+		-webkit-transform rotateZ(-12deg)
 @keyframes animacionDestello1
 	0%
-		top 30px
-		opacity 0
+		transform translate(0, 0px)
+		-ms-transform translate(0, 0px)
+		-webkit-transform translate(0, 0px)
+		opacity .2
 	25%
-		top 60px
-		opacity .8
-	50%
-		top 65px
+		transform translate(0, 90px)
+		-ms-transform translate(0, 90px)
+		-webkit-transform translate(0, 90px)
 		opacity 1
+	50%
+		transform translate(0, 150px)
+		-ms-transform translate(0, 150px)
+		-webkit-transform translate(0, 150px)
+		opacity .8
 	75%
-		top 60px
-		opacity .6
+		transform translate(0, 90px)
+		-ms-transform translate(0, 90px)
+		-webkit-transform translate(0, 90px)
+		opacity 1
 	100%
-		top 30px
-		opacity 0
+		transform translate(0, 0px)
+		-ms-transform translate(0, 0px)
+		-webkit-transform translate(0, 0px)
+		opacity .2
 @keyframes animacionDestello2
 	0%
-		top 197px
+		transform translate(0, 0px)
+		-ms-transform translate(0, 0px)
+		-webkit-transform translate(0, 0px)
 		opacity 1
 	25%
-		top 230px
-		opacity .8
+		transform translate(0, 80px)
+		-ms-transform translate(0, 80px)
+		-webkit-transform translate(0, 80px)
+		opacity .5
 	50%
-		top 225px
+		transform translate(0, 130px)
+		-ms-transform translate(0, 130px)
+		-webkit-transform translate(0, 130px)
 		opacity .3
 	75%
-		top 230px
-		opacity .6
+		transform translate(0, 90px)
+		-ms-transform translate(0, 90px)
+		-webkit-transform translate(0, 90px)
+		opacity 1
 	100%
-		top 197px
+		transform translate(0, 0px)
+		-ms-transform translate(0, 0px)
+		-webkit-transform translate(0, 0px)
 		opacity 1
 @keyframes animacionDestello3
 	0%
-		top 255px
-		opacity 0
-	25%
-		top 280px
-		opacity .8
-	50%
-		top 295px
+		transform translate(0, 0px)
+		-ms-transform translate(0, 0px)
+		-webkit-transform translate(0, 0px)
 		opacity .6
+	25%
+		transform translate(0, 65px)
+		-ms-transform translate(0, 65px)
+		-webkit-transform translate(0, 65px)
+		opacity 1
+	50%
+		transform translate(0, 160px)
+		-ms-transform translate(0, 160px)
+		-webkit-transform translate(0, 160px)
+		opacity .3
 	75%
-		top 283px
-		opacity .5
+		transform translate(0, 100px)
+		-ms-transform translate(0, 100px)
+		-webkit-transform translate(0, 100px)
+		opacity .7
 	100%
-		top 255px
-		opacity 0
+		transform translate(0, 0px)
+		-ms-transform translate(0, 0px)
+		-webkit-transform translate(0, 0px)
+		opacity .6
 @keyframes animacionDestello4
 	0%
-		top 280px
-		opacity .3
+		transform translate(0, 0px)
+		-ms-transform translate(0, 0px)
+		-webkit-transform translate(0, 0px)
+		opacity .8
 	25%
-		top 320px
-		opacity .7
-	50%
-		top 336px
-		opacity .85
-	75%
-		top 324px
+		transform translate(0, 80px)
+		-ms-transform translate(0, 80px)
+		-webkit-transform translate(0, 80px)
 		opacity .6
-	100%
-		top 280px
-		opacity .3
-@keyframes animacionDestello5
-	0%
-		top 100px
-		opacity .2
-	25%
-		top 132px
-		opacity .85
 	50%
-		top 145px
+		transform translate(0, 130px)
+		-ms-transform translate(0, 130px)
+		-webkit-transform translate(0, 130px)
 		opacity 1
 	75%
-		top 128px
-		opacity .85
+		transform translate(0, 90px)
+		-ms-transform translate(0, 90px)
+		-webkit-transform translate(0, 90px)
+		opacity .3
 	100%
-		top 100px
-		opacity .2
+		transform translate(0, 0px)
+		-ms-transform translate(0, 0px)
+		-webkit-transform translate(0, 0px)
+		opacity .8
+@keyframes animacionDestello5
+	0%
+		transform translate(0, 0px)
+		-ms-transform translate(0, 0px)
+		-webkit-transform translate(0, 0px)
+		opacity .8
+	25%
+		transform translate(0, 147px)
+		-ms-transform translate(0, 147px)
+		-webkit-transform translate(0, 147px)
+		opacity 1
+	50%
+		transform translate(0, 190px)
+		-ms-transform translate(0, 190px)
+		-webkit-transform translate(0, 190px)
+		opacity .7
+	75%
+		transform translate(0, 158px)
+		-ms-transform translate(0, 158px)
+		-webkit-transform translate(0, 158px)
+		opacity 1
+	100%
+		transform translate(0, 0px)
+		-ms-transform translate(0, 0px)
+		-webkit-transform translate(0, 0px)
+		opacity .8
 @keyframes animacionDia 
 	0% 
 		opacity 0
@@ -805,7 +861,6 @@ section
 		transform translate(-630px, 0)
 		-ms-transform translate(-630px, 0)
 		-webkit-transform translate(-630px, 0)
-
 @keyframes animacionNube2
 	0% 
 		opacity 0
