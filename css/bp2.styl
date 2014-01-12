@@ -248,7 +248,7 @@ section
 		width 100%
 		z-index 0
 		animation animacionDestellos 30s infinite
-		-webkit-animation animacionDestellos 30s infinite
+		// -webkit-animation animacionDestellos 30s infinite
 		.destello1
 			background rgba(white,.1)
 			border-radius 50%
@@ -262,14 +262,23 @@ section
 		.destello2
 			background rgba(white,.1)
 			border-radius 50%
+			height 35px
+			left 39px
+			position absolute
+			width 35px
+			animation animacionDestello5 30s infinite
+			-webkit-animation animacionDestello5 30s infinite
+		.destello3
+			background rgba(white,.1)
+			border-radius 50%
 			height 20px
-			left 45px
+			left 47px
 			position absolute
 			width 20px
 			-webkit-filter blur(1px)
 			animation animacionDestello2 30s infinite
 			-webkit-animation animacionDestello2 30s infinite
-		.destello3
+		.destello4 
 			background rgba(white,.1)
 			border-radius 50%
 			height 75px
@@ -278,10 +287,10 @@ section
 			width 75px
 			animation animacionDestello3 30s infinite
 			-webkit-animation animacionDestello3 30s infinite
-		.destello4 
+		.destello5
 			background rgba(white,.1)
 			height 55px
-			left 15px
+			left 13px
 			position relative
 			width 100px
 			transform scale(.8, .8)
@@ -310,15 +319,7 @@ section
 				border-left 50px solid transparent
 				border-right 50px solid transparent
 				border-top 25px solid rgba(white,.1)
-		.destello5
-			background rgba(white,.1)
-			border-radius 50%
-			height 35px
-			left 40px
-			position absolute
-			width 35px
-			animation animacionDestello5 30s infinite
-			-webkit-animation animacionDestello5 30s infinite
+			
 		
 						
 	.nubes
@@ -610,7 +611,6 @@ section
 		opacity 0
 	100% 
 		opacity 1
-
 @keyframes animacionDestellos 
 	0% 
 		transform rotateZ(-25deg)
@@ -633,17 +633,15 @@ section
 		-ms-transform rotateZ(-25deg)
 		-webkit-transform rotateZ(-25deg)
 		left 70px
-
-		
 @keyframes animacionDestello1
 	0%
 		top 30px
-	// 25%
-	// 	top 70px
-	// 50%
-	// 	top 90px
-	// 75%
-	// 	top 110px
+	25%
+		top 40px
+	50%
+		top 45px
+	75%
+		top 40px
 	100%
 		top 30px
 @keyframes animacionDestello2
