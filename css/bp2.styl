@@ -248,12 +248,12 @@ section
 		width 100%
 		z-index 0
 		animation animacionDestellos 30s infinite
-		// -webkit-animation animacionDestellos 30s infinite
+		-webkit-animation animacionDestellos 30s infinite
 		.destello1
 			background rgba(white,.1)
 			border-radius 50%
 			height 50px
-			left 35px
+			left 36px
 			position absolute
 			width 50px
 			-webkit-filter blur(1px)
@@ -290,12 +290,12 @@ section
 		.destello5
 			background rgba(white,.1)
 			height 55px
-			left 13px
+			left 12px
 			position relative
 			width 100px
-			transform scale(.8, .8)
-			-ms-transform scale(.8, .8)
-			-webkit-transform scale(.8, .8)
+			transform scale(.65, .65)
+			-ms-transform scale(.65, .65)
+			-webkit-transform scale(.65, .65)
 			-webkit-filter blur(2px)
 			animation animacionDestello5 30s infinite
 			-webkit-animation animacionDestello5 30s infinite
@@ -633,58 +633,83 @@ section
 @keyframes animacionDestello1
 	0%
 		top 30px
+		opacity .6
 	25%
-		top 40px
+		top 60px
+		opacity .8
 	50%
-		top 45px
+		top 65px
+		opacity 1
 	75%
-		top 40px
+		top 60px
+		opacity .6
 	100%
 		top 30px
+		opacity .6
 @keyframes animacionDestello2
 	0%
-		top 150px
-	// 25%
-	// 	top 70px
-	// 50%
-	// 	top 90px
-	// 75%
-	// 	top 110px
+		top 197px
+		opacity 1
+	25%
+		top 230px
+		opacity .8
+	50%
+		top 225px
+		opacity .3
+	75%
+		top 230px
+		opacity .6
 	100%
-		top 150px
+		top 197px
+		opacity 1
 @keyframes animacionDestello3
 	0%
-		top 190px
-	// 25%
-	// 	top 70px
-	// 50%
-	// 	top 90px
-	// 75%
-	// 	top 110px
+		top 255px
+		opacity .85
+	25%
+		top 280px
+		opacity .8
+	50%
+		top 295px
+		opacity .6
+	75%
+		top 283px
+		opacity .5
 	100%
-		top 190px
+		top 255px
+		opacity .85
 @keyframes animacionDestello4
 	0%
-		top 200px
-	// 25%
-	// 	top 70px
-	// 50%
-	// 	top 90px
-	// 75%
-	// 	top 110px
+		top 280px
+		opacity .3
+	25%
+		top 320px
+		opacity .7
+	50%
+		top 336px
+		opacity .85
+	75%
+		top 324px
+		opacity .6
 	100%
-		top 200px
+		top 280px
+		opacity .3
 @keyframes animacionDestello5
 	0%
 		top 100px
-	// 25%
-	// 	top 70px
-	// 50%
-	// 	top 90px
-	// 75%
-	// 	top 110px
+		opacity .7
+	25%
+		top 132px
+		opacity .85
+	50%
+		top 145px
+		opacity 1
+	75%
+		top 128px
+		opacity .85
 	100%
 		top 100px
+		opacity .7
 @keyframes animacionDia 
 	0% 
 		opacity 0
