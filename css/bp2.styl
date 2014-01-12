@@ -29,10 +29,16 @@ header
 			margin 0 0 0 1em 
 			position relative
 			width 65px
+			-webkit-transition all .3s ease
+			transition all .3s ease
 			&:first-child
 				margin 0 0 0 1.5em
 			&:last-child
 				margin 0 1em 0 1em
+			&:hover
+				border 2px solid white
+				color white
+
 			p
 				left 32%
 				font-weight 300
@@ -46,7 +52,7 @@ header
 				left 27%
 				position absolute
 			span
-				color rgba(secundario,.8)
+				// color rgba(secundario,.8)
 				left 20%
 				letter-spacing 0em
 				font-size .85em
