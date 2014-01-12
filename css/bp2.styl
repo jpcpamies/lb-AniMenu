@@ -243,38 +243,57 @@ section
 .efectos
 	.destellos
 		height 450px
-		width 100%
+		left 70px
 		overflow-x hidden
 		position absolute
+		width 100%
 		z-index 0
-		.destelloA1
+		transform rotateZ(-25deg)
+		-ms-transform rotateZ(-25deg)
+		-webkit-transform rotateZ(-25deg)
+		// animation animacionDestellos 30s infinite
+		// -webkit-animation animacionDestellos 30s infinite
+		.destello1
 			background rgba(white,.1)
 			border-radius 50%
 			height 50px
 			left 30px
 			position absolute
 			width 50px
-		.destelloA2
+			-webkit-filter blur(1px)
+			animation animacionDestello1 30s infinite
+			-webkit-animation animacionDestello1 30s infinite
+		.destello2
 			background rgba(white,.1)
 			border-radius 50%
 			height 20px
 			left 45px
 			position absolute
 			width 20px
-		.destelloA3
+			-webkit-filter blur(1px)
+			animation animacionDestello2 30s infinite
+			-webkit-animation animacionDestello2 30s infinite
+		.destello3
 			background rgba(white,.1)
 			border-radius 50%
-			height 100px
-			left 12px
+			height 75px
+			left 22px
 			position absolute
-			width 100px
-		.destelloA4 
+			width 75px
+			animation animacionDestello3 30s infinite
+			-webkit-animation animacionDestello3 30s infinite
+		.destello4 
 			background rgba(white,.1)
 			height 55px
-			left 12px
+			left 15px
 			position relative
 			width 100px
+			transform scale(.8, .8)
+			-ms-transform scale(.8, .8)
+			-webkit-transform scale(.8, .8)
 			-webkit-filter blur(2px)
+			animation animacionDestello4 30s infinite
+			-webkit-animation animacionDestello4 30s infinite
 			&:before 
 				content ''
 				position absolute
@@ -295,13 +314,15 @@ section
 				border-left 50px solid transparent
 				border-right 50px solid transparent
 				border-top 25px solid rgba(white,.1)
-		.destelloA5
+		.destello5
 			background rgba(white,.1)
 			border-radius 50%
 			height 35px
 			left 40px
 			position absolute
 			width 35px
+			animation animacionDestello5 30s infinite
+			-webkit-animation animacionDestello5 30s infinite
 		
 						
 	.nubes
@@ -593,6 +614,65 @@ section
 		opacity 0
 	100% 
 		opacity 1
+
+// @keyframes animacionDestellos 
+// 	0% 
+		
+@keyframes animacionDestello1
+	0%
+		top 30px
+	// 25%
+	// 	top 70px
+	// 50%
+	// 	top 90px
+	// 75%
+	// 	top 110px
+	100%
+		top 30px
+@keyframes animacionDestello2
+	0%
+		top 150px
+	// 25%
+	// 	top 70px
+	// 50%
+	// 	top 90px
+	// 75%
+	// 	top 110px
+	100%
+		top 150px
+@keyframes animacionDestello3
+	0%
+		top 190px
+	// 25%
+	// 	top 70px
+	// 50%
+	// 	top 90px
+	// 75%
+	// 	top 110px
+	100%
+		top 190px
+@keyframes animacionDestello4
+	0%
+		top 325px
+	// 25%
+	// 	top 70px
+	// 50%
+	// 	top 90px
+	// 75%
+	// 	top 110px
+	100%
+		top 325px
+@keyframes animacionDestello5
+	0%
+		top 100px
+	// 25%
+	// 	top 70px
+	// 50%
+	// 	top 90px
+	// 75%
+	// 	top 110px
+	100%
+		top 100px
 @keyframes animacionDia 
 	0% 
 		opacity 0
