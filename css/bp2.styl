@@ -243,16 +243,12 @@ section
 .efectos
 	.destellos
 		height 450px
-		left 70px
 		overflow-x hidden
 		position absolute
 		width 100%
 		z-index 0
-		transform rotateZ(-25deg)
-		-ms-transform rotateZ(-25deg)
-		-webkit-transform rotateZ(-25deg)
-		// animation animacionDestellos 30s infinite
-		// -webkit-animation animacionDestellos 30s infinite
+		animation animacionDestellos 30s infinite
+		-webkit-animation animacionDestellos 30s infinite
 		.destello1
 			background rgba(white,.1)
 			border-radius 50%
@@ -615,8 +611,29 @@ section
 	100% 
 		opacity 1
 
-// @keyframes animacionDestellos 
-// 	0% 
+@keyframes animacionDestellos 
+	0% 
+		transform rotateZ(-25deg)
+		-ms-transform rotateZ(-25deg)
+		-webkit-transform rotateZ(-25deg)
+		left 70px
+	35% 
+		transform rotateZ(-18deg)
+		-ms-transform rotateZ(-18deg)
+		-webkit-transform rotateZ(-18deg)
+		left 60px
+	65% 
+		transform rotateZ(-15deg)
+		-ms-transform rotateZ(-15deg)
+		-webkit-transform rotateZ(-15deg)
+		left 50px
+
+	100% 
+		transform rotateZ(-25deg)
+		-ms-transform rotateZ(-25deg)
+		-webkit-transform rotateZ(-25deg)
+		left 70px
+
 		
 @keyframes animacionDestello1
 	0%
