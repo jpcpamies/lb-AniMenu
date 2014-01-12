@@ -73,14 +73,14 @@
             <div id='divMes' class="mes"><span></span></div>   
         </div>
         <div id='divBotonera' class="botonera">  
-            <a href="#divBotonera"><div id="d1" class="dia pre" onclick="mostrar('dia1','d1')"><p>29</p><span>AGO</span></div></a> 
-            <a href="#divBotonera"><div id="d2" class="dia pre" onclick="mostrar('dia2','d2')"><p>30</p><span>AGO</span></div></a>
-            <a href="#divBotonera"><div id="d3" class="dia festes" onclick="mostrar('dia3','d3')"><p class='centrar'>1</p><span class='centrarMes'>SEP</span></div></a> 
-            <a href="#divBotonera"><div id="d4" class="dia festes" onclick="mostrar('dia4','d4')"><p class='centrar'>2</p><span class='centrarMes'>SEP</span></div></a> 
-            <a href="#divBotonera"><div id="d5" class="dia festes" onclick="mostrar('dia5','d5')"><p class='centrar'>3</p><span class='centrarMes'>SEP</span></div></a> 
-            <a href="#divBotonera"><div id="d6" class="dia festes" onclick="mostrar('dia6','d6')"><p class='centrar'>4</p><span class='centrarMes'>SEP</span></div></a> 
-            <a href="#divBotonera"><div id="d7" class="dia post" onclick="mostrar('dia7','d7')"><p class='centrar'>5</p><span class='centrarMes'>SEP</span></div></a> 
-            <a href="#divBotonera"><div id="d8" class="dia post" onclick="mostrar('dia8','d8')"><p class='centrar'>6</p><span class='centrarMes'>SEP</span></div></a> 
+            <a href="#divBotonera"><div id ="d1" class="dia" onclick="mostrar('dia1','d1')"><p>29</p><span>AGO</span></div></a> 
+            <a href="#divBotonera"><div id="d2" class="dia" onclick="mostrar('dia2','d2')"><p>30</p><span>AGO</span></div></a>
+            <a href="#divBotonera"><div id="d3" class="dia" onclick="mostrar('dia3','d3')"><p class='centrar'>1</p><span class='centrarMes'>SEP</span></div></a> 
+            <a href="#divBotonera"><div id="d4" class="dia" onclick="mostrar('dia4','d4')"><p class='centrar'>2</p><span class='centrarMes'>SEP</span></div></a> 
+            <a href="#divBotonera"><div id="d5" class="dia" onclick="mostrar('dia5','d5')"><p class='centrar'>3</p><span class='centrarMes'>SEP</span></div></a> 
+            <a href="#divBotonera"><div id="d6" class="dia" onclick="mostrar('dia6','d6')"><p class='centrar'>4</p><span class='centrarMes'>SEP</span></div></a> 
+            <a href="#divBotonera"><div id="d7" class="dia" onclick="mostrar('dia7','d7')"><p class='centrar'>5</p><span class='centrarMes'>SEP</span></div></a> 
+            <a href="#divBotonera"><div id="d8" class="dia" onclick="mostrar('dia8','d8')"><p class='centrar'>6</p><span class='centrarMes'>SEP</span></div></a> 
         </div>
         <div id='eventActual' class="eventActual">
             <div id='titol' class="titol"><p>Event actual</p></div>
@@ -97,19 +97,85 @@
         </div>
     </header>
     <section class="contingut">
-        <div class="llistaVisible"><!-- Iterar entre .llistaVisible .llistaInvisible-->
+        <div id="dia1" class="llistaInvisible"><!-- Iterar entre .llistaVisible .llistaInvisible-->
             <article class="event">
                 <div class="detall">
                     <div class="hora">
-                        <div class="horaInici"><p>13:30</p></div>
-                        <div class="horaFi"><p>14:45</p></div>
+                        <div class="horaInici"><p>9.00</p></div>
+                        <!-- <div class="horaFi"><p>09:45</p></div> -->
                     </div>
-                    <div class="lloc"><p>Poli deportiu nom llarg</p></div>
+                    <div class="lloc"><p>Camp de Tir Les Pedreres</p></div>
                 </div>
                 <div class="contingut">
-                    <div class="titolEvent">
+                    <div class="titolEvent" onclick="cambiar('dt1')">
+                        <p>Tirada social COMPAK</p>
+                        <div class="detallEvent" id="dt1" style="display:none"><p>Organitza: Ajuntament d’Ulldecona Col·labora: Societat de Caçadors.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>11.00</p></div>
+                        <!-- <div class="horaFi"><p>11:00</p></div> -->
+                    </div>
+                    <div class="lloc"><p>Avinguda de les Escoles</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt2')">
+                        <p>Activitats lúdiques </p>
+                        <div class="detallEvent" id="dt2" style="display:none"><p>Activitats lúdiques per a xiquets i xiquetes de totes les edats, a l’Avinguda de les Escoles. Circuit de segways, bici familiar de 12 places, pista americana Team Building, castells inflables, bou mecànic, futbolí humà ...</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>12.45</p></div>
+                        <!-- <div class="horaFi"><p>14:45</p></div> -->
+                    </div>
+                    <div class="lloc"><p>Poli deportiu</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt3')">
                         <p>XIII concurs de samarretes de colla i sangrida popular.</p>
-                        <div class="detallEvent"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        <div class="detallEvent" id="dt3" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div id="dia2" class="llistaInvisible"><!-- Iterar entre .llistaVisible .llistaInvisible-->
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>08:30</p></div>
+                        <div class="horaFi"><p>09:45</p></div>
+                    </div>
+                    <div class="lloc"><p>Plça Ajuntament</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt4')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt4" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>10:00</p></div>
+                        <div class="horaFi"><p>11:00</p></div>
+                    </div>
+                    <div class="lloc"><p>Casa de Cultura</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt5')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt5" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
                         </div>
                     </div>
                 </div>
@@ -123,9 +189,43 @@
                     <div class="lloc"><p>Poli deportiu</p></div>
                 </div>
                 <div class="contingut">
-                    <div class="titolEvent">
+                    <div class="titolEvent" onclick="cambiar('dt6')">
                         <p>XIII concurs de samarretes de colla i sangrida popular.</p>
-                        <div class="detallEvent"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        <div class="detallEvent" id="dt6" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div id="dia3" class="llistaInvisible"><!-- Iterar entre .llistaVisible .llistaInvisible-->
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>08:30</p></div>
+                        <div class="horaFi"><p>09:45</p></div>
+                    </div>
+                    <div class="lloc"><p>Plça Ajuntament</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt7')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt7" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>10:00</p></div>
+                        <div class="horaFi"><p>11:00</p></div>
+                    </div>
+                    <div class="lloc"><p>Casa de Cultura</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt8')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt8" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
                         </div>
                     </div>
                 </div>
@@ -139,9 +239,43 @@
                     <div class="lloc"><p>Poli deportiu</p></div>
                 </div>
                 <div class="contingut">
-                    <div class="titolEvent">
+                    <div class="titolEvent" onclick="cambiar('dt9')">
                         <p>XIII concurs de samarretes de colla i sangrida popular.</p>
-                        <div class="detallEvent"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        <div class="detallEvent" id="dt9" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div id="dia4" class="llistaInvisible"><!-- Iterar entre .llistaVisible .llistaInvisible-->
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>08:30</p></div>
+                        <div class="horaFi"><p>09:45</p></div>
+                    </div>
+                    <div class="lloc"><p>Plça Ajuntament</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt8')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt8" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>10:00</p></div>
+                        <div class="horaFi"><p>11:00</p></div>
+                    </div>
+                    <div class="lloc"><p>Casa de Cultura</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt9')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt9" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
                         </div>
                     </div>
                 </div>
@@ -155,9 +289,43 @@
                     <div class="lloc"><p>Poli deportiu</p></div>
                 </div>
                 <div class="contingut">
-                    <div class="titolEvent">
+                    <div class="titolEvent" onclick="cambiar('dt10')">
                         <p>XIII concurs de samarretes de colla i sangrida popular.</p>
-                        <div class="detallEvent"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        <div class="detallEvent" id="dt10" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div id="dia5" class="llistaInvisible"><!-- Iterar entre .llistaVisible .llistaInvisible-->
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>08:30</p></div>
+                        <div class="horaFi"><p>09:45</p></div>
+                    </div>
+                    <div class="lloc"><p>Plça Ajuntament</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt11')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt11" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>10:00</p></div>
+                        <div class="horaFi"><p>11:00</p></div>
+                    </div>
+                    <div class="lloc"><p>Casa de Cultura</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt12')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt12" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
                         </div>
                     </div>
                 </div>
@@ -171,9 +339,43 @@
                     <div class="lloc"><p>Poli deportiu</p></div>
                 </div>
                 <div class="contingut">
-                    <div class="titolEvent">
+                    <div class="titolEvent" onclick="cambiar('dt13')">
                         <p>XIII concurs de samarretes de colla i sangrida popular.</p>
-                        <div class="detallEvent"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        <div class="detallEvent" id="dt13" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div id="dia6" class="llistaInvisible"><!-- Iterar entre .llistaVisible .llistaInvisible-->
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>08:30</p></div>
+                        <div class="horaFi"><p>09:45</p></div>
+                    </div>
+                    <div class="lloc"><p>Plça Ajuntament</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt14')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt14" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>10:00</p></div>
+                        <div class="horaFi"><p>11:00</p></div>
+                    </div>
+                    <div class="lloc"><p>Casa de Cultura</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt15')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt15" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
                         </div>
                     </div>
                 </div>
@@ -187,9 +389,157 @@
                     <div class="lloc"><p>Poli deportiu</p></div>
                 </div>
                 <div class="contingut">
-                    <div class="titolEvent">
+                    <div class="titolEvent" onclick="cambiar('dt16')">
                         <p>XIII concurs de samarretes de colla i sangrida popular.</p>
-                        <div class="detallEvent"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        <div class="detallEvent" id="dt16" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div id="dia7" class="llistaInvisible"><!-- Iterar entre .llistaVisible .llistaInvisible-->
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>08:30</p></div>
+                        <div class="horaFi"><p>09:45</p></div>
+                    </div>
+                    <div class="lloc"><p>Plça Ajuntament</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt17')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt17" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>10:00</p></div>
+                        <div class="horaFi"><p>11:00</p></div>
+                    </div>
+                    <div class="lloc"><p>Casa de Cultura</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt18')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt18" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>13:30</p></div>
+                        <div class="horaFi"><p>14:45</p></div>
+                    </div>
+                    <div class="lloc"><p>Poli deportiu</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt19')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt19" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div id="dia8" class="llistaInvisible"><!-- Iterar entre .llistaVisible .llistaInvisible-->
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>13:30</p></div>
+                        <div class="horaFi"><p>14:45</p></div>
+                    </div>
+                    <div class="lloc"><p>Poli deportiu</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt20')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt20" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>13:30</p></div>
+                        <div class="horaFi"><p>14:45</p></div>
+                    </div>
+                    <div class="lloc"><p>Poli deportiu</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt21')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt21" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>13:30</p></div>
+                        <div class="horaFi"><p>14:45</p></div>
+                    </div>
+                    <div class="lloc"><p>Poli deportiu</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt22')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt22" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>13:30</p></div>
+                        <div class="horaFi"><p>14:45</p></div>
+                    </div>
+                    <div class="lloc"><p>Poli deportiu</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt23')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt23" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>13:30</p></div>
+                        <div class="horaFi"><p>14:45</p></div>
+                    </div>
+                    <div class="lloc"><p>Poli deportiu</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt24')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt24" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="event">
+                <div class="detall">
+                    <div class="hora">
+                        <div class="horaInici"><p>13:30</p></div>
+                        <div class="horaFi"><p>14:45</p></div>
+                    </div>
+                    <div class="lloc"><p>Poli deportiu</p></div>
+                </div>
+                <div class="contingut">
+                    <div class="titolEvent" onclick="cambiar('dt25')">
+                        <p>XIII concurs de samarretes de colla i sangrida popular.</p>
+                        <div class="detallEvent" id="dt25" style="display:none"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam.</p>
                         </div>
                     </div>
                 </div>

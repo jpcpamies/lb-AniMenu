@@ -66,9 +66,9 @@ function resizer (multiplicador){
 function resetearProg(){
     for (var i = 0; i < prog.length; i++) {
         if (prog[i].className=="llistaVisible"){
-            prog[i].className="llistaInVisible";
+            prog[i].className="llistaInvisible";
         }else{
-            prog[i].className="llistaInVisible";
+            prog[i].className="llistaInvisible";
         }
     };
 }
@@ -92,8 +92,3 @@ function resetearBot(){
     for (i=0;i<bot.length;i++)
       bot[i].style.backgroundColor="";
 }
-
-
-
-
-
