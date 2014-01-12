@@ -49,10 +49,25 @@ body{width:100%;height:100%;font-family:lato;font-size:20px;font-weight:100}
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp2\.styl}line{font-family:\000033}}
 header .botonera{height:auto;left:0;overflow-x:auto;overflow-y:hidden;position:absolute;top:230px;white-space:nowrap;width:100%;}
 
-/* line 13 : /Users/jordiimac/Documents/AniMenu/css/bp2.styl */
+/* line 12 : /Users/jordiimac/Documents/AniMenu/css/bp2.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp2\.styl}line{font-family:\0000313}}
-header .botonera .dia{background:none;border:1px solid #fff;border-radius:50%;color:#fff;display:inline-block;height:65px;margin:0 0 0 1em;position:relative;width:65px;}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp2\.styl}line{font-family:\0000312}}
+header .botonera .dia{background: rgb(207,207,207);
+				background: -moz-linear-gradient(left,  rgba(207,207,207,1) 0%, rgba(171,171,171,1) 100%);
+				background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(207,207,207,1)), color-stop(100%,rgba(171,171,171,1)));
+				background: -webkit-linear-gradient(left,  rgba(207,207,207,1) 0%,rgba(171,171,171,1) 100%);
+				background: -o-linear-gradient(left,  rgba(207,207,207,1) 0%,rgba(171,171,171,1) 100%);
+				background: -ms-linear-gradient(left,  rgba(207,207,207,1) 0%,rgba(171,171,171,1) 100%);
+				background: linear-gradient(to right,  rgba(207,207,207,1) 0%,rgba(171,171,171,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfcfcf', endColorstr='#ababab',GradientType=1 );border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,0.1);color:rgba(90,97,113,0.8);display:inline-block;height:65px;margin:0 0 0 1em;position:relative;width:65px;}
+background: rgb(207,207,207);
+				background: -moz-linear-gradient(left,  rgba(207,207,207,1) 0%, rgba(171,171,171,1) 100%);
+				background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(207,207,207,1)), color-stop(100%,rgba(171,171,171,1)));
+				background: -webkit-linear-gradient(left,  rgba(207,207,207,1) 0%,rgba(171,171,171,1) 100%);
+				background: -o-linear-gradient(left,  rgba(207,207,207,1) 0%,rgba(171,171,171,1) 100%);
+				background: -ms-linear-gradient(left,  rgba(207,207,207,1) 0%,rgba(171,171,171,1) 100%);
+				background: linear-gradient(to right,  rgba(207,207,207,1) 0%,rgba(171,171,171,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfcfcf', endColorstr='#ababab',GradientType=1 );
 
 /* line 23 : /Users/jordiimac/Documents/AniMenu/css/bp2.styl */
 
@@ -82,7 +97,7 @@ header .botonera .dia .centrarMes{left:27%;position:absolute}
 /* line 39 : /Users/jordiimac/Documents/AniMenu/css/bp2.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/bp2\.styl}line{font-family:\0000339}}
-header .botonera .dia span{color:#fff;left:20%;letter-spacing:0;font-size:.85em;font-weight:300;position:absolute;top:30px}
+header .botonera .dia span{color:rgba(90,97,113,0.8);left:20%;letter-spacing:0;font-size:.85em;font-weight:300;position:absolute;top:30px}
 
 /* line 47 : /Users/jordiimac/Documents/AniMenu/css/bp2.styl */
 
