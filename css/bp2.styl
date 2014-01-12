@@ -93,6 +93,8 @@ header
 		height auto
 		margin 0 0 1em 0
 		padding .7em 1em 1.2em 1em
+		position relative
+		z-index -3
 		.contingutEventActual
 			animation animacionLlista 3s 1
 			-webkit-animation animacionLlista 3s 1
@@ -139,7 +141,7 @@ header
 			left 12px
 			position absolute
 			text-transform uppercase
-			top 327px
+			top -25px
 section
 	margin 0 0 100px 0
 	position absolute
@@ -246,12 +248,15 @@ section
 			font-family icono
 			font-size 1.3em
 .efectos
+	height 900px
+	width 320px
+	overflow-x hidden
+	position absolute
 	.destellos
 		height 450px
-		overflow-x hidden
-		position absolute
 		width 100%
-		z-index 0
+		position absolute
+		top -10px
 		animation animacionDestellos 17s infinite
 		-webkit-animation animacionDestellos 17s infinite
 		.destello1
