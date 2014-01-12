@@ -247,58 +247,62 @@ section
 		overflow-x hidden
 		position absolute
 		z-index 0
-		.destelloA
+		.destelloA1
+			background rgba(white,.1)
+			border-radius 50%
+			height 50px
+			left 30px
+			position absolute
+			width 50px
+		.destelloA2
+			background rgba(white,.1)
+			border-radius 50%
+			height 20px
+			left 45px
+			position absolute
+			width 20px
+		.destelloA3
+			background rgba(white,.1)
+			border-radius 50%
+			height 100px
+			left 12px
+			position absolute
+			width 100px
+		.destelloA4 
+			background rgba(white,.1)
+			height 55px
+			left 12px
 			position relative
-			.destelloA1
-				background rgba(white,.1)
-				border-radius 50%
-				height 50px
-				left 20px
+			width 100px
+			-webkit-filter blur(2px)
+			&:before 
+				content ''
 				position absolute
-				width 50px
-			.destelloA2
-				background rgba(white,.1)
-				border-radius 50%
-				height 20px
-				left 35px
+				top -25px
+				left 0
+				width 0
+				height 0
+				border-left 50px solid transparent
+				border-right 50px solid transparent
+				border-bottom 25px solid rgba(white,.1)
+			&:after 
+				content ''
 				position absolute
-				width 20px
-		.destelloB
-			transition: all 1s infinite;
-			transition-delay: 2s;
-			.destelloB1
-				background rgba(white,.1)
-				border-radius 50%
-				height 100px
-				left 20px
-				position absolute
-				width 100px
-			.destelloB2 
-				width 100px
-				height 55px
-				background rgba(white,.1)
-				position relative
-				&:before 
-					content ''
-					position absolute
-					top -25px
-					left 0
-					width 0
-					height 0
-					border-left 50px solid transparent
-					border-right 50px solid transparent
-					border-bottom 25px solid rgba(white,.1)
-				&:after 
-					content ''
-					position absolute
-					bottom -25px
-					left 0
-					width 0
-					height 0
-					border-left 50px solid transparent
-					border-right 50px solid transparent
-					border-top 25px solid rgba(white,.1)
-			
+				bottom -25px
+				left 0
+				width 0
+				height 0
+				border-left 50px solid transparent
+				border-right 50px solid transparent
+				border-top 25px solid rgba(white,.1)
+		.destelloA5
+			background rgba(white,.1)
+			border-radius 50%
+			height 35px
+			left 40px
+			position absolute
+			width 35px
+		
 						
 	.nubes
 		height 250px
