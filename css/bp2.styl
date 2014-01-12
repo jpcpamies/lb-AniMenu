@@ -17,19 +17,9 @@ header
 		white-space nowrap
 		width 100%
 		.dia 
-			@css {
-				background: rgb(207,207,207);
-				background: -moz-linear-gradient(left,  rgba(207,207,207,1) 0%, rgba(171,171,171,1) 100%);
-				background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(207,207,207,1)), color-stop(100%,rgba(171,171,171,1)));
-				background: -webkit-linear-gradient(left,  rgba(207,207,207,1) 0%,rgba(171,171,171,1) 100%);
-				background: -o-linear-gradient(left,  rgba(207,207,207,1) 0%,rgba(171,171,171,1) 100%);
-				background: -ms-linear-gradient(left,  rgba(207,207,207,1) 0%,rgba(171,171,171,1) 100%);
-				background: linear-gradient(to right,  rgba(207,207,207,1) 0%,rgba(171,171,171,1) 100%);
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfcfcf', endColorstr='#ababab',GradientType=1 );
-				}
 			border-radius 50%
 			box-shadow 0 1px 3px rgba(black,.1)
-			color rgba(secundario,.8)
+			color rgba(secundario,1)
 			display inline-block
 			height 65px 
 			margin 0 0 0 1em 
@@ -37,30 +27,66 @@ header
 			width 65px
 			-webkit-transition all .3s ease
 			transition all .3s ease
-			&:hover
-				border 2px solid white
-				color white
-
 			p
 				left 32%
 				font-weight 300
 				margin 0
 				position absolute
 				top 7px
-			.centrar
-				left 40%
-				position absolute
-			.centrarMes
-				left 27%
-				position absolute
 			span
-				// color rgba(secundario,.8)
 				left 20%
 				letter-spacing 0em
 				font-size .85em
 				font-weight 300
 				position absolute
 				top 30px
+			.centrar
+				left 40%
+				position absolute
+			.centrarMes
+				left 27%
+				position absolute
+			&:hover
+				border 2px solid white
+				color white
+		.festes
+			background white
+			@css {
+				background: rgb(229,212,172);
+				background: -moz-linear-gradient(left,  rgba(229,212,172,1) 0%, rgba(165,143,91,1) 100%);
+				background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(229,212,172,1)), color-stop(100%,rgba(165,143,91,1)));
+				background: -webkit-linear-gradient(left,  rgba(229,212,172,1) 0%,rgba(165,143,91,1) 100%);
+				background: -o-linear-gradient(left,  rgba(229,212,172,1) 0%,rgba(165,143,91,1) 100%);
+				background: -ms-linear-gradient(left,  rgba(229,212,172,1) 0%,rgba(165,143,91,1) 100%);
+				background: linear-gradient(to right,  rgba(229,212,172,1) 0%,rgba(165,143,91,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5d4ac', endColorstr='#a58f5b',GradientType=1 );
+
+				}
+		.post
+			background white
+			@css {
+				background: rgb(252,208,176);
+				background: -moz-linear-gradient(left,  rgba(252,208,176,1) 0%, rgba(204,146,122,1) 100%);
+				background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(252,208,176,1)), color-stop(100%,rgba(204,146,122,1)));
+				background: -webkit-linear-gradient(left,  rgba(252,208,176,1) 0%,rgba(204,146,122,1) 100%);
+				background: -o-linear-gradient(left,  rgba(252,208,176,1) 0%,rgba(204,146,122,1) 100%);
+				background: -ms-linear-gradient(left,  rgba(252,208,176,1) 0%,rgba(204,146,122,1) 100%);
+				background: linear-gradient(to right,  rgba(252,208,176,1) 0%,rgba(204,146,122,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcd0b0', endColorstr='#cc927a',GradientType=1 );
+
+				}
+		.pre
+			background white
+			@css {
+				background: rgb(238,238,238);
+				background: -moz-linear-gradient(left,  rgba(238,238,238,1) 0%, rgba(196,196,196,1) 100%);
+				background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(196,196,196,1)));
+				background: -webkit-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(196,196,196,1) 100%);
+				background: -o-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(196,196,196,1) 100%);
+				background: -ms-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(196,196,196,1) 100%);
+				background: linear-gradient(to right,  rgba(238,238,238,1) 0%,rgba(196,196,196,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#c4c4c4',GradientType=1 );
+				}
 	.calendari
 		color white
 		display block
