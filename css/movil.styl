@@ -268,7 +268,7 @@ section
 			font-family icono
 			font-size 1.3em
 .efectos
-	height 900px
+	height 3000px
 	width 100%
 	overflow-x hidden
 	position absolute
@@ -387,9 +387,10 @@ section
 			animation animacionNube2 15s 1
 			-webkit-animation animacionNube2 15s 1
 	.rayos
-		height 700px
+		height 3000px
 		width 100%
 		overflow-x hidden
+		overflow-y hidden
 		position absolute
 		top 0
 		.rayo1 
@@ -405,8 +406,8 @@ section
 			-ms-transform rotateZ(43deg)
 			-webkit-transform rotateZ(43deg)
 			-webkit-filter: blur(3px);
-			animation animacionRayo1 3s infinite
-			-webkit-animation animacionRayo1 3s infinite
+			animation animacionRayo1 8s infinite
+			-webkit-animation animacionRayo1 8s infinite
 		.rayo2 
 			border-top 3px solid transparent
 			border-bottom 3px solid transparent
@@ -420,8 +421,8 @@ section
 			-ms-transform rotateZ(75deg)
 			-webkit-transform rotateZ(75deg)
 			-webkit-filter: blur(3px);
-			animation animacionRayo2 10s infinite
-			-webkit-animation animacionRayo2 10s infinite
+			animation animacionRayo2 6s infinite
+			-webkit-animation animacionRayo2 6s infinite
 		.rayo3 
 			border-top 3px solid transparent
 			border-bottom 3px solid transparent
@@ -438,11 +439,11 @@ section
 			animation animacionRayo3 10s infinite
 			-webkit-animation animacionRayo3 10s infinite
 		.rayo4
-			border-top 10px solid transparent
+			border-top 30px solid transparent
 			border-bottom 10px solid transparent
-			border-left 600px solid white
+			border-left 800px solid white
 			border-right 0px solid transparent
-			left -150px
+			left -220px
 			position absolute
 			top 300px
 			z-index -5
@@ -455,11 +456,11 @@ section
 		.rayo5
 			border-top 10px solid transparent
 			border-bottom 20px solid transparent
-			border-left 1200px solid white
+			border-left 1900px solid white
 			border-right 0px solid transparent
-			left -540px
+			left -770px
 			position absolute
-			top 300px
+			top 800px
 			z-index -5
 			transform rotateZ(260deg)
 			-ms-transform rotateZ(260deg)
@@ -467,12 +468,27 @@ section
 			-webkit-filter: blur(6px);
 			animation animacionRayo5 8s infinite
 			-webkit-animation animacionRayo5 8s infinite
+		.rayo5a
+			border-top 120px solid transparent
+			border-bottom 20px solid transparent
+			border-left 1900px solid rgba(white,1)
+			border-right 0px solid transparent
+			left -790px
+			position absolute
+			top 800px
+			z-index -5
+			transform rotateZ(258deg)
+			-ms-transform rotateZ(258deg)
+			-webkit-transform rotateZ(258deg)
+			-webkit-filter: blur(10px);
+			animation animacionRayo5 8s infinite
+			-webkit-animation animacionRayo5 8s infinite
 		.rayo6
 			border-top 10px solid transparent
 			border-bottom 3px solid transparent
-			border-left 700px solid white
+			border-left 1000px solid white
 			border-right 0px solid transparent
-			left -220px
+			left -350px
 			position absolute
 			top 350px
 			z-index -5
@@ -480,8 +496,38 @@ section
 			-ms-transform rotateZ(250deg)
 			-webkit-transform rotateZ(250deg)
 			-webkit-filter: blur(4px);
-			animation animacionRayo6 15s infinite
-			-webkit-animation animacionRayo6 15s infinite
+			animation animacionRayo6 9s infinite
+			-webkit-animation animacionRayo6 9s infinite
+		.rayo7
+			border-top 10px solid transparent
+			border-bottom 3px solid transparent
+			border-left 2500px solid rgba(white,.7)
+			border-right 0px solid transparent
+			left -1220px
+			position absolute
+			top 350px
+			z-index -5
+			transform rotateZ(265deg)
+			-ms-transform rotateZ(265deg)
+			-webkit-transform rotateZ(265deg)
+			-webkit-filter: blur(6px);
+			animation animacionRayo6 6s infinite
+			-webkit-animation animacionRayo6 6s infinite
+		.rayo8
+			border-top 60px solid transparent
+			border-bottom 50px solid transparent
+			border-left 1200px solid rgba(white,.7)
+			border-right 0px solid transparent
+			left -549px
+			position absolute
+			top 490px
+			z-index -5
+			transform rotateZ(265deg)
+			-ms-transform rotateZ(265deg)
+			-webkit-transform rotateZ(265deg)
+			-webkit-filter: blur(10px);
+			animation animacionRayo4 6s infinite
+			-webkit-animation animacionRayo4 6s infinite
 	.sol
 		background-image url(../img/sol.png)
 		background-size 350px auto
@@ -872,15 +918,15 @@ section
 		opacity 1
 @keyframes animacionRayo1 
 	0% 
-		opacity 0
+		opacity .15
 	25% 
 		opacity 0
 	50%
-		opacity .2
+		opacity 0
 	75%
 		opacity .1
 	100% 
-		opacity 0
+		opacity .15
 @keyframes animacionRayo2
 	0% 
 		opacity .15
