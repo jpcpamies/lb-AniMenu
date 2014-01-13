@@ -1,12 +1,28 @@
+.bgHeader
+	@css{
+		background: rgb(34,118,159);
+		background: -moz-linear-gradient(top,  rgba(34,118,159,1) 0%, rgba(119,179,206,1) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(34,118,159,1)), color-stop(100%,rgba(119,179,206,1)));
+		background: -webkit-linear-gradient(top,  rgba(34,118,159,1) 0%,rgba(119,179,206,1) 100%);
+		background: -o-linear-gradient(top,  rgba(34,118,159,1) 0%,rgba(119,179,206,1) 100%);
+		background: -ms-linear-gradient(top,  rgba(34,118,159,1) 0%,rgba(119,179,206,1) 100%);
+		background: linear-gradient(to bottom,  rgba(34,118,159,1) 0%,rgba(119,179,206,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#22769f', endColorstr='#77b3ce',GradientType=0 );
+
+
+
+		}
+	position absolute 
+	z-index -15
+	top 0
+	width 100%
+	height 475px
 
 header
-	z-index -15
-	position relative
 	width 100%
-	height 450px
-	overflow-x auto
+	// height 450px
+	overflow-x hidden
 	overflow-y hidden
-	position relative
 	.botonera
 		height auto
 		left 0px 
@@ -18,7 +34,6 @@ header
 		top 220px
 		white-space nowrap
 		width 100%
-		// z-index 5
 		.dia 
 			@css {
 				background: rgb(238,238,238);
@@ -63,17 +78,8 @@ header
 				border 2px solid white
 				color white
 		.festes
-			// border 3px solid rgba(black,.2)
+			border 3px solid rgba(black,.2)
 	.calendari
-		@css{
-			background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(99,99,99,0) 39%, rgba(255,255,255,0.1) 100%);
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(39%,rgba(99,99,99,0)), color-stop(100%,rgba(255,255,255,0.1)));
-			background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(99,99,99,0) 39%,rgba(255,255,255,0.1) 100%);
-			background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(99,99,99,0) 39%,rgba(255,255,255,0.1) 100%);
-			background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(99,99,99,0) 39%,rgba(255,255,255,0.1) 100%);
-			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(99,99,99,0) 39%,rgba(255,255,255,0.1) 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#1affffff',GradientType=0 );
-			}
 		color white
 		display block
 		height 345px
@@ -81,11 +87,12 @@ header
 		padding 3em 0 0 0 
 		position relative
 		width 100%
+		z-index -10
 		.dia
 			font-size 1em
 			font-weight 300
 			text-align center
-			text-shadow 0 1px 3px rgba(black,.35)
+			text-shadow 0 1px 3px rgba(black,.4)
 			animation animacionDia 3s 1
 			-webkit-animation animacionDia 3s 1
 		.numero
@@ -93,20 +100,19 @@ header
 			font-weight 100
 			margin -.1em 0
 			text-align center
-			text-shadow 0 1px 3px rgba(black,.35)
+			text-shadow 0 1px 3px rgba(black,.4)
 			animation animacionNumero 3s 1
 			-webkit-animation animacionNumero 3s 1
 		.mes
 			font-size 1em
 			font-weight 300
 			text-align center
-			text-shadow 0 1px 3px rgba(black,.35)
+			text-shadow 0 1px 3px rgba(black,.4)
 			animation animacionMes 3s 1
 			-webkit-animation animacionMes 3s 1
 	.eventActual
 		background rgba(white,.08)
 		border-top 1px solid rgba(white,.2)
-		border-bottom 1px solid rgba(white,.2)
 		color white
 		display block
 		font-size .9em
@@ -256,15 +262,15 @@ section
 		display none
 .bg 
 	@css {
-		background: rgb(38,134,180);
-		background: -moz-linear-gradient(top,  rgba(38,134,180,1) 0%, rgba(38,134,180,1) 41%, rgba(88,168,207,1) 79%, rgba(128,188,218,1) 99%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(38,134,180,1)), color-stop(41%,rgba(38,134,180,1)), color-stop(79%,rgba(88,168,207,1)), color-stop(99%,rgba(128,188,218,1)));
-		background: -webkit-linear-gradient(top,  rgba(38,134,180,1) 0%,rgba(38,134,180,1) 41%,rgba(88,168,207,1) 79%,rgba(128,188,218,1) 99%);
-		background: -o-linear-gradient(top,  rgba(38,134,180,1) 0%,rgba(38,134,180,1) 41%,rgba(88,168,207,1) 79%,rgba(128,188,218,1) 99%);
-		background: -ms-linear-gradient(top,  rgba(38,134,180,1) 0%,rgba(38,134,180,1) 41%,rgba(88,168,207,1) 79%,rgba(128,188,218,1) 99%);
-		background: linear-gradient(to bottom,  rgba(38,134,180,1) 0%,rgba(38,134,180,1) 41%,rgba(88,168,207,1) 79%,rgba(128,188,218,1) 99%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2686b4', endColorstr='#80bcda',GradientType=0 );
-		}
+		background: rgb(55,145,189);
+		background: -moz-linear-gradient(top,  rgba(55,145,189,1) 37%, rgba(89,161,198,1) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(37%,rgba(55,145,189,1)), color-stop(100%,rgba(89,161,198,1)));
+		background: -webkit-linear-gradient(top,  rgba(55,145,189,1) 37%,rgba(89,161,198,1) 100%);
+		background: -o-linear-gradient(top,  rgba(55,145,189,1) 37%,rgba(89,161,198,1) 100%);
+		background: -ms-linear-gradient(top,  rgba(55,145,189,1) 37%,rgba(89,161,198,1) 100%);
+		background: linear-gradient(to bottom,  rgba(55,145,189,1) 37%,rgba(89,161,198,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3791bd', endColorstr='#59a1c6',GradientType=0 );
+        }
 	height 100%
 	left 0
 	position fixed
@@ -397,42 +403,29 @@ section
 		height 350px
 		width 100%
 		position relative
-		z-index -15
 		.nube1
 			background-image url(../img/nube1.png)
 			background-repeat no-repeat
-			background-size 260px auto
-			height 150px
+			background-size 250px auto
+			height 188px
+			right -30%
+			top 120px
 			position absolute
-			right -150px
-			top 150px
-			width 300px
-			x-index -18
-			animation animacionNube1 320s infinite
-			-webkit-animation animacionNube1 320s infinite
+			width 292px
+			z-index -10
+			animation animacionNube1 190s infinite
+			-webkit-animation animacionNube1 190s infinite
 		.nube2
 			background-image url(../img/nube2.png)
 			background-repeat no-repeat
 			background-size 158px auto
 			height 115px
-			left 40px
-			top 60px
+			left 0%
 			position absolute
 			width 158px
-			animation animacionNube2 83s infinite
-			-webkit-animation animacionNube2 83s infinite
-		.nube3
-			background-image url(../img/nube3.png)
-			background-repeat no-repeat
-			background-size 160px auto
-			height 164px
-			right -100px
-			top 0px
-			position absolute
-			width 283px
-			x-index -19
-			animation animacionNube3 160s infinite
-			-webkit-animation animacionNube3 160s infinite
+			z-index -3
+			animation animacionNube2 15s 1
+			-webkit-animation animacionNube2 15s 1
 	.rayos
 		height 1200px
 		width 100%
@@ -583,7 +576,7 @@ section
 		position absolute
 		top -150px
 		width 350px
-		z-index -17
+		z-index -4
 .botoOn
 	background rgba(black,.7)
 	height 100%
@@ -947,38 +940,22 @@ section
 		transform translate(0, 0)
 		-ms-transform translate(0, 0)
 		-webkit-transform translate(0, 0)
-	3%
-		opacity .9
-
-	100% 
-		transform translate(-400px, 0)
-		-ms-transform translate(-400px, 0)
-		-webkit-transform translate(-400px, 0)
-@keyframes animacionNube2
-	0% 
-		opacity 0
-		transform translate(0, 0)
-		-ms-transform translate(0, 0)
-	12%
+	10%
 		opacity 1
 
 	100% 
-		transform translate(-190px, 0)
-		-ms-transform translate(-190px, 0)
-		-webkit-transform translate(-190px, 0)
-@keyframes animacionNube3
+		transform translate(-500px, 0)
+		-ms-transform translate(-500px, 0)
+		-webkit-transform translate(-500px, 0)
+@keyframes animacionNube2
 	0% 
 		opacity 0
-		transform translate(0, 0)
-		-ms-transform translate(0, 0)
-		-webkit-transform translate(0, 0)
-	15%
-		opacity .85
-
+	50%
+		opacity 1
+	75%
+		opacity 1
 	100% 
-		transform translate(-280px, 0)
-		-ms-transform translate(-280px, 0)
-		-webkit-transform translate(-280px, 0)
+		opacity 1
 @keyframes animacionRayo1 
 	0% 
 		opacity .15
