@@ -484,36 +484,34 @@ section
 		z-index -4
 .botoOn
 	background rgba(black,.7)
+	height 100%
 	position fixed
 	width 100%
-	height 100%
 	z-index 3
 	animation animacionBoto .4s 1
 	-webkit-animation animacionBoto .4s 1
 	.ajustos
 		color white
 		display block
-		margin 2.2em auto 0 auto
 		font-size 1.2em
 		font-weight bolder
 		letter-spacing 1px
+		margin .8em auto 0 auto
 		p
 			text-align center
 	.aumentar
 		background rgba(#1877e9,1)
 		border-radius 50%
 		color rgba(#deecfb,1)
+		font-size 1.2em
 		height 50px
 		line-height 1.75em
 		position fixed
-		font-size 1.2em
+		right 20px
 		text-align center
-		top 120px
-		left 90px
+		top 70px
 		width 50px
 		z-index 4
-		animation animacionAumentar .4s 1
-		-webkit-animation animacionAumentar .4s 1
 		&:after
 			content 'a'
 			font-size 1.4em
@@ -523,44 +521,43 @@ section
 			color white
 			-webkit-transition: all .2s;
 			transition: all .2s;
-	// .contraste
-	// 	background rgba(#1877e9,1)
-	// 	border-radius 50%
-	// 	top 205px 
-	// 	color rgba(#deecfb,1)
-	// 	height 50px
-	// 	line-height 2.1em
-	// 	position fixed
-	// 	right 12px
-	// 	font-size 1.2em
-	// 	text-align center
-	// 	width 50px
-	// 	z-index 4
-	// 	animation animacionAumentar .4s 1
-	// 	-webkit-animation animacionAumentar .4s 1
-	// 	&:after
-	// 		content '\e601'
-	// 		font-family icono
-	// 	&:hover
-	// 		background rgba(iconos,1)
-	// 		color white
-	// 		-webkit-transition: all .2s;
-	// 		transition: all .2s;
+	.contraste
+		background rgba(#1877e9,1)
+		border-radius 50%
+		color rgba(#deecfb,1)
+		font-size 1.2em
+		height 50px
+		line-height 2.1em
+		position fixed
+		right 20px
+		text-align center
+		top 150px 
+		width 50px
+		z-index 4
+		&:after
+			content '\e604'
+			font-family icono
+			font-size .9em
+		&:hover
+			background rgba(iconos,1)
+			color white
+			-webkit-transition: all .2s;
+			transition: all .2s;
 	.disminuir
 		background rgba(#1877e9,1)
 		border-radius 50%
-		top 120px 
 		color rgba(#deecfb,1)
+		font-size 1.2em
 		height 50px
 		line-height 1.85em
 		position fixed
-		left 20px
-		font-size 1.2em
+		right 90px
 		text-align center
+		top 70px 
 		width 50px
 		z-index 4
 		animation animacionDisminuir .2s 1
-		-webkit-animation animacionDisminuir .2s 1
+		// -webkit-animation animacionDisminuir .2s 1
 		&:after
 			content 'a'
 			font-size .9em
@@ -570,29 +567,27 @@ section
 			color white
 			-webkit-transition: all .2s;
 			transition: all .2s;
-	// .mapa
-	// 	background rgba(#8f8f8f,1)
-	// 	border-radius 50%
-	// 	top 12px 
-	// 	color rgba(white,1)
-	// 	height 50px
-	// 	line-height 2.1em
-	// 	position fixed
-	// 	left 12px
-	// 	font-size 1.2em
-	// 	text-align center
-	// 	width 50px
-	// 	z-index 3
-	// 	animation animacionMapa .4s 1
-	// 	-webkit-animation animacionMapa .4s 1
-	// 	&:before
-	// 		content '\e602'
-	// 		font-family icono
-	// 	&:hover
-	// 		background rgba(iconos,1)
-	// 		color white
-	// 		-webkit-transition: all .2s;
-	// 		transition: all .2s;
+	.mapa
+		background rgba(#8f8f8f,1)
+		border-radius 50%
+		top 230px 
+		color rgba(white,1)
+		height 50px
+		line-height 2.1em
+		position fixed
+		right 20px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 3
+		&:before
+			content '\e602'
+			font-family icono
+		&:hover
+			background rgba(iconos,1)
+			color white
+			-webkit-transition: all .2s;
+			transition: all .2s;
 	.menu
 		top 7px 
 		color rgba(white,.5)
@@ -626,17 +621,7 @@ section
 			right 0px
 			position fixed
 			z-index 4
-@keyframes animacionAumentar 
-	0% 
-		opacity 0
-		transform translate(190px, 0)
-		-ms-transform translate(190px, 0)
-		-webkit-transform translate(190px, 0)
-	100% 
-		opacity 1
-		transform translate(0px, 0)
-		-ms-transform translate(0px, 0)
-		-webkit-transform translate(0px, 0)
+
 @keyframes animacionBoto 
 	0% 
 		opacity 0
@@ -811,28 +796,10 @@ section
 		opacity 1
 	100% 
 		opacity 1
-@keyframes animacionDisminuir
-	0% 
-		opacity 0
-		transform translate(190px, 0)
-		-ms-transform translate(190px, 0)
-		-webkit-transform translate(190px, 0)
-	100% 
-		opacity 1
-		transform translate(0px, 0)
-		-ms-transform translate(0px, 0)
-		-webkit-transform translate(0px, 0)
 @keyframes animacionLlista
 	0% 
 		opacity 0
 	100% 
-		opacity 1
-@keyframes animacionMapa 
-	0% 
-		left 180px
-		opacity 0
-	100% 
-		left 12px
 		opacity 1
 @keyframes animacionMes 
 	0% 
