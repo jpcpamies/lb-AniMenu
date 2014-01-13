@@ -244,6 +244,7 @@ section
 .boto
 	.facebook
 	.twitter
+	.ajustos
 		display none
 	.menu
 		border-radius 50%
@@ -512,7 +513,7 @@ section
 		width 50px
 		z-index 4
 		animation animacionAumentar .4s 1
-		// -webkit-animation animacionAumentar .4s 1
+		-webkit-animation animacionAumentar .4s 1
 		&:after
 			content 'a'
 			font-size 1.4em
@@ -558,8 +559,8 @@ section
 		text-align center
 		width 50px
 		z-index 4
-		animation animacionDisminuir .4s 1
-		-webkit-animation animacionDisminuir .4s 1
+		animation animacionDisminuir .2s 1
+		-webkit-animation animacionDisminuir .2s 1
 		&:after
 			content 'a'
 			font-size .9em
@@ -628,14 +629,14 @@ section
 @keyframes animacionAumentar 
 	0% 
 		opacity 0
-		transform translate(50px, 0)
-		-ms-transform translate(50px, 0)
-		-webkit-transform translate(50px, 0)
+		transform translate(190px, 0)
+		-ms-transform translate(190px, 0)
+		-webkit-transform translate(190px, 0)
 	100% 
 		opacity 1
-		transform translate(100px, 0)
-		-ms-transform translate(100px, 0)
-		-webkit-transform translate(100px, 0)
+		transform translate(0px, 0)
+		-ms-transform translate(0px, 0)
+		-webkit-transform translate(0px, 0)
 @keyframes animacionBoto 
 	0% 
 		opacity 0
@@ -812,11 +813,15 @@ section
 		opacity 1
 @keyframes animacionDisminuir
 	0% 
-		top 12px
 		opacity 0
+		transform translate(190px, 0)
+		-ms-transform translate(190px, 0)
+		-webkit-transform translate(190px, 0)
 	100% 
-		bottom 75px
 		opacity 1
+		transform translate(0px, 0)
+		-ms-transform translate(0px, 0)
+		-webkit-transform translate(0px, 0)
 @keyframes animacionLlista
 	0% 
 		opacity 0
