@@ -17,7 +17,16 @@ header
 		white-space nowrap
 		width 100%
 		.dia 
-			background white
+			@css {
+				background: rgb(238,238,238);
+				background: -moz-linear-gradient(left,  rgba(238,238,238,1) 0%, rgba(196,196,196,1) 100%);
+				background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(196,196,196,1)));
+				background: -webkit-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(196,196,196,1) 100%);
+				background: -o-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(196,196,196,1) 100%);
+				background: -ms-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(196,196,196,1) 100%);
+				background: linear-gradient(to right,  rgba(238,238,238,1) 0%,rgba(196,196,196,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#c4c4c4',GradientType=1 );
+				}
 			border-radius 50%
 			box-shadow 0 1px 3px rgba(black,.1)
 			color rgba(secundario,1)
@@ -51,43 +60,7 @@ header
 				border 2px solid white
 				color white
 		.festes
-			background white
-			@css {
-				background: rgb(229,212,172);
-				background: -moz-linear-gradient(left,  rgba(229,212,172,1) 0%, rgba(165,143,91,1) 100%);
-				background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(229,212,172,1)), color-stop(100%,rgba(165,143,91,1)));
-				background: -webkit-linear-gradient(left,  rgba(229,212,172,1) 0%,rgba(165,143,91,1) 100%);
-				background: -o-linear-gradient(left,  rgba(229,212,172,1) 0%,rgba(165,143,91,1) 100%);
-				background: -ms-linear-gradient(left,  rgba(229,212,172,1) 0%,rgba(165,143,91,1) 100%);
-				background: linear-gradient(to right,  rgba(229,212,172,1) 0%,rgba(165,143,91,1) 100%);
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5d4ac', endColorstr='#a58f5b',GradientType=1 );
-
-				}
-		.post
-			background white
-			@css {
-				background: rgb(252,208,176);
-				background: -moz-linear-gradient(left,  rgba(252,208,176,1) 0%, rgba(204,146,122,1) 100%);
-				background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(252,208,176,1)), color-stop(100%,rgba(204,146,122,1)));
-				background: -webkit-linear-gradient(left,  rgba(252,208,176,1) 0%,rgba(204,146,122,1) 100%);
-				background: -o-linear-gradient(left,  rgba(252,208,176,1) 0%,rgba(204,146,122,1) 100%);
-				background: -ms-linear-gradient(left,  rgba(252,208,176,1) 0%,rgba(204,146,122,1) 100%);
-				background: linear-gradient(to right,  rgba(252,208,176,1) 0%,rgba(204,146,122,1) 100%);
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcd0b0', endColorstr='#cc927a',GradientType=1 );
-
-				}
-		.pre
-			background white
-			@css {
-				background: rgb(238,238,238);
-				background: -moz-linear-gradient(left,  rgba(238,238,238,1) 0%, rgba(196,196,196,1) 100%);
-				background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(196,196,196,1)));
-				background: -webkit-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(196,196,196,1) 100%);
-				background: -o-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(196,196,196,1) 100%);
-				background: -ms-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(196,196,196,1) 100%);
-				background: linear-gradient(to right,  rgba(238,238,238,1) 0%,rgba(196,196,196,1) 100%);
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#c4c4c4',GradientType=1 );
-				}
+			border 3px solid rgba(black,.2)
 	.calendari
 		color white
 		display block
@@ -195,15 +168,9 @@ section
 					font-size .65em
 					font-weight 300
 					margin -1px 10px 0 -5px
-					.horaInici
-						float left
-					.horaFi
-						margin 0 0 0 40px
-						p
-							&:after
-								content 'h'
-							&:before
-								content '- '
+					p
+						&:after
+							content 'h'
 				.lloc
 					color rgba(black,.4)
 					font-size .6em
@@ -257,8 +224,6 @@ section
 		// 		text-transform uppercase
 	.llistaInvisible
 		display none
-
-		
 .bg 
 	@css {
 		background: rgb(55,145,189);
@@ -281,7 +246,6 @@ section
 	.twitter
 		display none
 	.menu
-		// background rgba(black,.05)
 		border-radius 50%
 		bottom 5px 
 		color rgba(black,.5)
@@ -518,116 +482,124 @@ section
 		width 350px
 		z-index -4
 .botoOn
-	background rgba(black,.5)
+	background rgba(black,.7)
 	position fixed
 	width 100%
 	height 100%
 	z-index 3
 	animation animacionBoto .4s 1
 	-webkit-animation animacionBoto .4s 1
-	.aumentar
-		background rgba(#1877e9,1)
-		border-radius 50%
-		top 75px 
-		color rgba(#deecfb,1)
-		height 50px
-		line-height 1.75em
-		position fixed
-		right 12px
+	.ajustos
+		color white
+		display block
+		margin 1em auto 0 auto
 		font-size 1.2em
-		text-align center
-		width 50px
-		z-index 4
-		animation animacionAumentar .4s 1
-		-webkit-animation animacionAumentar .4s 1
-		&:after
-			content 'a'
-			font-size 1.4em
-			font-weight 300
-		&:hover
-			background rgba(iconos,1)
-			color white
-			-webkit-transition: all .2s;
-			transition: all .2s;
-	.contraste
-		background rgba(#1877e9,1)
-		border-radius 50%
-		top 205px 
-		color rgba(#deecfb,1)
-		height 50px
-		line-height 2.1em
-		position fixed
-		right 12px
-		font-size 1.2em
-		text-align center
-		width 50px
-		z-index 4
-		animation animacionAumentar .4s 1
-		-webkit-animation animacionAumentar .4s 1
-		&:after
-			content '\e601'
-			font-family icono
-		&:hover
-			background rgba(iconos,1)
-			color white
-			-webkit-transition: all .2s;
-			transition: all .2s;
-	.disminuir
-		background rgba(#1877e9,1)
-		border-radius 50%
-		top 140px 
-		color rgba(#deecfb,1)
-		height 50px
-		line-height 1.85em
-		position fixed
-		right 12px
-		font-size 1.2em
-		text-align center
-		width 50px
-		z-index 4
-		animation animacionDisminuir .4s 1
-		-webkit-animation animacionDisminuir .4s 1
-		&:after
-			content 'a'
-			font-size .9em
-			font-weight 300
-		&:hover
-			background rgba(iconos,1)
-			color white
-			-webkit-transition: all .2s;
-			transition: all .2s;
-	.mapa
-		background rgba(#8f8f8f,1)
-		border-radius 50%
-		top 12px 
-		color rgba(white,1)
-		height 50px
-		line-height 2.1em
-		position fixed
-		left 12px
-		font-size 1.2em
-		text-align center
-		width 50px
-		z-index 3
-		animation animacionMapa .4s 1
-		-webkit-animation animacionMapa .4s 1
-		&:before
-			content '\e602'
-			font-family icono
-		&:hover
-			background rgba(iconos,1)
-			color white
-			-webkit-transition: all .2s;
-			transition: all .2s;
+		font-weight bolder
+		letter-spacing 1px
+		p
+			text-align center
+
+	// .aumentar
+	// 	background rgba(#1877e9,1)
+	// 	border-radius 50%
+	// 	top 75px 
+	// 	color rgba(#deecfb,1)
+	// 	height 50px
+	// 	line-height 1.75em
+	// 	position fixed
+	// 	right 12px
+	// 	font-size 1.2em
+	// 	text-align center
+	// 	width 50px
+	// 	z-index 4
+	// 	animation animacionAumentar .4s 1
+	// 	-webkit-animation animacionAumentar .4s 1
+	// 	&:after
+	// 		content 'a'
+	// 		font-size 1.4em
+	// 		font-weight 300
+	// 	&:hover
+	// 		background rgba(iconos,1)
+	// 		color white
+	// 		-webkit-transition: all .2s;
+	// 		transition: all .2s;
+	// .contraste
+	// 	background rgba(#1877e9,1)
+	// 	border-radius 50%
+	// 	top 205px 
+	// 	color rgba(#deecfb,1)
+	// 	height 50px
+	// 	line-height 2.1em
+	// 	position fixed
+	// 	right 12px
+	// 	font-size 1.2em
+	// 	text-align center
+	// 	width 50px
+	// 	z-index 4
+	// 	animation animacionAumentar .4s 1
+	// 	-webkit-animation animacionAumentar .4s 1
+	// 	&:after
+	// 		content '\e601'
+	// 		font-family icono
+	// 	&:hover
+	// 		background rgba(iconos,1)
+	// 		color white
+	// 		-webkit-transition: all .2s;
+	// 		transition: all .2s;
+	// .disminuir
+	// 	background rgba(#1877e9,1)
+	// 	border-radius 50%
+	// 	top 140px 
+	// 	color rgba(#deecfb,1)
+	// 	height 50px
+	// 	line-height 1.85em
+	// 	position fixed
+	// 	right 12px
+	// 	font-size 1.2em
+	// 	text-align center
+	// 	width 50px
+	// 	z-index 4
+	// 	animation animacionDisminuir .4s 1
+	// 	-webkit-animation animacionDisminuir .4s 1
+	// 	&:after
+	// 		content 'a'
+	// 		font-size .9em
+	// 		font-weight 300
+	// 	&:hover
+	// 		background rgba(iconos,1)
+	// 		color white
+	// 		-webkit-transition: all .2s;
+	// 		transition: all .2s;
+	// .mapa
+	// 	background rgba(#8f8f8f,1)
+	// 	border-radius 50%
+	// 	top 12px 
+	// 	color rgba(white,1)
+	// 	height 50px
+	// 	line-height 2.1em
+	// 	position fixed
+	// 	left 12px
+	// 	font-size 1.2em
+	// 	text-align center
+	// 	width 50px
+	// 	z-index 3
+	// 	animation animacionMapa .4s 1
+	// 	-webkit-animation animacionMapa .4s 1
+	// 	&:before
+	// 		content '\e602'
+	// 		font-family icono
+	// 	&:hover
+	// 		background rgba(iconos,1)
+	// 		color white
+	// 		-webkit-transition: all .2s;
+	// 		transition: all .2s;
 	.menu
-		background rgba(black,.1)
-		border-radius 50%
-		top 12px 
+		top 7px 
 		color rgba(white,.5)
 		height 50px
 		line-height 2.2em
 		position fixed
-		right 12px
+		right 7px
 		font-size 1.2em
 		text-align center
 		width 50px
@@ -636,12 +608,11 @@ section
 		-ms-transform rotateZ(45deg)
 		-webkit-transform rotateZ(45deg)
 		&:after
-			content '\e603'
+			content '\e607'
 			font-family icono
-			font-size 1.3em
+			font-size 1.7em
 	.social
 		.facebook
-			background rgba(#8f8f8f,.8)
 			bottom 0px 
 			display block
 			height 80px
