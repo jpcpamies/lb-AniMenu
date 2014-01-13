@@ -2,12 +2,10 @@
 
 header
 	width 100%
-	// height 450px
-	overflow-x hidden	overflow-y hidden
+	overflow-x hidden	
 	.botonera
 		height auto
 		left 0px 
-		// margin 0 0 0 1em
 		overflow-x auto
 		overflow-y hidden
 		padding 10px 20px 0 10px 
@@ -16,9 +14,19 @@ header
 		white-space nowrap
 		width 100%
 		.dia 
+			@css {
+				background: rgb(224,224,222);
+				background: -moz-linear-gradient(left,  rgba(224,224,222,1) 24%, rgba(184,183,181,1) 100%);
+				background: -webkit-gradient(linear, left top, right top, color-stop(24%,rgba(224,224,222,1)), color-stop(100%,rgba(184,183,181,1)));
+				background: -webkit-linear-gradient(left,  rgba(224,224,222,1) 24%,rgba(184,183,181,1) 100%);
+				background: -o-linear-gradient(left,  rgba(224,224,222,1) 24%,rgba(184,183,181,1) 100%);
+				background: -ms-linear-gradient(left,  rgba(224,224,222,1) 24%,rgba(184,183,181,1) 100%);
+				background: linear-gradient(to right,  rgba(224,224,222,1) 24%,rgba(184,183,181,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0de', endColorstr='#b8b7b5',GradientType=1 );
+				}
 			border-radius 50%
-			border 1px solid rgba(black,.5)
-			color rgba(black,.5)
+			box-shadow 0 1px 3px rgba(black,.1)
+			color rgba(secundario,1)
 			display inline-block
 			height 65px 
 			margin 0 0 0 1em 
@@ -46,7 +54,7 @@ header
 				left 27%
 				position absolute
 			&:hover
-				border 2px solid white
+				background rgba(black,.5)
 				color white
 		.festes
 			border 3px solid rgba(black,.2)
