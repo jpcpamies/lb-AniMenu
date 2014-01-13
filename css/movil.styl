@@ -1,5 +1,7 @@
 
 header
+	z-index -15
+	position relative
 	width 100%
 	// height 450px
 	overflow-x hidden
@@ -16,6 +18,7 @@ header
 		top 220px
 		white-space nowrap
 		width 100%
+		z-index 5
 		.dia 
 			@css {
 				background: rgb(238,238,238);
@@ -385,25 +388,34 @@ section
 		height 350px
 		width 100%
 		position relative
+		z-index -15
 		.nube1
 			background-image url(../img/nube1.png)
-			background-size 292px auto
-			height 188px
-			right -30%
-			top 20%
+			background-repeat no-repeat
+			background-size 205px auto
+			height 87px
 			position absolute
-			width 292px
-			z-index -3
-			animation animacionNube1 120s infinite
-			-webkit-animation animacionNube1 120s infinite
+			right -15%
+			top 160px
+			width 205px
+			animation animacionNube1 240s infinite
+			-webkit-animation animacionNube1 240s infinite
 		.nube2
 			background-image url(../img/nube2.png)
 			background-size 158px auto
 			height 115px
-			left 0%
+			left 200px
 			position absolute
 			width 158px
-			z-index -3
+			animation animacionNube2 15s 1
+			-webkit-animation animacionNube2 15s 1
+		.nube3
+			background-image url(../img/nube3.png)
+			background-size 283px auto
+			height 164px
+			left 0%
+			position absolute
+			width 283px
 			animation animacionNube2 15s 1
 			-webkit-animation animacionNube2 15s 1
 	.rayos
