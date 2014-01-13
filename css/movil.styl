@@ -492,37 +492,36 @@ section
 	.ajustos
 		color white
 		display block
-		margin 1em auto 0 auto
+		margin 2.2em auto 0 auto
 		font-size 1.2em
 		font-weight bolder
 		letter-spacing 1px
 		p
 			text-align center
-
-	// .aumentar
-	// 	background rgba(#1877e9,1)
-	// 	border-radius 50%
-	// 	top 75px 
-	// 	color rgba(#deecfb,1)
-	// 	height 50px
-	// 	line-height 1.75em
-	// 	position fixed
-	// 	right 12px
-	// 	font-size 1.2em
-	// 	text-align center
-	// 	width 50px
-	// 	z-index 4
-	// 	animation animacionAumentar .4s 1
-	// 	-webkit-animation animacionAumentar .4s 1
-	// 	&:after
-	// 		content 'a'
-	// 		font-size 1.4em
-	// 		font-weight 300
-	// 	&:hover
-	// 		background rgba(iconos,1)
-	// 		color white
-	// 		-webkit-transition: all .2s;
-	// 		transition: all .2s;
+	.aumentar
+		background rgba(#1877e9,1)
+		border-radius 50%
+		color rgba(#deecfb,1)
+		height 50px
+		line-height 1.75em
+		position fixed
+		font-size 1.2em
+		text-align center
+		top 120px
+		left 90px
+		width 50px
+		z-index 4
+		animation animacionAumentar .4s 1
+		// -webkit-animation animacionAumentar .4s 1
+		&:after
+			content 'a'
+			font-size 1.4em
+			font-weight 300
+		&:hover
+			background rgba(iconos,1)
+			color white
+			-webkit-transition: all .2s;
+			transition: all .2s;
 	// .contraste
 	// 	background rgba(#1877e9,1)
 	// 	border-radius 50%
@@ -546,30 +545,30 @@ section
 	// 		color white
 	// 		-webkit-transition: all .2s;
 	// 		transition: all .2s;
-	// .disminuir
-	// 	background rgba(#1877e9,1)
-	// 	border-radius 50%
-	// 	top 140px 
-	// 	color rgba(#deecfb,1)
-	// 	height 50px
-	// 	line-height 1.85em
-	// 	position fixed
-	// 	right 12px
-	// 	font-size 1.2em
-	// 	text-align center
-	// 	width 50px
-	// 	z-index 4
-	// 	animation animacionDisminuir .4s 1
-	// 	-webkit-animation animacionDisminuir .4s 1
-	// 	&:after
-	// 		content 'a'
-	// 		font-size .9em
-	// 		font-weight 300
-	// 	&:hover
-	// 		background rgba(iconos,1)
-	// 		color white
-	// 		-webkit-transition: all .2s;
-	// 		transition: all .2s;
+	.disminuir
+		background rgba(#1877e9,1)
+		border-radius 50%
+		top 120px 
+		color rgba(#deecfb,1)
+		height 50px
+		line-height 1.85em
+		position fixed
+		left 20px
+		font-size 1.2em
+		text-align center
+		width 50px
+		z-index 4
+		animation animacionDisminuir .4s 1
+		-webkit-animation animacionDisminuir .4s 1
+		&:after
+			content 'a'
+			font-size .9em
+			font-weight 300
+		&:hover
+			background rgba(iconos,1)
+			color white
+			-webkit-transition: all .2s;
+			transition: all .2s;
 	// .mapa
 	// 	background rgba(#8f8f8f,1)
 	// 	border-radius 50%
@@ -628,11 +627,15 @@ section
 			z-index 4
 @keyframes animacionAumentar 
 	0% 
-		top 12px
 		opacity 0
+		transform translate(50px, 0)
+		-ms-transform translate(50px, 0)
+		-webkit-transform translate(50px, 0)
 	100% 
-		bottom 75px
 		opacity 1
+		transform translate(100px, 0)
+		-ms-transform translate(100px, 0)
+		-webkit-transform translate(100px, 0)
 @keyframes animacionBoto 
 	0% 
 		opacity 0
