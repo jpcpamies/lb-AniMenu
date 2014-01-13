@@ -178,13 +178,11 @@ section
 	margin 0 0 100px 0
 	display block
 	.llistaVisible
-		// background red
+		padding 1em 0 0 0 
 		animation animacionLlista .3s 1
 		-webkit-animation animacionLlista .3s 1
-		position relative 
-		top 0px
 		.event
-			margin 0 .5em 1.8em 2em
+			margin 0 .5em 1.8em 1.5em
 			.detall
 				border-bottom 3px solid rgba(white,1)
 				padding 0 0 .2em .25em
@@ -218,6 +216,7 @@ section
 							font-family icono
 			.contingut
 				margin 1em 0 0 0 
+				
 				.titolEvent
 					color rgba(white,1)
 					font-size .9em
@@ -233,24 +232,29 @@ section
 							right -33px
 							top 0px
 				.detallEvent
+					// background red
+					display block
+					width 107%
 					font-size .8em
 					font-weight 300
-					margin 1em -1em 0em 2em
+					margin 1em -1em 0em 1em
 					p
 						&:after
 							display none
-		.preFestes
-			background rgba(#ffeb80,1)
-			display block
-			height 20px
-			margin 0 0 1em 0
-			p
-				text-transform uppercase
-				font-weight 400
-				font-size .6em
-				text-align center
-				line-height 1.6em
-				color #8b4513
+		// .preFestes
+		// 	background rgba(#ffeb80,1)
+		// 	display block
+		// 	height 23px
+		// 	margin 0 0 1em 0
+		// 	animation animacionPreFestes 10s 1
+		// 	-webkit-animation animacionPreFestes 10s 1
+		// 	p
+		// 		color #957c38
+		// 		font-size .6em
+		// 		font-weight 400
+		// 		line-height 1.8em
+		// 		text-align center
+		// 		text-transform uppercase
 	.llistaInvisible
 		display none
 
@@ -348,8 +352,8 @@ section
 			position absolute
 			top 220px
 			width 75px
-			animation animacionDestello4 50s infinite
-			-webkit-animation animacionDestello4 50s infinite
+			animation animacionDestello4 30s infinite
+			-webkit-animation animacionDestello4 30s infinite
 		.destello5
 			background rgba(white,.1)
 			height 55px
@@ -695,7 +699,7 @@ section
 		transform translate(0, 90px)
 		-ms-transform translate(0, 90px)
 		-webkit-transform translate(0, 90px)
-		opacity 1
+		opacity .4
 	50%
 		transform translate(0, 150px)
 		-ms-transform translate(0, 150px)
@@ -716,7 +720,7 @@ section
 		transform translate(0, 0px)
 		-ms-transform translate(0, 0px)
 		-webkit-transform translate(0, 0px)
-		opacity 1
+		opacity .2
 	25%
 		transform translate(0, 80px)
 		-ms-transform translate(0, 80px)
@@ -726,7 +730,7 @@ section
 		transform translate(0, 130px)
 		-ms-transform translate(0, 130px)
 		-webkit-transform translate(0, 130px)
-		opacity .3
+		opacity .7
 	75%
 		transform translate(0, 90px)
 		-ms-transform translate(0, 90px)
@@ -736,7 +740,7 @@ section
 		transform translate(0, 0px)
 		-ms-transform translate(0, 0px)
 		-webkit-transform translate(0, 0px)
-		opacity 1
+		opacity .2
 @keyframes animacionDestello3
 	0%
 		transform translate(0, 0px)
@@ -768,7 +772,7 @@ section
 		transform translate(0, 0px)
 		-ms-transform translate(0, 0px)
 		-webkit-transform translate(0, 0px)
-		opacity .8
+		opacity .3
 	25%
 		transform translate(0, 80px)
 		-ms-transform translate(0, 80px)
@@ -783,18 +787,21 @@ section
 		transform translate(0, 90px)
 		-ms-transform translate(0, 90px)
 		-webkit-transform translate(0, 90px)
-		opacity .3
+		opacity .6
 	100%
 		transform translate(0, 0px)
 		-ms-transform translate(0, 0px)
 		-webkit-transform translate(0, 0px)
-		opacity .8
+		opacity .3
 @keyframes animacionDestello5
 	0%
 		transform translate(0, 0px)
 		-ms-transform translate(0, 0px)
 		-webkit-transform translate(0, 0px)
-		opacity .8
+		transform rotateZ(60deg)
+		-ms-transform rotateZ(60deg)
+		-webkit-transform rotateZ(60deg)
+		opacity .6
 	25%
 		transform translate(0, 147px)
 		-ms-transform translate(0, 147px)
@@ -809,12 +816,15 @@ section
 		transform translate(0, 158px)
 		-ms-transform translate(0, 158px)
 		-webkit-transform translate(0, 158px)
+		transform rotateZ(-60deg)
+		-ms-transform rotateZ(-60deg)
+		-webkit-transform rotateZ(-60deg)
 		opacity 1
 	100%
 		transform translate(0, 0px)
 		-ms-transform translate(0, 0px)
 		-webkit-transform translate(0, 0px)
-		opacity .8
+		opacity .6
 @keyframes animacionDia 
 	0% 
 		opacity 0
