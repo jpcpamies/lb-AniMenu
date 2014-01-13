@@ -3,10 +3,10 @@ header
 	z-index -15
 	position relative
 	width 100%
-	// height 450px
-	overflow-x hidden
+	height 450px
+	overflow-x auto
 	overflow-y hidden
-	// position relative
+	position relative
 	.botonera
 		height auto
 		left 0px 
@@ -18,7 +18,7 @@ header
 		top 220px
 		white-space nowrap
 		width 100%
-		z-index 5
+		// z-index 5
 		.dia 
 			@css {
 				background: rgb(238,238,238);
@@ -63,15 +63,24 @@ header
 				border 2px solid white
 				color white
 		.festes
-			border 3px solid rgba(black,.2)
+			// border 3px solid rgba(black,.2)
 	.calendari
+		@css{
+			background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(99,99,99,0) 39%, rgba(255,255,255,0.1) 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(39%,rgba(99,99,99,0)), color-stop(100%,rgba(255,255,255,0.1)));
+			background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(99,99,99,0) 39%,rgba(255,255,255,0.1) 100%);
+			background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(99,99,99,0) 39%,rgba(255,255,255,0.1) 100%);
+			background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(99,99,99,0) 39%,rgba(255,255,255,0.1) 100%);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(99,99,99,0) 39%,rgba(255,255,255,0.1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#1affffff',GradientType=0 );
+			}
 		color white
 		display block
 		height 345px
 		margin 0 auto
 		padding 3em 0 0 0 
 		position relative
-		width 150px
+		width 100%
 		.dia
 			font-size 1em
 			font-weight 300
@@ -247,15 +256,15 @@ section
 		display none
 .bg 
 	@css {
-		background: rgb(55,145,189);
-		background: -moz-linear-gradient(top,  rgba(55,145,189,1) 37%, rgba(89,161,198,1) 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(37%,rgba(55,145,189,1)), color-stop(100%,rgba(89,161,198,1)));
-		background: -webkit-linear-gradient(top,  rgba(55,145,189,1) 37%,rgba(89,161,198,1) 100%);
-		background: -o-linear-gradient(top,  rgba(55,145,189,1) 37%,rgba(89,161,198,1) 100%);
-		background: -ms-linear-gradient(top,  rgba(55,145,189,1) 37%,rgba(89,161,198,1) 100%);
-		background: linear-gradient(to bottom,  rgba(55,145,189,1) 37%,rgba(89,161,198,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3791bd', endColorstr='#59a1c6',GradientType=0 );
-        }
+		background: rgb(38,134,180);
+		background: -moz-linear-gradient(top,  rgba(38,134,180,1) 0%, rgba(38,134,180,1) 41%, rgba(88,168,207,1) 79%, rgba(128,188,218,1) 99%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(38,134,180,1)), color-stop(41%,rgba(38,134,180,1)), color-stop(79%,rgba(88,168,207,1)), color-stop(99%,rgba(128,188,218,1)));
+		background: -webkit-linear-gradient(top,  rgba(38,134,180,1) 0%,rgba(38,134,180,1) 41%,rgba(88,168,207,1) 79%,rgba(128,188,218,1) 99%);
+		background: -o-linear-gradient(top,  rgba(38,134,180,1) 0%,rgba(38,134,180,1) 41%,rgba(88,168,207,1) 79%,rgba(128,188,218,1) 99%);
+		background: -ms-linear-gradient(top,  rgba(38,134,180,1) 0%,rgba(38,134,180,1) 41%,rgba(88,168,207,1) 79%,rgba(128,188,218,1) 99%);
+		background: linear-gradient(to bottom,  rgba(38,134,180,1) 0%,rgba(38,134,180,1) 41%,rgba(88,168,207,1) 79%,rgba(128,188,218,1) 99%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2686b4', endColorstr='#80bcda',GradientType=0 );
+		}
 	height 100%
 	left 0
 	position fixed
@@ -410,8 +419,8 @@ section
 			top 60px
 			position absolute
 			width 158px
-			animation animacionNube2 99s infinite
-			-webkit-animation animacionNube2 99s infinite
+			animation animacionNube2 83s infinite
+			-webkit-animation animacionNube2 83s infinite
 		.nube3
 			background-image url(../img/nube3.png)
 			background-repeat no-repeat
@@ -963,7 +972,7 @@ section
 		transform translate(0, 0)
 		-ms-transform translate(0, 0)
 		-webkit-transform translate(0, 0)
-	8%
+	15%
 		opacity .85
 
 	100% 
