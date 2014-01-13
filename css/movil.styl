@@ -1,10 +1,10 @@
 
 header
 	width 100%
-	height 480px
+	// height 450px
 	overflow-x hidden
 	overflow-y hidden
-	position relative
+	// position relative
 	.botonera
 		height auto
 		left 0px 
@@ -123,10 +123,10 @@ header
 		border-top 1px solid rgba(white,.2)
 		border-bottom 1px solid rgba(white,.2)
 		color white
+		display block
 		font-size .9em
 		font-weight 100
 		height auto
-		margin 0 0 1em 0
 		padding .7em 1em 1.2em 1em
 		position relative
 		z-index -3
@@ -176,11 +176,13 @@ header
 			top -25px
 section
 	margin 0 0 100px 0
-	position absolute
-	z-index 0
+	display block
 	.llistaVisible
-		animation animacionLlista 3s 1
-		-webkit-animation animacionLlista 3s 1
+		// background red
+		animation animacionLlista .3s 1
+		-webkit-animation animacionLlista .3s 1
+		position relative 
+		top 0px
 		.event
 			margin 0 .5em 1.8em 2em
 			.detall
@@ -237,8 +239,22 @@ section
 					p
 						&:after
 							display none
+		.preFestes
+			background rgba(#ffeb80,1)
+			display block
+			height 20px
+			margin 0 0 1em 0
+			p
+				text-transform uppercase
+				font-weight 400
+				font-size .6em
+				text-align center
+				line-height 1.6em
+				color #8b4513
 	.llistaInvisible
 		display none
+
+		
 .bg 
 	@css {
 		background: rgb(55,145,189);
