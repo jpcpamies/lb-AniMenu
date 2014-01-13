@@ -13,51 +13,58 @@ header
 		top 220px
 		white-space nowrap
 		width 100%
-		.dia 
-			@css {
-				background: rgb(224,224,222);
-				background: -moz-linear-gradient(left,  rgba(224,224,222,1) 24%, rgba(184,183,181,1) 100%);
-				background: -webkit-gradient(linear, left top, right top, color-stop(24%,rgba(224,224,222,1)), color-stop(100%,rgba(184,183,181,1)));
-				background: -webkit-linear-gradient(left,  rgba(224,224,222,1) 24%,rgba(184,183,181,1) 100%);
-				background: -o-linear-gradient(left,  rgba(224,224,222,1) 24%,rgba(184,183,181,1) 100%);
-				background: -ms-linear-gradient(left,  rgba(224,224,222,1) 24%,rgba(184,183,181,1) 100%);
-				background: linear-gradient(to right,  rgba(224,224,222,1) 24%,rgba(184,183,181,1) 100%);
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0de', endColorstr='#b8b7b5',GradientType=1 );
-				}
-			border-radius 50%
-			box-shadow 0 1px 3px rgba(black,.1)
-			color rgba(secundario,1)
-			display inline-block
-			height 65px 
-			margin 0 0 0 1em 
+		ul
 			position relative
-			width 65px
-			-webkit-transition all .3s ease
-			transition all .3s ease
-			p
-				left 32%
-				font-weight 300
-				margin 0
-				position absolute
-				top 7px
-			span
-				left 20%
-				letter-spacing 0em
-				font-size .85em
-				font-weight 300
-				position absolute
-				top 30px
-			.centrar
-				left 40%
-				position absolute
-			.centrarMes
-				left 27%
-				position absolute
-			&:hover
-				background rgba(black,.5)
-				color white
-		.festes
-			border 3px solid rgba(black,.2)
+			left 0
+			right 0
+			width 100%
+			.dia 
+				@css {
+					background: rgb(224,224,222);
+					background: -moz-linear-gradient(left,  rgba(224,224,222,1) 24%, rgba(184,183,181,1) 100%);
+					background: -webkit-gradient(linear, left top, right top, color-stop(24%,rgba(224,224,222,1)), color-stop(100%,rgba(184,183,181,1)));
+					background: -webkit-linear-gradient(left,  rgba(224,224,222,1) 24%,rgba(184,183,181,1) 100%);
+					background: -o-linear-gradient(left,  rgba(224,224,222,1) 24%,rgba(184,183,181,1) 100%);
+					background: -ms-linear-gradient(left,  rgba(224,224,222,1) 24%,rgba(184,183,181,1) 100%);
+					background: linear-gradient(to right,  rgba(224,224,222,1) 24%,rgba(184,183,181,1) 100%);
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0de', endColorstr='#b8b7b5',GradientType=1 );
+					}
+				border-radius 50%
+				box-shadow 0 1px 3px rgba(black,.1)
+				color rgba(secundario,1)
+				display inline-block
+				height 65px 
+				margin 0 0 0 1em 
+				position relative
+				width 65px
+				-webkit-transition all .3s ease
+				transition all .3s ease
+				p
+					color rgba(secundario,1)
+					font-weight 300
+					left 32%
+					margin 0
+					position absolute
+					top 7px
+				span
+					color rgba(secundario,1)
+					font-size .85em
+					font-weight 300
+					left 20%
+					letter-spacing 0em
+					position absolute
+					top 30px
+				.centrar
+					left 40%
+					position absolute
+				.centrarMes
+					left 27%
+					position absolute
+				&:hover
+					background rgba(black,.5)
+					p
+					span
+						color white
 	.calendari
 		color white
 		display block
