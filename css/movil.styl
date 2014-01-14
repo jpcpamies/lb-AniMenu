@@ -4,6 +4,22 @@ header
 	overflow-x hidden
 	overflow-y hidden
 	position relative	
+	.bgHeader
+		@css{
+			background: rgb(34,118,159);
+			background: -moz-linear-gradient(top,  rgba(34,118,159,1) 0%, rgba(119,179,206,1) 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(34,118,159,1)), color-stop(100%,rgba(119,179,206,1)));
+			background: -webkit-linear-gradient(top,  rgba(34,118,159,1) 0%,rgba(119,179,206,1) 100%);
+			background: -o-linear-gradient(top,  rgba(34,118,159,1) 0%,rgba(119,179,206,1) 100%);
+			background: -ms-linear-gradient(top,  rgba(34,118,159,1) 0%,rgba(119,179,206,1) 100%);
+			background: linear-gradient(to bottom,  rgba(34,118,159,1) 0%,rgba(119,179,206,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#22769f', endColorstr='#77b3ce',GradientType=0 );
+			}
+		position absolute 
+		z-index -5
+		top 0
+		width 100%
+		height 578px
 	.botonera
 		height auto
 		overflow-x auto
@@ -73,7 +89,6 @@ header
 		padding 3em 0 0 0 
 		position relative
 		width 100%
-		z-index -10
 		.dia
 			font-size 1em
 			font-weight 300
@@ -261,7 +276,7 @@ section
 	position fixed
 	top 0
 	width 100%
-	z-index -20
+	z-index -50
 .boto
 	.ajustos
 	.facebook
@@ -295,22 +310,6 @@ section
 	overflow-x hidden
 	overflow-y hidden
 	position absolute
-	.bgHeader
-		@css{
-			background: rgb(34,118,159);
-			background: -moz-linear-gradient(top,  rgba(34,118,159,1) 0%, rgba(119,179,206,1) 100%);
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(34,118,159,1)), color-stop(100%,rgba(119,179,206,1)));
-			background: -webkit-linear-gradient(top,  rgba(34,118,159,1) 0%,rgba(119,179,206,1) 100%);
-			background: -o-linear-gradient(top,  rgba(34,118,159,1) 0%,rgba(119,179,206,1) 100%);
-			background: -ms-linear-gradient(top,  rgba(34,118,159,1) 0%,rgba(119,179,206,1) 100%);
-			background: linear-gradient(to bottom,  rgba(34,118,159,1) 0%,rgba(119,179,206,1) 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#22769f', endColorstr='#77b3ce',GradientType=0 );
-			}
-		position absolute 
-		z-index -5
-		top 0
-		width 100%
-		height 578px
 	.moverDestellos
 		position absolute
 		top 30px
@@ -412,7 +411,6 @@ section
 			top 120px
 			position absolute
 			width 292px
-			z-index -10
 			animation animacionNube1 190s infinite
 			-webkit-animation animacionNube1 190s infinite
 		.nube2
@@ -423,7 +421,6 @@ section
 			left 0%
 			position absolute
 			width 158px
-			z-index -3
 			animation animacionNube2 15s 1
 			-webkit-animation animacionNube2 15s 1
 		.nube3
@@ -435,7 +432,6 @@ section
 			left 280px
 			position absolute
 			width 158px
-			z-index -3
 			animation animacionNube3 280s infinite
 			-webkit-animation animacionNube3 280s infinite
 	.rayos
@@ -445,6 +441,7 @@ section
 		overflow-y hidden
 		position absolute
 		top 0
+		z-index -5
 		.rayo1 
 			border-top 5px solid transparent
 			border-bottom 5px solid transparent
@@ -453,7 +450,6 @@ section
 			left -100px
 			position absolute
 			top 100px
-			z-index -5
 			transform rotateZ(43deg)
 			-ms-transform rotateZ(43deg)
 			-webkit-transform rotateZ(43deg)
@@ -468,7 +464,6 @@ section
 			left -100px
 			position absolute
 			top 100px
-			z-index -5
 			transform rotateZ(75deg)
 			-ms-transform rotateZ(75deg)
 			-webkit-transform rotateZ(75deg)
@@ -483,7 +478,6 @@ section
 			left 0px
 			position absolute
 			top 25px
-			z-index -5
 			transform rotateZ(3deg)
 			-ms-transform rotateZ(3deg)
 			-webkit-transform rotateZ(3deg)
@@ -498,7 +492,6 @@ section
 			left -600px
 			position absolute
 			top 700px
-			z-index -5
 			transform rotateZ(240deg)
 			-ms-transform rotateZ(240deg)
 			-webkit-transform rotateZ(240deg)
@@ -528,7 +521,6 @@ section
 			left -770px
 			position absolute
 			top 800px
-			z-index -5
 			transform rotateZ(260deg)
 			-ms-transform rotateZ(260deg)
 			-webkit-transform rotateZ(260deg)
@@ -543,7 +535,6 @@ section
 			left -790px
 			position absolute
 			top 800px
-			z-index -5
 			transform rotateZ(258deg)
 			-ms-transform rotateZ(258deg)
 			-webkit-transform rotateZ(258deg)
@@ -558,7 +549,6 @@ section
 			left -860px
 			position absolute
 			top 350px
-			z-index -5
 			transform rotateZ(250deg)
 			-ms-transform rotateZ(250deg)
 			-webkit-transform rotateZ(250deg)
@@ -573,7 +563,6 @@ section
 			left -150px
 			position absolute
 			top 240px
-			z-index -5
 			transform rotateZ(215deg)
 			-ms-transform rotateZ(215deg)
 			-webkit-transform rotateZ(215deg)
@@ -588,7 +577,6 @@ section
 			left -1220px
 			position absolute
 			top 350px
-			z-index -5
 			transform rotateZ(265deg)
 			-ms-transform rotateZ(265deg)
 			-webkit-transform rotateZ(265deg)
@@ -603,7 +591,6 @@ section
 			left -549px
 			position absolute
 			top 490px
-			z-index -5
 			transform rotateZ(265deg)
 			-ms-transform rotateZ(265deg)
 			-webkit-transform rotateZ(265deg)
