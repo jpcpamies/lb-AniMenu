@@ -339,7 +339,7 @@ background: rgb(6,13,13);
 /* line 308 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003308}}
-.efectos .nit .contenedorCastell{display:block;margin:0 auto;position:relative;width:150px;z-index:3;}
+.efectos .nit .contenedorCastell{display:block;margin:0 auto;position:relative;width:150px;z-index:5;}
 
 /* line 314 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
@@ -369,12 +369,12 @@ background: rgb(6,13,13);
 /* line 357 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003357}}
-.efectos .nit .estrellas .moverConstelacion{height:445px;overflow-x:auto;overflow-y:hidden;position:relative;}
+.efectos .nit .estrellas .moverConstelacion{height:445px;overflow-x:auto;overflow-y:hidden;position:relative;z-index:1;}
 
-/* line 362 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 363 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003362}}
-.efectos .nit .estrellas .moverConstelacion .constelacion{background-image:url("../img/constelaciones.png");background-repeat:no-repeat;background-size:800px auto;height:1000px;left:-450px;position:absolute;top:0;width:1000px;opacity:.3;animation:animacionConstelacion 360s infinite;-webkit-animation:animacionConstelacion 360s infinite}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003363}}
+.efectos .nit .estrellas .moverConstelacion .constelacion{background-image:url("../img/estrellas.png");background-repeat:no-repeat;background-size:600px auto;height:1000px;left:-250px;position:absolute;top:0;width:1000px;opacity:.7;animation:animacionConstelacion 450s infinite;-webkit-animation:animacionConstelacion 450s infinite}
 
 /* line 375 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
@@ -385,7 +385,7 @@ background: rgb(6,13,13);
 				background: -o-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
 				background: -ms-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
 				background: linear-gradient(to bottom,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00545454', endColorstr='#cc9f5b25',GradientType=0 );opacity:.2;display:block;width:100%;height:445px;top:0;position:absolute;z-index:2}
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00545454', endColorstr='#cc9f5b25',GradientType=0 );opacity:.2;display:block;width:100%;height:445px;top:0;position:absolute;z-index:3}
 background: -moz-linear-gradient(top,  rgba(84,84,84,0) 0%, rgba(255,255,255,0.07) 49%, rgba(255,255,255,0.51) 80%, rgba(159,91,37,0.8) 100%);
 				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(84,84,84,0)), color-stop(49%,rgba(255,255,255,0.07)), color-stop(80%,rgba(255,255,255,0.51)), color-stop(100%,rgba(159,91,37,0.8)));
 				background: -webkit-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
@@ -398,19 +398,19 @@ background: -moz-linear-gradient(top,  rgba(84,84,84,0) 0%, rgba(255,255,255,0.0
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003384}}
 .efectos .nit .degradadoB{background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(244,118,0,1) 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,0)), color-stop(100%,rgba(244,118,0,1)));
-background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
-background: -o-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
-background: -ms-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
-background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#f47600',GradientType=0 );opacity:.2;display:block;width:100%;height:145px;top:300px;position:absolute;z-index:2}
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,0)), color-stop(100%,rgba(244,118,0,1)));
+				background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+				background: -o-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+				background: -ms-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+				background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#f47600',GradientType=0 );opacity:.2;display:block;width:100%;height:145px;top:300px;position:absolute;z-index:3}
 background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(244,118,0,1) 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,0)), color-stop(100%,rgba(244,118,0,1)));
-background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
-background: -o-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
-background: -ms-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
-background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#f47600',GradientType=0 );
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,0)), color-stop(100%,rgba(244,118,0,1)));
+				background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+				background: -o-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+				background: -ms-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+				background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#f47600',GradientType=0 );
 
 /* line 393 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
