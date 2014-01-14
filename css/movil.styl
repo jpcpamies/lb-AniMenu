@@ -621,12 +621,12 @@ section
 		z-index -4
 .botoOn
 	background rgba(black,.7)
-	height 100%
-	position fixed
-	top 0
-	left 0
-	right 0
 	bottom 0
+	height 100%
+	left 0
+	position fixed
+	right 0
+	top 0
 	width 100%
 	z-index 3
 	animation animacionBoto .4s 1
@@ -637,7 +637,7 @@ section
 		font-size 1.3em
 		font-weight 400
 		letter-spacing 1px
-		margin .6em auto 0 auto
+		margin 35px auto 0 auto
 		p
 			text-align center
 	.aumentar
@@ -646,11 +646,11 @@ section
 		color rgba(#deecfb,1)
 		font-size 1.2em
 		height 50px
+		left 90px
 		line-height 1.75em
 		position fixed
-		right 20px
 		text-align center
-		top 70px
+		top 110px
 		width 50px
 		z-index 4
 		&:after
@@ -670,9 +670,9 @@ section
 		height 50px
 		line-height 2.1em
 		position fixed
-		right 20px
+		left 20px
 		text-align center
-		top 150px 
+		top 190px 
 		width 50px
 		z-index 4
 		&:after
@@ -690,15 +690,13 @@ section
 		color rgba(#deecfb,1)
 		font-size 1.2em
 		height 50px
+		left 20px
 		line-height 1.85em
 		position fixed
-		right 90px
 		text-align center
-		top 70px 
+		top 110px 
 		width 50px
 		z-index 4
-		animation animacionDisminuir .2s 1
-		// -webkit-animation animacionDisminuir .2s 1
 		&:after
 			content 'a'
 			font-size .9em
@@ -708,29 +706,29 @@ section
 			color white
 			-webkit-transition: all .2s;
 			transition: all .2s;
-	.llibret
-		position fixed
-		top 235px
-		right 93px
+	.vistaCompleta
 		color white
 		font-weight 400
-	.llibret2
 		position fixed
-		top 255px
-		right 93px
+		left 93px
+		top 273px
+	.programa
 		color white
 		font-weight 100
+		position fixed
+		left 93px
+		top 293px
 	.mapa
 		background rgba(#8f8f8f,1)
 		border-radius 50%
-		top 230px 
 		color rgba(white,1)
+		font-size 1.2em
 		height 50px
+		left 20px
 		line-height 2.1em
 		position fixed
-		right 20px
-		font-size 1.2em
 		text-align center
+		top 270px 
 		width 50px
 		z-index 3
 		&:before
@@ -742,14 +740,14 @@ section
 			-webkit-transition: all .2s;
 			transition: all .2s;
 	.menu
-		top 7px 
 		color rgba(white,.5)
+		font-size 1.2em
 		height 50px
 		line-height 2.2em
 		position fixed
 		right 7px
-		font-size 1.2em
 		text-align center
+		top 7px 
 		width 50px
 		z-index 7
 		transform rotateZ(45deg)
@@ -759,26 +757,26 @@ section
 			content '\e607'
 			font-family icono
 			font-size 1.7em
-	.nit
-		position fixed
-		top 158px
-		right 93px
+	.vistaNit
 		color white
 		font-weight 400
+		position fixed
+		left 93px
+		top 203px
 	.social
 		.facebook
-			bottom -1px 
+			top 325px 
 			display block
 			height 80px
-			left 10px
+			left 5px
 			padding 1.5em 0 0 1em
 			position fixed
 			width 100%
 			z-index 4
 		.twitter
-			bottom 25px 
-			right 0px
+			top 355px 
 			position fixed
+			left 200px
 			z-index 4
 
 @keyframes animacionBoto 
