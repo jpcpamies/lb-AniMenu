@@ -30,7 +30,7 @@ header
 		top 320px
 		white-space nowrap
 		width 100%
-		z-index 5
+		z-index 12
 		ul
 			.dia 
 				// @css {
@@ -94,6 +94,7 @@ header
 		padding 3em 0 0 0 
 		position relative
 		width 100%
+		z-index 10
 		.dia
 			font-size 1em
 			font-weight 300
@@ -351,9 +352,12 @@ section
 				-webkit-animation animacionFosc 15s infinite
 		.estrellas
 			background rgba(red,.3)
-			display block
-			width 100%
-			height 300px
+			position relative
+			top 0
+			left 0 
+			right 0
+			height 445px
+			z-index 1
 			.moverFugaz
 				display block
 				position absolute 
@@ -372,8 +376,20 @@ section
 					width 35px
 					animation animacionFugaz 15s infinite
 					-webkit-animation animacionFugaz 15s infinite
-			// .moverConstelacion
-			// 	.constelacion
+			.moverConstelacion
+				position relative
+				height 445px
+				overflow-y hidden
+				overflow-x auto
+				.constelacion
+					background-image url(../img/constelaciones.png)
+					background-repeat no-repeat
+					background-size 1000px auto
+					height 1000px
+					left -200px
+					position absolute
+					top 0px
+					width 1000px
 					
 		.degradado
 			@css{
@@ -389,6 +405,7 @@ section
 			display block
 			width 100%
 			height 445px
+				
 			top 0px
 			position absolute
 			z-index 2
@@ -401,14 +418,6 @@ section
 		// 	width 633px
 		// 	z-index 3
 		// 	.constelacion
-		// 		background-image url(../img/constelaciones.png)
-		// 		background-repeat no-repeat
-		// 		background-size 633px auto
-		// 		height 587px
-		// 		left 0px
-		// 		position absolute
-		// 		top 0px
-		// 		width 633px
 		// 		animation animacionConstelacion 15s infinite
 		// 		-webkit-animation animacionConstelacion 15s infinit
 				
