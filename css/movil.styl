@@ -390,6 +390,8 @@ section
 					position absolute
 					top 0px
 					width 1000px
+					animation animacionConstelacion 15s infinite
+					-webkit-animation animacionConstelacion 15s infinite
 					
 		.degradado
 			@css{
@@ -408,19 +410,7 @@ section
 				
 			top 0px
 			position absolute
-			z-index 2
-
-		// .moverConstelacion
-		// 	display block
-		// 	height 587px
-		// 	margin 0 auto
-		// 	position relative
-		// 	width 633px
-		// 	z-index 3
-		// 	.constelacion
-		// 		animation animacionConstelacion 15s infinite
-		// 		-webkit-animation animacionConstelacion 15s infinit
-				
+			z-index 2		
 .botoOn
 	background rgba(black,.8)
 	bottom 0
@@ -592,6 +582,23 @@ section
 	// 	transform rotateZ(0deg)
 	// 	-ms-transform rotateZ(0deg)
 	// 	-webkit-transform rotateZ(0deg)
+
+@keyframes animacionConstelacion
+	0%
+		transform rotateZ(0deg)
+		-ms-transform rotateZ(0deg)
+		-webkit-transform rotateZ(0deg)
+
+	50%
+		transform rotateZ(120deg)
+		-ms-transform rotateZ(120deg)
+		-webkit-transform rotateZ(120deg)
+
+	100%
+		transform rotateZ(0deg)
+		-ms-transform rotateZ(0deg)
+		-webkit-transform rotateZ(0deg)
+
 @keyframes animacionDia 	
 	0% 
 		opacity 0
