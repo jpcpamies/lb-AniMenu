@@ -350,7 +350,7 @@ background: rgb(6,13,13);
 /* line 323 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003323}}
-.efectos .nit .contenedorCastell .castellFosc{background-image:url("../img/castellFosc.png");background-repeat:no-repeat;background-size:243px auto;height:119px;left:-50px;position:absolute;top:326px;width:243px;animation:animacionFosc 21s infinite;-webkit-animation:animacionFosc 21s infinite}
+.efectos .nit .contenedorCastell .castellFosc{background-image:url("../img/castellFosc.png");background-repeat:no-repeat;background-size:243px auto;height:119px;left:-50px;position:absolute;top:326px;width:243px;animation:animacionFosc 15s infinite;-webkit-animation:animacionFosc 15s infinite}
 
 /* line 334 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
@@ -589,7 +589,7 @@ background: -moz-linear-gradient(top,  rgba(84,84,84,0) 0%, rgba(255,255,255,0.0
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003560}}
 @-moz-keyframes animacionFosc{0%{opacity:1}
 50%{opacity:.1}
-75%{opacity:.1}
+75%{opacity:1}
 100%{opacity:1}
 }
 /* line 560 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
@@ -597,7 +597,7 @@ background: -moz-linear-gradient(top,  rgba(84,84,84,0) 0%, rgba(255,255,255,0.0
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003560}}
 @-webkit-keyframes animacionFosc{0%{opacity:1}
 50%{opacity:.1}
-75%{opacity:.1}
+75%{opacity:1}
 100%{opacity:1}
 }
 /* line 560 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
@@ -605,7 +605,7 @@ background: -moz-linear-gradient(top,  rgba(84,84,84,0) 0%, rgba(255,255,255,0.0
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003560}}
 @-o-keyframes animacionFosc{0%{opacity:1}
 50%{opacity:.1}
-75%{opacity:.1}
+75%{opacity:1}
 100%{opacity:1}
 }
 /* line 560 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
@@ -613,7 +613,7 @@ background: -moz-linear-gradient(top,  rgba(84,84,84,0) 0%, rgba(255,255,255,0.0
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003560}}
 @-ms-keyframes animacionFosc{0%{opacity:1}
 50%{opacity:.1}
-75%{opacity:.1}
+75%{opacity:1}
 100%{opacity:1}
 }
 /* line 560 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
@@ -621,7 +621,7 @@ background: -moz-linear-gradient(top,  rgba(84,84,84,0) 0%, rgba(255,255,255,0.0
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003560}}
 @keyframes animacionFosc{0%{opacity:1}
 50%{opacity:.1}
-75%{opacity:.1}
+75%{opacity:1}
 100%{opacity:1}
 }
 /* line 569 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
