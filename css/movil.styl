@@ -350,8 +350,7 @@ section
 				width 243px
 				animation animacionFosc 15s infinite
 				-webkit-animation animacionFosc 15s infinite
-		.movEsrella
-			// background rgba(red,.3)
+		.moverEsrella
 			display block
 			position absolute 
 			// width 50%
@@ -362,13 +361,13 @@ section
 			transform rotateZ(-50deg)
 			-ms-transform rotateZ(-50deg)
 			-webkit-transform rotateZ(-50deg)
-			.estrellaDeseo
+			.estrellaFugaz
 				background white
 				border-radius 50%
 				height 1px
 				width 35px
-				animation animacionDeseo 15s infinite
-				-webkit-animation animacionDeseo 15s infinite
+				animation animacionFugaz 15s infinite
+				-webkit-animation animacionFugaz 15s infinite
 		.degradado
 			@css{
 				background: -moz-linear-gradient(top,  rgba(84,84,84,0) 0%, rgba(255,255,255,0.07) 49%, rgba(255,255,255,0.51) 80%, rgba(159,91,37,0.8) 100%);
@@ -386,28 +385,26 @@ section
 			top 0px
 			position absolute
 			z-index 2
-		.constelaciones
-			border 1px solid white
-			display block
-			margin 0 auto
-			position relative
-			z-index 3
-			height 587px
-			width 633
-			.constelacion
-				background-image url(../img/constelaciones.png)
-				background-repeat no-repeat
-				background-size 633px auto
-				height 587px
-				left 0px
-				position absolute
-				top 0px
-				width 633px
-				transform rotateZ(0deg)
-				-ms-transform rotateZ(0deg)
-				-webkit-transform rotateZ(0deg)
-				animation animacionConstelacion 15s infinite
-				-webkit-animation animacionConstelacion 15s infinit
+
+		// .moverConstelacion
+		// 	display block
+		// 	height 587px
+		// 	margin 0 auto
+		// 	position relative
+		// 	width 633px
+		// 	z-index 3
+		// 	.constelacion
+		// 		background-image url(../img/constelaciones.png)
+		// 		background-repeat no-repeat
+		// 		background-size 633px auto
+		// 		height 587px
+		// 		left 0px
+		// 		position absolute
+		// 		top 0px
+		// 		width 633px
+		// 		animation animacionConstelacion 15s infinite
+		// 		-webkit-animation animacionConstelacion 15s infinit
+				
 .botoOn
 	background rgba(black,.8)
 	bottom 0
@@ -565,28 +562,20 @@ section
 			position fixed
 			left 200px
 			z-index 4
-// @keyframes 
 
-// 		transform rotateZ(-18deg)
-// 		-ms-transform rotateZ(-18deg)
-// 		-webkit-transform rotateZ(-18deg)
 
-// 		transform translate(0px)
-// 		-ms-transform translate(0px)
-// 		-webkit-transform translate(0px)
-@keyframes animacionConstelacion 	
-	0% 
-		transform rotateZ(0deg)
-		-ms-transform rotateZ(0deg)
-		-webkit-transform rotateZ(0deg)
-	50%
-		transform rotateZ(360deg)
-		-ms-transform rotateZ(360deg)
-		-webkit-transform rotateZ(360deg)
-	100% 
-		transform rotateZ(0deg)
-		-ms-transform rotateZ(0deg)
-		-webkit-transform rotateZ(0deg)
+	// 0% 
+	// 	transform rotateZ(0deg)
+	// 	-ms-transform rotateZ(0deg)
+	// 	-webkit-transform rotateZ(0deg)
+	// 50%
+	// 	transform rotateZ(180deg)
+	// 	-ms-transform rotateZ(180deg)
+	// 	-webkit-transform rotateZ(180deg)
+	// 100% 
+	// 	transform rotateZ(0deg)
+	// 	-ms-transform rotateZ(0deg)
+	// 	-webkit-transform rotateZ(0deg)
 @keyframes animacionDia 	
 	0% 
 		opacity 0
@@ -596,7 +585,7 @@ section
 		opacity 1
 	100% 
 		opacity 1
-@keyframes animacionDeseo 
+@keyframes animacionFugaz 
 	0%
 		opacity 0
 		transform translate(0px)
