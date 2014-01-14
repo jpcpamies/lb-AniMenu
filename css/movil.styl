@@ -350,20 +350,25 @@ section
 				width 243px
 				animation animacionFosc 21s infinite
 				-webkit-animation animacionFosc 21s infinite
-		.estrellaDeseo
-			width 35px
-			height 1px
-			background white
-			border-radius 50%
+		.movEsrella
+			// background rgba(red,.3)
+			display block
 			position absolute 
-			top 200px
-			right 100px
+			// width 50%
+			// height 50%
 			z-index 1
-			transform rotateZ(-18deg)
-			-ms-transform rotateZ(-18deg)
-			-webkit-transform rotateZ(-18deg)
-			animation animacionDeseo 21s infinite
-			-webkit-animation animacionDeseo 21s infinite
+			right -10px
+			top -10px
+			transform rotateZ(-50deg)
+			-ms-transform rotateZ(-50deg)
+			-webkit-transform rotateZ(-50deg)
+			.estrellaDeseo
+				background white
+				border-radius 50%
+				height 1px
+				width 35px
+				animation animacionDeseo 15s infinite
+				-webkit-animation animacionDeseo 15s infinite
 .botoOn
 	background rgba(black,.8)
 	bottom 0
@@ -530,9 +535,7 @@ section
 // 		transform translate(0px)
 // 		-ms-transform translate(0px)
 // 		-webkit-transform translate(0px)
-// 		transform translate(0px)
-// 		-ms-transform translate(0px)
-// 		-webkit-transform translate(0px)
+
 @keyframes animacionDia 
 	0% 
 		opacity 0
@@ -542,8 +545,30 @@ section
 		opacity 1
 	100% 
 		opacity 1
-// @keyframes animacionDia 
-// 	0%
+@keyframes animacionDeseo 
+	0%
+		opacity 0
+		transform translate(0px)
+		-ms-transform translate(0px)
+		-webkit-transform translate(0px)
+	1%
+		opacity .2
+	15%
+		opacity 0
+	20%
+		opacity 0
+	30%
+		opacity 0
+		transform translate(-900px)
+		-ms-transform translate(-900px)
+		-webkit-transform translate(-900px)
+	35%
+		opacity 0
+	100%
+		opacity 0
+		transform translate(0px)
+		-ms-transform translate(0px)
+		-webkit-transform translate(0px)
 
 @keyframes animacionFosc
 	0% 
