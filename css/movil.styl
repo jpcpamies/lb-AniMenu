@@ -351,18 +351,15 @@ section
 				animation animacionFosc 15s infinite
 				-webkit-animation animacionFosc 15s infinite
 		.estrellas
-			background rgba(red,.3)
-			position relative
-			top 0
-			left 0 
-			right 0
 			height 445px
+			left 0 
+			position relative
+			right 0
+			top 0
 			z-index 1
 			.moverFugaz
 				display block
 				position absolute 
-				// width 50%
-				// height 50%
 				z-index 1
 				right -10px
 				top -10px
@@ -377,21 +374,22 @@ section
 					animation animacionFugaz 15s infinite
 					-webkit-animation animacionFugaz 15s infinite
 			.moverConstelacion
-				position relative
 				height 445px
-				overflow-y hidden
 				overflow-x auto
+				overflow-y hidden
+				position relative
 				.constelacion
 					background-image url(../img/constelaciones.png)
 					background-repeat no-repeat
-					background-size 1000px auto
+					background-size 800px auto
 					height 1000px
-					left -200px
+					left -450px
 					position absolute
 					top 0px
 					width 1000px
-					animation animacionConstelacion 15s infinite
-					-webkit-animation animacionConstelacion 15s infinite
+					opacity .3
+					animation animacionConstelacion 360s infinite
+					-webkit-animation animacionConstelacion 360s infinite
 					
 		.degradado
 			@css{
@@ -568,20 +566,6 @@ section
 			position fixed
 			left 200px
 			z-index 4
-
-
-	// 0% 
-	// 	transform rotateZ(0deg)
-	// 	-ms-transform rotateZ(0deg)
-	// 	-webkit-transform rotateZ(0deg)
-	// 50%
-	// 	transform rotateZ(180deg)
-	// 	-ms-transform rotateZ(180deg)
-	// 	-webkit-transform rotateZ(180deg)
-	// 100% 
-	// 	transform rotateZ(0deg)
-	// 	-ms-transform rotateZ(0deg)
-	// 	-webkit-transform rotateZ(0deg)
 
 @keyframes animacionConstelacion
 	0%
