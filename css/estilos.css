@@ -215,7 +215,7 @@ section .llistaVisible .event .detall .horaEvent p:after{content:'h'}
 /* line 186 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003186}}
-section .llistaVisible .event .detall .lloc{color:rgba(0,0,0,0.4);font-size:.6em;font-weight:300;letter-spacing:.2em;text-transform:uppercase;}
+section .llistaVisible .event .detall .lloc{color:rgba(255,244,0,0.7);font-size:.6em;font-weight:300;letter-spacing:.2em;text-transform:uppercase;}
 
 /* line 192 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
@@ -267,7 +267,7 @@ section .llistaVisible .centrar{display:block;text-align:center;}
 /* line 225 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003225}}
-section .llistaVisible .centrar .anarInici{-ms-transform:rotateZ(180deg);-webkit-transform:rotateZ(180deg);background:rgba(0,0,0,0.1);border-radius:50%;color:#fff;display:inline-block;height:50px;line-height:2.7em;transform:rotateZ(180deg);width:50px;}
+section .llistaVisible .centrar .anarInici{-ms-transform:rotateZ(180deg);-webkit-transform:rotateZ(180deg);background:rgba(255,255,255,0.1);border-radius:50%;color:rgba(0,0,0,0.65);display:inline-block;height:50px;line-height:2.7em;transform:rotateZ(180deg);width:50px;}
 
 /* line 236 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
@@ -283,21 +283,21 @@ section .llistaInvisible{display:none}
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003256}}
 .bg{background: rgb(6,13,13);
-background: -moz-linear-gradient(top,  rgba(6,13,13,1) 39%, rgba(3,39,66,1) 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(39%,rgba(6,13,13,1)), color-stop(100%,rgba(3,39,66,1)));
-background: -webkit-linear-gradient(top,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
-background: -o-linear-gradient(top,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
-background: -ms-linear-gradient(top,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
-background: linear-gradient(to bottom,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#060d0d', endColorstr='#032742',GradientType=0 );height:100%;left:0;position:fixed;top:0;width:100%;z-index:-50}
+		background: -moz-linear-gradient(top,  rgba(6,13,13,1) 39%, rgba(3,39,66,1) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(39%,rgba(6,13,13,1)), color-stop(100%,rgba(3,39,66,1)));
+		background: -webkit-linear-gradient(top,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
+		background: -o-linear-gradient(top,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
+		background: -ms-linear-gradient(top,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
+		background: linear-gradient(to bottom,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#060d0d', endColorstr='#032742',GradientType=0 );height:100%;left:0;position:fixed;top:0;width:100%;z-index:-50}
 background: rgb(6,13,13);
-background: -moz-linear-gradient(top,  rgba(6,13,13,1) 39%, rgba(3,39,66,1) 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(39%,rgba(6,13,13,1)), color-stop(100%,rgba(3,39,66,1)));
-background: -webkit-linear-gradient(top,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
-background: -o-linear-gradient(top,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
-background: -ms-linear-gradient(top,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
-background: linear-gradient(to bottom,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#060d0d', endColorstr='#032742',GradientType=0 );
+		background: -moz-linear-gradient(top,  rgba(6,13,13,1) 39%, rgba(3,39,66,1) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(39%,rgba(6,13,13,1)), color-stop(100%,rgba(3,39,66,1)));
+		background: -webkit-linear-gradient(top,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
+		background: -o-linear-gradient(top,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
+		background: -ms-linear-gradient(top,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
+		background: linear-gradient(to bottom,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#060d0d', endColorstr='#032742',GradientType=0 );
 
 /* line 264 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
