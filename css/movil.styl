@@ -323,39 +323,47 @@ section
 		.sol
 			display none
 	.nit
-		display block
-		margin 0 auto
-		position relative
-		width 150px
-		z-index 1
-		.castell
-			background-image url(../img/castell.png)
-			background-repeat no-repeat
-			background-size 243px auto
-			height 119px
-			left -50px
-			position absolute
-			top 326px
-			width 243px
-		.castellFosc
-			background-image url(../img/castellFosc.png)
-			background-repeat no-repeat
-			background-size 243px auto
-			height 119px
-			left -50px
-			position absolute
-			top 326px
-			width 243px
-			animation animacionFosc 21s infinite
-			-webkit-animation animacionFosc 21s infinite
+		width 100%
+		.contenedorCastell
+			display block
+			margin 0 auto
+			position relative
+			width 150px
+			z-index 1
+			.castell
+				background-image url(../img/castell.png)
+				background-repeat no-repeat
+				background-size 243px auto
+				height 119px
+				left -50px
+				position absolute
+				top 326px
+				width 243px
+			.castellFosc
+				background-image url(../img/castellFosc.png)
+				background-repeat no-repeat
+				background-size 243px auto
+				height 119px
+				left -50px
+				position absolute
+				top 326px
+				width 243px
+				animation animacionFosc 21s infinite
+				-webkit-animation animacionFosc 21s infinite
 		.estrellaDeseo
-			width 3px
-			height 3px
+			width 35px
+			height 1px
 			background white
 			border-radius 50%
 			position absolute 
 			top 200px
-			left 100px
+			right 100px
+			z-index 1
+			transform rotateZ(-18deg)
+			-ms-transform rotateZ(-18deg)
+			-webkit-transform rotateZ(-18deg)
+			animation animacionDeseo 21s infinite
+			-webkit-animation animacionDeseo 21s infinite
 .botoOn
 	background rgba(black,.8)
 	bottom 0
@@ -534,6 +542,9 @@ section
 		opacity 1
 	100% 
 		opacity 1
+// @keyframes animacionDia 
+// 	0%
+
 @keyframes animacionFosc
 	0% 
 		opacity 1
