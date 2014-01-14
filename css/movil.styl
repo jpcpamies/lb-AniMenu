@@ -386,6 +386,28 @@ section
 			top 0px
 			position absolute
 			z-index 2
+		.constelaciones
+			border 1px solid white
+			display block
+			margin 0 auto
+			position relative
+			z-index 3
+			height 587px
+			width 633
+			.constelacion
+				background-image url(../img/constelaciones.png)
+				background-repeat no-repeat
+				background-size 633px auto
+				height 587px
+				left 0px
+				position absolute
+				top 0px
+				width 633px
+				transform rotateZ(0deg)
+				-ms-transform rotateZ(0deg)
+				-webkit-transform rotateZ(0deg)
+				animation animacionConstelacion 15s infinite
+				-webkit-animation animacionConstelacion 15s infinit
 .botoOn
 	background rgba(black,.8)
 	bottom 0
@@ -552,8 +574,20 @@ section
 // 		transform translate(0px)
 // 		-ms-transform translate(0px)
 // 		-webkit-transform translate(0px)
-
-@keyframes animacionDia 
+@keyframes animacionConstelacion 	
+	0% 
+		transform rotateZ(0deg)
+		-ms-transform rotateZ(0deg)
+		-webkit-transform rotateZ(0deg)
+	50%
+		transform rotateZ(360deg)
+		-ms-transform rotateZ(360deg)
+		-webkit-transform rotateZ(360deg)
+	100% 
+		transform rotateZ(0deg)
+		-ms-transform rotateZ(0deg)
+		-webkit-transform rotateZ(0deg)
+@keyframes animacionDia 	
 	0% 
 		opacity 0
 	50%
