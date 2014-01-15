@@ -43,14 +43,6 @@ function toggleMenu(a){
     }
 }
 
-function mostrar(b,c){
-    resetearProg();
-    var elem = document.getElementById(b);
-    elem.className="llistaVisible";
-    resetearBot();
-    document.getElementById(c).style.backgroundColor="lightgray";
-}
-
 function resizer (multiplicador){
     for (var i = 0; i < texto.length; i++) {
         
@@ -63,6 +55,15 @@ function resizer (multiplicador){
         };
 }
 
+
+function mostrar(b){
+    resetearProg();
+    var elem = document.getElementById(b);
+    elem.className="llistaVisible";
+
+}
+
+
 function resetearProg(){
     for (var i = 0; i < prog.length; i++) {
         if (prog[i].className=="llistaVisible"){
@@ -73,22 +74,52 @@ function resetearProg(){
     };
 }
 
+// function resetearBot(){
+//     for (i=0;i<bot.length;i++)
+//       bot[i].style.backgroundColor="";
+// }
+
 //Cambiar el display de none a block
-function cambiar(esto){
-  vista = document.getElementById(esto).style.display;
+// function cambiar(esto){
+//   vista = document.getElementById(esto).style.display;
 
-  if (vista == 'none')
-  {
-    vista = 'block';
-  }
-  else
-  {
-    vista = 'none';
-  }
-  document.getElementById(esto).style.display = vista;
+//   if (vista == 'none')
+//   {
+//     vista = 'block';
+//   }
+//   else
+//   {
+//     vista = 'none';
+//   }
+//   document.getElementById(esto).style.display = vista;
+// }
+
+
+
+
+function togglePes(a){
+  var elem = document.getElementById(a);
+  $(elem).slideToggle('slow');
 }
 
-function resetearBot(){
-    for (i=0;i<bot.length;i++)
-      bot[i].style.backgroundColor="";
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
