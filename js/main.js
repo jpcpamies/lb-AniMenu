@@ -96,13 +96,37 @@ function resetearProg(){
 
 
 
-
+//Función para desplegar los elementos del div llistaEvent.
 function togglePes(a){
   var elem = document.getElementById(a);
   $(elem).slideToggle('slow');
 }
 
+function vistaDia(){
 
+  var elem = $('link')[2];
+  if (elem.href="css/estilosNoche.css"){
+
+    elem.href="css/estilosDia.css";
+    $('#inici').removeClass('botoOn');
+    $('#inici').addClass('boto');
+
+  }
+
+}
+
+function vistaNoche(){
+
+  var elem = $('link')[2];
+  if (elem.href="css/estilosDia.css"){
+
+    elem.href="css/estilosNoche.css";
+    $('#inici').removeClass('botoOn');
+    $('#inici').addClass('boto');
+
+  }
+
+}
 
 
 
