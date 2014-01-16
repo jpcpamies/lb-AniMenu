@@ -99,7 +99,7 @@ function resetearProg(){
 //Función para desplegar los elementos del div llistaEvent.
 function togglePes(a){
   var elem = document.getElementById(a);
-  $(elem).slideToggle('slow');
+  $(elem).slideToggle('fast');
 }
 
 function vistaDia(){
@@ -108,8 +108,8 @@ function vistaDia(){
   if (elem.href="css/estilosNoche.css"){
 
     elem.href="css/estilosDia.css";
-    $('#inici').removeClass('botoOn');
     $('#inici').addClass('boto');
+    $('#inici').removeClass('botoOn');
 
   }
 
@@ -121,8 +121,8 @@ function vistaNoche(){
   if (elem.href="css/estilosDia.css"){
 
     elem.href="css/estilosNoche.css";
-    $('#inici').removeClass('botoOn');
     $('#inici').addClass('boto');
+    $('#inici').removeClass('botoOn');
 
   }
 
