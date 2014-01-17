@@ -191,39 +191,46 @@ section
 			display block
 			margin 0 0 0 80px
 			.event
-			// margin 0 .5em 1.8em 1.5em
+				position relative
+				padding .7em .1em .5em .5em
 				.detall
-					border-bottom 3px solid rgba(white,1)
-					padding 0 0 .2em .25em
+					margin 1em 0
+					// border-bottom 3px solid rgba(white,1)
+					// padding 0 0 .2em .25em
 					.horaEvent
-						float left
-						width 100%
 						color white
-						display block
-						float left
 						font-size .65em
 						font-weight 300
 						margin -1px 10px 0 -5px
-						p
-							&:after
-								content 'h'
+						position absolute
+						left -60px
+						top 36px
+						.punt
+							background secundario
+							border 2px solid white
+							border-radius 50%
+							height 15px
+							left 50px
+							position absolute
+							top 0px
+							width 15px
 					.lloc
-						color rgba(noche,.7)
+						color white
 						font-size .6em
 						font-weight 300
 						letter-spacing .20em
 						text-transform uppercase
 						p
-							&:after
+							&:before
 								content '\e605'
 								font-family icono
 				.contingut
 					margin 1em 0 0 0 
 					
 					.titolEvent
-						color rgba(white,1)
+						color rgba(noche,1)
 						font-size .9em
-						font-weight 400
+						font-weight 300
 						margin -.7em 1.8em .7em .1em
 						position relative
 						p
@@ -243,6 +250,8 @@ section
 						p
 							&:after
 								display none
+				&:nth-child(even)
+					background rgba(white,.3)
 		.centrar
 			display block
 			text-align center
