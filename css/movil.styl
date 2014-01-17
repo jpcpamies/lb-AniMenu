@@ -38,14 +38,12 @@ header
 				margin 0 0 0 1em 
 				position relative
 				width 65px
-				-webkit-transition all .3s ease
-				transition all .3s ease
 				p
 					border-radius 50%
 					color rgba(white,.8)
-					font-weight 300
 					height 35px
 					left 25%
+					font-weight 300
 					line-height 1.5em
 					position absolute
 					text-align center
@@ -56,11 +54,10 @@ header
 						color rgba(black,.5)
 				.centrarMes
 					margin 0 0 0 .5em
-	
 				.mes
 					color rgba(white,.8)
 					font-size .7em
-					font-weight 100
+					font-weight 300
 					left 25%
 					letter-spacing 0em
 					position absolute
@@ -68,6 +65,7 @@ header
 				.nomDia
 					color rgba(white,.8)
 					font-size .7em
+					font-weight 300
 					left 30%
 					position absolute
 					top -5px
@@ -126,7 +124,7 @@ header
 				font-weight 300
 				letter-spacing .055em
 				line-height 1.2em
-				margin 0 auto
+				margin .7em auto 0 auto
 				padding .7em 0 .2em 0
 				text-align center
 				width 90%
@@ -148,21 +146,24 @@ header
 				margin 0 auto
 				text-align center
 				width 100px
-				p
-					&:after
-						content 'h'
+				// p
+				// 	&:after
+				// 		content 'h'
 		.titol
-			background rgba(white,.5)
+			// background rgba(white,.5)
 			border-radius 10px
-			color rgba(white,1)
-			font-size .6em
+			color rgba(noche,1)
+			font-size 1em
 			font-weight 300
-			left 20px
-			line-height 2em
+			left 10px
+			// line-height 2em
 			padding 0 .7em
 			position absolute
-			text-transform uppercase
-			top 12px
+			// text-transform uppercase
+			p
+				&:after
+					content '\e605'
+					font-family icono
 section
 	margin 0 0 100px 0
 	display block
@@ -312,108 +313,108 @@ section
 		.sol
 			display none
 	.nit
-		// .contenedorCastell
-		// 	display block
-		// 	margin 0 auto
-		// 	position relative
-		// 	width 150px
-		// 	z-index 5
-		// 	.castell
-		// 		background-image url(../img/castell.png)
-		// 		background-repeat no-repeat
-		// 		background-size 243px auto
-		// 		height 119px
-		// 		left -50px
-		// 		position absolute
-		// 		top 326px
-		// 		width 243px
-		// 	.castellFosc
-		// 		background-image url(../img/castellFosc.png)
-		// 		background-repeat no-repeat
-		// 		background-size 243px auto
-		// 		height 119px
-		// 		left -50px
-		// 		position absolute
-		// 		top 326px
-		// 		width 243px
-		// 		animation animacionFosc 15s infinite
-		// 		-webkit-animation animacionFosc 15s infinite
-		// .estrellas
-		// 	height 445px
-		// 	left 0 
-		// 	position relative
-		// 	right 0
-		// 	top 0
-		// 	z-index 1
-		// 	.moverFugaz
-		// 		display block
-		// 		position absolute 
-		// 		z-index 1
-		// 		right -10px
-		// 		top -10px
-		// 		transform rotateZ(-50deg)
-		// 		-ms-transform rotateZ(-50deg)
-		// 		-webkit-transform rotateZ(-50deg)
-		// 		.fugaz
-		// 			background white
-		// 			border-radius 50%
-		// 			height 1px
-		// 			width 35px
-		// 			animation animacionFugaz 16s infinite
-		// 			-webkit-animation animacionFugaz 16s infinite
-		// 	.moverConstelacion
-		// 		height 445px
-		// 		overflow-x auto
-		// 		overflow-y hidden
-		// 		position relative
-		// 		z-index 1
-		// 		.constelacion
-		// 			background-image url(../img/estrellas.png)
-		// 			background-repeat no-repeat
-		// 			background-size 900px auto
-		// 			// border 2px solid white
-		// 			height 900px
-		// 			left -250px
-		// 			position absolute
-		// 			top 0px
-		// 			width 900px
-		// 			opacity 1
-		// 			animation animacionConstelacion 320s infinite
-		// 			-webkit-animation animacionConstelacion 320s infinite
-		// .degradadoA
-		// 	@css{
-		// 		background: -moz-linear-gradient(top,  rgba(84,84,84,0) 0%, rgba(255,255,255,0.07) 49%, rgba(255,255,255,0.51) 80%, rgba(159,91,37,0.8) 100%);
-		// 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(84,84,84,0)), color-stop(49%,rgba(255,255,255,0.07)), color-stop(80%,rgba(255,255,255,0.51)), color-stop(100%,rgba(159,91,37,0.8)));
-		// 		background: -webkit-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
-		// 		background: -o-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
-		// 		background: -ms-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
-		// 		background: linear-gradient(to bottom,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
-		// 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00545454', endColorstr='#cc9f5b25',GradientType=0 );
-		// 		}
-		// 	opacity .2
-		// 	display block
-		// 	width 100%
-		// 	height 445px
-		// 	top 0px
-		// 	position absolute
-		// 	z-index 3	
-		// .degradadoB
-		// 	@css{
-		// 		background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(244,118,0,1) 100%);
-		// 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,0)), color-stop(100%,rgba(244,118,0,1)));
-		// 		background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
-		// 		background: -o-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
-		// 		background: -ms-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
-		// 		background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
-		// 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#f47600',GradientType=0 );
-		// 		}
-		// 	opacity .2
-		// 	display block
-		// 	width 100%
-		// 	height 145px
-		// 	top 300px
-		// 	position absolute
-		// 	z-index 3		
+		.contenedorCastell
+			display block
+			margin 0 auto
+			position relative
+			width 150px
+			z-index 5
+			.castell
+				background-image url(../img/castell.png)
+				background-repeat no-repeat
+				background-size 243px auto
+				height 119px
+				left -50px
+				position absolute
+				top 326px
+				width 243px
+			.castellFosc
+				background-image url(../img/castellFosc.png)
+				background-repeat no-repeat
+				background-size 243px auto
+				height 119px
+				left -50px
+				position absolute
+				top 326px
+				width 243px
+				animation animacionFosc 15s infinite
+				-webkit-animation animacionFosc 15s infinite
+		.estrellas
+			height 445px
+			left 0 
+			position relative
+			right 0
+			top 0
+			z-index 1
+			.moverFugaz
+				display block
+				position absolute 
+				z-index 1
+				right -10px
+				top -10px
+				transform rotateZ(-50deg)
+				-ms-transform rotateZ(-50deg)
+				-webkit-transform rotateZ(-50deg)
+				.fugaz
+					background white
+					border-radius 50%
+					height 1px
+					width 35px
+					animation animacionFugaz 16s infinite
+					-webkit-animation animacionFugaz 16s infinite
+			.moverConstelacion
+				height 445px
+				overflow-x auto
+				overflow-y hidden
+				position relative
+				z-index 1
+				.constelacion
+					background-image url(../img/estrellas.png)
+					background-repeat no-repeat
+					background-size 900px auto
+					// border 2px solid white
+					height 900px
+					left -250px
+					position absolute
+					top 0px
+					width 900px
+					opacity 1
+					animation animacionConstelacion 320s infinite
+					-webkit-animation animacionConstelacion 320s infinite
+		.degradadoA
+			@css{
+				background: -moz-linear-gradient(top,  rgba(84,84,84,0) 0%, rgba(255,255,255,0.07) 49%, rgba(255,255,255,0.51) 80%, rgba(159,91,37,0.8) 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(84,84,84,0)), color-stop(49%,rgba(255,255,255,0.07)), color-stop(80%,rgba(255,255,255,0.51)), color-stop(100%,rgba(159,91,37,0.8)));
+				background: -webkit-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
+				background: -o-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
+				background: -ms-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
+				background: linear-gradient(to bottom,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00545454', endColorstr='#cc9f5b25',GradientType=0 );
+				}
+			opacity .2
+			display block
+			width 100%
+			height 445px
+			top 0px
+			position absolute
+			z-index 3	
+		.degradadoB
+			@css{
+				background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(244,118,0,1) 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,0)), color-stop(100%,rgba(244,118,0,1)));
+				background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+				background: -o-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+				background: -ms-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+				background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#f47600',GradientType=0 );
+				}
+			opacity .2
+			display block
+			width 100%
+			height 145px
+			top 300px
+			position absolute
+			z-index 3		
 .botoOn
 	background rgba(black,.8)
 	bottom 0
