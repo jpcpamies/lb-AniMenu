@@ -51,7 +51,7 @@ header .bgHeader{background: rgb(6,64,112);
 			background: -o-linear-gradient(45deg,  rgba(6,64,112,1) 0%,rgba(3,30,57,1) 53%,rgba(6,13,13,1) 87%);
 			background: -ms-linear-gradient(45deg,  rgba(6,64,112,1) 0%,rgba(3,30,57,1) 53%,rgba(6,13,13,1) 87%);
 			background: linear-gradient(45deg,  rgba(6,64,112,1) 0%,rgba(3,30,57,1) 53%,rgba(6,13,13,1) 87%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#064070', endColorstr='#060d0d',GradientType=1 );position:absolute;z-index:0;top:0;width:100%;height:678px}
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#064070', endColorstr='#060d0d',GradientType=1 );position:absolute;z-index:0;top:0;width:100%;height:710px}
 background: rgb(6,64,112);
 			background: -moz-linear-gradient(45deg,  rgba(6,64,112,1) 0%, rgba(3,30,57,1) 53%, rgba(6,13,13,1) 87%);
 			background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(6,64,112,1)), color-stop(53%,rgba(3,30,57,1)), color-stop(87%,rgba(6,13,13,1)));
@@ -64,7 +64,7 @@ background: rgb(6,64,112);
 /* line 14 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\0000314}}
-header .botonera{background:rgba(255,255,255,0.08);height:auto;overflow-x:auto;overflow-y:hidden;padding:10px 20px 0 10px;white-space:nowrap;width:100%;z-index:12;}
+header .botonera{background:rgba(255,255,255,0.08);height:auto;overflow-x:auto;overflow-y:hidden;padding:20px 20px 0 10px;white-space:nowrap;width:100%;z-index:12;}
 
 /* line 23 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
@@ -139,7 +139,7 @@ header .eventActual .contingutEventActual{animation:animacionLlista 3s 1;-webkit
 /* line 111 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003111}}
-header .eventActual .contingutEventActual .event{color:#fff;display:block;font-size:.9em;font-weight:300;letter-spacing:.055em;line-height:1.2em;margin:.7em auto 0 auto;padding:.7em 0 .2em 0;text-align:center;width:90%;}
+header .eventActual .contingutEventActual .event{color:#fff;display:block;font-size:.9em;font-weight:300;letter-spacing:.055em;line-height:1.2em;margin:.7em auto 0 auto;padding:.7em 0 0 0;text-align:center;width:90%;}
 
 /* line 122 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
