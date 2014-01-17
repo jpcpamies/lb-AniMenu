@@ -19,9 +19,9 @@ header
 		z-index 0
 		top 0
 		width 100%
-		height 710px
+		height 445px
 	.botonera
-		background rgba(white,.08)
+		// background rgba(black,.3)
 		height auto
 		overflow-x auto
 		overflow-y hidden
@@ -104,8 +104,8 @@ header
 			animation animacionMes 3s 1
 			-webkit-animation animacionMes 3s 1
 	.eventActual
-		// background rgba(white,.08)
-		border-top 1px solid rgba(white,.2)
+		// background rgba(black,.3)
+		// border-top 1px solid rgba(white,.2)
 		color white
 		display block
 		font-size .9em
@@ -261,14 +261,15 @@ section
 		display none
 .bg 
 	@css {
-		background: rgb(6,13,13);
-		background: -moz-linear-gradient(top,  rgba(6,13,13,1) 39%, rgba(3,39,66,1) 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(39%,rgba(6,13,13,1)), color-stop(100%,rgba(3,39,66,1)));
-		background: -webkit-linear-gradient(top,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
-		background: -o-linear-gradient(top,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
-		background: -ms-linear-gradient(top,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
-		background: linear-gradient(to bottom,  rgba(6,13,13,1) 39%,rgba(3,39,66,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#060d0d', endColorstr='#032742',GradientType=0 );
+		background: rgb(20,87,133);
+		background: -moz-linear-gradient(45deg,  rgba(20,87,133,1) 0%, rgba(13,58,89,1) 56%, rgba(10,44,67,1) 98%);
+		background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(20,87,133,1)), color-stop(56%,rgba(13,58,89,1)), color-stop(98%,rgba(10,44,67,1)));
+		background: -webkit-linear-gradient(45deg,  rgba(20,87,133,1) 0%,rgba(13,58,89,1) 56%,rgba(10,44,67,1) 98%);
+		background: -o-linear-gradient(45deg,  rgba(20,87,133,1) 0%,rgba(13,58,89,1) 56%,rgba(10,44,67,1) 98%);
+		background: -ms-linear-gradient(45deg,  rgba(20,87,133,1) 0%,rgba(13,58,89,1) 56%,rgba(10,44,67,1) 98%);
+		background: linear-gradient(45deg,  rgba(20,87,133,1) 0%,rgba(13,58,89,1) 56%,rgba(10,44,67,1) 98%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#145785', endColorstr='#0a2c43',GradientType=1 );
+
         }
 	height 100%
 	left 0
@@ -276,6 +277,24 @@ section
 	top 0
 	width 100%
 	z-index -50
+.bgEvento
+	border-bottom 1px solid rgba(white,.0)
+	border-top 1px solid rgba(white,.3)
+	height 263px
+	left 0 
+	position absolute
+	right 0
+	top 445px
+	@css {
+		background: rgb(15,32,45);
+		background: -moz-linear-gradient(45deg,  rgba(15,32,45,1) 0%, rgba(52,81,105,1) 52%, rgba(107,139,163,1) 100%);
+		background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(15,32,45,1)), color-stop(52%,rgba(52,81,105,1)), color-stop(100%,rgba(107,139,163,1)));
+		background: -webkit-linear-gradient(45deg,  rgba(15,32,45,1) 0%,rgba(52,81,105,1) 52%,rgba(107,139,163,1) 100%);
+		background: -o-linear-gradient(45deg,  rgba(15,32,45,1) 0%,rgba(52,81,105,1) 52%,rgba(107,139,163,1) 100%);
+		background: -ms-linear-gradient(45deg,  rgba(15,32,45,1) 0%,rgba(52,81,105,1) 52%,rgba(107,139,163,1) 100%);
+		background: linear-gradient(45deg,  rgba(15,32,45,1) 0%,rgba(52,81,105,1) 52%,rgba(107,139,163,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f202d', endColorstr='#6b8ba3',GradientType=1 );
+	}
 .boto
 	.ajustos
 	.facebook
