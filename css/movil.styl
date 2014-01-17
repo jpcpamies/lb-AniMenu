@@ -22,7 +22,6 @@ header
 		height 678px
 	.botonera
 		background rgba(white,.08)
-		display block
 		height auto
 		overflow-x auto
 		overflow-y hidden
@@ -31,10 +30,9 @@ header
 		width 100%
 		z-index 12
 		ul
+			text-align center
 			.dia 
-				// border 1px solid rgba(noche,.7)
 				border-radius 50%
-				// box-shadow 0 1px 3px rgba(black,.1)
 				display inline-block
 				height 90px 
 				margin 0 0 0 1em 
@@ -43,35 +41,39 @@ header
 				-webkit-transition all .3s ease
 				transition all .3s ease
 				p
+					border-radius 50%
 					color rgba(white,.8)
 					font-weight 300
-					left 32%
-					// margin .2em 0
+					height 35px
+					left 25%
+					line-height 1.5em
 					position absolute
+					text-align center
 					top 17px
+					width 35px 
 					&:hover
 						background rgba(white,1)
 						color rgba(black,.5)
-
-				span
-					color rgba(white,.8)
-					font-size .7em
-					font-weight 300
-					left 25%
-					letter-spacing 0em
-					position absolute
-					top 50px
 				.centrar
 					left 40%
 					position absolute
-				.centrarMes
-					left 27%
-					position absolute
-				.nom
+				// .centrarMes
+				// 	position absolute
+				.mes
+					color rgba(white,.8)
 					font-size .7em
+					font-weight 100
+					left 25%
+					letter-spacing 0em
 					position absolute
-					top -10px
-				
+					top 55px
+				.nom
+					color rgba(white,.8)
+					font-size .7em
+					left 30%
+					position absolute
+					position absolute
+					top -5px
 				&:last-child
 					margin 0 3em 0 1em
 	.calendari
