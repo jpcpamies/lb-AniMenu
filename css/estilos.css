@@ -73,37 +73,37 @@ header .botonera{background:rgba(255,255,255,0.08);display:block;height:auto;ove
 /* line 25 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\0000325}}
-header .botonera ul .dia{border-radius:50%;display:inline-block;height:65px;margin:0 0 0 1em;position:relative;width:65px;-webkit-transition:all .3s ease;transition:all .3s ease;}
+header .botonera ul .dia{border-radius:50%;display:inline-block;height:90px;margin:0 0 0 1em;position:relative;width:65px;-webkit-transition:all .3s ease;transition:all .3s ease;}
 
 /* line 36 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\0000336}}
-header .botonera ul .dia p{color:rgba(255,255,255,0.8);font-weight:300;left:32%;margin:0;position:absolute;top:7px}
+header .botonera ul .dia p{color:rgba(255,255,255,0.8);font-weight:300;left:32%;position:absolute;top:17px;}
 
 /* line 43 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\0000343}}
-header .botonera ul .dia span{color:rgba(255,255,255,0.8);font-size:.85em;font-weight:300;left:20%;letter-spacing:0;position:absolute;top:30px}
+header .botonera ul .dia p:hover{background:#fff;color:rgba(0,0,0,0.5)}
 
-/* line 51 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 47 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\0000351}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\0000347}}
+header .botonera ul .dia span{color:rgba(255,255,255,0.8);font-size:.7em;font-weight:300;left:25%;letter-spacing:0;position:absolute;top:50px}
+
+/* line 55 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\0000355}}
 header .botonera ul .dia .centrar{left:40%;position:absolute}
 
-/* line 54 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 58 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\0000354}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\0000358}}
 header .botonera ul .dia .centrarMes{left:27%;position:absolute}
 
-/* line 57 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 61 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\0000357}}
-header .botonera ul .dia:hover{background:#fff;border:none;transition:all .3s ease;}
-
-/* line 62 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\0000362}}
-header .botonera ul .dia:hover p,header .botonera ul .dia:hover span{font-weight:400;color:rgba(0,0,0,0.7)}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\0000361}}
+header .botonera ul .dia .nom{font-size:.7em;position:absolute;top:-10px}
 
 /* line 66 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
