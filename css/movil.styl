@@ -179,50 +179,69 @@ section
 		animation animacionLlista .3s 1
 		-webkit-animation animacionLlista .3s 1
 		.event
-			position relative
-			.hora
+			margin  10px 10px
+			.detallEvent
+				background rgba(white,.3)
+				border-radius 10px 10px 0 0 
 				color white
-				font-size .65em
-				font-weight 300
-				position absolute
-				left 0
-				top 0
-			.lloc
-				color white
-				font-size .6em
-				font-weight 300
-				letter-spacing .20em
-				text-transform uppercase
-				p
-					&:before
-						content '\e605'
-						font-family icono
-			.titol
-				color white
-				font-size .9em
-				font-weight 300
-				margin -.7em 1.8em .7em .1em
-				position relative
-			.expandir
-				transform rotateZ(90deg)
-				-ms-transform rotateZ(90deg)
-				-webkit-transform rotateZ(90deg)
-				position absolute 
-				right 0px
-				top 0px
-				&:after
-					content '\e60b'
-					font-family icono
-					font-size 1.2em
-			.detall
-				display none
-				width 107%
-				font-size .8em
-				font-weight 300
-				margin 1em -1em 0em 1em
-				p
-					&:after
+				display block
+				height 60px
+				.quan
+					.data
+						p
+							color rgba(white,.5)
+							font-size .50em
+							font-weight 300
+							left 15px
+							position relative
+							top -3px
+					.hora
+						font-size .65em
+						font-weight 300
+						position relative
+						top 27px
+						left 15px
+				.lloc
+					color rgba(white,.9)
+					font-size .6em
+					font-weight 300
+					letter-spacing .2em
+					margin -1.3em 1em 0 5.5em
+					text-transform uppercase
+					p
+						&:before
+							content '\e605'
+							font-family icono
+			.Event
+					background rgba(white,.3)
+					border-radius 0 0 10px 10px
+					color rgba(white,.8)
+					display block
+					font-size .9em
+					font-weight 300
+					margin 2px 0 0 0 
+					padding .7em .5em .8em .5em
+					position relative
+					.detall
 						display none
+						width 95%
+						font-size .8em
+						font-weight 300
+						margin 1em 0 0 1em 
+						p
+							&:after
+								display none
+					.expandir
+						position absolute 
+						right .2em
+						top .7em
+						transform rotateZ(90deg)
+						-ms-transform rotateZ(90deg)
+						-webkit-transform rotateZ(90deg)
+						&:after
+							content '\e60b'
+							font-family icono
+							font-size 1em
 		.anarInici
 			display block
 			text-align center
