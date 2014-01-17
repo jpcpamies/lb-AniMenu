@@ -14,38 +14,27 @@ header
 			background: -ms-linear-gradient(45deg,  rgba(6,64,112,1) 0%,rgba(3,30,57,1) 53%,rgba(6,13,13,1) 87%);
 			background: linear-gradient(45deg,  rgba(6,64,112,1) 0%,rgba(3,30,57,1) 53%,rgba(6,13,13,1) 87%);
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#064070', endColorstr='#060d0d',GradientType=1 );
-
-       		 }
+       		}
 		position absolute 
 		z-index 0
 		top 0
 		width 100%
-		height 578px
+		height 678px
 	.botonera
+		background rgba(white,.08)
+		display block
 		height auto
 		overflow-x auto
 		overflow-y hidden
 		padding 10px 20px 0 10px 
-		position absolute
-		top 320px
 		white-space nowrap
 		width 100%
 		z-index 12
 		ul
 			.dia 
-				// @css {
-				// 	background: rgb(224,224,222);
-				// 	background: -moz-linear-gradient(left,  rgba(224,224,222,1) 24%, rgba(184,183,181,1) 100%);
-				// 	background: -webkit-gradient(linear, left top, right top, color-stop(24%,rgba(224,224,222,1)), color-stop(100%,rgba(184,183,181,1)));
-				// 	background: -webkit-linear-gradient(left,  rgba(224,224,222,1) 24%,rgba(184,183,181,1) 100%);
-				// 	background: -o-linear-gradient(left,  rgba(224,224,222,1) 24%,rgba(184,183,181,1) 100%);
-				// 	background: -ms-linear-gradient(left,  rgba(224,224,222,1) 24%,rgba(184,183,181,1) 100%);
-				// 	background: linear-gradient(to right,  rgba(224,224,222,1) 24%,rgba(184,183,181,1) 100%);
-				// 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0de', endColorstr='#b8b7b5',GradientType=1 );
-				// 	}
-				border 1px solid rgba(noche,.7)
+				// border 1px solid rgba(noche,.7)
 				border-radius 50%
-				box-shadow 0 1px 3px rgba(black,.1)
+				// box-shadow 0 1px 3px rgba(black,.1)
 				display inline-block
 				height 65px 
 				margin 0 0 0 1em 
@@ -118,7 +107,7 @@ header
 			animation animacionMes 3s 1
 			-webkit-animation animacionMes 3s 1
 	.eventActual
-		background rgba(white,.08)
+		// background rgba(white,.08)
 		border-top 1px solid rgba(white,.2)
 		color white
 		display block
@@ -163,7 +152,6 @@ header
 				p
 					&:after
 						content 'h'
-
 		.titol
 			color rgba(white,1)
 			font-size .8em
@@ -179,59 +167,70 @@ section
 		padding 1em 0 0 0 
 		animation animacionLlista .3s 1
 		-webkit-animation animacionLlista .3s 1
-		.event
-			margin 0 .5em 1.8em 1.5em
-			.detall
-				border-bottom 3px solid rgba(white,1)
-				padding 0 0 .2em .25em
-				.horaEvent
-					float left
-					width 100%
-					color white
-					display block
-					float left
-					font-size .65em
-					font-weight 300
-					margin -1px 10px 0 -5px
-					p
-						&:after
-							content 'h'
-				.lloc
-					color rgba(noche,.7)
-					font-size .6em
-					font-weight 300
-					letter-spacing .20em
-					text-transform uppercase
-					p
-						&:after
-							content '\e605'
-							font-family icono
-			.contingut
-				margin 1em 0 0 0 
-				
-				.titolEvent
-					color rgba(white,1)
-					font-size .9em
-					font-weight 400
-					margin -.7em 1.8em .7em .1em
-					position relative
-					p
-						&:after
-							content '\e606'
-							font-family icono
-							font-size 1.2em
-							position absolute 
-							right -33px
-							top 0px
-				.detallEvent
-					display none
-					width 107%
-					font-size .8em
-					font-weight 300
-					margin 1em -1em 0em 1em
-					p
-						&:after
-							display none
+		.timeLine
+			// width 4px
+			// height 100%
+			// position absolute 
+			// top 0
+			// bottom 0 
+			// left 70px
+			// background white
+		.contingutLlista
+			display block
+			margin 0 0 0 80px
+			.event
+			// margin 0 .5em 1.8em 1.5em
+				.detall
+					border-bottom 3px solid rgba(white,1)
+					padding 0 0 .2em .25em
+					.horaEvent
+						float left
+						width 100%
+						color white
+						display block
+						float left
+						font-size .65em
+						font-weight 300
+						margin -1px 10px 0 -5px
+						p
+							&:after
+								content 'h'
+					.lloc
+						color rgba(noche,.7)
+						font-size .6em
+						font-weight 300
+						letter-spacing .20em
+						text-transform uppercase
+						p
+							&:after
+								content '\e605'
+								font-family icono
+				.contingut
+					margin 1em 0 0 0 
+					
+					.titolEvent
+						color rgba(white,1)
+						font-size .9em
+						font-weight 400
+						margin -.7em 1.8em .7em .1em
+						position relative
+						p
+							&:after
+								content '\e606'
+								font-family icono
+								font-size 1.2em
+								position absolute 
+								right -33px
+								top 0px
+					.detallEvent
+						display none
+						width 107%
+						font-size .8em
+						font-weight 300
+						margin 1em -1em 0em 1em
+						p
+							&:after
+								display none
 		.centrar
 			display block
 			text-align center
@@ -250,20 +249,6 @@ section
 					content '\e606'
 					font-family icono
 					font-size 1.5em
-		// .preFestes
-		// 	background rgba(#ffeb80,1)
-		// 	display block
-		// 	height 23px
-		// 	margin 0 0 1em 0
-		// 	animation animacionPreFestes 10s 1
-		// 	-webkit-animation animacionPreFestes 10s 1
-		// 	p
-		// 		color #957c38
-		// 		font-size .6em
-		// 		font-weight 400
-		// 		line-height 1.8em
-		// 		text-align center
-		// 		text-transform uppercase
 	.llistaInvisible
 		display none
 .bg 
@@ -324,108 +309,108 @@ section
 		.sol
 			display none
 	.nit
-		.contenedorCastell
-			display block
-			margin 0 auto
-			position relative
-			width 150px
-			z-index 5
-			.castell
-				background-image url(../img/castell.png)
-				background-repeat no-repeat
-				background-size 243px auto
-				height 119px
-				left -50px
-				position absolute
-				top 326px
-				width 243px
-			.castellFosc
-				background-image url(../img/castellFosc.png)
-				background-repeat no-repeat
-				background-size 243px auto
-				height 119px
-				left -50px
-				position absolute
-				top 326px
-				width 243px
-				animation animacionFosc 15s infinite
-				-webkit-animation animacionFosc 15s infinite
-		.estrellas
-			height 445px
-			left 0 
-			position relative
-			right 0
-			top 0
-			z-index 1
-			.moverFugaz
-				display block
-				position absolute 
-				z-index 1
-				right -10px
-				top -10px
-				transform rotateZ(-50deg)
-				-ms-transform rotateZ(-50deg)
-				-webkit-transform rotateZ(-50deg)
-				.fugaz
-					background white
-					border-radius 50%
-					height 1px
-					width 35px
-					animation animacionFugaz 16s infinite
-					-webkit-animation animacionFugaz 16s infinite
-			.moverConstelacion
-				height 445px
-				overflow-x auto
-				overflow-y hidden
-				position relative
-				z-index 1
-				.constelacion
-					background-image url(../img/estrellas.png)
-					background-repeat no-repeat
-					background-size 900px auto
-					// border 2px solid white
-					height 900px
-					left -250px
-					position absolute
-					top 0px
-					width 900px
-					opacity 1
-					animation animacionConstelacion 320s infinite
-					-webkit-animation animacionConstelacion 320s infinite
-		.degradadoA
-			@css{
-				background: -moz-linear-gradient(top,  rgba(84,84,84,0) 0%, rgba(255,255,255,0.07) 49%, rgba(255,255,255,0.51) 80%, rgba(159,91,37,0.8) 100%);
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(84,84,84,0)), color-stop(49%,rgba(255,255,255,0.07)), color-stop(80%,rgba(255,255,255,0.51)), color-stop(100%,rgba(159,91,37,0.8)));
-				background: -webkit-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
-				background: -o-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
-				background: -ms-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
-				background: linear-gradient(to bottom,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00545454', endColorstr='#cc9f5b25',GradientType=0 );
-				}
-			opacity .2
-			display block
-			width 100%
-			height 445px
-			top 0px
-			position absolute
-			z-index 3	
-		.degradadoB
-			@css{
-				background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(244,118,0,1) 100%);
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,0)), color-stop(100%,rgba(244,118,0,1)));
-				background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
-				background: -o-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
-				background: -ms-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
-				background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#f47600',GradientType=0 );
-				}
-			opacity .2
-			display block
-			width 100%
-			height 145px
-			top 300px
-			position absolute
-			z-index 3		
+		// .contenedorCastell
+		// 	display block
+		// 	margin 0 auto
+		// 	position relative
+		// 	width 150px
+		// 	z-index 5
+		// 	.castell
+		// 		background-image url(../img/castell.png)
+		// 		background-repeat no-repeat
+		// 		background-size 243px auto
+		// 		height 119px
+		// 		left -50px
+		// 		position absolute
+		// 		top 326px
+		// 		width 243px
+		// 	.castellFosc
+		// 		background-image url(../img/castellFosc.png)
+		// 		background-repeat no-repeat
+		// 		background-size 243px auto
+		// 		height 119px
+		// 		left -50px
+		// 		position absolute
+		// 		top 326px
+		// 		width 243px
+		// 		animation animacionFosc 15s infinite
+		// 		-webkit-animation animacionFosc 15s infinite
+		// .estrellas
+		// 	height 445px
+		// 	left 0 
+		// 	position relative
+		// 	right 0
+		// 	top 0
+		// 	z-index 1
+		// 	.moverFugaz
+		// 		display block
+		// 		position absolute 
+		// 		z-index 1
+		// 		right -10px
+		// 		top -10px
+		// 		transform rotateZ(-50deg)
+		// 		-ms-transform rotateZ(-50deg)
+		// 		-webkit-transform rotateZ(-50deg)
+		// 		.fugaz
+		// 			background white
+		// 			border-radius 50%
+		// 			height 1px
+		// 			width 35px
+		// 			animation animacionFugaz 16s infinite
+		// 			-webkit-animation animacionFugaz 16s infinite
+		// 	.moverConstelacion
+		// 		height 445px
+		// 		overflow-x auto
+		// 		overflow-y hidden
+		// 		position relative
+		// 		z-index 1
+		// 		.constelacion
+		// 			background-image url(../img/estrellas.png)
+		// 			background-repeat no-repeat
+		// 			background-size 900px auto
+		// 			// border 2px solid white
+		// 			height 900px
+		// 			left -250px
+		// 			position absolute
+		// 			top 0px
+		// 			width 900px
+		// 			opacity 1
+		// 			animation animacionConstelacion 320s infinite
+		// 			-webkit-animation animacionConstelacion 320s infinite
+		// .degradadoA
+		// 	@css{
+		// 		background: -moz-linear-gradient(top,  rgba(84,84,84,0) 0%, rgba(255,255,255,0.07) 49%, rgba(255,255,255,0.51) 80%, rgba(159,91,37,0.8) 100%);
+		// 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(84,84,84,0)), color-stop(49%,rgba(255,255,255,0.07)), color-stop(80%,rgba(255,255,255,0.51)), color-stop(100%,rgba(159,91,37,0.8)));
+		// 		background: -webkit-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
+		// 		background: -o-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
+		// 		background: -ms-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
+		// 		background: linear-gradient(to bottom,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
+		// 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00545454', endColorstr='#cc9f5b25',GradientType=0 );
+		// 		}
+		// 	opacity .2
+		// 	display block
+		// 	width 100%
+		// 	height 445px
+		// 	top 0px
+		// 	position absolute
+		// 	z-index 3	
+		// .degradadoB
+		// 	@css{
+		// 		background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(244,118,0,1) 100%);
+		// 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,0)), color-stop(100%,rgba(244,118,0,1)));
+		// 		background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+		// 		background: -o-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+		// 		background: -ms-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+		// 		background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+		// 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#f47600',GradientType=0 );
+		// 		}
+		// 	opacity .2
+		// 	display block
+		// 	width 100%
+		// 	height 145px
+		// 	top 300px
+		// 	position absolute
+		// 	z-index 3		
 .botoOn
 	background rgba(black,.8)
 	bottom 0
