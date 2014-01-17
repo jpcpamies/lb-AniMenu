@@ -188,6 +188,7 @@ section .llistaVisible{padding:1em 0 0 0;animation:animacionLlista .3s 1;-webkit
 /* line 173 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003173}}
+section .llistaVisible .timeLine{width:4px;height:100%;position:absolute;top:708px;bottom:0;left:70px;background:#fff}
 
 /* line 181 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
@@ -272,7 +273,7 @@ section .llistaVisible .centrar{display:block;text-align:center;}
 /* line 240 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003240}}
-section .llistaVisible .centrar .anarInici{-ms-transform:rotateZ(180deg);-webkit-transform:rotateZ(180deg);background:rgba(255,255,255,0.1);border-radius:50%;color:rgba(0,0,0,0.65);margin:1em 0 0 0;display:inline-block;height:50px;line-height:2.7em;transform:rotateZ(180deg);width:50px;}
+section .llistaVisible .centrar .anarInici{-ms-transform:rotateZ(180deg);-webkit-transform:rotateZ(180deg);background:rgba(255,255,255,0.1);border-radius:50%;color:rgba(0,0,0,0.65);display:inline-block;height:50px;line-height:2.7em;margin:1em 0 0 0;transform:rotateZ(180deg);width:50px;}
 
 /* line 252 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
