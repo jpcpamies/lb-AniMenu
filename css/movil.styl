@@ -183,7 +183,7 @@ section
 		.event
 			margin  10px 10px
 			.detallEvent
-				background rgba(white,.4)
+				background rgba(white,.3)
 				border-radius 10px 10px 0 0 
 				margin .5em 0 0 0 
 				color rgba(black,.8)
@@ -192,20 +192,23 @@ section
 				.quan
 					.data
 						p
-							color rgba(black,.5)
+							color rgba(#c0fff2,.5)
 							font-size .70em
 							font-weight 300
-							left 15px
+							left 70px
 							position relative
 							top -10px
 					.hora
 						color rgba(#c0fff2,1)
 						font-size .7em
-						font-weight 300
+						font-weight 400
 						letter-spacing 2px
 						position relative
 						top 7px
-						left 80px
+						left 10px
+						p
+							&:after
+								content 'h'
 			.Event
 					background rgba(white,.4)
 					border-radius 0 0 10px 10px
@@ -213,7 +216,7 @@ section
 					display block
 					font-size .9em
 					font-weight 400
-					margin 1px 0 0 0 
+					// margin 1px 0 0 0 
 					padding .7em .5em .8em .5em
 					position relative
 					.detall
