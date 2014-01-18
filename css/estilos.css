@@ -163,7 +163,7 @@ header .eventActual .contingutEventActual .hora{color:#fff;display:block;font-si
 /* line 145 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003145}}
-header .eventActual .titol{border-radius:10px;color:#c0fff2;font-size:1em;font-weight:300;left:10px;top:20px;padding:0 .7em;position:absolute;}
+header .eventActual .titol{border-radius:10px;color:#c0fff2;font-size:1em;font-weight:400;left:10px;top:20px;padding:0 .7em;position:absolute;}
 
 /* line 157 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
@@ -178,116 +178,116 @@ header .eventActual .titol span:after{content:'\e603';font-family:icono}
 /* line 167 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003167}}
-section{margin:0 0 60px 0;display:block;}
+section{margin:0 0 60px 0;display:block;position:relative;overflow-x:hidden;}
 
-/* line 170 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 172 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003170}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003172}}
 section .llistaVisible{animation:animacionLlista .3s 1;-webkit-animation:animacionLlista .3s 1;padding:1em 0 1em 0;}
-
-/* line 174 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003174}}
-section .llistaVisible .event{margin:10px 10px;}
 
 /* line 176 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003176}}
+section .llistaVisible .event{margin:10px 10px;}
+
+/* line 178 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003178}}
 section .llistaVisible .event .detallEvent{background:rgba(255,255,255,0.3);border-radius:10px 10px 0 0;margin:.5em 0 0 0;color:rgba(0,0,0,0.8);display:block;height:30px;}
-
-/* line 183 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003183}}
-
-/* line 184 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003184}}
 
 /* line 185 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003185}}
+
+/* line 186 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003186}}
+
+/* line 187 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003187}}
 section .llistaVisible .event .detallEvent .quan .data p{color:rgba(192,255,242,0.5);font-size:.7em;font-weight:300;left:70px;position:relative;top:-10px}
 
-/* line 192 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 194 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003192}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003194}}
 section .llistaVisible .event .detallEvent .quan .hora{color:#c0fff2;font-size:.7em;font-weight:400;letter-spacing:2px;position:relative;top:7px;left:10px;}
 
-/* line 200 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 202 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003200}}
-
-/* line 201 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003201}}
-section .llistaVisible .event .detallEvent .quan .hora p:after{content:'h'}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003202}}
 
 /* line 203 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003203}}
+section .llistaVisible .event .detallEvent .quan .hora p:after{content:'h'}
+
+/* line 205 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003205}}
 section .llistaVisible .event .Event{background:rgba(255,255,255,0.4);border-radius:0 0 10px 10px;color:#c0fff2;display:block;font-size:.9em;font-weight:400;padding:.7em .5em .8em .5em;position:relative;}
 
-/* line 213 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 215 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003213}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003215}}
 section .llistaVisible .event .Event .detall{display:none;width:95%;font-size:.8em;font-weight:300;margin:1em 0 1em 1em;}
 
-/* line 219 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 221 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003219}}
-
-/* line 220 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003220}}
-section .llistaVisible .event .Event .detall p:after{display:none}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003221}}
 
 /* line 222 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003222}}
+section .llistaVisible .event .Event .detall p:after{display:none}
+
+/* line 224 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003224}}
 section .llistaVisible .event .Event .expandir{position:absolute;right:.2em;top:.7em;transform:rotateZ(90deg);-ms-transform:rotateZ(90deg);-webkit-transform:rotateZ(90deg);}
 
-/* line 229 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 231 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003229}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003231}}
 section .llistaVisible .event .Event .expandir:after{content:'\e60b';color:rgba(0,0,0,0.3);font-family:icono;font-size:1em}
 
-/* line 234 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 236 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003234}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003236}}
 section .llistaVisible .event .Event .lloc{color:#c0fff2;font-size:.6em;font-weight:300;letter-spacing:1px;margin:.5em 1em 0 0;text-transform:uppercase;}
 
-/* line 241 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 243 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003241}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003243}}
 
-/* line 242 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 244 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003242}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003244}}
 section .llistaVisible .event .Event .lloc p:before{content:'\e605';font-family:icono;color:#c0fff2}
 
-/* line 246 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 248 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003246}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003248}}
 section .llistaVisible .anarInici{display:block;text-align:center;}
 
-/* line 249 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 251 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003249}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003251}}
 section .llistaVisible .anarInici .boto{background:rgba(255,255,255,0.1);border-radius:50%;color:rgba(255,255,255,0.5);display:inline-block;height:50px;line-height:2.5em;margin:1em 0 0 0;width:50px;}
 
-/* line 258 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 260 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003258}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003260}}
 section .llistaVisible .anarInici .boto:after{content:'\e604';font-family:icono;font-size:1.5em}
-
-/* line 262 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003262}}
-section .llistaInvisible{display:none}
 
 /* line 264 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003264}}
+section .llistaInvisible{display:none}
+
+/* line 266 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003266}}
 .bg{background: rgb(20,87,133);
 		background: -moz-linear-gradient(45deg,  rgba(20,87,133,1) 0%, rgba(13,58,89,1) 56%, rgba(10,44,67,1) 98%);
 		background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(20,87,133,1)), color-stop(56%,rgba(13,58,89,1)), color-stop(98%,rgba(10,44,67,1)));
@@ -305,9 +305,9 @@ background: rgb(20,87,133);
 		background: linear-gradient(45deg,  rgba(20,87,133,1) 0%,rgba(13,58,89,1) 56%,rgba(10,44,67,1) 98%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#145785', endColorstr='#0a2c43',GradientType=1 );
 
-/* line 272 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 274 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003272}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003274}}
 .bgEvento{box-shadow:0 -2px 3px rgba(0,0,0,0.2);height:235px;left:0;position:absolute;right:0;top:445px;z-index:5;background: rgb(24,49,75);
 		background: -moz-linear-gradient(45deg,  rgba(24,49,75,1) 7%, rgba(26,78,121,1) 99%);
 		background: -webkit-gradient(linear, left bottom, right top, color-stop(7%,rgba(24,49,75,1)), color-stop(99%,rgba(26,78,121,1)));
@@ -325,67 +325,67 @@ background: rgb(24,49,75);
 		background: linear-gradient(45deg,  rgba(24,49,75,1) 7%,rgba(26,78,121,1) 99%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#18314b', endColorstr='#1a4e79',GradientType=1 );
 
-/* line 283 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 285 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003283}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003285}}
 .efectos{height:600px;width:100%;top:0;overflow-x:hidden;overflow-y:hidden;position:absolute;}
 
-/* line 290 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 292 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003290}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003292}}
 
-/* line 291 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 293 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003291}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003293}}
 .efectos .dia .moverDestellos,.efectos .dia .nubes,.efectos .dia .rayos,.efectos .dia .sol{display:none}
 
-/* line 296 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 298 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003296}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003298}}
 
-/* line 297 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 299 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003297}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003299}}
 .efectos .nit .contenedorCastell{display:block;margin:0 auto;position:relative;width:150px;z-index:4;}
 
-/* line 303 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 305 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003303}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003305}}
 .efectos .nit .contenedorCastell .castell{background-image:url("../img/castell.png");background-repeat:no-repeat;background-size:243px auto;height:119px;left:-50px;position:absolute;top:326px;width:243px}
 
-/* line 312 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 314 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003312}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003314}}
 .efectos .nit .contenedorCastell .castellFosc{background-image:url("../img/castellFosc.png");background-repeat:no-repeat;background-size:243px auto;height:119px;left:-50px;position:absolute;top:326px;width:243px;animation:animacionFosc 15s infinite;-webkit-animation:animacionFosc 15s infinite}
 
-/* line 323 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 325 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003323}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003325}}
 .efectos .nit .estrellas{height:445px;left:0;position:relative;right:0;top:0;z-index:1;}
 
-/* line 330 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 332 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003330}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003332}}
 .efectos .nit .estrellas .moverFugaz{display:block;position:absolute;z-index:1;right:-10px;top:-10px;transform:rotateZ(-50deg);-ms-transform:rotateZ(-50deg);-webkit-transform:rotateZ(-50deg);}
 
-/* line 339 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 341 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003339}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003341}}
 .efectos .nit .estrellas .moverFugaz .fugaz{background:#fff;border-radius:50%;height:1px;width:35px;-webkit-filter:brightness(3);animation:animacionFugaz 16s infinite;-webkit-animation:animacionFugaz 16s infinite}
 
-/* line 347 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 349 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003347}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003349}}
 .efectos .nit .estrellas .moverConstelacion{height:445px;overflow-x:auto;overflow-y:hidden;position:relative;z-index:1;}
 
-/* line 353 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 355 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003353}}
-.efectos .nit .estrellas .moverConstelacion .constelacion{background-image:url("../img/estrellas.png");background-repeat:no-repeat;background-size:900px auto;height:900px;left:-250px;position:absolute;top:0;width:900px;opacity:1;-webkit-filter:brightness(1.7);animation:animacionConstelacion 320s infinite;-webkit-animation:animacionConstelacion 320s infinite}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003355}}
+.efectos .nit .estrellas .moverConstelacion .constelacion{background-image:url("../img/estrellas.png");background-repeat:no-repeat;background-size:900px auto;height:900px;left:-250px;position:absolute;top:0;width:900px;opacity:1;-webkit-filter:brightness(1.8);animation:animacionConstelacion 320s infinite;-webkit-animation:animacionConstelacion 320s infinite}
 
-/* line 367 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 369 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003367}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003369}}
 .efectos .nit .degradadoA{background: -moz-linear-gradient(top,  rgba(84,84,84,0) 0%, rgba(255,255,255,0.07) 49%, rgba(255,255,255,0.51) 80%, rgba(159,91,37,0.8) 100%);
 				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(84,84,84,0)), color-stop(49%,rgba(255,255,255,0.07)), color-stop(80%,rgba(255,255,255,0.51)), color-stop(100%,rgba(159,91,37,0.8)));
 				background: -webkit-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
@@ -401,9 +401,9 @@ background: -moz-linear-gradient(top,  rgba(84,84,84,0) 0%, rgba(255,255,255,0.0
 				background: linear-gradient(to bottom,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00545454', endColorstr='#cc9f5b25',GradientType=0 );
 
-/* line 376 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 378 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003376}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003378}}
 .efectos .nit .degradadoB{background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(244,118,0,1) 100%);
 				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,0)), color-stop(100%,rgba(244,118,0,1)));
 				background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
@@ -419,193 +419,193 @@ background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(244,118,0,1) 1
 				background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#f47600',GradientType=0 );
 
-/* line 385 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 387 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003385}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003387}}
 .menu{background:#1e3e5e;border-radius:10px;width:99%;bottom:0;margin:0 auto .4em auto;left:0;position:fixed;right:0;z-index:20;}
 
-/* line 395 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 397 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003395}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003397}}
 .menu .botonMenu{display:inline-block;width:18%;}
-
-/* line 398 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003398}}
-.menu .botonMenu a{decoration:none;}
 
 /* line 400 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003400}}
+.menu .botonMenu a{decoration:none;}
+
+/* line 402 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003402}}
 .menu .botonMenu a .mapa{color:#c0fff2;font-size:1.2em;height:50px;line-height:2.1em;text-align:center;width:50px;z-index:3;}
 
-/* line 408 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 410 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003408}}
-.menu .botonMenu a .mapa:before{content:'\e607';font-family:icono;font-size:.85em}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003410}}
+.menu .botonMenu a .mapa:before{content:'\e607';font-family:icono;font-size:.7em}
 
-/* line 412 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 414 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003412}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003414}}
 .menu .botonMenu a .mapa:hover{color:rgba(255,255,255,0.6);-webkit-transition:all .2s;transition:all .2s}
 
-/* line 416 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 418 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003416}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003418}}
 .menu .botonMenu .aumentar{color:#c0fff2;font-size:1.2em;left:90px;line-height:1.75em;text-align:right;width:50px;z-index:4;}
 
-/* line 424 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 426 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003424}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003426}}
 .menu .botonMenu .aumentar:after{content:'a';font-size:1.4em;font-weight:100}
 
-/* line 428 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 430 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003428}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003430}}
 .menu .botonMenu .aumentar:hover{color:rgba(255,255,255,0.6);-webkit-transition:all .2s;transition:all .2s}
 
-/* line 432 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 434 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003432}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003434}}
 .menu .botonMenu .contraste{color:#c0fff2;font-size:1.2em;height:50px;line-height:2.1em;text-align:center;width:50px;z-index:4;}
 
-/* line 440 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 442 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003440}}
-.menu .botonMenu .contraste:after{content:'\e601';font-family:icono;font-size:.85em}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003442}}
+.menu .botonMenu .contraste:after{content:'\e601';font-family:icono;font-size:.75em}
 
-/* line 444 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 446 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003444}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003446}}
 .menu .botonMenu .contraste:hover{color:rgba(255,255,255,0.6);-webkit-transition:all .2s;transition:all .2s}
 
-/* line 448 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 450 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003448}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003450}}
 .menu .botonMenu .compartir{color:#c0fff2;font-size:1.2em;height:50px;line-height:2.1em;text-align:center;width:50px;z-index:4;}
 
-/* line 456 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 458 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003456}}
-.menu .botonMenu .compartir:after{content:'\e602';font-family:icono;font-size:.9em}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003458}}
+.menu .botonMenu .compartir:after{content:'\e602';font-family:icono;font-size:.85em}
 
-/* line 460 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 462 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003460}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003462}}
 .menu .botonMenu .compartir:hover{color:rgba(255,255,255,0.6);-webkit-transition:all .2s;transition:all .2s;}
 
-/* line 464 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 466 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003464}}
-
-/* line 465 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003465}}
-.menu .botonMenu .compartir:hover .social .facebook{z-index:4}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003466}}
 
 /* line 467 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003467}}
-.menu .botonMenu .compartir:hover .social .twitter{z-index:4}
+.menu .botonMenu .compartir:hover .social .facebook{z-index:4}
 
 /* line 469 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
 @media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003469}}
+.menu .botonMenu .compartir:hover .social .twitter{z-index:4}
+
+/* line 471 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003471}}
 .menu .botonMenu .disminuir{color:#c0fff2;font-size:1.2em;height:50px;line-height:1.85em;text-align:center;width:50px;z-index:4;}
 
-/* line 477 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 479 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003477}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003479}}
 .menu .botonMenu .disminuir:after{content:'a';font-size:.9em;font-weight:300}
 
-/* line 481 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 483 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003481}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003483}}
 .menu .botonMenu .disminuir:hover{color:rgba(255,255,255,0.6);-webkit-transition:all .2s;transition:all .2s}
 
-/* line 485 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 487 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003485}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003487}}
 .patron{position:fixed;top:0;bottom:0;right:0;left:0;width:100%;height:100%;background-image:url("../img/patron.png");background-repeat:repeat;background-size:408px auto;z-index:-5;opacity:.05}
 
-/* line 499 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 501 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003499}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003501}}
 @-moz-keyframes animacionConstelacion{0%{transform:rotateZ(0);-ms-transform:rotateZ(0);-webkit-transform:rotateZ(0)}
 50%{transform:rotateZ(120deg);-ms-transform:rotateZ(120deg);-webkit-transform:rotateZ(120deg)}
 100%{transform:rotateZ(0);-ms-transform:rotateZ(0);-webkit-transform:rotateZ(0)}
 }
-/* line 499 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 501 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003499}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003501}}
 @-webkit-keyframes animacionConstelacion{0%{transform:rotateZ(0);-ms-transform:rotateZ(0);-webkit-transform:rotateZ(0)}
 50%{transform:rotateZ(120deg);-ms-transform:rotateZ(120deg);-webkit-transform:rotateZ(120deg)}
 100%{transform:rotateZ(0);-ms-transform:rotateZ(0);-webkit-transform:rotateZ(0)}
 }
-/* line 499 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 501 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003499}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003501}}
 @-o-keyframes animacionConstelacion{0%{transform:rotateZ(0);-ms-transform:rotateZ(0);-webkit-transform:rotateZ(0)}
 50%{transform:rotateZ(120deg);-ms-transform:rotateZ(120deg);-webkit-transform:rotateZ(120deg)}
 100%{transform:rotateZ(0);-ms-transform:rotateZ(0);-webkit-transform:rotateZ(0)}
 }
-/* line 499 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 501 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003499}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003501}}
 @-ms-keyframes animacionConstelacion{0%{transform:rotateZ(0);-ms-transform:rotateZ(0);-webkit-transform:rotateZ(0)}
 50%{transform:rotateZ(120deg);-ms-transform:rotateZ(120deg);-webkit-transform:rotateZ(120deg)}
 100%{transform:rotateZ(0);-ms-transform:rotateZ(0);-webkit-transform:rotateZ(0)}
 }
-/* line 499 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 501 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003499}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003501}}
 @keyframes animacionConstelacion{0%{transform:rotateZ(0);-ms-transform:rotateZ(0);-webkit-transform:rotateZ(0)}
 50%{transform:rotateZ(120deg);-ms-transform:rotateZ(120deg);-webkit-transform:rotateZ(120deg)}
 100%{transform:rotateZ(0);-ms-transform:rotateZ(0);-webkit-transform:rotateZ(0)}
 }
-/* line 514 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 516 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003514}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003516}}
 @-moz-keyframes animacionDia{0%{opacity:0}
 50%{opacity:1}
 75%{opacity:1}
 100%{opacity:1}
 }
-/* line 514 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 516 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003514}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003516}}
 @-webkit-keyframes animacionDia{0%{opacity:0}
 50%{opacity:1}
 75%{opacity:1}
 100%{opacity:1}
 }
-/* line 514 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 516 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003514}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003516}}
 @-o-keyframes animacionDia{0%{opacity:0}
 50%{opacity:1}
 75%{opacity:1}
 100%{opacity:1}
 }
-/* line 514 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 516 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003514}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003516}}
 @-ms-keyframes animacionDia{0%{opacity:0}
 50%{opacity:1}
 75%{opacity:1}
 100%{opacity:1}
 }
-/* line 514 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 516 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003514}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003516}}
 @keyframes animacionDia{0%{opacity:0}
 50%{opacity:1}
 75%{opacity:1}
 100%{opacity:1}
 }
-/* line 523 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 525 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003523}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003525}}
 @-moz-keyframes animacionFugaz{0%{opacity:0;transform:translate(0);-ms-transform:translate(0);-webkit-transform:translate(0)}
 1%{opacity:.3}
 15%{opacity:0}
@@ -613,9 +613,9 @@ background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(244,118,0,1) 1
 35%{opacity:0}
 100%{opacity:0;transform:translate(0);-ms-transform:translate(0);-webkit-transform:translate(0)}
 }
-/* line 523 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 525 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003523}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003525}}
 @-webkit-keyframes animacionFugaz{0%{opacity:0;transform:translate(0);-ms-transform:translate(0);-webkit-transform:translate(0)}
 1%{opacity:.3}
 15%{opacity:0}
@@ -623,9 +623,9 @@ background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(244,118,0,1) 1
 35%{opacity:0}
 100%{opacity:0;transform:translate(0);-ms-transform:translate(0);-webkit-transform:translate(0)}
 }
-/* line 523 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 525 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003523}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003525}}
 @-o-keyframes animacionFugaz{0%{opacity:0;transform:translate(0);-ms-transform:translate(0);-webkit-transform:translate(0)}
 1%{opacity:.3}
 15%{opacity:0}
@@ -633,9 +633,9 @@ background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(244,118,0,1) 1
 35%{opacity:0}
 100%{opacity:0;transform:translate(0);-ms-transform:translate(0);-webkit-transform:translate(0)}
 }
-/* line 523 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 525 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003523}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003525}}
 @-ms-keyframes animacionFugaz{0%{opacity:0;transform:translate(0);-ms-transform:translate(0);-webkit-transform:translate(0)}
 1%{opacity:.3}
 15%{opacity:0}
@@ -643,9 +643,9 @@ background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(244,118,0,1) 1
 35%{opacity:0}
 100%{opacity:0;transform:translate(0);-ms-transform:translate(0);-webkit-transform:translate(0)}
 }
-/* line 523 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 525 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003523}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003525}}
 @keyframes animacionFugaz{0%{opacity:0;transform:translate(0);-ms-transform:translate(0);-webkit-transform:translate(0)}
 1%{opacity:.3}
 15%{opacity:0}
@@ -653,121 +653,121 @@ background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(244,118,0,1) 1
 35%{opacity:0}
 100%{opacity:0;transform:translate(0);-ms-transform:translate(0);-webkit-transform:translate(0)}
 }
-/* line 545 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 547 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003545}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003547}}
 @-moz-keyframes animacionFosc{0%{opacity:1}
 50%{opacity:.1}
 75%{opacity:1}
 100%{opacity:1}
 }
-/* line 545 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 547 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003545}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003547}}
 @-webkit-keyframes animacionFosc{0%{opacity:1}
 50%{opacity:.1}
 75%{opacity:1}
 100%{opacity:1}
 }
-/* line 545 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 547 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003545}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003547}}
 @-o-keyframes animacionFosc{0%{opacity:1}
 50%{opacity:.1}
 75%{opacity:1}
 100%{opacity:1}
 }
-/* line 545 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 547 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003545}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003547}}
 @-ms-keyframes animacionFosc{0%{opacity:1}
 50%{opacity:.1}
 75%{opacity:1}
 100%{opacity:1}
 }
-/* line 545 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 547 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003545}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003547}}
 @keyframes animacionFosc{0%{opacity:1}
 50%{opacity:.1}
 75%{opacity:1}
 100%{opacity:1}
 }
-/* line 554 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 556 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003554}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003556}}
 @-moz-keyframes animacionMes{0%{opacity:0}
 50%{opacity:0}
 75%{opacity:0}
 100%{opacity:1}
 }
-/* line 554 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 556 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003554}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003556}}
 @-webkit-keyframes animacionMes{0%{opacity:0}
 50%{opacity:0}
 75%{opacity:0}
 100%{opacity:1}
 }
-/* line 554 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 556 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003554}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003556}}
 @-o-keyframes animacionMes{0%{opacity:0}
 50%{opacity:0}
 75%{opacity:0}
 100%{opacity:1}
 }
-/* line 554 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 556 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003554}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003556}}
 @-ms-keyframes animacionMes{0%{opacity:0}
 50%{opacity:0}
 75%{opacity:0}
 100%{opacity:1}
 }
-/* line 554 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 556 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003554}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003556}}
 @keyframes animacionMes{0%{opacity:0}
 50%{opacity:0}
 75%{opacity:0}
 100%{opacity:1}
 }
-/* line 563 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 565 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003563}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003565}}
 @-moz-keyframes animacionNumero{0%{opacity:0}
 50%{opacity:0}
 75%{opacity:1}
 100%{opacity:1}
 }
-/* line 563 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 565 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003563}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003565}}
 @-webkit-keyframes animacionNumero{0%{opacity:0}
 50%{opacity:0}
 75%{opacity:1}
 100%{opacity:1}
 }
-/* line 563 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 565 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003563}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003565}}
 @-o-keyframes animacionNumero{0%{opacity:0}
 50%{opacity:0}
 75%{opacity:1}
 100%{opacity:1}
 }
-/* line 563 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 565 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003563}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003565}}
 @-ms-keyframes animacionNumero{0%{opacity:0}
 50%{opacity:0}
 75%{opacity:1}
 100%{opacity:1}
 }
-/* line 563 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
+/* line 565 : /Users/jordiimac/Documents/AniMenu/css/movil.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003563}}
+@media -stylus-debug-info{filename{font-family:file\:\/\/\/Users\/jordiimac\/Documents\/AniMenu\/css\/movil\.styl}line{font-family:\00003565}}
 @keyframes animacionNumero{0%{opacity:0}
 50%{opacity:0}
 75%{opacity:1}
