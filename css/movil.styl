@@ -295,33 +295,6 @@ section
 		background: linear-gradient(45deg,  rgba(15,32,45,1) 0%,rgba(52,81,105,1) 52%,rgba(107,139,163,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f202d', endColorstr='#6b8ba3',GradientType=1 );
 	}
-.boto
-	.ajustos
-	.facebook
-	.programa
-	.twitter
-	.vistaCompleta
-	.vistaNit
-		display none
-	.menu
-		border-radius 50%
-		bottom 15px 
-		color rgba(white,.5)
-		height 50px
-		line-height 2.2em
-		padding 1em
-		position fixed
-		right 10px
-		font-size 1em
-		text-align center
-		width 50px
-		z-index 10
-		animation animacionBoto .2s 1
-		-webkit-animation animacionBoto .2s 1
-		&:after
-			content '\e600'
-			font-family icono
-			font-size 1.3em
 .efectos
 	height 600px
 	width 100%
@@ -438,163 +411,116 @@ section
 			top 300px
 			position absolute
 			z-index 3		
-.botoOn
-	background rgba(black,.8)
+.menu
+	@css {
+		background: rgb(52,82,106);
+		background: -moz-linear-gradient(top,  rgba(52,82,106,1) 0%, rgba(44,69,89,1) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(52,82,106,1)), color-stop(100%,rgba(44,69,89,1)));
+		background: -webkit-linear-gradient(top,  rgba(52,82,106,1) 0%,rgba(44,69,89,1) 100%);
+		background: -o-linear-gradient(top,  rgba(52,82,106,1) 0%,rgba(44,69,89,1) 100%);
+		background: -ms-linear-gradient(top,  rgba(52,82,106,1) 0%,rgba(44,69,89,1) 100%);
+		background: linear-gradient(to bottom,  rgba(52,82,106,1) 0%,rgba(44,69,89,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34526a', endColorstr='#2c4559',GradientType=0 );
+	}
+	border-radius 10px
+	width 99%
 	bottom 0
-	height 100%
+	margin 0 auto .4em auto
 	left 0
 	position fixed
 	right 0
-	top 0
-	width 100%
 	z-index 20
-	.ajustos
-		color white
-		display block
-		font-size 1.3em
-		font-weight 400
-		letter-spacing 1px
-		margin 35px auto 0 auto
-		p
+	.botonMenu
+		display inline-block
+		width 18%
+		a
+			decoration none
+			.mapa
+				color rgba(white,1)
+				font-size 1.2em
+				height 50px
+				line-height 2.1em
+				text-align center
+				width 50px
+				z-index 3
+				&:before
+					content '\e607'
+					font-family icono
+				&:hover
+					color rgba(white,.6)
+					-webkit-transition: all .2s;
+					transition: all .2s;
+		.aumentar
+			color rgba(#deecfb,1)
+			font-size 1.2em
+			left 90px
+			line-height 1.75em
 			text-align center
-	.aumentar
-		background rgba(#1877e9,1)
-		border-radius 50%
-		color rgba(#deecfb,1)
-		font-size 1.2em
-		height 50px
-		left 90px
-		line-height 1.75em
-		position fixed
-		text-align center
-		top 110px
-		width 50px
-		z-index 4
-		&:after
-			content 'a'
-			font-size 1.4em
-			font-weight 300
-		&:hover
-			background rgba(iconos,1)
-			color white
-			-webkit-transition: all .2s;
-			transition: all .2s;
-	.contraste
-		background rgba(#1877e9,1)
-		border-radius 50%
-		color rgba(#deecfb,1)
-		font-size 1.2em
-		height 50px
-		line-height 2.1em
-		position fixed
-		left 20px
-		text-align center
-		top 190px 
-		width 50px
-		z-index 4
-		&:after
-			content '\e604'
-			font-family icono
-			font-size .9em
-		&:hover
-			background rgba(iconos,1)
-			color white
-			-webkit-transition: all .2s;
-			transition: all .2s;
-	.disminuir
-		background rgba(#1877e9,1)
-		border-radius 50%
-		color rgba(#deecfb,1)
-		font-size 1.2em
-		height 50px
-		left 20px
-		line-height 1.85em
-		position fixed
-		text-align center
-		top 110px 
-		width 50px
-		z-index 4
-		&:after
-			content 'a'
-			font-size .9em
-			font-weight 300
-		&:hover
-			background rgba(iconos,1)
-			color white
-			-webkit-transition: all .2s;
-			transition: all .2s;
-	.vistaCompleta
-		color white
-		font-weight 400
-		position fixed
-		left 93px
-		top 273px
-	.programa
-		color white
-		font-weight 100
-		position fixed
-		left 93px
-		top 293px
-	.mapa
-		background rgba(#8f8f8f,1)
-		border-radius 50%
-		color rgba(white,1)
-		font-size 1.2em
-		height 50px
-		left 20px
-		line-height 2.1em
-		position fixed
-		text-align center
-		top 270px 
-		width 50px
-		z-index 3
-		&:before
-			content '\e602'
-			font-family icono
-		&:hover
-			background rgba(iconos,1)
-			color white
-			-webkit-transition: all .2s;
-			transition: all .2s;
-	.menu
-		color rgba(white,.5)
-		font-size 1.2em
-		height 50px
-		line-height 2.2em
-		position fixed
-		right 7px
-		text-align center
-		top 7px 
-		width 50px
-		z-index 7
-		transform rotateZ(45deg)
-		-ms-transform rotateZ(45deg)
-		-webkit-transform rotateZ(45deg)
-		&:after
-			content '\e607'
-			font-family icono
-			font-size 1.7em
-	.vistaNit
-		color white
-		font-weight 400
-		position fixed
-		left 93px
-		top 203px
-	.social
-		.facebook
-			top 325px 
-			display block
-			height 80px
-			left 5px
-			padding 1.5em 0 0 1em
-			position fixed
-			width 100%
+			width 50px
 			z-index 4
-		.twitter
-			top 355px 
-			position fixed
-			left 200px
+			&:after
+				content 'a'
+				font-size 1.4em
+				font-weight 300
+			&:hover
+				color rgba(white,.6)
+				-webkit-transition: all .2s;
+				transition: all .2s;
+		.contraste
+			color rgba(#deecfb,1)
+			font-size 1.2em
+			height 50px
+			line-height 2.1em
+			text-align center
+			width 50px
 			z-index 4
+			&:after
+				content '\e601'
+				font-family icono
+				font-size .9em
+			&:hover
+				color rgba(white,.6)
+				-webkit-transition: all .2s;
+				transition: all .2s;
+		.compartir
+			color rgba(#deecfb,1)
+			font-size 1.2em
+			height 50px
+			line-height 2.1em
+			text-align center
+			width 50px
+			z-index 4
+			&:after
+				content '\e602'
+				font-family icono
+				font-size .9em
+			&:hover
+				color rgba(white,.6)
+				-webkit-transition: all .2s;
+				transition: all .2s;
+				.social
+					.facebook
+						z-index 4
+					.twitter
+						z-index 4
+		.disminuir
+			color rgba(#deecfb,1)
+			font-size 1.2em
+			height 50px
+			line-height 1.85em
+			text-align center
+			width 50px
+			z-index 4
+			&:after
+				content 'a'
+				font-size .9em
+				font-weight 300
+			&:hover
+				color rgba(white,.6)
+				-webkit-transition: all .2s;
+				transition: all .2s;
+		
+
 .patron
 	position fixed
 	top 0
