@@ -28,7 +28,8 @@ header
 		padding 20px 20px 0 10px 
 		white-space nowrap
 		width 100%
-		z-index 12
+		position relative
+		z-index 15
 		ul
 			text-align center
 			.dia 
@@ -51,7 +52,8 @@ header
 					width 35px 
 					&:hover
 						background rgba(white,1)
-						color rgba(black,.5)
+						color rgba(black,.7)
+						font-weight 400
 				.centrarMes
 					margin 0 0 0 .35em
 				.mes
@@ -172,53 +174,45 @@ header
 					content '\e603'
 					font-family icono
 section
-	margin 0 0 100px 0
+	margin 0 0 60px 0
 	display block
 	.llistaVisible
 		animation animacionLlista .3s 1
 		-webkit-animation animacionLlista .3s 1
+		padding 1em 0 1em 0
 		.event
 			margin  10px 10px
 			.detallEvent
-				background rgba(white,.2)
+				background rgba(white,.4)
 				border-radius 10px 10px 0 0 
+				margin .5em 0 0 0 
 				color white
 				display block
-				height 60px
+				height 30px
 				.quan
 					.data
 						p
-							color rgba(white,.5)
-							font-size .50em
+							color rgba(black,.7)
+							font-size .70em
 							font-weight 300
 							left 15px
 							position relative
-							top -3px
+							top -10px
 					.hora
-						font-size .65em
+						font-size .7em
 						font-weight 300
+						letter-spacing 2px
 						position relative
-						top 27px
-						left 15px
-				.lloc
-					color rgba(white,.9)
-					font-size .6em
-					font-weight 300
-					letter-spacing .2em
-					margin -1.3em 1em 0 5.5em
-					text-transform uppercase
-					p
-						&:before
-							content '\e605'
-							font-family icono
+						top 7px
+						left 80px
 			.Event
-					background rgba(white,.2)
+					background rgba(white,.4)
 					border-radius 0 0 10px 10px
 					color rgba(white,.8)
 					display block
 					font-size .9em
 					font-weight 300
-					margin 2px 0 0 0 
+					margin 1px 0 0 0 
 					padding .7em .5em .8em .5em
 					position relative
 					.detall
@@ -226,7 +220,7 @@ section
 						width 95%
 						font-size .8em
 						font-weight 300
-						margin 1em 0 0 1em 
+						margin 1em 0 1em 1em 
 						p
 							&:after
 								display none
@@ -241,13 +235,25 @@ section
 							content '\e60b'
 							font-family icono
 							font-size 1em
+					.lloc
+						color rgba(white,1)
+						font-size .6em
+						font-weight 300
+						letter-spacing .2em
+						margin .5em 1em 0 0
+						text-transform uppercase
+						p
+							&:before
+								content '\e605'
+								font-family icono
+								color rgba(white,.7)
 		.anarInici
 			display block
 			text-align center
 			.boto
 				background rgba(white,.1)
 				border-radius 50%
-				color rgba(black,.65)
+				color rgba(white,.5)
 				display inline-block
 				height 50px
 				line-height 2.5em
@@ -278,22 +284,25 @@ section
 	width 100%
 	z-index -50
 .bgEvento
-	border-bottom 1px solid rgba(white,.0)
-	border-top 1px solid rgba(white,.3)
+	// border-bottom 1px solid rgba(white,.0)
+	// border-top 1px solid rgba(white,.3)
+	box-shadow 0px -2px 3px rgba(black,.2)
 	height 263px
 	left 0 
 	position absolute
 	right 0
 	top 445px
+	z-index 5
 	@css {
-		background: rgb(15,32,45);
-		background: -moz-linear-gradient(45deg,  rgba(15,32,45,1) 0%, rgba(52,81,105,1) 52%, rgba(107,139,163,1) 100%);
-		background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(15,32,45,1)), color-stop(52%,rgba(52,81,105,1)), color-stop(100%,rgba(107,139,163,1)));
-		background: -webkit-linear-gradient(45deg,  rgba(15,32,45,1) 0%,rgba(52,81,105,1) 52%,rgba(107,139,163,1) 100%);
-		background: -o-linear-gradient(45deg,  rgba(15,32,45,1) 0%,rgba(52,81,105,1) 52%,rgba(107,139,163,1) 100%);
-		background: -ms-linear-gradient(45deg,  rgba(15,32,45,1) 0%,rgba(52,81,105,1) 52%,rgba(107,139,163,1) 100%);
-		background: linear-gradient(45deg,  rgba(15,32,45,1) 0%,rgba(52,81,105,1) 52%,rgba(107,139,163,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f202d', endColorstr='#6b8ba3',GradientType=1 );
+		background: rgb(24,49,75);
+		background: -moz-linear-gradient(45deg,  rgba(24,49,75,1) 7%, rgba(26,78,121,1) 99%);
+		background: -webkit-gradient(linear, left bottom, right top, color-stop(7%,rgba(24,49,75,1)), color-stop(99%,rgba(26,78,121,1)));
+		background: -webkit-linear-gradient(45deg,  rgba(24,49,75,1) 7%,rgba(26,78,121,1) 99%);
+		background: -o-linear-gradient(45deg,  rgba(24,49,75,1) 7%,rgba(26,78,121,1) 99%);
+		background: -ms-linear-gradient(45deg,  rgba(24,49,75,1) 7%,rgba(26,78,121,1) 99%);
+		background: linear-gradient(45deg,  rgba(24,49,75,1) 7%,rgba(26,78,121,1) 99%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#18314b', endColorstr='#1a4e79',GradientType=1 );
+
 	}
 .efectos
 	height 600px
@@ -314,7 +323,7 @@ section
 			margin 0 auto
 			position relative
 			width 150px
-			z-index 5
+			z-index 4
 			.castell
 				background-image url(../img/castell.png)
 				background-repeat no-repeat
@@ -412,16 +421,7 @@ section
 			position absolute
 			z-index 3		
 .menu
-	@css {
-		background: rgb(52,82,106);
-		background: -moz-linear-gradient(top,  rgba(52,82,106,1) 0%, rgba(44,69,89,1) 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(52,82,106,1)), color-stop(100%,rgba(44,69,89,1)));
-		background: -webkit-linear-gradient(top,  rgba(52,82,106,1) 0%,rgba(44,69,89,1) 100%);
-		background: -o-linear-gradient(top,  rgba(52,82,106,1) 0%,rgba(44,69,89,1) 100%);
-		background: -ms-linear-gradient(top,  rgba(52,82,106,1) 0%,rgba(44,69,89,1) 100%);
-		background: linear-gradient(to bottom,  rgba(52,82,106,1) 0%,rgba(44,69,89,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34526a', endColorstr='#2c4559',GradientType=0 );
-	}
+	background #1e3e5e
 	border-radius 10px
 	width 99%
 	bottom 0
@@ -519,8 +519,6 @@ section
 				color rgba(white,.6)
 				-webkit-transition: all .2s;
 				transition: all .2s;
-		
-
 .patron
 	position fixed
 	top 0
