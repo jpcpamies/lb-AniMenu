@@ -73,6 +73,22 @@ function vistaDia(){
 
 }
 
+//active de la botonera
+function activeBot(a){
+
+  resetearBot();
+  $('.dia p')[a].style.backgroundColor="gray";
+
+}
+
+function  resetearBot(){
+
+  var num = $('.botonera p');
+  for (var i=0; i<num.length;i++){
+    num[i].style.backgroundColor="";
+  }
+}
+
 function vistaNoche(){
 
   var elem = $('link')[2];
@@ -95,24 +111,6 @@ $(window).bind('scroll', function () {
     }
 });
 
-
-
-
-
-
-
-// Facebook
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
-// Twitter
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-
 //función para animar el despliegue del programa
 $(function(){
   //clic en un enlace de la lista
@@ -129,6 +127,21 @@ $(function(){
     },1000);
   });
 });
+
+
+//Facebook
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+// Twitter
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+
 
 
 
