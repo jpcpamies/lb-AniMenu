@@ -4,7 +4,7 @@ $(function(){
 		//prevenir en comportamiento predeterminado del enlace
 		e.preventDefault();
 		//obtenemos el id del elemento en el que debemos posicionarnos
-		var strAncla=$(this).attr('href');
+		var strAncla=$('#eventActual');
 		
 		//utilizamos body y html, ya que dependiendo del navegador uno u otro no funciona
 		$('body,html').stop(true,true).animate({
