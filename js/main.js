@@ -101,7 +101,7 @@ function vistaNoche(){
 }
 
 //función para mostrar y esconder el menu
-var num = 180; //numero de pixele antes de aplicar el script
+var num = 150; //numero de pixele antes de aplicar el script
 
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > num) {
