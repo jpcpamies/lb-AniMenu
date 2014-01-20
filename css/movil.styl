@@ -41,7 +41,7 @@ header
 				width 65px
 				p
 					border-radius 50%
-					color rgba(#c0fff2,1)
+					color rgba(#aae2ff,1)
 					height 35px
 					left 25%
 					font-weight 400
@@ -51,7 +51,7 @@ header
 					top 17px
 					width 35px 
 					&:hover
-						background rgba(#c0fff2,1)
+						background rgba(cielo,1)
 						color rgba(black,.7)
 						font-weight 400
 				.centrarMes
@@ -154,7 +154,7 @@ header
 		.titol
 			// background rgba(white,.5)
 			border-radius 10px
-			color rgba(#c0fff2,1)
+			color rgba(cielo,1)
 			font-size 1em
 			font-weight 400
 			left 10px
@@ -194,14 +194,14 @@ section
 				.quan
 					.data
 						p
-							color rgba(#c0fff2,.5)
+							color rgba(cielo,.5)
 							font-size .70em
 							font-weight 300
 							left 70px
 							position relative
 							top -10px
 					.hora
-						color rgba(#c0fff2,1)
+						color rgba(cielo,1)
 						font-size .7em
 						font-weight 400
 						letter-spacing 2px
@@ -214,7 +214,7 @@ section
 			.Event
 					background rgba(white,.4)
 					border-radius 0 0 10px 10px
-					color rgba(#c0fff2,1)
+					color rgba(cielo,1)
 					display block
 					font-size .9em
 					font-weight 400
@@ -243,7 +243,7 @@ section
 							font-family icono
 							font-size 1em
 					.lloc
-						color rgba(#c0fff2,1)
+						color rgba(cielo,1)
 						font-size .6em
 						font-weight 300
 						letter-spacing 1px
@@ -253,7 +253,7 @@ section
 							&:before
 								content '\e605'
 								font-family icono
-								color rgba(#c0fff2,1)
+								color rgba(cielo,1)
 		.anarInici
 			display block
 			text-align center
@@ -273,17 +273,7 @@ section
 	.llistaInvisible
 		display none
 .bg 
-	@css {
-		background: rgb(20,87,133);
-		background: -moz-linear-gradient(45deg,  rgba(20,87,133,1) 0%, rgba(13,58,89,1) 56%, rgba(10,44,67,1) 98%);
-		background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(20,87,133,1)), color-stop(56%,rgba(13,58,89,1)), color-stop(98%,rgba(10,44,67,1)));
-		background: -webkit-linear-gradient(45deg,  rgba(20,87,133,1) 0%,rgba(13,58,89,1) 56%,rgba(10,44,67,1) 98%);
-		background: -o-linear-gradient(45deg,  rgba(20,87,133,1) 0%,rgba(13,58,89,1) 56%,rgba(10,44,67,1) 98%);
-		background: -ms-linear-gradient(45deg,  rgba(20,87,133,1) 0%,rgba(13,58,89,1) 56%,rgba(10,44,67,1) 98%);
-		background: linear-gradient(45deg,  rgba(20,87,133,1) 0%,rgba(13,58,89,1) 56%,rgba(10,44,67,1) 98%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#145785', endColorstr='#0a2c43',GradientType=1 );
-
-        }
+	background #1f4567
 	height 100%
 	left 0
 	position fixed
@@ -293,6 +283,7 @@ section
 .bgEvento
 	// border-bottom 1px solid rgba(white,.0)
 	// border-top 1px solid rgba(white,.3)
+	background #283148
 	box-shadow 0px -2px 3px rgba(black,.2)
 	height 235px
 	left 0 
@@ -300,17 +291,17 @@ section
 	right 0
 	top 445px
 	z-index 5
-	@css {
-		background: rgb(24,49,75);
-		background: -moz-linear-gradient(45deg,  rgba(24,49,75,1) 7%, rgba(26,78,121,1) 99%);
-		background: -webkit-gradient(linear, left bottom, right top, color-stop(7%,rgba(24,49,75,1)), color-stop(99%,rgba(26,78,121,1)));
-		background: -webkit-linear-gradient(45deg,  rgba(24,49,75,1) 7%,rgba(26,78,121,1) 99%);
-		background: -o-linear-gradient(45deg,  rgba(24,49,75,1) 7%,rgba(26,78,121,1) 99%);
-		background: -ms-linear-gradient(45deg,  rgba(24,49,75,1) 7%,rgba(26,78,121,1) 99%);
-		background: linear-gradient(45deg,  rgba(24,49,75,1) 7%,rgba(26,78,121,1) 99%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#18314b', endColorstr='#1a4e79',GradientType=1 );
+	// @css {
+	// 	background: rgb(24,49,75);
+	// 	background: -moz-linear-gradient(45deg,  rgba(24,49,75,1) 7%, rgba(26,78,121,1) 99%);
+	// 	background: -webkit-gradient(linear, left bottom, right top, color-stop(7%,rgba(24,49,75,1)), color-stop(99%,rgba(26,78,121,1)));
+	// 	background: -webkit-linear-gradient(45deg,  rgba(24,49,75,1) 7%,rgba(26,78,121,1) 99%);
+	// 	background: -o-linear-gradient(45deg,  rgba(24,49,75,1) 7%,rgba(26,78,121,1) 99%);
+	// 	background: -ms-linear-gradient(45deg,  rgba(24,49,75,1) 7%,rgba(26,78,121,1) 99%);
+	// 	background: linear-gradient(45deg,  rgba(24,49,75,1) 7%,rgba(26,78,121,1) 99%);
+	// 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#18314b', endColorstr='#1a4e79',GradientType=1 );
 
-	}
+	// }
 .efectos
 	height 600px
 	width 100%
@@ -430,7 +421,7 @@ section
 			position absolute
 			z-index 3		
 .menu
-	background #1e3e5e
+	background #283148
 	border-radius 10px
 	width 99%
 	bottom 0
@@ -441,15 +432,15 @@ section
 	z-index 20
 	.botonMenu
 		display inline-block
-		width 18%
+		width 24%
 		a
 			decoration none
 			.mapa
-				color rgba(#c0fff2,1)
+				color rgba(cielo,1)
 				font-size 1.2em
 				height 50px
 				line-height 2.1em
-				text-align center
+				text-align left
 				width 50px
 				z-index 3
 				&:before
@@ -461,7 +452,7 @@ section
 					-webkit-transition: all .2s;
 					transition: all .2s;
 		.aumentar
-			color rgba(#c0fff2,1)
+			color rgba(cielo,1)
 			font-size 1.2em
 			left 90px
 			line-height 1.75em
@@ -476,24 +467,8 @@ section
 				color rgba(white,.6)
 				-webkit-transition: all .2s;
 				transition: all .2s;
-		.contraste
-			color rgba(#c0fff2,1)
-			font-size 1.2em
-			height 50px
-			line-height 2.1em
-			text-align center
-			width 50px
-			z-index 4
-			&:after
-				content '\e601'
-				font-family icono
-				font-size .75em
-			&:hover
-				color rgba(white,.6)
-				-webkit-transition: all .2s;
-				transition: all .2s;
 		.compartir
-			color rgba(#c0fff2,1)
+			color rgba(cielo,1)
 			font-size 1.2em
 			height 50px
 			line-height 2.1em
@@ -514,7 +489,7 @@ section
 					.twitter
 						z-index 4
 		.disminuir
-			color rgba(#c0fff2,1)
+			color rgba(cielo,1)
 			font-size 1.2em
 			height 50px
 			line-height 1.85em
@@ -542,7 +517,6 @@ section
 	background-size 200px auto
 	z-index -5
 	opacity .075
-
 @keyframes animacionConstelacion
 	0%
 		transform rotateZ(0deg)
