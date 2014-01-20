@@ -1,14 +1,3 @@
-// Facebook
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
-// Twitter
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 
 
 // Variables para capturar la fecha del navegador
@@ -20,11 +9,11 @@ var horas = fecha.getHours();
 var minutos = fecha.getMinutes();
 
 //Variables para capturar elementos
-var texto = document.getElementsByClassName('detallEvent');
+var texto = document.getElementsByClassName('detall');
 var prog = document.getElementsByClassName('llistaVisible');
 var bot = document.getElementsByClassName('dia');
 
-// Arreglos per a mostrar mesesos y díes en Català
+// Arreglos para a mostrar meses y días en Catalán
 var meses = ["Gener", "Febrer", "Març", "Abril", "Maig", "Juny", "Juliol", "Agost", "Setembre", "Octubre" ,"Novembre", "Desembre"];
 var diasSemana = ["Diumenge", "Dilluns", "Dimarts", "Dimecres", "Dijous", "Divendres", "Dissabte"];
 
@@ -33,16 +22,7 @@ document.getElementById('divDia').innerHTML = diasSemana[dia];
 document.getElementById('divNumero').innerHTML = numero;
 document.getElementById('divMes').innerHTML = meses[mes];
 
-function toggleMenu(a){
-    var e = document.getElementById(a);
-    if(e.className=='boto'){
-        e.className='botoOn';
-    }
-    else {
-        e.className='boto';
-    }
-}
-
+//función para subir o bajar el tamaño de la fuente
 function resizer (multiplicador){
     for (var i = 0; i < texto.length; i++) {
         
@@ -50,12 +30,13 @@ function resizer (multiplicador){
 
             texto[i].style.fontSize = "1.0em";
 
-        }texto[i].style.fontSize = parseFloat(texto[i].style.fontSize)
+        }
+        texto[i].style.fontSize = parseFloat(texto[i].style.fontSize)
         + (multiplicador * 0.1) + "em";
         };
 }
 
-
+//mostrar el programa de un dia concreto
 function mostrar(b){
     resetearProg();
     var elem = document.getElementById(b);
@@ -63,7 +44,7 @@ function mostrar(b){
 
 }
 
-
+//eliminar el programa de el dia anterior
 function resetearProg(){
     for (var i = 0; i < prog.length; i++) {
         if (prog[i].className=="llistaVisible"){
@@ -74,32 +55,11 @@ function resetearProg(){
     };
 }
 
-// function resetearBot(){
-//     for (i=0;i<bot.length;i++)
-//       bot[i].style.backgroundColor="";
-// }
 
-//Cambiar el display de none a block
-// function cambiar(esto){
-//   vista = document.getElementById(esto).style.display;
-
-//   if (vista == 'none')
-//   {
-//     vista = 'block';
-//   }
-//   else
-//   {
-//     vista = 'none';
-//   }
-//   document.getElementById(esto).style.display = vista;
-// }
-
-
-
-//Función para desplegar los elementos del div llistaEvent.
-function togglePes(a){
+//Función para desplegar los elementos por su Id.
+function slideToggle(a){
   var elem = document.getElementById(a);
-  $(elem).slideToggle('fast');
+  $(elem).slideToggle('slow');
 }
 
 function vistaDia(){
@@ -108,11 +68,25 @@ function vistaDia(){
   if (elem.href="css/estilosNoche.css"){
 
     elem.href="css/estilosDia.css";
-    $('#inici').addClass('boto');
-    $('#inici').removeClass('botoOn');
 
   }
 
+}
+
+//active de la botonera
+function activeBot(a){
+
+  resetearBot();
+  $('.dia p')[a].style.backgroundColor="gray";
+
+}
+
+function  resetearBot(){
+
+  var num = $('.botonera p');
+  for (var i=0; i<num.length;i++){
+    num[i].style.backgroundColor="";
+  }
 }
 
 function vistaNoche(){
@@ -121,20 +95,51 @@ function vistaNoche(){
   if (elem.href="css/estilosDia.css"){
 
     elem.href="css/estilosNoche.css";
-    $('#inici').addClass('boto');
-    $('#inici').removeClass('botoOn');
 
   }
 
 }
 
+//función para mostrar y esconder el menu
+var num = 150; //numero de pixele antes de aplicar el script
+
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > num) {
+        $('#menu').addClass('menu');
+    } else {
+        $('#menu').removeClass('menu');
+    }
+});
+
+//función para animar el despliegue del programa
+$(function(){
+  //clic en un enlace de la lista
+  $('ul li a').on('click',function(e){
+    //prevenir en comportamiento predeterminado del enlace
+    e.preventDefault();
+    //obtenemos el id del elemento en el que debemos posicionarnos
+    var strAncla=$(this).attr('href');
+    
+    //utilizamos body y html, ya que dependiendo del navegador uno u otro no funciona
+    $('body,html').stop(true,true).animate({
+      //realizamos la animacion hacia el ancla
+      scrollTop: $(strAncla).offset().top
+    },1000);
+  });
+});
 
 
+//Facebook
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 
-
-
-
-
+// Twitter
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 
 
 
