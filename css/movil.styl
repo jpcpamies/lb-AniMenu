@@ -433,77 +433,55 @@ section
 	.botonMenu
 		display inline-block
 		width 24%
-		a
-			decoration none
-			.mapa
-				color rgba(cielo,1)
-				font-size 1.2em
-				height 50px
-				line-height 2.1em
-				text-align left
-				width 50px
-				z-index 3
-				&:before
-					content '\e607'
-					font-family icono
-					font-size .7em
-				&:hover
-					color rgba(white,.6)
-					-webkit-transition: all .2s;
-					transition: all .2s;
-		.aumentar
+		// position relative
+		// height 13px
+		.mapa
 			color rgba(cielo,1)
 			font-size 1.2em
-			left 90px
-			line-height 1.75em
-			text-align right
-			width 50px
-			z-index 4
+			// position absolute
+			// right 40%
+			// bottom 20px
+			&:after
+				content '\e607'
+				font-family icono
+				font-size .7em
+			&:hover
+				color rgba(white,.6)
+		.aumentar
+			color rgba(cielo,1)
+			font-size 1.6em
+			// position absolute
+			// left 10%
+			// bottom -20px
 			&:after
 				content 'a'
-				font-size 1.4em
 				font-weight 100
 			&:hover
 				color rgba(white,.6)
-				-webkit-transition: all .2s;
-				transition: all .2s;
 		.compartir
 			color rgba(cielo,1)
 			font-size 1.2em
-			height 50px
-			line-height 2.1em
-			text-align center
-			width 50px
-			z-index 4
+			// position absolute
+			// right 10%
+			// bottom 0px
 			&:after
 				content '\e602'
 				font-family icono
 				font-size .85em
 			&:hover
 				color rgba(white,.6)
-				-webkit-transition: all .2s;
-				transition: all .2s;
-				.social
-					.facebook
-						z-index 4
-					.twitter
-						z-index 4
 		.disminuir
 			color rgba(cielo,1)
 			font-size 1.2em
-			height 50px
-			line-height 1.85em
-			text-align center
-			width 50px
-			z-index 4
+			// position absolute
+			// left 30%
+			// bottom -10px
 			&:after
 				content 'a'
 				font-size .9em
 				font-weight 300
 			&:hover
 				color rgba(white,.6)
-				-webkit-transition: all .2s;
-				transition: all .2s;
 .patron
 	position fixed
 	top 0
