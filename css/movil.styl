@@ -216,11 +216,12 @@ section
 			.Event
 				background rgba(white,.6)
 				border-radius 0 0 10px 10px
+				box-shadow 0px 1px 1px rgba(black,.2)
 				color rgba(black,.8)
 				display block
 				font-size .9em
 				font-weight 400
-				padding .7em .5em .8em .5em
+				padding .7em .5em .8em 1em
 				position relative
 				.detall
 					color rgba(secundario,1)
@@ -228,7 +229,7 @@ section
 					width 95%
 					font-size .8em
 					font-weight 300
-					margin 1em 0 1em 1em 
+					margin 1em 0 1em 0 
 					p
 						&:after
 							display none
@@ -241,7 +242,7 @@ section
 					-webkit-transform rotateZ(90deg)
 					&:after
 						content '\e60b'
-						color rgba(black,.3)
+						color rgba(black,.2)
 						font-family icono
 						font-size 1em
 				.lloc
@@ -272,8 +273,6 @@ section
 				content '\e604'
 				font-family icono
 				font-size 1.5em
-	.llistaInvisible
-		display none
 .bg 
 	background #9fc1e0
 	height 100%
@@ -593,6 +592,8 @@ section
 			top -150px
 			width 350px
 			z-index -4
+.llistaInvisible
+	display none
 .menu
 	background secundario
 	border-radius 5px
@@ -604,8 +605,8 @@ section
 	right 0
 	width 97%
 	z-index 20
-	animation animacionMenu .5s 1
-	-webkit-animation animacionMenu .5s 1
+	animation animacionMenu 1s 1
+	-webkit-animation animacionMenu 1s 1
 	.botones
 		.botonMenu
 			display inline-block
@@ -623,7 +624,7 @@ section
 					font-family icono
 					font-size .85em
 				&:hover
-					color rgba(white,.6)
+					color rgba(black,.25)
 			.mapa
 				// color rgba(#283148,1)
 				font-size 1.15em
@@ -632,24 +633,30 @@ section
 					font-family icono
 					font-size .7em
 				&:hover
-					color rgba(white,.6)
+					color rgba(black,.25)
 			.menuResizer
 				font-weight 400
+				&:hover
+					color rgba(black,.25)
 				.grande
 					font-size .6em
 				.menor
 					font-size 1em
 	.resizer
-		border-top 1px solid rgba(#283148,.2)
+		background rgba(black,.2)
+		border-top 1px solid rgba(#283148,.4)
+		box-shadow 0px 1px 0px rgba(white,.1)
+		color rgba(white,.7)
 		padding .4em 0
 		.botonResizer
-			// color rgba(#283148,1)
+			// color rgba(#283148,14
 			display inline-block
 			font-weight 400
 			text-align center
 			width 49%
 			.aumentar
-				border-right 1px solid rgba(#283148,.2)
+				border-right 1px solid rgba(#283148,.4)
+				box-shadow 1px 0px 0px rgba(white,.1)
 				&:after
 					content 'A'
 					font-size .7em
@@ -658,7 +665,8 @@ section
 					content 'A'
 					font-size 1.2em
 	.social
-		border-top 1px solid rgba(#283148,.2)
+		background rgba(black,.2)
+		border-top 1px solid rgba(#283148,.45)
 		padding .8em 0 .6em 0
 		.botonSocial
 			display inline-block
