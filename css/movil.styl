@@ -257,6 +257,8 @@ section
 							color rgba(secundario,1)
 							content '\e605'
 							font-family icono
+	.llistaInvisible
+		display none
 	.anarInici
 		display block
 		text-align center
@@ -464,7 +466,7 @@ section
 				border-right 0px solid transparent
 				left 0px
 				position absolute
-				top 25px
+				top 5px
 				transform rotateZ(3deg)
 				-ms-transform rotateZ(3deg)
 				-webkit-transform rotateZ(3deg)
@@ -478,7 +480,7 @@ section
 				border-right 0px solid transparent
 				left -600px
 				position absolute
-				top 700px
+				top 690px
 				transform rotateZ(240deg)
 				-ms-transform rotateZ(240deg)
 				-webkit-transform rotateZ(240deg)
@@ -490,9 +492,9 @@ section
 				border-bottom 50px solid transparent
 				border-left 2000px solid white
 				border-right 0px solid transparent
-				left -576px
+				left -580px
 				position absolute
-				top 700px
+				top 690px
 				z-index -6
 				transform rotateZ(240deg)
 				-ms-transform rotateZ(240deg)
@@ -505,7 +507,7 @@ section
 				border-bottom 20px solid transparent
 				border-left 1900px solid white
 				border-right 0px solid transparent
-				left -795px
+				left -798px
 				position absolute
 				top 800px
 				transform rotateZ(260deg)
@@ -549,7 +551,7 @@ section
 				border-right 0px solid transparent
 				left -150px
 				position absolute
-				top 240px
+				top 245px
 				transform rotateZ(215deg)
 				-ms-transform rotateZ(215deg)
 				-webkit-transform rotateZ(215deg)
@@ -593,8 +595,6 @@ section
 			top -150px
 			width 350px
 			z-index -4
-.llistaInvisible
-	display none
 .menu
 	background secundario
 	border-radius 5px
@@ -624,8 +624,8 @@ section
 					content '\e602'
 					font-family icono
 					font-size .85em
-				&:hover
-					color rgba(black,.25)
+				&:active
+					color rgba(white,.3)
 			.mapa
 				// color rgba(#283148,1)
 				font-size 1.15em
@@ -633,16 +633,20 @@ section
 					content '\e607'
 					font-family icono
 					font-size .7em
-				&:hover
-					color rgba(black,.25)
+				&:active
+					color rgba(white,.3)
 			.menuResizer
 				font-weight 400
-				&:hover
-					color rgba(black,.25)
-				.grande
-					font-size .6em
-				.menor
-					font-size 1em
+				&:active
+					color rgba(white,.3)
+				.aumentar
+					&:after
+						content 'A'
+						font-size 1em
+				.disminuir
+					&:after
+						content 'A'
+						font-size .6em
 	.resizer
 		background rgba(black,.2)
 		border-top 1px solid rgba(#283148,.4)
@@ -650,21 +654,24 @@ section
 		color rgba(white,.7)
 		padding .4em 0
 		.botonResizer
-			// color rgba(#283148,14
 			display inline-block
 			font-weight 400
 			text-align center
 			width 49%
-			.aumentar
+			.disminuir
 				border-right 1px solid rgba(#283148,.4)
 				box-shadow 1px 0px 0px rgba(white,.1)
 				&:after
 					content 'A'
 					font-size .7em
-			.disminuir
+				&:active
+					color rgba(white,.3)
+			.aumentar
 				&:after
 					content 'A'
 					font-size 1.2em
+				&:active
+						color rgba(white,.3)
 	.social
 		background rgba(black,.2)
 		border-top 1px solid rgba(#283148,.45)
@@ -676,6 +683,8 @@ section
 			width 49%
 			.twitter
 				margin 0 0 0 1.5em
+.invisible
+	display none
 .patron
 	position fixed
 	top 0
