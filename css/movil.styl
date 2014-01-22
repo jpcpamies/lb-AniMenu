@@ -425,57 +425,66 @@ section
 	background cielo
 	border-radius 5px
 	bottom 0
+	color white
 	left 0
 	margin 0 auto .4em auto
 	position fixed
 	right 0
 	width 97%
 	z-index 20
-	animation animacionMenu .5s 1
-	-webkit-animation animacionMenu .5s 1
+	animation animacionMenu 1s 1
+	-webkit-animation animacionMenu 1s 1
 	.botones
 		.botonMenu
+			color #283148
 			display inline-block
 			line-height 2em
 			text-align center
 			width 32%
 			a
+				color #283148
 				text-decoration none
 			.compartir
-				color rgba(#283148,1)
+				// color rgba(#283148,1)
 				font-size 1.2em
 				&:after
 					content '\e602'
 					font-family icono
 					font-size .85em
 				&:hover
-					color rgba(white,.6)
+					color rgba(black,.25)
 			.mapa
-				color rgba(#283148,1)
+				// color rgba(#283148,1)
 				font-size 1.15em
 				&:after
 					content '\e607'
 					font-family icono
 					font-size .7em
 				&:hover
-					color rgba(white,.6)
+					color rgba(black,.25)
 			.menuResizer
 				font-weight 400
+				&:hover
+					color rgba(black,.25)
 				.grande
 					font-size .6em
 				.menor
 					font-size 1em
 	.resizer
-		border-top 1px solid rgba(#283148,.2)
+		background rgba(black,.2)
+		border-top 1px solid rgba(#283148,.4)
+		// box-shadow 0px 1px 0px rgba(white,.5)
+		color rgba(#283148,.8)
 		padding .4em 0
 		.botonResizer
-			color rgba(#283148,1)
+			// color rgba(#283148,14
 			display inline-block
 			font-weight 400
 			text-align center
 			width 49%
 			.aumentar
 				border-right 1px solid rgba(#283148,.2)
+				box-shadow 1px 0px 0px rgba(white,.1)
 				&:after
 					content 'A'
 					font-size .7em
@@ -484,6 +493,7 @@ section
 					content 'A'
 					font-size 1.2em
 	.social
+		background rgba(black,.2)
 		border-top 1px solid rgba(#283148,.2)
 		padding .8em 0 .6em 0
 		.botonSocial
