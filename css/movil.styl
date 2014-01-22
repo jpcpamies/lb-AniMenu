@@ -449,8 +449,8 @@ section
 					content '\e602'
 					font-family icono
 					font-size .85em
-				&:hover
-					color rgba(black,.25)
+				&:active
+					color rgba(#283148,.3)
 			.mapa
 				// color rgba(#283148,1)
 				font-size 1.15em
@@ -458,41 +458,48 @@ section
 					content '\e607'
 					font-family icono
 					font-size .7em
-				&:hover
-					color rgba(black,.25)
+				&:active
+					color rgba(#283148,.3)
 			.menuResizer
 				font-weight 400
-				&:hover
-					color rgba(black,.25)
-				.grande
-					font-size .6em
-				.menor
-					font-size 1em
+				&:active
+					color rgba(#283148,.3)
+				.aumentar
+					&:after
+						content 'A'
+						font-size 1em
+				.disminuir
+					&:after
+						content 'A'
+						font-size .6em
 	.resizer
 		background rgba(black,.2)
 		border-top 1px solid rgba(#283148,.4)
-		// box-shadow 0px 1px 0px rgba(white,.5)
+		box-shadow 0px 1px 0px rgba(white,.1)
 		color rgba(#283148,.8)
 		padding .4em 0
 		.botonResizer
-			// color rgba(#283148,14
 			display inline-block
 			font-weight 400
 			text-align center
 			width 49%
-			.aumentar
-				border-right 1px solid rgba(#283148,.2)
+			.disminuir
+				border-right 1px solid rgba(#283148,.4)
 				box-shadow 1px 0px 0px rgba(white,.1)
 				&:after
 					content 'A'
 					font-size .7em
-			.disminuir
+				&:active
+					color rgba(#283148,.3)
+			.aumentar
 				&:after
 					content 'A'
 					font-size 1.2em
+				&:active
+						color rgba(#283148,.3)
 	.social
 		background rgba(black,.2)
-		border-top 1px solid rgba(#283148,.2)
+		border-top 1px solid rgba(#283148,.45)
 		padding .8em 0 .6em 0
 		.botonSocial
 			display inline-block
@@ -501,6 +508,8 @@ section
 			width 49%
 			.twitter
 				margin 0 0 0 1.5em
+.invisible
+	display none
 .patron
 	position fixed
 	top 0
