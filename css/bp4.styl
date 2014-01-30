@@ -10,11 +10,33 @@ section
 		height 380px
 		top 60px
 .efectos
-	.dia
-		.nubes
-			.nube1
-				right 0%
-				top 120px
+	.nit
+		.estrellas
+			height 445px
+			left 0 
+			position relative
+			right 0
+			top 0
+			z-index 1
+			.moverConstelacion
+				height 445px
+				overflow-x auto
+				overflow-y hidden
+				position relative
+				z-index 1
+				.constelacion
+					background-image url(../img/estrellas.png)
+					background-repeat no-repeat
+					background-size 1100px auto
+					height 900px
+					left 100px
+					position absolute
+					top -150px
+					width 1100px
+					opacity 1
+					-webkit-filter brightness(1.8)
+					animation animacionConstelacion 320s infinite
+					-webkit-animation animacionConstelacion 320s infinite
 .menu
 	background none
 	position relative 
@@ -29,10 +51,10 @@ section
 			.menuResizer
 				display none
 			.mapa
-				background secundario
+				background cielo
 				border-radius 50%
 				bottom 20px
-				color rgba(white,1)
+				color rgba(#283148,1)
 				font-size 1.15em
 				height 50px
 				line-height 2.15em
