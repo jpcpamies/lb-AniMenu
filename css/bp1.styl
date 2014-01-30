@@ -746,169 +746,22 @@ section
 	top 0
 	width 100%
 	z-index -5
-@keyframes animacionDestellos 
+@keyframes animacionConstelacion
 	0%
-		transform rotateZ(-18deg)
-		-ms-transform rotateZ(-18deg)
-		-webkit-transform rotateZ(-18deg)
+		transform rotateZ(0deg)
+		-ms-transform rotateZ(0deg)
+		-webkit-transform rotateZ(0deg)
+
 	50%
-		transform rotateZ(-33deg)
-		-ms-transform rotateZ(-33deg)
-		-webkit-transform rotateZ(-33deg)
-	100%
-		transform rotateZ(-18deg)
-		-ms-transform rotateZ(-18deg)
-		-webkit-transform rotateZ(-18deg)
-@keyframes animacionMoverDestellos
-	0%
-		transform translate(0px)
-		-ms-transform translate(0px)
-		-webkit-transform translate(0px)
-	50%
-		transform translate(50px, -50px)
-		-ms-transform translate(50px, -50px)
-		-webkit-transform translate(50px, -50px)
+		transform rotateZ(120deg)
+		-ms-transform rotateZ(120deg)
+		-webkit-transform rotateZ(120deg)
 
 	100%
-		transform translate(0px)
-		-ms-transform translate(0px)
-		-webkit-transform translate(0px)
-@keyframes animacionDestello1
-	0%
-		transform translate(0, 0px)
-		-ms-transform translate(0, 0px)
-		-webkit-transform translate(0, 0px)
-		opacity .2
-	25%
-		transform translate(0, 90px)
-		-ms-transform translate(0, 90px)
-		-webkit-transform translate(0, 90px)
-		opacity .4
-	50%
-		transform translate(0, 150px)
-		-ms-transform translate(0, 150px)
-		-webkit-transform translate(0, 150px)
-		opacity .8
-	75%
-		transform translate(0, 90px)
-		-ms-transform translate(0, 90px)
-		-webkit-transform translate(0, 90px)
-		opacity 1
-	100%
-		transform translate(0, 0px)
-		-ms-transform translate(0, 0px)
-		-webkit-transform translate(0, 0px)
-		opacity .2
-@keyframes animacionDestello2
-	0%
-		transform translate(0, 0px)
-		-ms-transform translate(0, 0px)
-		-webkit-transform translate(0, 0px)
-		opacity .2
-	25%
-		transform translate(0, 80px)
-		-ms-transform translate(0, 80px)
-		-webkit-transform translate(0, 80px)
-		opacity .5
-	50%
-		transform translate(0, 130px)
-		-ms-transform translate(0, 130px)
-		-webkit-transform translate(0, 130px)
-		opacity .7
-	75%
-		transform translate(0, 90px)
-		-ms-transform translate(0, 90px)
-		-webkit-transform translate(0, 90px)
-		opacity 1
-	100%
-		transform translate(0, 0px)
-		-ms-transform translate(0, 0px)
-		-webkit-transform translate(0, 0px)
-		opacity .2
-@keyframes animacionDestello3
-	0%
-		transform translate(0, 0px)
-		-ms-transform translate(0, 0px)
-		-webkit-transform translate(0, 0px)
-		opacity .6
-	25%
-		transform translate(0, 65px)
-		-ms-transform translate(0, 65px)
-		-webkit-transform translate(0, 65px)
-		opacity 1
-	50%
-		transform translate(0, 160px)
-		-ms-transform translate(0, 160px)
-		-webkit-transform translate(0, 160px)
-		opacity .3
-	75%
-		transform translate(0, 100px)
-		-ms-transform translate(0, 100px)
-		-webkit-transform translate(0, 100px)
-		opacity .7
-	100%
-		transform translate(0, 0px)
-		-ms-transform translate(0, 0px)
-		-webkit-transform translate(0, 0px)
-		opacity .6
-@keyframes animacionDestello4
-	0%
-		transform translate(0, 0px)
-		-ms-transform translate(0, 0px)
-		-webkit-transform translate(0, 0px)
-		opacity .3
-	25%
-		transform translate(0, 80px)
-		-ms-transform translate(0, 80px)
-		-webkit-transform translate(0, 80px)
-		opacity .6
-	50%
-		transform translate(0, 130px)
-		-ms-transform translate(0, 130px)
-		-webkit-transform translate(0, 130px)
-		opacity 1
-	75%
-		color rgba(#dda0dd,.1)
-		transform translate(0, 90px)
-		-ms-transform translate(0, 90px)
-		-webkit-transform translate(0, 90px)
-		opacity .6
-	100%
-		transform translate(0, 0px)
-		-ms-transform translate(0, 0px)
-		-webkit-transform translate(0, 0px)
-		opacity .3
-@keyframes animacionDestello5
-	0%
-		transform translate(0, 0px)
-		-ms-transform translate(0, 0px)
-		-webkit-transform translate(0, 0px)
-		transform rotateZ(60deg)
-		-ms-transform rotateZ(60deg)
-		-webkit-transform rotateZ(60deg)
-		opacity .3
-	25%
-		transform translate(0, 80px)
-		-ms-transform translate(0, 80px)
-		-webkit-transform translate(0, 80px)
-		opacity .6
-	50%
-		transform translate(0, 170px)
-		-ms-transform translate(0, 170px)
-		-webkit-transform translate(0, 170px)
-		opacity 1
-	75%
-		transform translate(0, 170px)
-		-ms-transform translate(0, 170px)
-		-webkit-transform translate(0, 170px)
-
-		opacity .6
-	100%
-		transform translate(0, 0px)
-		-ms-transform translate(0, 0px)
-		-webkit-transform translate(0, 0px)
-		opacity .3
-@keyframes animacionDia 
+		transform rotateZ(0deg)
+		-ms-transform rotateZ(0deg)
+		-webkit-transform rotateZ(0deg)
+@keyframes animacionDia 	
 	0% 
 		opacity 0
 	50%
@@ -917,7 +770,38 @@ section
 		opacity 1
 	100% 
 		opacity 1
-@keyframes animacionLlista
+@keyframes animacionFugaz 
+	0%
+		opacity 0
+		transform translate(0px)
+		-ms-transform translate(0px)
+		-webkit-transform translate(0px)
+	1%
+		opacity .3
+	15%
+		opacity 0
+	30%
+		opacity 0
+		transform translate(-900px)
+		-ms-transform translate(-900px)
+		-webkit-transform translate(-900px)
+	35%
+		opacity 0
+	100%
+		opacity 0
+		transform translate(0px)
+		-ms-transform translate(0px)
+		-webkit-transform translate(0px)
+@keyframes animacionFosc
+	0% 
+		opacity 1
+	50%
+		opacity .1
+	75%
+		opacity 1
+	100% 
+		opacity 1
+@keyframes animacionMenu 
 	0% 
 		opacity 0
 	100% 
@@ -940,107 +824,6 @@ section
 		opacity 1
 	100% 
 		opacity 1
-@keyframes animacionNube1
-	0% 
-		opacity 0
-		transform translate(0, 0)
-		-ms-transform translate(0, 0)
-		-webkit-transform translate(0, 0)
-	5%
-		opacity 1
-
-	100% 
-		transform translate(-400px, 0)
-		-ms-transform translate(-400px, 0)
-		-webkit-transform translate(-400px, 0)
-@keyframes animacionNube2
-	0% 
-		opacity 0
-	50%
-		opacity 1
-	75%
-		opacity 1
-	100% 
-		opacity 1
-@keyframes animacionNube3
-	0% 
-		opacity 0
-		transform translate(0, 0)
-		-ms-transform translate(0, 0)
-		-webkit-transform translate(0, 0)
-	5%
-		opacity .5
-
-	100% 
-		transform translate(-360px, 0)
-		-ms-transform translate(-360px, 0)
-		-webkit-transform translate(-360px, 0)
-@keyframes animacionRayo1 
-	0% 
-		opacity .15
-	25% 
-		opacity 0
-	50%
-		opacity 0
-	75%
-		opacity .1
-	100% 
-		opacity .15
-@keyframes animacionRayo2
-	0% 
-		opacity .15
-	25% 
-		opacity 0
-	50%
-		opacity 0
-	75%
-		opacity .1
-	100% 
-		opacity .15
-@keyframes animacionRayo3 
-	0% 
-		opacity .3
-	25% 
-		opacity .2
-	50%
-		opacity 0
-	75%
-		opacity .1
-	100% 
-		opacity .3
-@keyframes animacionRayo4 
-	0% 
-		opacity 0
-	25% 
-		opacity 0
-	50%
-		opacity 0
-	75%
-		opacity .05
-	100% 
-		opacity 0
-@keyframes animacionRayo5
-	0% 
-		opacity 0
-	25% 
-		opacity 0.01
-	50%
-		opacity 0
-	75%
-		opacity .05
-	100% 
-		opacity 0
-@keyframes animacionRayo6 
-	0% 
-		opacity 0
-	25% 
-		opacity 0
-	50%
-		opacity .08
-	75%
-		opacity .02
-	100% 
-		opacity 0	
 
 
 
