@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Festes Quinquenals Ulldecona 2014</title>
+    <title>Programa Festes Quinquenals Ulldecona 2014</title>
     <meta name="description" content="Programa de les festes Quinquenals d'Ulldecona 2014" />
     <meta name="author" content="Ivan Bardón | Jordi Pàmies | Marc Ferré" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -17,7 +17,7 @@
     <meta name="apple-mobile-web-app-title" content="Ulldecona">
 
     <link rel="stylesheet" href="css/normalize.min.css" />
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/estilos.css" />
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
@@ -29,6 +29,9 @@
     <div class="core">
         <div class="bg"></div>
         <div class="bgEvento"></div>
+        <div class="bgHeader">
+            <div class="montsia"></div>
+        </div>
         <div class="patron"></div>
         <div class="efectos">
             <div class="dia">
@@ -72,35 +75,34 @@
                 <div class="degradadoA"></div>
                 <div class="degradadoB"></div>
             </div>
-        <div id="menu" class="menu">
-            <div class="botones">
-                <div class="botonMenu"><div id='menuResizer' class="menuResizer"><span class="disminuir"></span><span class="aumentar"></span></div></div>
-                <div class="botonMenu"><a class="mapa" traget='no-blanck' href="javascript:vistaDia()"></a></div>
-                <div class="botonMenu"><div id='compartir' class="compartir"></div></div>
+    </div>
+    <div id="menu" class="menu">
+        <div class="botones">
+            <div class="botonMenu"><div id='menuResizer' class="menuResizer"><span class="disminuir"></span><span class="aumentar"></span></div></div>
+            <div class="botonMenu"><a class="mapa" traget='no-blanck' href="fqu/index.html"></a></div>
+            <div class="botonMenu"><div id='compartir' class="compartir"></div></div>
+        </div>
+        <div class="resizer">
+            <div class="botonResizer"><div id='disminuir' class="disminuir" onclick="resizer(-1)"></div></div>
+            <div class="botonResizer"><div id='aumentar' class="aumentar" onclick="resizer(1)"></div></div>
+        </div>
+        <div class="social">
+            <div class="botonSocial">
+                <div class="facebook"><div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></div>
             </div>
-            <div class="resizer"  style='display:none'>
-                <div class="botonResizer"><div id='disminuir' class="disminuir" onclick="resizer(-1)"></div></div>
-                <div class="botonResizer"><div id='aumentar' class="aumentar" onclick="resizer(1)"></div></div>
-            </div>
-            <div class="social" style='display:none'>
-                <div class="botonSocial">
-                    <div class="facebook"><div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></div>
-                </div>
-                <div class="botonSocial">
-                    <div class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="" data-text="" data-via="" data-lang="es">Twittear</a></div>
-                </div>
+            <div class="botonSocial">
+                <div class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="" data-text="" data-via="" data-lang="es">Twittear</a></div>
             </div>
         </div>
     </div>
     <header>
-        <div class="bgHeader"></div>
         <div class="calendari">
             <div id='divDia' class="dia"><span></span></div>
             <div id='divNumero' class="numero"><span></span></div>
             <div id='divMes' class="mes"><span></span></div>   
         </div>
         <div id='eventActual' class="eventActual">
-            <div id='titol' class="titol"><p>Ara</p><span></span></div>
+            <!-- <div id='titol' class="titol"><p>Ara</p><span></span></div> -->
             <div class="contingutEventActual">
                 <div class="hora">
                     <div class="horaEvent"><p>13:30</p></div>
@@ -113,30 +115,108 @@
         </div>
         <nav id='divBotonera' class="botonera">
             <ul>
-                <li class="dia"><a href="#divBotonera"><div id="d1" onclick="mostrar('dia1')"><span class="nomDia">Dill</span><p>29</p></div></a></li>
-                <li class="dia"><a href="#divBotonera"><div id="d2" onclick="mostrar('dia2')"><span class="nomDia">Dim</span><p>30</p></div></a></li>
-                <li class="dia"><a href="#divBotonera"><div id="d3" onclick="mostrar('dia3')"><span class="nomDia">Dim</span><p class='centrar'>1</p></div></a></li>
-                <li class="dia"><a href="#divBotonera"><div id="d4" onclick="mostrar('dia4')"><span class="nomDia">Dij</span><p class='centrar'>2</p></div></a></li>
-                <li class="dia"><a href="#divBotonera"><div id="d5" onclick="mostrar('dia5')"><span class="nomDia">Div</span><p class='centrar'>3</p></div></a></li>
-                <li class="dia"><a href="#divBotonera"><div id="d6" onclick="mostrar('dia6')"><span class="nomDia">Dis</span><p class='centrar'>4</p></div></a></li>
-                <li class="dia"><a href="#divBotonera"><div id="d7" onclick="mostrar('dia7')"><span class="nomDia">Diu</span><p class='centrar'>5</p></div></a></li>
-                <li class="dia"><a href="#divBotonera"><div id="d8" onclick="mostrar('dia8')"><span class="nomDia">Dill</span><p class='centrar'>6</p></div></a></li>
+                <li class="dia"><a href="#divBotonera"><div onclick=" activeBot(0), mostrar('dia1')"><span class="nomDia">Dill</span><p>29</p></div></a></li>
+                <li class="dia"><a href="#divBotonera"><div onclick="activeBot(1), mostrar('dia2')"><span class="nomDia">Dim</span><p>30</p></div></a></li>
+                <li class="dia"><a href="#divBotonera"><div onclick="mostrar('dia3')"><span class="nomDia">Dim</span><p class='centrar'>1</p></div></a></li>
+                <li class="dia"><a href="#divBotonera"><div onclick="mostrar('dia4')"><span class="nomDia">Dij</span><p class='centrar'>2</p></div></a></li>
+                <li class="dia"><a href="#divBotonera"><div onclick="mostrar('dia5')"><span class="nomDia">Div</span><p class='centrar'>3</p></div></a></li>
+                <li class="dia"><a href="#divBotonera"><div onclick="mostrar('dia6')"><span class="nomDia">Dis</span><p class='centrar'>4</p></div></a></li>
+                <li class="dia"><a href="#divBotonera"><div onclick="mostrar('dia7')"><span class="nomDia">Diu</span><p class='centrar'>5</p></div></a></li>
+                <li class="dia"><a href="#divBotonera"><div onclick="mostrar('dia8')"><span class="nomDia">Dill</span><p class='centrar'>6</p></div></a></li>
             </ul>
         </nav>
     </header>
     <section>
         <div id="dia1" class="llistaInvisible"><!-- Iterar entre .llistaVisible .llistaInvisible-->
-            <!-- <div class="preFestes"><p>Acte Previ</p></div> -->
             <article class="event">
                 <div class="detallEvent">
                     <div class="quan">
                         <div class="hora"><p>9:00</p></div>
-                        <div class="data"><p>29 AGO</p></div>
+                        <div class="data"><p>28 AGO</p></div>
                     </div>
                 </div>
-                <div class="Event" onclick="togglePes('p1')">
-                    <p>Tirada social COMPAK</p>
+                <div class="Event" onclick="slideToggle('p1')">
+                    <p>Titol de tamany mig per fer probes d'estil</p>
                     <div id="p1" class="detall"><p>Organitza: Ajuntament d’Ulldecona Col·labora: Societat de Caçadors.</p></div>
+                    <div class="lloc"><p>Camp de Tir Les Pedreres</p></div>
+                </div>
+                <div class="preExtender previ">
+                    <div class='girar'>
+                        <div class="extender"></div>
+                    </div>
+                    <p>Acte previ</p>
+                </div>
+            </article>
+            <article class="event">
+                <div class="detallEvent">
+                    <div class="quan">
+                        <div class="hora"><p>9:00</p></div>
+                        <div class="data"><p>28 AGO</p></div>
+                    </div>
+                </div>
+                <div class="Event" onclick="slideToggle('p2')">
+                    <p>Titol de tamany curt</p>
+                    <div id="p2" class="detall"><p>Organitza: Ajuntament d’Ulldecona Col·labora: Societat de Caçadors.</p></div>
+                    <div class="lloc"><p>Camp de Tir Les Pedreres</p></div>
+                </div>
+                <div class="preExtender religios">
+                    <div class='girar'>
+                        <div class="extender"></div>
+                    </div>
+                    <p>Acte Religós</p>
+                </div>
+            </article>
+            <article class="event">
+                <div class="detallEvent">
+                    <div class="quan">
+                        <div class="hora"><p>9:00</p></div>
+                        <div class="data"><p>28 AGO</p></div>
+                    </div>
+                </div>
+                <div class="Event" onclick="slideToggle('p3')">
+                    <p>Titol de tamany llarg amb molt més contingut del normal per fer probes d'estil</p>
+                    <div id="p3" class="detall"><p>Organitza: Ajuntament d’Ulldecona Col·labora: Societat de Caçadors.</p></div>
+                    <div class="lloc"><p>Camp de Tir Les Pedreres</p></div>
+                </div>
+                <div class="preExtender posterior">
+                    <div class='girar'>
+                        <div class="extender"></div>
+                    </div>
+                    <p>Acte posterior</p>
+                </div>
+            </article>
+            <article class="event">
+                <div class="detallEvent">
+                    <div class="quan">
+                        <div class="hora"><p>14:00</p></div>
+                        <div class="data"><p>28 AGO</p></div>
+                    </div>
+                </div>
+                <div class="Event" onclick="slideToggle('p4')">
+                    <p>Titol de tamany llarg amb molt més contingut del normal per fer probes d'estil</p>
+                    <div id="p4" class="detall"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, corrupti quo consectetur numquam obcaecati incidunt aspernatur facilis voluptate. Nostrum eos saepe officiis? Fugit, dolore facere deleniti nulla laudantium delectus eius.</p></div>
+                </div>
+                <div class="preExtender festes">
+                    <div class='girar'>
+                        <div class="extender"></div>
+                    </div>
+                    <p>Festes</p>
+                </div>
+            </article>
+
+            <div class="anarInici"><a href="#divBotonera"><div class="boto"></div></a></div>
+        </div>
+        <div id="dia2" class="llistaInvisible"><!-- Iterar entre .llistaVisible .llistaInvisible-->
+            <article class="event">
+                <div class="detallEvent">
+                    <div class="quan">
+                        <div class="hora"><p>9:00</p></div>
+                        <div class="data"><p>28 AGO</p></div>
+                    </div>
+                </div>
+                <div class="Event" onclick="slideToggle('p7')">
+                    <p>Dia 2</p>
+                    <div id="p7" class="detall"><p>Organitza: Ajuntament d’Ulldecona Col·labora: Societat de Caçadors.</p></div>
                     <div class="lloc"><p>Camp de Tir Les Pedreres</p></div>
                     <div class="expandir"></div>
                 </div>
@@ -145,12 +225,12 @@
                 <div class="detallEvent">
                     <div class="quan">
                         <div class="hora"><p>9:00</p></div>
-                        <div class="data"><p>29 AGO</p></div>
+                        <div class="data"><p>28 AGO</p></div>
                     </div>
                 </div>
-                <div class="Event" onclick="togglePes('p1')">
+                <div class="Event" onclick="slideToggle('p8')">
                     <p>Tirada social COMPAK</p>
-                    <div id="p1" class="detall"><p>Organitza: Ajuntament d’Ulldecona Col·labora: Societat de Caçadors.</p></div>
+                    <div id="p8" class="detall"><p>Organitza: Ajuntament d’Ulldecona Col·labora: Societat de Caçadors.</p></div>
                     <div class="lloc"><p>Camp de Tir Les Pedreres</p></div>
                     <div class="expandir"></div>
                 </div>
@@ -159,12 +239,12 @@
                 <div class="detallEvent">
                     <div class="quan">
                         <div class="hora"><p>9:00</p></div>
-                        <div class="data"><p>29 AGO</p></div>
+                        <div class="data"><p>28 AGO</p></div>
                     </div>
                 </div>
-                <div class="Event" onclick="togglePes('p1')">
+                <div class="Event" onclick="slideToggle('p9')">
                     <p>Tirada social COMPAK</p>
-                    <div id="p1" class="detall"><p>Organitza: Ajuntament d’Ulldecona Col·labora: Societat de Caçadors.</p></div>
+                    <div id="p9" class="detall"><p>Organitza: Ajuntament d’Ulldecona Col·labora: Societat de Caçadors.</p></div>
                     <div class="lloc"><p>Camp de Tir Les Pedreres</p></div>
                     <div class="expandir"></div>
                 </div>
@@ -173,12 +253,12 @@
                 <div class="detallEvent">
                     <div class="quan">
                         <div class="hora"><p>9:00</p></div>
-                        <div class="data"><p>29 AGO</p></div>
+                        <div class="data"><p>28 AGO</p></div>
                     </div>
                 </div>
-                <div class="Event" onclick="togglePes('p1')">
+                <div class="Event" onclick="slideToggle('p10')">
                     <p>Tirada social COMPAK</p>
-                    <div id="p1" class="detall"><p>Organitza: Ajuntament d’Ulldecona Col·labora: Societat de Caçadors.</p></div>
+                    <div id="p10" class="detall"><p>Organitza: Ajuntament d’Ulldecona Col·labora: Societat de Caçadors.</p></div>
                     <div class="lloc"><p>Camp de Tir Les Pedreres</p></div>
                     <div class="expandir"></div>
                 </div>
@@ -187,12 +267,12 @@
                 <div class="detallEvent">
                     <div class="quan">
                         <div class="hora"><p>9:00</p></div>
-                        <div class="data"><p>29 AGO</p></div>
+                        <div class="data"><p>28 AGO</p></div>
                     </div>
                 </div>
-                <div class="Event" onclick="togglePes('p1')">
+                <div class="Event" onclick="slideToggle('p11')">
                     <p>Tirada social COMPAK</p>
-                    <div id="p1" class="detall"><p>Organitza: Ajuntament d’Ulldecona Col·labora: Societat de Caçadors.</p></div>
+                    <div id="p11" class="detall"><p>Organitza: Ajuntament d’Ulldecona Col·labora: Societat de Caçadors.</p></div>
                     <div class="lloc"><p>Camp de Tir Les Pedreres</p></div>
                     <div class="expandir"></div>
                 </div>
@@ -201,26 +281,12 @@
                 <div class="detallEvent">
                     <div class="quan">
                         <div class="hora"><p>9:00</p></div>
-                        <div class="data"><p>29 AGO</p></div>
+                        <div class="data"><p>28 AGO</p></div>
                     </div>
                 </div>
-                <div class="Event" onclick="togglePes('p1')">
+                <div class="Event" onclick="slideToggle('p12')">
                     <p>Tirada social COMPAK</p>
-                    <div id="p1" class="detall"><p>Organitza: Ajuntament d’Ulldecona Col·labora: Societat de Caçadors.</p></div>
-                    <div class="lloc"><p>Camp de Tir Les Pedreres</p></div>
-                    <div class="expandir"></div>
-                </div>
-            </article>
-            <article class="event">
-                <div class="detallEvent">
-                    <div class="quan">
-                        <div class="hora"><p>9:00</p></div>
-                        <div class="data"><p>29 AGO</p></div>
-                    </div>
-                </div>
-                <div class="Event" onclick="togglePes('p1')">
-                    <p>Tirada social COMPAK</p>
-                    <div id="p1" class="detall"><p>Organitza: Ajuntament d’Ulldecona Col·labora: Societat de Caçadors.</p></div>
+                    <div id="p12" class="detall"><p>Organitza: Ajuntament d’Ulldecona Col·labora: Societat de Caçadors.</p></div>
                     <div class="lloc"><p>Camp de Tir Les Pedreres</p></div>
                     <div class="expandir"></div>
                 </div>
