@@ -5,12 +5,11 @@ header
 	overflow hidden
 	.botonera
 		height auto
-		overflow-x auto
-		overflow-y hidden
+		overflow hidden
 		padding 20px 20px 0 10px 
+		position relative
 		white-space nowrap
 		width 100%
-		position relative
 		z-index 15
 		ul
 			text-align center
@@ -23,24 +22,24 @@ header
 				width 55px
 				p
 					border-radius 50%
-					color rgba(rosa,1)
+					color rgba(white,1)
+					font-style italic
+					font-weight 900
 					height 35px
 					left 25%
-					font-weight 900
-					font-style italic
 					line-height 1.6em
 					position absolute
 					text-align center
 					top 17px
 					width 35px 
 					&:hover
-						background rgba(secundario,1)
-						color rgba(white,1)
+						background rgba(cielo,1)
+						color rgba(black,.7)
 						font-weight 400
 				.centrarMes
 					margin 0 0 0 .35em
 				.nomDia
-					color rgba(black,1)
+					color rgba(cielo,1)
 					font-size .7em
 					font-weight 400
 					left 35%
@@ -306,16 +305,16 @@ section
 	top 425px
 	z-index 5
 .bgHeader
-	@css{
-		background: rgb(34,118,159);
-		background: -moz-linear-gradient(top,  rgba(34,118,159,1) 0%, rgba(119,179,206,1) 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(34,118,159,1)), color-stop(100%,rgba(119,179,206,1)));
-		background: -webkit-linear-gradient(top,  rgba(34,118,159,1) 0%,rgba(119,179,206,1) 100%);
-		background: -o-linear-gradient(top,  rgba(34,118,159,1) 0%,rgba(119,179,206,1) 100%);
-		background: -ms-linear-gradient(top,  rgba(34,118,159,1) 0%,rgba(119,179,206,1) 100%);
-		background: linear-gradient(to bottom,  rgba(34,118,159,1) 0%,rgba(119,179,206,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#22769f', endColorstr='#77b3ce',GradientType=0 );
-		}
+	@css {
+		background: rgb(6,64,112);
+		background: -moz-linear-gradient(45deg,  rgba(6,64,112,1) 0%, rgba(3,30,57,1) 53%, rgba(6,13,13,1) 87%);
+		background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(6,64,112,1)), color-stop(53%,rgba(3,30,57,1)), color-stop(87%,rgba(6,13,13,1)));
+		background: -webkit-linear-gradient(45deg,  rgba(6,64,112,1) 0%,rgba(3,30,57,1) 53%,rgba(6,13,13,1) 87%);
+		background: -o-linear-gradient(45deg,  rgba(6,64,112,1) 0%,rgba(3,30,57,1) 53%,rgba(6,13,13,1) 87%);
+		background: -ms-linear-gradient(45deg,  rgba(6,64,112,1) 0%,rgba(3,30,57,1) 53%,rgba(6,13,13,1) 87%);
+		background: linear-gradient(45deg,  rgba(6,64,112,1) 0%,rgba(3,30,57,1) 53%,rgba(6,13,13,1) 87%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#064070', endColorstr='#060d0d',GradientType=1 );
+   		}
 	height 445px
 	left 0
 	position absolute 
@@ -323,318 +322,124 @@ section
 	top 0
 	width 100%
 	z-index 0
-	.montsia
-		background-image url(../img/montsia.png)
-		background-repeat no-repeat
-		background-size 100% 140px
-		height 350px
-		left 0
-		position absolute
-		right 0
-		top 288px
-		width 100%
-		z-index 0
 .efectos
-	height 1200px
-	overflow hidden
-	position absolute
+	height 600px
 	width 100%
+	top 0px
+	overflow-x hidden
+	overflow-y hidden
+	position absolute
 	.dia
 		.moverDestellos
-			left 50px
-			position absolute
-			top 30px
-			animation animacionMoverDestellos 20s infinite
-			-webkit-animation animacionMoverDestellos 20s infinite
-			.destellos
-				height 600px
-				transform rotateZ(-18deg)
-				-ms-transform rotateZ(-18deg)
-				-webkit-transform rotateZ(-18deg)
-				animation animacionDestellos 20s infinite
-				-webkit-animation animacionDestellos 20s infinite
-				.destello1
-					background rgba(white,.1)
+		.nubes
+		.rayos
+		.sol
+			display none
+	.nit
+		.contenedorCastell
+			display block
+			margin 0 auto
+			position relative
+			width 150px
+			z-index 4
+			.castell
+				background-image url(../img/castell.png)
+				background-repeat no-repeat
+				background-size 243px auto
+				height 119px
+				left -50px
+				position absolute
+				top 326px
+				width 243px
+			.castellFosc
+				background-image url(../img/castellFosc.png)
+				background-repeat no-repeat
+				background-size 243px auto
+				height 119px
+				left -50px
+				position absolute
+				top 326px
+				width 243px
+				animation animacionFosc 15s infinite
+				-webkit-animation animacionFosc 15s infinite
+		.estrellas
+			height 445px
+			left 0 
+			position relative
+			right 0
+			top 0
+			z-index 1
+			.moverFugaz
+				display block
+				position absolute 
+				z-index 1
+				right -10px
+				top -10px
+				transform rotateZ(-50deg)
+				-ms-transform rotateZ(-50deg)
+				-webkit-transform rotateZ(-50deg)
+				.fugaz
+					background white
 					border-radius 50%
-					height 50px
-					left 30px
+					height 1px
+					width 35px
+					-webkit-filter brightness(3)
+					animation animacionFugaz 16s infinite
+					-webkit-animation animacionFugaz 16s infinite
+			.moverConstelacion
+				height 445px
+				overflow-x auto
+				overflow-y hidden
+				position relative
+				z-index 1
+				.constelacion
+					background-image url(../img/estrellas.png)
+					background-repeat no-repeat
+					background-size 900px auto
+					// border 2px solid white
+					height 900px
+					left -250px
 					position absolute
 					top 0px
-					width 50px
-					-webkit-filter blur(1px)
-					animation animacionDestello1 30s infinite
-					-webkit-animation animacionDestello1 30s infinite
-				.destello2
-					background rgba(white,.1)
-					border-radius 50%
-					height 35px
-					left 40px
-					position absolute
-					top 100px
-					width 35px
-					animation animacionDestello2 30s infinite
-					-webkit-animation animacionDestello2 30s infinite
-				.destello3
-					background rgba(white,.1)
-					border-radius 50%
-					height 20px
-					left 49px
-					position absolute
-					top 150px
-					width 20px
-					-webkit-filter blur(1px)
-					animation animacionDestello3 30s infinite
-					-webkit-animation animacionDestello3 30s infinite
-				.destello4 
-					background rgba(white,.1)
-					border-radius 50%
-					height 75px
-					left 25px
-					position absolute
-					top 220px
-					width 75px
-					animation animacionDestello4 30s infinite
-					-webkit-animation animacionDestello4 30s infinite
-				.destello5
-					background rgba(white,.1)
-					height 55px
-					left 12px
-					position relative
-					top 330px
-					width 100px
-					transform scale(.65, .65)
-					-ms-transform scale(.65, .65)
-					-webkit-transform scale(.65, .65)
-					-webkit-filter blur(2px)
-					animation animacionDestello5 30s infinite
-					-webkit-animation animacionDestello5 30s infinite
-					&:before 
-						content ''
-						height 0
-						left 0
-						position absolute
-						top -25px
-						width 0
-						border-left 50px solid transparent
-						border-right 50px solid transparent
-						border-bottom 25px solid rgba(white,.1)
-					&:after 
-						bottom -25px
-						content ''
-						height 0
-						left 0
-						position absolute
-						width 0
-						border-left 50px solid transparent
-						border-right 50px solid transparent
-						border-top 25px solid rgba(white,.1)
-		.nubes
-			height 350px
-			position relative
+					width 900px
+					opacity 1
+					-webkit-filter brightness(1.8)
+					animation animacionConstelacion 320s infinite
+					-webkit-animation animacionConstelacion 320s infinite
+		.degradadoA
+			@css{
+				background: -moz-linear-gradient(top,  rgba(84,84,84,0) 0%, rgba(255,255,255,0.07) 49%, rgba(255,255,255,0.51) 80%, rgba(159,91,37,0.8) 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(84,84,84,0)), color-stop(49%,rgba(255,255,255,0.07)), color-stop(80%,rgba(255,255,255,0.51)), color-stop(100%,rgba(159,91,37,0.8)));
+				background: -webkit-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
+				background: -o-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
+				background: -ms-linear-gradient(top,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
+				background: linear-gradient(to bottom,  rgba(84,84,84,0) 0%,rgba(255,255,255,0.07) 49%,rgba(255,255,255,0.51) 80%,rgba(159,91,37,0.8) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00545454', endColorstr='#cc9f5b25',GradientType=0 );
+				}
+			opacity .2
+			display block
 			width 100%
-			.nube1
-				background-image url(../img/nube1.png)
-				background-repeat no-repeat
-				background-size 250px auto
-				height 188px
-				position absolute
-				right -30%
-				top 120px
-				width 292px
-				animation animacionNube1 190s infinite
-				-webkit-animation animacionNube1 190s infinite
-			.nube2
-				background-image url(../img/nube2.png)
-				background-repeat no-repeat
-				background-size 158px auto
-				height 115px
-				left 0%
-				position absolute
-				width 158px
-				animation animacionNube2 15s 1
-				-webkit-animation animacionNube2 15s 1
-			.nube3
-				background-image url(../img/nube3.png)
-				background-repeat no-repeat
-				background-size 84px auto
-				height 115px
-				left 280px
-				position absolute
-				top 70px
-				width 158px
-				animation animacionNube3 280s infinite
-				-webkit-animation animacionNube3 280s infinite
-		.rayos
-			height 1200px
-			overflow hidden
+			height 445px
+			top 0px
 			position absolute
-			top 0
+			z-index 3	
+		.degradadoB
+			@css{
+				background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(244,118,0,1) 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,0)), color-stop(100%,rgba(244,118,0,1)));
+				background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+				background: -o-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+				background: -ms-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+				background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(244,118,0,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#f47600',GradientType=0 );
+				}
+			opacity .12
+			display block
 			width 100%
-			z-index 0
-			.rayo1 
-				border-bottom 5px solid transparent
-				border-left 400px solid white
-				border-right 0px solid transparent
-				border-top 5px solid transparent
-				left -100px
-				position absolute
-				top 100px
-				transform rotateZ(43deg)
-				-ms-transform rotateZ(43deg)
-				-webkit-transform rotateZ(43deg)
-				-webkit-filter: blur(3px);
-				animation animacionRayo1 8s infinite
-				-webkit-animation animacionRayo1 8s infinite
-			.rayo2 
-				border-bottom 3px solid transparent
-				border-left 250px solid white
-				border-right 0px solid transparent
-				border-top 3px solid transparent
-				left -100px
-				position absolute
-				top 100px
-				transform rotateZ(75deg)
-				-ms-transform rotateZ(75deg)
-				-webkit-transform rotateZ(75deg)
-				-webkit-filter: blur(3px);
-				animation animacionRayo2 6s infinite
-				-webkit-animation animacionRayo2 6s infinite
-			.rayo3 
-				border-bottom 3px solid transparent
-				border-left 220px solid white
-				border-right 0px solid transparent
-				border-top 3px solid transparent
-				left 0px
-				position absolute
-				top 5px
-				transform rotateZ(3deg)
-				-ms-transform rotateZ(3deg)
-				-webkit-transform rotateZ(3deg)
-				-webkit-filter: blur(3px);
-				animation animacionRayo3 10s infinite
-				-webkit-animation animacionRayo3 10s infinite
-			.rayo4
-				border-bottom 10px solid transparent
-				border-left 2000px solid white
-				border-right 0px solid transparent
-				border-top 30px solid transparent
-				left -600px
-				position absolute
-				top 690px
-				transform rotateZ(240deg)
-				-ms-transform rotateZ(240deg)
-				-webkit-transform rotateZ(240deg)
-				-webkit-filter: blur(3px);
-				animation animacionRayo4 5s infinite
-				-webkit-animation animacionRayo4 5s infinite
-			.rayo4a
-				border-bottom 50px solid transparent
-				border-left 2000px solid white
-				border-right 0px solid transparent
-				border-top 65px solid transparent
-				left -580px
-				position absolute
-				top 690px
-				z-index -6
-				transform rotateZ(240deg)
-				-ms-transform rotateZ(240deg)
-				-webkit-transform rotateZ(240deg)
-				-webkit-filter: blur(8px);
-				animation animacionRayo4 5s infinite
-				-webkit-animation animacionRayo4 5s infinite
-			.rayo5
-				border-bottom 20px solid transparent
-				border-left 1900px solid white
-				border-right 0px solid transparent
-				border-top 10px solid transparent
-				left -798px
-				position absolute
-				top 800px
-				transform rotateZ(260deg)
-				-ms-transform rotateZ(260deg)
-				-webkit-transform rotateZ(260deg)
-				-webkit-filter: blur(6px);
-				animation animacionRayo5 8s infinite
-				-webkit-animation animacionRayo5 8s infinite
-			.rayo5a
-				border-bottom 20px solid transparent
-				border-left 1900px solid rgba(white,1)
-				border-right 0px solid transparent
-				border-top 120px solid transparent
-				left -790px
-				position absolute
-				top 800px
-				transform rotateZ(258deg)
-				-ms-transform rotateZ(258deg)
-				-webkit-transform rotateZ(258deg)
-				-webkit-filter: blur(10px);
-				animation animacionRayo5 8s infinite
-				-webkit-animation animacionRayo5 8s infinite
-			.rayo6
-				border-bottom 3px solid transparent
-				border-left 2000px solid white
-				border-right 0px solid transparent
-				border-top 10px solid transparent
-				left -870px
-				position absolute
-				top 350px
-				transform rotateZ(250deg)
-				-ms-transform rotateZ(250deg)
-				-webkit-transform rotateZ(250deg)
-				-webkit-filter: blur(1px);
-				animation animacionRayo6 9s infinite
-				-webkit-animation animacionRayo6 9s infinite
-			.rayo6a
-				border-bottom 3px solid transparent
-				border-left 1000px solid white
-				border-right 0px solid transparent
-				border-top 10px solid transparent
-				left -150px
-				position absolute
-				top 245px
-				transform rotateZ(215deg)
-				-ms-transform rotateZ(215deg)
-				-webkit-transform rotateZ(215deg)
-				-webkit-filter: blur(1px);
-				animation animacionRayo6 11s infinite
-				-webkit-animation animacionRayo6 11s infinite
-			.rayo7
-				border-bottom 3px solid transparent
-				border-left 2500px solid rgba(white,.7)
-				border-right 0px solid transparent
-				border-top 10px solid transparent
-				left -1220px
-				position absolute
-				top 350px
-				transform rotateZ(265deg)
-				-ms-transform rotateZ(265deg)
-				-webkit-transform rotateZ(265deg)
-				-webkit-filter: blur(6px);
-				animation animacionRayo6 6s infinite
-				-webkit-animation animacionRayo6 6s infinite
-			.rayo8
-				border-bottom 50px solid transparent
-				border-left 1200px solid rgba(white,.7)
-				border-right 0px solid transparent
-				border-top 60px solid transparent
-				left -549px
-				position absolute
-				top 490px
-				transform rotateZ(265deg)
-				-ms-transform rotateZ(265deg)
-				-webkit-transform rotateZ(265deg)
-				-webkit-filter: blur(10px);
-				animation animacionRayo6 6s infinite
-				-webkit-animation animacionRayo6 6s infinite
-		.sol
-			background-image url(../img/sol.png)
-			background-size 350px auto
-			height 350px
-			left -150px
+			height 145px
+			top 300px
 			position absolute
-			top -150px
-			width 350px
-			z-index 0
+			z-index 3		
 .invisible
 .menu
 	background cielo
